@@ -1,0 +1,37 @@
+import guardrails
+import llm
+
+# classify and cache user text
+flow policy input route $user_message -> $category
+  $category = await InferCategoryAction(input=$user_message)
+  return $category
+
+flow input rails $input_text -> $input_text_out
+  global $last_user_text
+  global $category
+  $last_user_text = $input_text
+  $category = await policy input route $input_text
+  $input_text_out = $input_text
+  return $input_text_out
+
+# Output rails: dynamic rule evaluation → block/revise/ok
+flow output rails $bot_text -> $final_text
+  $res = await CompositeCheckAction(input=$last_user_text, output=$bot_text)
+
+  # compute booleans first; never await inside if
+  $is_block  = await IsBlockAction(decision=$res.decision)
+  $is_revise = await IsReviseAction(decision=$res.decision)
+
+  if $is_block
+    $final_text = $res.reason
+  elif $is_revise
+    $final_text = $res.revised
+  else
+    $final_text = $bot_text
+  return $final_text
+
+flow main
+  user says $u
+  $draft = await generate_bot_message(input=$u)
+  $final = await output rails $draft
+  bot says $final

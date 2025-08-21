@@ -1,0 +1,13 @@
+colang_version: "2.x" 
+
+models:
+  - type: main
+    engine: openai
+    model: gpt-4o-mini
+    api_key: 
+# Colang files and action import path
+colang_files:
+  - D:/AAAI ( AIGOV 26 )/rails/colang/policy_guard.co
+
+import_paths:
+  - D:/AAAI ( AIGOV 26 )/rails/actions
