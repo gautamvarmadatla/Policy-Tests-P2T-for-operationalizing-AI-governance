@@ -1,0 +1,174 @@
+{
+  "doc_filter": "(all)",
+  "systems": {
+    "Seed1": {
+      "document_filter": "(all)",
+      "counts": {
+        "gold_spans": 20,
+        "pred_rules_total": 17,
+        "pred_unique_signature_count": 17
+      },
+      "metrics": {
+        "SE Slot F1": 0.2382,
+        "Coverage": 0.55,
+        "Test Acc": 0.55,
+        "Sig F1": 0.2243
+      },
+      "cm_metrics": {
+        "CM Precision": 1.0,
+        "CM Recall": 0.55,
+        "CM F1": 0.7097,
+        "CM AUPRC": 0.55,
+        "gold_spans": 20,
+        "pred_spans": 11,
+        "tp_at_op": 11,
+        "fp_at_op": 0,
+        "fn_at_op": 9
+      },
+      "slot_f1_breakdown": {
+        "hazard": 0.0682,
+        "scope.actor": 0.35,
+        "scope.domain": 0.0,
+        "scope.context": 0.35,
+        "conditions": 0.1479,
+        "exceptions": 0.55,
+        "requirements": 0.1286,
+        "evidence": 0.325,
+        "evidence_signals": 0.2243
+      },
+      "notes": {
+        "field_scoring": "scope=min-1 overlap; others=LLM similarity (fallback token Jaccard)",
+        "conflicts_omitted": true
+      }
+    },
+    "Seed2": {
+      "document_filter": "(all)",
+      "counts": {
+        "gold_spans": 20,
+        "pred_rules_total": 21,
+        "pred_unique_signature_count": 21
+      },
+      "metrics": {
+        "SE Slot F1": 0.2429,
+        "Coverage": 0.55,
+        "Test Acc": 0.55,
+        "Sig F1": 0.2477
+      },
+      "cm_metrics": {
+        "CM Precision": 1.0,
+        "CM Recall": 0.55,
+        "CM F1": 0.7097,
+        "CM AUPRC": 0.55,
+        "gold_spans": 20,
+        "pred_spans": 11,
+        "tp_at_op": 11,
+        "fp_at_op": 0,
+        "fn_at_op": 9
+      },
+      "slot_f1_breakdown": {
+        "hazard": 0.0525,
+        "scope.actor": 0.35,
+        "scope.domain": 0.0,
+        "scope.context": 0.4,
+        "conditions": 0.1178,
+        "exceptions": 0.55,
+        "requirements": 0.1481,
+        "evidence": 0.32,
+        "evidence_signals": 0.2477
+      },
+      "notes": {
+        "field_scoring": "scope=min-1 overlap; others=LLM similarity (fallback token Jaccard)",
+        "conflicts_omitted": true
+      }
+    }
+  },
+  "paired_tests": {
+    "macro_f1_permutation": {
+      "delta": -0.0047,
+      "p_value": 0.91595
+    },
+    "span_hit_mcnemar": {
+      "b_A1_B0": 3,
+      "c_A0_B1": 0,
+      "p_value": 0.25
+    }
+  },
+  "delta_with_ci": {
+    "SE Slot F1": {
+      "delta": -0.0047,
+      "ci95": [
+        -0.0893,
+        0.0824
+      ]
+    },
+    "Coverage@span": {
+      "delta": 0.0,
+      "ci95": [
+        NaN,
+        NaN
+      ]
+    },
+    "Test Acc": {
+      "delta": 0.0,
+      "ci95": [
+        NaN,
+        NaN
+      ]
+    },
+    "Sig F1": {
+      "delta": -0.0233,
+      "ci95": [
+        NaN,
+        NaN
+      ]
+    },
+    "CM F1": {
+      "delta": 0.0,
+      "ci95": [
+        NaN,
+        NaN
+      ]
+    },
+    "CM AUPRC": {
+      "delta": 0.0,
+      "ci95": [
+        NaN,
+        NaN
+      ]
+    }
+  },
+  "aggregated_across_seeds": {
+    "Gold spans": 20,
+    "Pred spans (mean)": 11.0,
+    "SE Slot F1 (mean)": 0.2406,
+    "SE Slot F1 CI95": [
+      0.152,
+      0.3274
+    ],
+    "Coverage (mean)": 0.55,
+    "Coverage CI95": [
+      0.35,
+      0.75
+    ],
+    "Test Acc (mean)": 0.55,
+    "Test Acc CI95": [
+      0.35,
+      0.75
+    ],
+    "Sig F1 (mean)": 0.236,
+    "Sig F1 CI95": [
+      0.1392,
+      0.3392
+    ],
+    "CM F1 (mean)": 0.7965,
+    "CM F1 CI95": [
+      0.6522,
+      0.9131
+    ],
+    "CM AUPRC (mean)": 0.7316,
+    "CM AUPRC CI95": [
+      0.5638,
+      0.875
+    ]
+  }
+}

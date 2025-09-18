@@ -1,0 +1,13 @@
+k,span_id,score,tp,fp,precision,recall
+0,,1.0,0,0,1.0,0.0
+1,EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002,0.5427350427350428,1,0,1.0,0.05
+2,EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003,0.5155555555555555,2,0,1.0,0.1
+3,EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002,0.5119285952619286,3,0,1.0,0.15
+4,EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001,0.4715219421101774,4,0,1.0,0.2
+5,EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001,0.4477466977466978,5,0,1.0,0.25
+6,EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0003,0.44312169312169314,6,0,1.0,0.3
+7,EU_AI_2024_removed/article-12/sent_0001,0.402020202020202,7,0,1.0,0.35
+8,EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0004,0.39337231968810915,8,0,1.0,0.4
+9,EU_AI_2024_removed/article-12/sent_0003,0.3872785829307569,9,0,1.0,0.45
+10,EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002,0.35833333333333334,10,0,1.0,0.5
+11,EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002,0.2908496732026144,11,0,1.0,0.55
