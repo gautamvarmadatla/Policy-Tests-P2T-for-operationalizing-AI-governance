@@ -1,0 +1,40 @@
+{
+  "document_filter": "EU_AI_2024_removed",
+  "counts": {
+    "gold_spans": 20,
+    "pred_rules_total": 0,
+    "pred_unique_signature_count": 0
+  },
+  "metrics": {
+    "SE Slot F1": 0.0,
+    "Coverage": 0.0,
+    "Test Acc": 0.0,
+    "Sig F1": 0.0
+  },
+  "cm_metrics": {
+    "CM Precision": 0.0,
+    "CM Recall": 0.0,
+    "CM F1": 0.0,
+    "CM AUPRC": 0.0,
+    "gold_spans": 20,
+    "pred_spans": 0,
+    "tp_at_op": 0,
+    "fp_at_op": 0,
+    "fn_at_op": 20
+  },
+  "slot_f1_breakdown": {
+    "hazard": 0.0,
+    "scope.actor": 0.0,
+    "scope.domain": 0.0,
+    "scope.context": 0.0,
+    "conditions": 0.0,
+    "exceptions": 0.0,
+    "requirements": 0.0,
+    "evidence": 0.0,
+    "evidence_signals": 0.0
+  },
+  "notes": {
+    "field_scoring": "scope=min-1 overlap; others=LLM similarity (fallback token Jaccard)",
+    "conflicts_omitted": true
+  }
+}

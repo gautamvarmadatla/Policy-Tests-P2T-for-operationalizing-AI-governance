@@ -1,0 +1,40 @@
+{
+  "document_filter": "EU_AI_2024_removed",
+  "counts": {
+    "gold_spans": 20,
+    "pred_rules_total": 65,
+    "pred_unique_signature_count": 65
+  },
+  "metrics": {
+    "SE Slot F1": 0.3955,
+    "Coverage": 0.95,
+    "Test Acc": 0.0,
+    "Sig F1": 0.0
+  },
+  "cm_metrics": {
+    "CM Precision": 1.0,
+    "CM Recall": 0.95,
+    "CM F1": 0.9744,
+    "CM AUPRC": 0.95,
+    "gold_spans": 20,
+    "pred_spans": 19,
+    "tp_at_op": 19,
+    "fp_at_op": 0,
+    "fn_at_op": 1
+  },
+  "slot_f1_breakdown": {
+    "hazard": 0.1803,
+    "scope.actor": 0.5,
+    "scope.domain": 0.05,
+    "scope.context": 0.5,
+    "conditions": 0.3674,
+    "exceptions": 0.85,
+    "requirements": 0.4746,
+    "evidence": 0.6375,
+    "evidence_signals": 0.0
+  },
+  "DupIdx": 0.0,
+  "notes": {
+    "pred_filter": "none (all predictions kept)"
+  }
+}

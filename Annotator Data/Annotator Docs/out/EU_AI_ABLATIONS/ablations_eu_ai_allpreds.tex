@@ -1,0 +1,9 @@
+\begin{tabularx}{\textwidth}{@{}l c c c c c@{}}
+\toprule
+\textbf{Variant} & \textbf{Coverage} & \textbf{CM F$_1$} & \textbf{SE Slot F$_1$} & \textbf{Evidence F$_1$} & \textbf{DupIdx}\,$\downarrow$ \\
+\midrule
+LLM-only & 1.00 & 1.00 & 0.44 & 0.00 & 0.00 \\
++ Judge + Repair & 1.00 & 1.00 & 0.43 & 0.00 & 0.00 \\
++ Judge + Repair + Dedup & 0.95 & 0.97 & 0.40 & 0.00 & 0.17 \\
+\bottomrule
+\end{tabularx}
