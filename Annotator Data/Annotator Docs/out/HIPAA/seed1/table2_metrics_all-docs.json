@@ -1,0 +1,40 @@
+{
+  "document_filter": "(all)",
+  "counts": {
+    "gold_spans": 43,
+    "pred_rules_total": 66,
+    "pred_unique_signature_count": 66
+  },
+  "metrics": {
+    "SE Slot F1": 0.2655,
+    "Coverage": 0.7442,
+    "Test Acc": 0.7442,
+    "Sig F1": 0.3282
+  },
+  "cm_metrics": {
+    "CM Precision": 0.9706,
+    "CM Recall": 0.7674,
+    "CM F1": 0.8571,
+    "CM AUPRC": 0.7668,
+    "gold_spans": 43,
+    "pred_spans": 34,
+    "tp_at_op": 33,
+    "fp_at_op": 1,
+    "fn_at_op": 10
+  },
+  "slot_f1_breakdown": {
+    "hazard": 0.2013,
+    "scope.actor": 0.3721,
+    "scope.domain": 0.0,
+    "scope.context": 0.0233,
+    "conditions": 0.2317,
+    "exceptions": 0.5849,
+    "requirements": 0.3457,
+    "evidence": 0.3023,
+    "evidence_signals": 0.3282
+  },
+  "notes": {
+    "field_scoring": "scope=min-1 overlap; others=LLM similarity (fallback token Jaccard)",
+    "conflicts_omitted": true
+  }
+}

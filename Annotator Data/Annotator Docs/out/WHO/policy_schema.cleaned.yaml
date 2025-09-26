@@ -1,0 +1,966 @@
+- rule_id: spans-passthrough-candidates/sent_0001-f6b4d0c1
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - health
+    context: []
+  hazard: novel risks to health-care services or applications
+  conditions:
+  - when a user prompts an LMM to generate health-care related outputs
+  - when a provider is permitted by the developer to integrate the LMM into a health-care
+    related application, product or service
+  exceptions: []
+  requirements:
+  - 'developer shall address the novel risks introduced by the use of general-purpose
+    foundation models (LMMs) in the situations: when a user prompts an LMM to generate
+    health-care related outputs, or when the developer permits a provider to integrate
+    the LMM into a health-care related application, product or service.'
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-b208f847
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: novel risks to health-care services or applications
+  conditions:
+  - when a user prompts an LMM to generate health-care related outputs
+  - when a provider is permitted by the developer to integrate the LMM into a health-care
+    related application, product or service
+  exceptions: []
+  requirements:
+  - provider shall address the novel risks introduced by the use of general-purpose
+    foundation models (LMMs) when a user prompts an LMM to generate health-care related
+    outputs or when the provider is permitted by the developer to integrate the LMM
+    into a health-care related application, product or service.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-507c97c2
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - health
+    context: []
+  hazard: harm from misleading or inappropriate medical information
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall block queries or attach a clear warning to any responses that
+    include health or medical information and shall direct users to information or
+    services that can provide appropriate assistance.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-4faf8524
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - health
+    context: []
+  hazard: harm from unsafe use of LMMs in health care
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall address the risks associated with use of LMMs in health care.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-d0be93ea
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: harm from unsafe use of LMMs in health care
+  conditions: []
+  exceptions: []
+  requirements:
+  - provider shall address the risks associated with use of LMMs in health care.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-cfa0ca7e
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain: []
+    context: []
+  hazard: system-wide bias
+  conditions:
+  - before deployment
+  - if an LMM is to be used in health care
+  exceptions: []
+  requirements:
+  - developer and provider shall identify, evaluate and mitigate system-wide bias
+    in the LMM prior to deployment when the LMM is to be used in health care.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-a0474130
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain: []
+    context: []
+  hazard: false information or hallucinations
+  conditions:
+  - before deployment
+  - if an LMM is to be used in health care
+  exceptions: []
+  requirements:
+  - developer and provider shall implement measures to prevent or mitigate false information
+    or hallucinations produced by the LMM prior to deployment when the LMM is to be
+    used in health care.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-8f1ae890
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain: []
+    context: []
+  hazard: manipulation and automation bias
+  conditions:
+  - before deployment
+  - if an LMM is to be used in health care
+  exceptions: []
+  requirements:
+  - developer and provider shall identify and mitigate risks of manipulation and automation
+    bias in the LMM prior to deployment when the LMM is to be used in health care.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-d426276c
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain: []
+    context: []
+  hazard: privacy of data entered into an LMM
+  conditions:
+  - before deployment
+  - if an LMM is to be used in health care
+  exceptions: []
+  requirements:
+  - developer and provider shall ensure the privacy of data entered into the LMM is
+    protected prior to deployment when the LMM is to be used in health care.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-a1e140ed
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0005
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: deployment of unsafe or non-compliant AI in health care
+  conditions:
+  - when required
+  exceptions: []
+  requirements:
+  - Developers and providers shall demonstrate that an AI technology intended for
+    use in health care meets the minimum requirements set out in a law or policy.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-ba161111
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0006
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - general
+    context: []
+  hazard: incorrect information from model (hallucinations)
+  conditions:
+  - model is a general-purpose foundation model
+  exceptions: []
+  requirements:
+  - developer shall disclose the performance of a general-purpose foundation model,
+    including its propensity to hallucinate.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-8d8f64a6
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0006
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - general
+    context: []
+  hazard: incorrect information from model (hallucinations)
+  conditions:
+  - model is a general-purpose foundation model
+  - when fine-tuning the model or deciding whether to market the technology
+  exceptions: []
+  requirements:
+  - provider shall disclose the performance of a general-purpose foundation model
+    when that information is needed to fine-tune the model or to decide whether to
+    market the technology.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0007-2b0acd08
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0007
+  scope:
+    actor:
+    - evaluator
+    data_domain: []
+    context:
+    - eval
+  hazard: impaired assessment of safety and efficacy
+  conditions:
+  - in the assessment of a general-purpose foundation model or application
+  exceptions: []
+  requirements:
+  - Include documented disclosure of the system's transparency, explainability and
+    intelligibility in the assessment report for each general-purpose foundation model
+    or application.
+  evidence:
+  - source code
+  - data inputs
+  - analytical approach
+  - performance in internal testing
+  - carbon footprint
+  - water footprint
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0007-487b5bbe
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0007
+  scope:
+    actor:
+    - evaluator
+    data_domain: []
+    context:
+    - eval
+  hazard: impaired oversight of safety and efficacy
+  conditions:
+  - in the assessment of a general-purpose foundation model or application
+  exceptions: []
+  requirements:
+  - Document transparency of specific technical aspects to support oversight and assessment
+    of safety and efficacy, including source code, data inputs, and the analytical
+    approach used.
+  evidence:
+  - source code
+  - data inputs
+  - analytical approach
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0009-608d9b45
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0009
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - PII
+    context: []
+  hazard: unauthorized personal information disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall implement measures to prevent accidental or prompt-based disclosure
+    of personal information.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0009-e4187f97
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0009
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - PII
+    context: []
+  hazard: unauthorized personal information disclosure
+  conditions:
+  - personal information may be disclosed either accidentally or through prompts
+  exceptions: []
+  requirements:
+  - developer shall prohibit their own employees from using such algorithms when personal
+    information may be disclosed accidentally or through prompts.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0012-9cc44b89
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0012
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: violation of human rights (dignity, autonomy, privacy)
+  conditions:
+  - used in health care and medicine
+  - includes general-purpose foundation models
+  exceptions: []
+  requirements:
+  - The developer or provider shall ensure AI systems or tools used in health care
+    and medicine respect human rights and ethical obligations affecting a person's
+    dignity, autonomy, and privacy.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0012-7db6447a
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0012
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: insufficient scrutiny of low-risk AI leading to human rights harms
+  conditions:
+  - algorithm is considered "low risk"
+  - used in health care and medicine
+  exceptions: []
+  requirements:
+  - The developer or provider shall subject AI algorithms to scrutiny regardless of
+    their risk classification, including when an algorithm is considered "low risk".
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0013-49481ab7
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unassessed human rights harms
+  conditions:
+  - throughout the life cycle of the AI system
+  exceptions: []
+  requirements:
+  - org must conduct an impact assessment that addresses ethics, human rights, safety
+    and data protection throughout the life cycle of the AI system.
+  evidence:
+  - impact assessment (ethics, human rights, safety, data protection, lifecycle)
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0013-915cf3d1
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unaudited impact assessments leading to unmitigated harms
+  conditions:
+  - before and after introduction of the AI technology
+  exceptions: []
+  requirements:
+  - org must obtain an independent third-party audit of the impact assessment before
+    introduction of the AI technology.
+  evidence:
+  - audit report (independent third party)
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0013-5d67516b
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of transparency of impact assessment results
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must publish the results of the impact assessment while accounting for proprietary
+    or sensitive information.
+  evidence:
+  - impact assessment (results)
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0013-a09b5d98
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: affected stakeholders lack access to impact assessment results
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must make impact assessment results available to the public and to groups
+    that may be affected.
+  evidence:
+  - impact assessment (results)
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0015-39905ecb
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0015
+  scope:
+    actor:
+    - provider
+    - developer
+    data_domain:
+    - PII
+    context:
+    - dev
+  hazard: unauthorized disclosure of personal data
+  conditions:
+  - during development of LMMs
+  exceptions: []
+  requirements:
+  - provider and developer shall collaborate when developing LMMs to address risks
+    to privacy and implement measures that preserve individual privacy.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0018-6ad2ce48
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0018
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: anticompetitive conduct
+  conditions:
+  - a general-purpose foundation model is adapted for use in health care or medicine
+    by the provider, to which the developer agrees
+  exceptions: []
+  requirements:
+  - The provider shall be subject to an AI regulatory assessment when a general-purpose
+    foundation model is adapted for use in health care or medicine by the provider,
+    to which the developer agrees.
+  evidence:
+  - AI regulatory assessment
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0021-95e4a426
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0021
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain: []
+    context:
+    - regulated
+  hazard: inaccurate device performance claims
+  conditions:
+  - If an LMM or application is to be regulated as a medical device
+  exceptions: []
+  requirements:
+  - Developer and provider shall provide evidence that the device performs as marketed.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0021-1b25ba87
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0021
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain: []
+    context:
+    - regulated
+  hazard: noncompliance with national medical device laws
+  conditions:
+  - If an LMM or application is to be regulated as a medical device
+  exceptions: []
+  requirements:
+  - Developer and provider shall provide evidence that the device meets the requirements
+    of current or amended national laws.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0022-ec5c8990
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0022
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: patient harm
+  conditions:
+  - unless in an authorized clinical trial setting
+  exceptions: []
+  requirements:
+  - developer shall not conduct experiments of LMMs for clinical decision support
+    outside an authorized clinical trial setting.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0024-bcb2dcd1
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0024
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: patient harm
+  conditions:
+  - seeks to commercialize such technologies
+  exceptions: []
+  requirements:
+  - Entity must address the causes of any negative consequences of the technologies.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0024-3cd6556c
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0024
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - text
+    context: []
+  hazard: user deception
+  conditions:
+  - seeks to commercialize such technologies
+  - in LMMs and applications
+  exceptions: []
+  requirements:
+  - Entity must restrict use of language in LMMs and applications that could misdirect
+    or mislead an end-user into ascribing human-like qualities to an LMM.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0025-06b586a6
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0025
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient regulator oversight of safety and efficacy
+  conditions:
+  - of an LMM or application
+  - to allow oversight and assessment by regulators
+  exceptions: []
+  requirements:
+  - 'Make the following aspects of an LMM or application transparent: source code,
+    data inputs, model weights, and analytical approach.'
+  evidence:
+  - source code
+  - data inputs
+  - model weights
+  - analytical approach
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0025-8fe40f57
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0025
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: violation of dignity, autonomy or privacy
+  conditions:
+  - used in health care and medicine
+  - irrespective of the risk or benefit associated with the AI technology
+  exceptions: []
+  requirements:
+  - Ensure LMMs and applications used in health care and medicine meet ethical obligations
+    and human rights standards affecting a person's dignity, autonomy and privacy.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0025-7925dd48
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0025
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: unaddressed ethics, human rights, safety or data protection risks
+  conditions:
+  - of LMMs and applications
+  - throughout the life cycle of an AI system
+  exceptions: []
+  requirements:
+  - Conduct an impact assessment of LMMs and applications that addresses ethics, human
+    rights, safety and data protection throughout the life cycle of the AI system.
+  evidence:
+  - impact assessment (ethics, human rights, safety, data protection)
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0025-2db72028
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0025
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: unaddressed ethics, human rights, safety or data protection risks
+  conditions:
+  - of LMMs and applications
+  - throughout the life cycle of an AI system
+  exceptions: []
+  requirements:
+  - Conduct an impact assessment of LMMs and applications that addresses ethics, human
+    rights, safety and data protection throughout the life cycle of the AI system.
+  evidence:
+  - impact assessment (ethics, human rights, safety, data protection)
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0026-67bbfb00
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0026
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: insufficient evidence of safety or effectiveness for a medical device
+  conditions:
+  - for an LMM or application that is regulated as a medical device
+  exceptions: []
+  requirements:
+  - Be responsible for the burden of proof for an LMM or application that is regulated
+    as a medical device.
+  evidence: []
+  severity: critical
+- rule_id: spans-passthrough-candidates/sent_0026-c3c2d8ec
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0026
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: insufficient evidence of safety or effectiveness for a medical device
+  conditions:
+  - for an LMM or application that is regulated as a medical device
+  exceptions: []
+  requirements:
+  - Be responsible for the burden of proof for an LMM or application that is regulated
+    as a medical device.
+  evidence: []
+  severity: critical
+- rule_id: spans-passthrough-candidates/sent_0026-c723d553
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0026
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of public transparency of impact assessments
+  conditions: []
+  exceptions: []
+  requirements:
+  - Ensure impact assessments are published in the public domain.
+  evidence:
+  - impact assessment
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-c7341ca3
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: inaccurate or false responses
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - deployer shall implement monitoring and mitigation measures to detect, report
+    and minimise inaccurate or false responses from the LMM when deploying the system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-71cb5bd9
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: bias
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - deployer shall identify, evaluate and mitigate bias in the LMM's outputs prior
+    to and during deployment.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-435c5b90
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: privacy of data entered into and produced by the LMM
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - deployer shall protect the privacy of data entered into and produced by the LMM
+    when deploying the system, including implementing appropriate technical and organisational
+    safeguards.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-0df12311
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: automation bias and skills degradation
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - deployer shall implement safeguards and user training to mitigate automation bias
+    and prevent skills degradation when deploying the LMM.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-00dfc9e7
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: quality of interactions between health-care providers and patients
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - deployer shall ensure the LMM maintains or improves the quality of interactions
+    between health-care providers and patients when deployed, and mitigate degradations
+    to interaction quality.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-8b03d982
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: impacts on labour and employment
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - deployer shall assess and mitigate negative impacts on labour and employment arising
+    from deployment of the LMM.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-d211eb91
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0002
+  scope:
+    actor:
+    - provider
+    - developer
+    data_domain: []
+    context: []
+  hazard: false and harmful information
+  conditions:
+  - producing information that is "false and harmful"
+  exceptions: []
+  requirements:
+  - provider and developer must not produce information that is "false and harmful".
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-47caa035
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0004
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: harm from inappropriate use
+  conditions:
+  - received clear, adequate warning of such risks
+  - offered the LMM for use in inappropriate settings
+  exceptions: []
+  requirements:
+  - When the deployer receives clear, adequate warning of such risks and still offers
+    the LMM for use in inappropriate settings, the deployer must accept accountability
+    for any resulting harm.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-60c6cd7e
+  source:
+    doc: spans_passthrough_candidates
+    citation: 7-liability-for-lmms/sent_0001
+    span_id: AI in health - WHO_removed/7-liability-for-lmms/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: harm to individuals
+  conditions:
+  - for harm caused by LMMs
+  exceptions: []
+  requirements:
+  - The org shall use liability rules to compensate individuals for harm caused by
+    large multi-modal models (LMMs).
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-60062638
+  source:
+    doc: spans_passthrough_candidates
+    citation: 7-liability-for-lmms/sent_0001
+    span_id: AI in health - WHO_removed/7-liability-for-lmms/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: harm to individuals
+  conditions:
+  - when current approaches are insufficient or out of date
+  exceptions: []
+  requirements:
+  - The org shall establish new forms of redress when current approaches to compensating
+    individuals for harm from LMMs are insufficient or out of date.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-a50d0b28
+  source:
+    doc: spans_passthrough_candidates
+    citation: 7-liability-for-lmms/sent_0004
+    span_id: AI in health - WHO_removed/7-liability-for-lmms/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: liability for AI-caused harm
+  conditions:
+  - victim demonstrates one or more entities did not comply with an obligation relevant
+    to the harm
+  - a causal link with AI performance is likely
+  exceptions: []
+  requirements:
+  - org must rebut the presumption that non-compliance caused the damage, for example
+    by indicating another party as the cause of the damage.
+  evidence: []
+  severity: high

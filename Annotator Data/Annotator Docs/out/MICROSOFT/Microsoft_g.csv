@@ -1,0 +1,959 @@
+span_id,text,scope.actor,scope.domain,scope.context,hazard,requirement,exceptions,conditions,is_testable,evidence_signals,evidence,rule_id
+Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0001,"Microsoft Responsible AI Standard v2
+4
+Accountability Goals
+Goal A1: Impact assessment
+Microsoft AI systems are assessed using Impact Assessments. Applies to: All AI systems. Requirements
+A1.1 Assess the impact of the system on people, organizations, and society by completing an Impact Assessment
+early in the system's development, typically when defining the product vision and requirements. Document the
+effort using the Impact Assessment template provided by the Office of Responsible AI.",org,null,dev,unassessed societal impact,"The org shall assess the impact of the AI system on people, organizations, and society by completing an Impact Assessment.",null,early in the system's development,TRUE,attest_check; repo_check,Impact Assessment,1
+Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0001,"Microsoft Responsible AI Standard v2
+4
+Accountability Goals
+Goal A1: Impact assessment
+Microsoft AI systems are assessed using Impact Assessments. Applies to: All AI systems. Requirements
+A1.1 Assess the impact of the system on people, organizations, and society by completing an Impact Assessment
+early in the system's development, typically when defining the product vision and requirements. Document the
+effort using the Impact Assessment template provided by the Office of Responsible AI.",org,null,dev,inadequate impact documentation,The org shall document the impact assessment effort using the provided Impact Assessment template.,null,when completing an Impact Assessment,TRUE,repo_check,Impact Assessment template,2
+Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0002,"Tags: Impact Assessment. A1.2 Review the completed Impact Assessment with the reviewers identified according to your organization's
+compliance process before development starts. Secure all required approvals from those reviewers. Tags: Impact Assessment.",org,null,dev,unidentified project risks,The org must review the completed Impact Assessment with reviewers identified by the organization's compliance process before development starts.,null,before development starts; after Impact Assessment is completed,TRUE,attest_check,Impact Assessment (review records),1
+Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0002,"Tags: Impact Assessment. A1.2 Review the completed Impact Assessment with the reviewers identified according to your organization's
+compliance process before development starts. Secure all required approvals from those reviewers. Tags: Impact Assessment.",org,null,dev,non-compliant development,The org must secure all required approvals from identified reviewers for the Impact Assessment.,null,after Impact Assessment review,TRUE,attest_check,Impact Assessment (approvals),2
+Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0003,"A1.3 Update and review the Impact Assessment at least annually, when new intended uses are added, and before
+advancing to a new release stage. Tags: Impact Assessment.",org,null,null,unmanaged model risk,"The org must update the Impact Assessment at least annually, when new intended uses are added, and before advancing to a new release stage.",null,at least annually; when new intended uses are added; before advancing to a new release stage,TRUE,attest_check; repo_check,Impact Assessment,1
+Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0003,"A1.3 Update and review the Impact Assessment at least annually, when new intended uses are added, and before
+advancing to a new release stage. Tags: Impact Assessment.",org,null,null,unmanaged model risk,"The org must review the Impact Assessment at least annually, when new intended uses are added, and before advancing to a new release stage.",null,at least annually; when new intended uses are added; before advancing to a new release stage,TRUE,attest_check,Impact Assessment (review records),2
+Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0001,"Microsoft Responsible AI Standard v2
+5
+Goal A2: Oversight of significant adverse impacts
+Microsoft AI systems are reviewed to identify systems that may have a significant adverse impact on people,
+organizations, and society, and additional oversight and requirements are applied to those systems. Applies to: All AI systems. Requirements
+A2.1 Review defined Restricted Uses to determine whether the system meets the definition of any Restricted Use. If it does, document this in the Impact Assessment, and follow the requirements for the Restricted Use.",org,,dev; eval,unidentified deployment of a restricted use system,The org must review defined Restricted Uses to determine whether the AI system meets the definition of any Restricted Use.,,,TRUE,attest_check,,1
+Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0001,"Microsoft Responsible AI Standard v2
+5
+Goal A2: Oversight of significant adverse impacts
+Microsoft AI systems are reviewed to identify systems that may have a significant adverse impact on people,
+organizations, and society, and additional oversight and requirements are applied to those systems. Applies to: All AI systems. Requirements
+A2.1 Review defined Restricted Uses to determine whether the system meets the definition of any Restricted Use. If it does, document this in the Impact Assessment, and follow the requirements for the Restricted Use.",org,,dev; eval,lack of oversight for restricted systems,The org must document in the Impact Assessment if the system meets the definition of a Restricted Use.,,if the system meets the definition of a Restricted Use,TRUE,attest_check,Impact Assessment,2
+Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0002,"Tags: Impact Assessment. A2.2 Answer prompts in the Impact Assessment template to determine whether the system meets the definition of
+a Sensitive Use. If it does, report it to the Office of Responsible AI, and follow any additional requirements resulting
+from a Sensitive Uses review. Tags: Impact Assessment.",org,,eval,unidentified sensitive use case,The org must answer prompts in the Impact Assessment template to determine whether a system meets the definition of a Sensitive Use.,,,TRUE,attest_check,Impact Assessment template,1
+Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0002,"Tags: Impact Assessment. A2.2 Answer prompts in the Impact Assessment template to determine whether the system meets the definition of
+a Sensitive Use. If it does, report it to the Office of Responsible AI, and follow any additional requirements resulting
+from a Sensitive Uses review. Tags: Impact Assessment.",org,,eval; regulated,failure to report a sensitive system,The org must report a system to the Office of Responsible AI if it meets the definition of a Sensitive Use.,,system meets the definition of a Sensitive Use,TRUE,attest_check,,2
+Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0002,"Tags: Impact Assessment. A2.2 Answer prompts in the Impact Assessment template to determine whether the system meets the definition of
+a Sensitive Use. If it does, report it to the Office of Responsible AI, and follow any additional requirements resulting
+from a Sensitive Uses review. Tags: Impact Assessment.",org,,regulated,non-compliance with required safeguards,The org must follow any additional requirements for a system resulting from a Sensitive Uses review.,,after a Sensitive Uses review,TRUE,attest_check,Sensitive Uses review requirements,3
+Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0003,"A2.3 Review your systems at least annually against the definitions for Sensitive Uses and Restricted Uses. If there
+are systems that meet the criteria for Sensitive Uses, report them to the Office of Responsible AI. If there are
+systems that meet the criteria for Restricted Uses, notify the Office of Responsible AI.",org,,regulated,failure to identify high-risk systems,The org must review its systems at least annually against the definitions for Sensitive Uses and Restricted Uses.,,at least annually,TRUE,attest_check,,1
+Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0003,"A2.3 Review your systems at least annually against the definitions for Sensitive Uses and Restricted Uses. If there
+are systems that meet the criteria for Sensitive Uses, report them to the Office of Responsible AI. If there are
+systems that meet the criteria for Restricted Uses, notify the Office of Responsible AI.",org,,regulated,unreported deployment of sensitive systems,The org must report systems that meet the criteria for Sensitive Uses to the Office of Responsible AI.,,system meets criteria for Sensitive Uses,TRUE,attest_check,,2
+Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0003,"A2.3 Review your systems at least annually against the definitions for Sensitive Uses and Restricted Uses. If there
+are systems that meet the criteria for Sensitive Uses, report them to the Office of Responsible AI. If there are
+systems that meet the criteria for Restricted Uses, notify the Office of Responsible AI.",org,,regulated,unreported deployment of restricted systems,The org must notify the Office of Responsible AI if systems meet the criteria for Restricted Uses.,,system meets criteria for Restricted Uses,TRUE,attest_check,,3
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0001,"Microsoft Responsible AI Standard v2
+6
+Goal A3: Fit for purpose
+Microsoft AI systems are fit for purpose in the sense that they provide valid solutions for the problems they are
+designed to solve. Applies to: All AI systems. Requirements
+A3.1 Document in the Impact Assessment how the system's use will solve the problem posed by each intended use,
+recognizing that there may be multiple valid ways in which to solve the problem. Tags: Impact Assessment.",org,,,mismatched solution to problem,The org shall document in the Impact Assessment how the system's use will solve the problem posed by each intended use.,,,TRUE,attest_check,Impact Assessment,1
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002,"A3.2 Define and document for each model in the AI system:
+1) the model's proposed inputs and how well they represent the concepts they are intended to represent; include
+analysis of the limitations of this representation,
+2) the model's proposed output and how well it represents the concept it is intended to represent; include analysis
+of the limitations of this representation, and
+3) limitations to the generalizability of the resulting model based on the training and testing data that will be used. A3.3 Define and document Responsible Release Criteria for this Goal. Include:
+1) a concise definition of the problem being solved in the intended use,
+2) performance metrics and their Responsible Release Criteria, and
+3) error types and their Responsible Release Criteria. A3.4 Document an evaluation plan for each of the performance metrics and error types.",org,,dev; eval,inappropriate model application,"The org must define and document each model's proposed inputs, how well they represent intended concepts, and the limitations of this representation.",,for each model in the AI system,TRUE,repo_check,model documentation,1
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002,"A3.2 Define and document for each model in the AI system:
+1) the model's proposed inputs and how well they represent the concepts they are intended to represent; include
+analysis of the limitations of this representation,
+2) the model's proposed output and how well it represents the concept it is intended to represent; include analysis
+of the limitations of this representation, and
+3) limitations to the generalizability of the resulting model based on the training and testing data that will be used. A3.3 Define and document Responsible Release Criteria for this Goal. Include:
+1) a concise definition of the problem being solved in the intended use,
+2) performance metrics and their Responsible Release Criteria, and
+3) error types and their Responsible Release Criteria. A3.4 Document an evaluation plan for each of the performance metrics and error types.",org,,dev; eval,inappropriate model application,"The org must define and document each model's proposed output, how well it represents the intended concept, and the limitations of this representation.",,for each model in the AI system,TRUE,repo_check,model documentation,2
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002,"A3.2 Define and document for each model in the AI system:
+1) the model's proposed inputs and how well they represent the concepts they are intended to represent; include
+analysis of the limitations of this representation,
+2) the model's proposed output and how well it represents the concept it is intended to represent; include analysis
+of the limitations of this representation, and
+3) limitations to the generalizability of the resulting model based on the training and testing data that will be used. A3.3 Define and document Responsible Release Criteria for this Goal. Include:
+1) a concise definition of the problem being solved in the intended use,
+2) performance metrics and their Responsible Release Criteria, and
+3) error types and their Responsible Release Criteria. A3.4 Document an evaluation plan for each of the performance metrics and error types.",org,,dev; eval; training,overgeneralization failure,The org must document the limitations to the generalizability of the resulting model based on the training and testing data that will be used.,,for each model in the AI system,TRUE,repo_check; data_check,model documentation,3
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002,"A3.2 Define and document for each model in the AI system:
+1) the model's proposed inputs and how well they represent the concepts they are intended to represent; include
+analysis of the limitations of this representation,
+2) the model's proposed output and how well it represents the concept it is intended to represent; include analysis
+of the limitations of this representation, and
+3) limitations to the generalizability of the resulting model based on the training and testing data that will be used. A3.3 Define and document Responsible Release Criteria for this Goal. Include:
+1) a concise definition of the problem being solved in the intended use,
+2) performance metrics and their Responsible Release Criteria, and
+3) error types and their Responsible Release Criteria. A3.4 Document an evaluation plan for each of the performance metrics and error types.",org,,dev; eval,unsafe system deployment,"The org must define and document Responsible Release Criteria, including a concise problem definition, performance metrics with their criteria, and error types with their criteria.",,,TRUE,repo_check; attest_check,Responsible Release Criteria document,4
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002,"A3.2 Define and document for each model in the AI system:
+1) the model's proposed inputs and how well they represent the concepts they are intended to represent; include
+analysis of the limitations of this representation,
+2) the model's proposed output and how well it represents the concept it is intended to represent; include analysis
+of the limitations of this representation, and
+3) limitations to the generalizability of the resulting model based on the training and testing data that will be used. A3.3 Define and document Responsible Release Criteria for this Goal. Include:
+1) a concise definition of the problem being solved in the intended use,
+2) performance metrics and their Responsible Release Criteria, and
+3) error types and their Responsible Release Criteria. A3.4 Document an evaluation plan for each of the performance metrics and error types.",org,,eval; qa,inadequate system evaluation,The org must document an evaluation plan for each of the defined performance metrics and error types.,,for each performance metric and error type,TRUE,repo_check; attest_check,evaluation plan,5
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0003,"Tags: Ongoing Evaluation Checkpoint. A3.5 Use the methods defined in requirement A3.4 to conduct evaluations. Document the pre-release results of the
+evaluations. Determine and document how often ongoing evaluation should be conducted to continue supporting this
+Goal.",evaluator,,eval,Inadequate model evaluation,The evaluator must conduct evaluations using the methods defined in requirement A3.4.,,,TRUE,log_check; attest_check,,1
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0003,,org,,eval; dev,Uninformed release decisions,The org must document the results of pre-release evaluations.,,pre-release,TRUE,repo_check; attest_check,evaluation results documentation,2
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0003,,org,,eval,Stale model evaluations due to undefined monitoring schedule,The org must determine and document the required frequency for ongoing evaluations.,,,TRUE,repo_check; attest_check,ongoing evaluation plan,3
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0004,"Tags: Ongoing Evaluation Checkpoint. A3.6 Provide documentation to customers which describes the system's:
+1) intended uses, and
+2) evidence that the system is fit for purpose for each intended use. When the system is a platform service made available to external customers or partners, include this information in the
+required Transparency Note. Tags: Transparency Note.",org,,public,Customer misunderstanding of system capabilities,The org must provide documentation to customers describing the system's intended uses and evidence that the system is fit for purpose for each intended use.,,,TRUE,repo_check,customer documentation,1
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0004,"Tags: Ongoing Evaluation Checkpoint. A3.6 Provide documentation to customers which describes the system's:
+1) intended uses, and
+2) evidence that the system is fit for purpose for each intended use. When the system is a platform service made available to external customers or partners, include this information in the
+required Transparency Note. Tags: Transparency Note.",org,,public,Lack of transparency for platform users,The org must include information on intended uses and fitness for purpose in the required Transparency Note when the system is a platform service for external customers or partners.,,system is a platform service for external customers or partners,TRUE,repo_check,Transparency Note,2
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005,"A3.7 If an intended use is not supported by evidence, or if evidence comes to light that refutes that the system is fit for
+purpose for the intended use at any point in the system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue, take
+action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in the
+required Transparency Note.",org,,public,misleading claims about system capabilities,"The org must remove an unsupported intended use from customer-facing materials and make current customers aware of the issue, unless it takes action to close the evidence gap or discontinues the system.",,an intended use is not supported by evidence; evidence refutes the system is fit for an intended use,TRUE,io_check; attest_check,customer-facing materials; customer notification records,1
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005,"A3.7 If an intended use is not supported by evidence, or if evidence comes to light that refutes that the system is fit for
+purpose for the intended use at any point in the system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue, take
+action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in the
+required Transparency Note.",org,,public,outdated system documentation,The org must revise documentation related to an intended use if it is found to be unsupported by evidence.,,an intended use is not supported by evidence; evidence refutes the system is fit for an intended use,TRUE,repo_check; attest_check,revised documentation,2
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005,"A3.7 If an intended use is not supported by evidence, or if evidence comes to light that refutes that the system is fit for
+purpose for the intended use at any point in the system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue, take
+action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in the
+required Transparency Note.",org,,public,lack of transparency about system limitations,The org must publish the revised documentation to customers.,,documentation related to an unsupported intended use has been revised,TRUE,io_check; ci_gate,published documentation,3
+Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005,"A3.7 If an intended use is not supported by evidence, or if evidence comes to light that refutes that the system is fit for
+purpose for the intended use at any point in the system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue, take
+action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in the
+required Transparency Note.",org,,public,lack of transparency about system limitations,The org must include information about an unsupported intended use in the required Transparency Note.,,the system is a platform service; an intended use is unsupported by evidence,TRUE,repo_check; io_check,Transparency Note,4
+Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0001,"Microsoft Responsible AI Standard v2
+7
+Goal A4: Data governance and management
+Microsoft AI systems are subject to appropriate data governance and management practices. Applies to: All AI systems. Requirements
+A4.1 Define and document data requirements with respect to the system's intended uses, stakeholders, and the
+geographic areas where the system will be deployed. Document these requirements in the Impact Assessment.",org,,dev,System failure from mismatched data,"The org must define and document data requirements in the Impact Assessment, considering the system's intended uses, stakeholders, and geographic deployment areas.",,,TRUE,attest_check,Impact Assessment,1
+Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0002,"Tags: Impact Assessment. A4.2 Define and document procedures for the collection and processing of data, to include annotation, labelling,
+cleaning, enrichment, and aggregation, where relevant. A4.3 If you plan to use existing data sets to train the system, assess the quantity and suitability of available data
+sets that will be needed by the system in relation to the data requirements defined in A4.1. Document this
+assessment in the Impact Assessment.",org,,dev,Use of low-quality or inappropriate data,"The org must define and document procedures for the collection and processing of data, including annotation, labelling, cleaning, enrichment, and aggregation.",,,TRUE,repo_check; attest_check,Data processing procedures,1
+Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0002,,developer,,training,Model underperformance due to unsuitable training data,The developer must assess the quantity and suitability of available data sets needed by the system.,,When using existing data sets to train the system,TRUE,attest_check; repo_check,Data set suitability assessment,2
+Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0002,,org,,training,Lack of transparency in data sourcing,The org must document the data set quantity and suitability assessment in the Impact Assessment.,,When using existing data sets to train the system,TRUE,repo_check; attest_check,Impact Assessment,3
+Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0003,"Tags: Impact Assessment. A4.4 Define and document methods for evaluating data to be used by the system against the requirements
+defined in A4.1. A4.5 Evaluate all data sets using the methods defined in requirement A4.4. Document the results of the evaluation.",developer,,dev; eval,use of unsuitable training data,The developer shall define and document methods for evaluating data to be used by the system against defined requirements.,,,TRUE,repo_check; attest_check,data evaluation methods documentation,1
+Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0003,"Tags: Impact Assessment. A4.4 Define and document methods for evaluating data to be used by the system against the requirements
+defined in A4.1. A4.5 Evaluate all data sets using the methods defined in requirement A4.4. Document the results of the evaluation.",developer,,eval; training,biased or low-quality data usage,The developer shall evaluate all data sets using the defined methods.,,using methods defined in requirement A4.4,TRUE,log_check; repo_check; attest_check,data set evaluation results,2
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0001,"Microsoft Responsible AI Standard v2
+8
+Goal A5: Human oversight and control
+Microsoft AI systems include capabilities that support informed human oversight and control. Applies to: All AI systems. Requirements
+A5.1 Identify the stakeholders who are responsible for troubleshooting, managing, operating, overseeing, and
+controlling the system during and after deployment. Document these stakeholders and their oversight and control
+responsibilities using the Impact Assessment template.",org,,prod,lack of operational accountability,"The org must identify stakeholders responsible for troubleshooting, managing, operating, overseeing, and controlling the system.",,during and after deployment,TRUE,attest_check,Impact Assessment,1
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0001,"Microsoft Responsible AI Standard v2
+8
+Goal A5: Human oversight and control
+Microsoft AI systems include capabilities that support informed human oversight and control. Applies to: All AI systems. Requirements
+A5.1 Identify the stakeholders who are responsible for troubleshooting, managing, operating, overseeing, and
+controlling the system during and after deployment. Document these stakeholders and their oversight and control
+responsibilities using the Impact Assessment template.",org,,prod,unclear system oversight roles,The org must document identified stakeholders and their oversight and control responsibilities using the Impact Assessment template.,,,TRUE,attest_check,Impact Assessment,2
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0002,"Tags: Impact Assessment. A5.2 Identify the system elements (including system UX, features, alerting and reporting functions, and
+educational materials) necessary for stakeholders identified in requirement A5.1 to effectively understand their
+oversight responsibilities and carry them out. Stakeholders must be able to understand:
+1) the system's intended uses,
+2) how to effectively execute interactions with the system,
+3) how to interpret system behavior,
+4) when and how to override, intervene, or interrupt the system, and
+5) how to remain aware of the possible tendency of over-relying on outputs produced by the system
+(""automation bias""). Document the system design elements that will support relevant stakeholders for each oversight and control
+function.",org,,dev,ineffective user oversight,"The org shall identify system elements, including UX, features, alerting, reporting functions, and educational materials, that enable stakeholders to understand the system's intended uses, interactions, behavior, override procedures, and the risk of automation bias.",,during impact assessment,TRUE,repo_check; attest_check,Impact assessment documentation; Educational materials,1
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0002,,org,,dev,ineffective user oversight,The org shall document the system design elements that support relevant stakeholders for each oversight and control function.,,during impact assessment,FALSE,repo_check; attest_check,System design documentation; Impact assessment report,2
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0003,"A5.3 When possible, design the system elements identified in A5.2. When this is not possible (for example, when
+Microsoft is not responsible for the system UX), provide guidance on human oversight considerations to the third
+party responsible for implementing the system elements identified in A5.2. A5.4 Define and document the method to be used to evaluate whether each oversight or control function can be
+accomplished by stakeholders in realistic conditions of system use. Include the metrics or rubrics that will be used
+in the evaluations.",developer,,dev,lack of human oversight,The developer shall design system elements to support human oversight.,,when possible; for system elements identified in A5.2,TRUE,repo_check,,1
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0003,,org,,prod,ineffective human oversight,The org shall provide guidance on human oversight considerations to the third party responsible for implementing the system elements.,,when direct design of system elements is not possible; for system elements identified in A5.2,TRUE,repo_check,guidance on human oversight,2
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0003,,org,,eval,ineffective human oversight,The org shall define and document the method to evaluate whether each oversight or control function can be accomplished by stakeholders in realistic conditions of system use.,,,TRUE,repo_check,evaluation method documentation,3
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0003,,org,,eval,unvalidated control functions,The org shall include the metrics or rubrics that will be used in the evaluations in the documented evaluation method.,,,TRUE,repo_check,evaluation method documentation (metrics/rubrics),4
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0004,"When this is not possible (for example, when Microsoft is not responsible for oversight and
+control functions), provide guidance on evaluating oversight and control functions to the third party responsible
+for evaluating oversight or control functions. A5.5 Define and document Responsible Release Criteria to achieve this Goal. A5.6 Conduct evaluations defined by requirement A5.4 using a near-release version of the system. Document the
+results.",org; provider,,,third-party operational risk,The org shall provide guidance on evaluating oversight and control functions to the third party responsible for these functions.,,when the org is not responsible for oversight and control functions,TRUE,repo_check; attest_check,guidance documentation,1
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0004,,org,,dev; ci,unsafe system release,The org shall define and document Responsible Release Criteria.,,,TRUE,repo_check; attest_check,Responsible Release Criteria document,2
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0004,,evaluator,,eval; qa; staging,inaccurate pre-release risk assessment,The evaluator shall conduct evaluations using a near-release version of the system.,,,TRUE,attest_check; log_check,,3
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0005,"A5.7 If there are Responsible Release Criteria for metrics or rubrics that have not been met, consult with the
+reviewers named in the Impact Assessment, and in the case of Sensitive Uses, with the Office of Responsible AI, to
+develop a plan detailing how the gap will be managed until it can be closed. Document that plan. Tools and practices
+Recommendation A5.3.1 Follow the Guidelines for Human-AI Interaction when designing the system.",org,,,unmanaged release risk,The org must consult with reviewers named in the Impact Assessment to develop a plan for managing how the gap will be managed until it can be closed.,,Responsible Release Criteria for metrics or rubrics have not been met,TRUE,attest_check; repo_check,Impact Assessment; Gap management plan,1
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0005,"A5.7 If there are Responsible Release Criteria for metrics or rubrics that have not been met, consult with the
+reviewers named in the Impact Assessment, and in the case of Sensitive Uses, with the Office of Responsible AI, to
+develop a plan detailing how the gap will be managed until it can be closed. Document that plan. Tools and practices
+Recommendation A5.3.1 Follow the Guidelines for Human-AI Interaction when designing the system.",org,,high-risk,unmanaged risk for sensitive applications,The org must consult with the Office of Responsible AI to develop a plan for managing how the gap will be managed until it can be closed.,,Responsible Release Criteria have not been met; in the case of Sensitive Uses,TRUE,attest_check; repo_check,Gap management plan,2
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0005,"A5.7 If there are Responsible Release Criteria for metrics or rubrics that have not been met, consult with the
+reviewers named in the Impact Assessment, and in the case of Sensitive Uses, with the Office of Responsible AI, to
+develop a plan detailing how the gap will be managed until it can be closed. Document that plan. Tools and practices
+Recommendation A5.3.1 Follow the Guidelines for Human-AI Interaction when designing the system.",org,,,untracked risk mitigation,The org must document the plan for managing how a gap in Responsible Release Criteria will be managed.,,after a plan is developed to manage unmet Responsible Release Criteria,TRUE,repo_check; attest_check,Gap management plan,3
+Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0005,"A5.7 If there are Responsible Release Criteria for metrics or rubrics that have not been met, consult with the
+reviewers named in the Impact Assessment, and in the case of Sensitive Uses, with the Office of Responsible AI, to
+develop a plan detailing how the gap will be managed until it can be closed. Document that plan. Tools and practices
+Recommendation A5.3.1 Follow the Guidelines for Human-AI Interaction when designing the system.",developer,,dev,poor human-AI interaction,The developer must follow the Guidelines for Human-AI Interaction when designing the system.,,when designing the system,TRUE,repo_check; attest_check; io_check,,4
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0001,"Microsoft Responsible AI Standard v2
+9
+Transparency Goals
+Goal T1: System intelligibility for decision making
+Microsoft AI systems that inform decision making by or about people are designed to support stakeholder needs for
+intelligibility of system behavior. Applies to: All AI systems when the intended use of the generated outputs is to inform decision making by or
+about people. Requirements
+T1.1 Identify:
+1) stakeholders who will use the outputs of the system to make decisions, and
+2) stakeholders who are subject to decisions informed by the system. Document these stakeholders using the Impact Assessment template.",org,,,Unfair decision-making due to lack of stakeholder consideration,The org must identify stakeholders who will use the system's outputs to make decisions and stakeholders who are subject to decisions informed by the system.,,when system outputs inform decision making by or about people,TRUE,attest_check,Impact Assessment,1
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0001,org,,,Unfair decision-making due to lack of stakeholder consideration,The org must document the identified stakeholders using the Impact Assessment template.,,when system outputs inform decision making by or about people,TRUE,attest_check,Impact Assessment template,,2
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0002,"Tags: Impact Assessment. T1.2 Design the system, including, when possible, the system UX, features, reporting functions, and educational
+materials, so that stakeholders identified in requirement T1.1 can:
+1) understand the system's intended uses,
+2) interpret relevant system behavior effectively (i.e., in a way that supports informed decision making), and
+3) remain aware of the possible tendency of over-relying on outputs produced by the system (""automation
+bias""). For the two categories of stakeholders identified in requirement T1.1, document:
+1) how the system design will support their understanding of the system's intended uses, and
+2) how the system aids their ability to interpret relevant system responses, and
+3) how the system design discourages automation bias. T1.3 Define and document the method to be used to evaluate whether each stakeholder who will make decisions
+or be subject to decisions based on the behavior of the system can interpret the relevant system responses
+reasonably well.",developer,,dev,automation bias,"The developer shall design the system, including its UX, features, reporting functions, and educational materials, to enable stakeholders to understand intended uses, interpret system behavior effectively, and remain aware of automation bias.",,,TRUE,repo_check; attest_check,,1
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0002,"Tags: Impact Assessment. T1.2 Design the system, including, when possible, the system UX, features, reporting functions, and educational
+materials, so that stakeholders identified in requirement T1.1 can:
+1) understand the system's intended uses,
+2) interpret relevant system behavior effectively (i.e., in a way that supports informed decision making), and
+3) remain aware of the possible tendency of over-relying on outputs produced by the system (""automation
+bias""). For the two categories of stakeholders identified in requirement T1.1, document:
+1) how the system design will support their understanding of the system's intended uses, and
+2) how the system aids their ability to interpret relevant system responses, and
+3) how the system design discourages automation bias. T1.3 Define and document the method to be used to evaluate whether each stakeholder who will make decisions
+or be subject to decisions based on the behavior of the system can interpret the relevant system responses
+reasonably well.",org,,dev,automation bias,"The org shall document how the system design supports stakeholder understanding of intended uses, aids their ability to interpret system responses, and discourages automation bias.",,for identified stakeholder categories,TRUE,repo_check; attest_check,Impact Assessment,2
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0002,"Tags: Impact Assessment. T1.2 Design the system, including, when possible, the system UX, features, reporting functions, and educational
+materials, so that stakeholders identified in requirement T1.1 can:
+1) understand the system's intended uses,
+2) interpret relevant system behavior effectively (i.e., in a way that supports informed decision making), and
+3) remain aware of the possible tendency of over-relying on outputs produced by the system (""automation
+bias""). For the two categories of stakeholders identified in requirement T1.1, document:
+1) how the system design will support their understanding of the system's intended uses, and
+2) how the system aids their ability to interpret relevant system responses, and
+3) how the system design discourages automation bias. T1.3 Define and document the method to be used to evaluate whether each stakeholder who will make decisions
+or be subject to decisions based on the behavior of the system can interpret the relevant system responses
+reasonably well.",developer,,eval; dev,flawed decision-making due to misinterpretation,The developer shall define the method to be used to evaluate whether stakeholders can interpret relevant system responses reasonably well.,,for stakeholders who will make decisions or be subject to decisions based on system behavior,TRUE,repo_check; attest_check,evaluation plan,3
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0002,"Tags: Impact Assessment. T1.2 Design the system, including, when possible, the system UX, features, reporting functions, and educational
+materials, so that stakeholders identified in requirement T1.1 can:
+1) understand the system's intended uses,
+2) interpret relevant system behavior effectively (i.e., in a way that supports informed decision making), and
+3) remain aware of the possible tendency of over-relying on outputs produced by the system (""automation
+bias""). For the two categories of stakeholders identified in requirement T1.1, document:
+1) how the system design will support their understanding of the system's intended uses, and
+2) how the system aids their ability to interpret relevant system responses, and
+3) how the system design discourages automation bias. T1.3 Define and document the method to be used to evaluate whether each stakeholder who will make decisions
+or be subject to decisions based on the behavior of the system can interpret the relevant system responses
+reasonably well.",org,,eval; dev,undocumented evaluation method,The org shall document the method to be used to evaluate whether stakeholders can interpret relevant system responses reasonably well.,,for stakeholders who will make decisions or be subject to decisions based on system behavior,TRUE,repo_check; attest_check,evaluation plan,4
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0003,"Include the metrics or rubrics that will be used in the evaluations. Tags: Ongoing Evaluation Checkpoint. T1.4 Define and document a Responsible Release Plan, to include Responsible Release Criteria to achieve this
+Goal. Tags: Ongoing Evaluation Checkpoint.",org,,eval,unvalidated system performance,The org must include the metrics or rubrics that will be used in evaluations in relevant documentation.,,when conducting evaluations,TRUE,repo_check; attest_check,,1
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0004,"Include the metrics or rubrics that will be used in the evaluations. Tags: Ongoing Evaluation Checkpoint. T1.4 Define and document a Responsible Release Plan, to include Responsible Release Criteria to achieve this
+Goal. Tags: Ongoing Evaluation Checkpoint.",org,,prod,unsafe system release,The org must define and document a Responsible Release Plan that includes Responsible Release Criteria.,,,TRUE,repo_check; attest_check,Responsible Release Plan,2
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0004,T1.5 Conduct evaluations defined by requirement T1.3. Document the pre-release results of the evaluations. Determine and document how often ongoing evaluation should be conducted to continue supporting this Goal. Tags: Ongoing Evaluation Checkpoint.,org,,eval,unidentified model failure,The org shall conduct evaluations as defined by requirement T1.3.,,as defined by requirement T1.3,TRUE,ci_gate; attest_check,evaluation results documentation,1
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0005,"T1.6 If there are Responsible Release Criteria for metrics or rubrics that that have not been met, consult with the
+reviewers named in the Impact Assessment, and in the case of Sensitive Uses, with the Office of Responsible AI, to
+develop a plan detailing how the gap will be managed until it can be closed. Document that plan.",org,,high-risk,unmanaged release risks,"The org must consult with reviewers named in the Impact Assessment, and with the Office of Responsible AI for Sensitive Uses, to develop a plan for managing how the gap will be managed until it can be closed.",,Responsible Release Criteria for metrics or rubrics have not been met,TRUE,attest_check; repo_check,Impact Assessment; release gap management plan,1
+Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0006,"Microsoft Responsible AI Standard v2
+10
+Tools and practices
+Recommendation T1.2.1 Follow the Guidelines for Human-AI Interaction when designing the system. Recommendation T1.2.2 Use one or more techniques available as part of the Interpret ML toolkit to understand
+the impact of features on system behavior. This may help stakeholders who need to understand model predictions. Recommendation T1.3.1 Assign user researchers to define, design, and prioritize evaluations in appropriately
+realistic contexts of use.",developer,,dev,user misuse from poor interaction design,developer shall follow the Guidelines for Human-AI Interaction when designing the system.,,when designing the system,TRUE,repo_check; attest_check,Guidelines for Human-AI Interaction,1
+Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0001,"Microsoft Responsible AI Standard v2
+11
+Goal T2: Communication to stakeholders
+Microsoft provides information about the capabilities and limitations of our AI systems to support stakeholders in
+making informed choices about those systems. Applies to: All AI systems. Requirements
+T2.1 Identify:
+1) stakeholders who make decisions about whether to employ a system for particular tasks, and
+2) stakeholders who develop or deploy systems that integrate with this system. Document these stakeholders in the Impact Assessment template.",org,,,Uninformed system deployment or use,"The org must identify stakeholders who make decisions about whether to employ a system for particular tasks, and stakeholders who develop or deploy systems that integrate with this system.",,For all AI systems,FALSE,,,1
+Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0002,"Tags: Impact Assessment. T2.2 Publish documentation for the system so that stakeholders defined in T2.1 can understand the system. Include:
+1) capabilities,
+2) intended uses,
+3) uses that require extra care or guidance,
+4) operational factors and settings that allow for effective and responsible system use,
+5) limitations, including uses for which the system was not designed or evaluated, and
+6) evidence of system accuracy and performance as well as a description of the extent to which these results
+are generalizable across use cases that were not part of the evaluation. When the system is a platform service made available to external customers or partners, a Transparency Note is
+required.",org,,public,Stakeholder misunderstanding of system capabilities,"The org must publish system documentation including its capabilities, intended uses, uses requiring extra care, operational factors, limitations, and evidence of its accuracy and performance.",,,TRUE,repo_check,system documentation,1
+Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0002,"Tags: Impact Assessment. T2.2 Publish documentation for the system so that stakeholders defined in T2.1 can understand the system. Include:
+1) capabilities,
+2) intended uses,
+3) uses that require extra care or guidance,
+4) operational factors and settings that allow for effective and responsible system use,
+5) limitations, including uses for which the system was not designed or evaluated, and
+6) evidence of system accuracy and performance as well as a description of the extent to which these results
+are generalizable across use cases that were not part of the evaluation. When the system is a platform service made available to external customers or partners, a Transparency Note is
+required.",org,,public,Lack of transparency for platform users,The org must provide a Transparency Note when the system is a platform service made available to external customers or partners.,,when the system is a platform service for external customers or partners,TRUE,repo_check; attest_check,Transparency Note,2
+Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0003,"Tags: Transparency Note. T2.3 Review and update documentation annually or when any of the following events occur:
+1) new uses are added,
+2) functionality changes,
+3) the product moves to a new release stage,
+4) new information about reliable and safe performance becomes known as defined by requirement RS3.3, or
+5) new information about system accuracy and performance becomes available. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Transparency Note.",org,,,misinformed system use due to outdated documentation,"The org must review and update documentation annually or when specified events like changes in use, functionality, release stage, or performance information occur.",,annually; when new uses are added; when functionality changes; when the product moves to a new release stage; when new information about reliable and safe performance becomes known; when new information about system accuracy and performance becomes available,TRUE,repo_check; attest_check,documentation,1
+Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0001,"Microsoft Responsible AI Standard v2
+12
+Goal T3: Disclosure of AI interaction
+Microsoft AI systems are designed to inform people that they are interacting with an AI system or are using a system
+that generates or manipulates image, audio, or video content that could falsely appear to be authentic. Applies to: AI systems that impersonate interactions with humans, unless it is obvious from the circumstances
+or context of use that an AI system is in use. AI systems that generate or manipulate image, audio, or video
+content that could falsely appear to be authentic. Requirements
+T3.1 Identify stakeholders who will use or be exposed to the system, in accordance with the Impact Assessment
+requirements.",org,,dev,unwitting interaction with AI,"The org must identify stakeholders who will use or be exposed to the system, in accordance with the Impact Assessment requirements.",obvious from the circumstances or context of use that an AI system is in use,"AI system impersonates human interaction; AI system generates or manipulates image, audio, or video content that could falsely appear authentic",TRUE,attest_check,Impact Assessment,1
+Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0002,"Document these stakeholders using the Impact Assessment template. Tags: Impact Assessment. T3.2 Design the system, including system UX, features, reporting functions, educational materials, and outputs so
+that stakeholders identified in T3.1 will be informed of the type of AI system they are interacting with or exposed
+to. Ensure that any image, audio, or video outputs that are intended to be used outside the system are labelled as
+being produced by AI.",org,,dev,stakeholder harm oversight,The org must document stakeholders using the Impact Assessment template.,,,TRUE,attest_check,Impact Assessment,1
+Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0002,"Document these stakeholders using the Impact Assessment template. Tags: Impact Assessment. T3.2 Design the system, including system UX, features, reporting functions, educational materials, and outputs so
+that stakeholders identified in T3.1 will be informed of the type of AI system they are interacting with or exposed
+to. Ensure that any image, audio, or video outputs that are intended to be used outside the system are labelled as
+being produced by AI.",developer,,dev,user deception,"The developer must design the system, including its UX, features, and educational materials, so that stakeholders are informed of the type of AI system they are interacting with.",,,TRUE,io_check,system UX design; educational materials,2
+Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0002,"Document these stakeholders using the Impact Assessment template. Tags: Impact Assessment. T3.2 Design the system, including system UX, features, reporting functions, educational materials, and outputs so
+that stakeholders identified in T3.1 will be informed of the type of AI system they are interacting with or exposed
+to. Ensure that any image, audio, or video outputs that are intended to be used outside the system are labelled as
+being produced by AI.",developer,,inference,misinformation from generated content,"The developer must ensure that any image, audio, or video outputs intended for use outside the system are labelled as being produced by AI.",,outputs are intended for use outside the system,TRUE,io_check,,3
+Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0003,"T3.3 Define and document the method to be used to evaluate whether each stakeholder identified in T3.1 is
+informed of the type of AI system they are interacting with or exposed to. Tags: Ongoing Evaluation Checkpoint. T3.4 Define and document Responsible Release Criteria to achieve this Goal. Tags: Ongoing Evaluation Checkpoint.",org,,eval,uninformed interaction with AI,The org must define and document the method to evaluate whether stakeholders are informed of the type of AI system they are interacting with or exposed to.,,,TRUE,repo_check; attest_check,evaluation method documentation,1
+Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0004,T3.5 Conduct evaluations defined by requirement T3.3. Document the pre-release results of the evaluations. Determine and document how often ongoing evaluation should be conducted to continue supporting this goal. Tags: Ongoing Evaluation Checkpoint.,evaluator,,eval,unidentified model risk,The evaluator shall conduct evaluations as defined by requirement T3.3.,,as defined by requirement T3.3,TRUE,attest_check; log_check; ci_gate,,1
+Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0004,T3.5 Conduct evaluations defined by requirement T3.3. Document the pre-release results of the evaluations. Determine and document how often ongoing evaluation should be conducted to continue supporting this goal. Tags: Ongoing Evaluation Checkpoint.,org,,eval,lack of pre-release risk assessment,The org shall document the results of pre-release evaluations.,,pre-release,TRUE,attest_check; repo_check; ci_gate,evaluation results document,2
+Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0004,T3.5 Conduct evaluations defined by requirement T3.3. Document the pre-release results of the evaluations. Determine and document how often ongoing evaluation should be conducted to continue supporting this goal. Tags: Ongoing Evaluation Checkpoint.,org,,eval,model performance degradation over time,The org shall determine and document the frequency for ongoing evaluations.,,,TRUE,attest_check; repo_check,evaluation plan,3
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0001,"Microsoft Responsible AI Standard v2
+13
+Fairness Goals
+Goal F1: Quality of service
+Microsoft AI systems are designed to provide a similar quality of service for identified demographic groups,
+including marginalized groups. Applies to: AI systems when system users or people impacted by the system with different demographic
+characteristics might experience differences in quality of service that Microsoft can remedy by building the system
+differently. Requirements
+F1.1 Identify and prioritize demographic groups, including marginalized groups, that may be at risk of
+experiencing worse quality of service based on intended uses and geographic areas where the system will be
+deployed. Include:
+1) groups defined by a single factor, and
+2) groups defined by a combination of factors.",org,,dev,discriminatory quality of service,"The org must identify and prioritize demographic groups, including single-factor and intersectional groups, that may be at risk of worse quality of service based on the system's intended uses and geographic deployment areas.",,during system design,TRUE,attest_check,,1
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0002,Document the prioritized identified demographic groups using the Impact Assessment template. Tags: Impact Assessment. F1.2 Evaluate all data sets to assess inclusiveness of identified demographic groups and collect data to close gaps. Document this process and its results.,org,,eval,Representational harm,The org must document the prioritized identified demographic groups using the Impact Assessment template.,,after identifying prioritized demographic groups,TRUE,repo_check; attest_check,Impact Assessment,1
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0002,,developer,,eval,Exclusion bias,The developer must evaluate all data sets to assess the inclusiveness of identified demographic groups.,,when using datasets for model development,TRUE,data_check; repo_check; attest_check,Data set evaluation report,2
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0002,,developer,,eval,Exclusion bias,The developer must collect data to close identified inclusiveness gaps for demographic groups.,,after identifying inclusiveness gaps in data sets,TRUE,data_check; repo_check; attest_check,Data gap analysis and collection plan,3
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0003,"F1.3 Define and document the evaluation that you will perform to support this Goal. Include:
+1) any system components to be evaluated, in addition to the whole system,
+2) the metrics to be used to evaluate the system components and the whole system, and
+3) a description of the data set to be used for this evaluation. Tags: Ongoing Evaluation Checkpoint. F1.4 Define and document Responsible Release Criteria to achieve this Goal, as follows:
+For each metric, document:
+1) any target minimum performance level for all groups, and
+2) the target maximum (absolute or relative) performance difference between groups.",developer,,eval,Inadequate system evaluation,"The developer shall define and document an evaluation plan that includes the system components to be evaluated, the metrics to be used, and a description of the data set to be used for the evaluation.",,,TRUE,repo_check; attest_check,evaluation plan,1
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0003,"F1.3 Define and document the evaluation that you will perform to support this Goal. Include:
+1) any system components to be evaluated, in addition to the whole system,
+2) the metrics to be used to evaluate the system components and the whole system, and
+3) a description of the data set to be used for this evaluation. Tags: Ongoing Evaluation Checkpoint. F1.4 Define and document Responsible Release Criteria to achieve this Goal, as follows:
+For each metric, document:
+1) any target minimum performance level for all groups, and
+2) the target maximum (absolute or relative) performance difference between groups.",org,,dev; ci,Biased or unsafe system release,"The org shall define and document Responsible Release Criteria that specifies, for each metric, the target minimum performance level for all groups and the target maximum performance difference between groups.",,,TRUE,repo_check; ci_gate,Responsible Release Criteria document,2
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0004,"Tags: Ongoing Evaluation Checkpoint. F1.5 Evaluate the system according to the defined Responsible Release Criteria. Tags: Ongoing Evaluation Checkpoint. F1.6 Reassess the system design, including the choice of training data, features, objective function, and training
+algorithm, to pursue the goals of:
+1) improving performance for any identified demographic group that does not meet any target minimum
+performance level, and
+2) minimizing performance differences between identified demographic groups, paying particular attention
+to those that exceed the target maximum, while recognizing that doing so may appear to affect system
+performance and that it is seldom clear how to make such tradeoffs.",evaluator,,eval,deployment of system not meeting release criteria,The evaluator must evaluate the system according to the defined Responsible Release Criteria.,,at ongoing evaluation checkpoints,TRUE,attest_check; repo_check,Responsible Release Criteria,1
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0006,"Microsoft Responsible AI Standard v2
+14
+Tags: Ongoing Evaluation Checkpoint. F1.7 Identify and document any justifiable factors, such as circumstantial and other operational factors (e.g.,
+""background noise"" for speech recognition systems or ""image resolution"" for facial recognition systems), that
+account for:
+1) any inability to meet any target minimum performance level for any identified demographic group, and
+2) any remaining performance differences between identified demographic groups. Tags: Ongoing Evaluation Checkpoint. F1.8 Document the pre-release results from requirements F1.4, F1.5, and F1.6.",org,,eval,Algorithmic bias against demographic groups,The org must identify and document justifiable factors for any inability to meet minimum performance targets for a demographic group or for any remaining performance differences between demographic groups.,,inability to meet target minimum performance for a demographic group; remaining performance differences between demographic groups,TRUE,attest_check; repo_check,Performance evaluation documentation,1
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0007,"Microsoft Responsible AI Standard v2
+14
+Tags: Ongoing Evaluation Checkpoint. F1.7 Identify and document any justifiable factors, such as circumstantial and other operational factors (e.g.,
+""background noise"" for speech recognition systems or ""image resolution"" for facial recognition systems), that
+account for:
+1) any inability to meet any target minimum performance level for any identified demographic group, and
+2) any remaining performance differences between identified demographic groups. Tags: Ongoing Evaluation Checkpoint. F1.8 Document the pre-release results from requirements F1.4, F1.5, and F1.6.",org,,eval,Lack of pre-release evaluation transparency,"The org must document the pre-release results from requirements F1.4, F1.5, and F1.6.",,pre-release,TRUE,attest_check; repo_check; ci_gate,Pre-release results documentation,1
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0007,"Determine and document how often
+ongoing evaluation should be conducted to continue supporting this Goal. Tags: Ongoing Evaluation Checkpoint. F1.9 Publish information for customers about:
+1) identified demographic groups for which performance may not meet any target minimum performance
+level,
+2) any remaining performance disparities between identified demographic groups that may exceed the target
+maximum, and
+3) any justifiable factors that account for these performance levels and differences. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note.",org,,eval,Performance degradation over time,The org must determine and document the frequency for conducting ongoing evaluations.,,,TRUE,repo_check; attest_check,Ongoing evaluation plan,2
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0008,"Determine and document how often
+ongoing evaluation should be conducted to continue supporting this Goal. Tags: Ongoing Evaluation Checkpoint. F1.9 Publish information for customers about:
+1) identified demographic groups for which performance may not meet any target minimum performance
+level,
+2) any remaining performance disparities between identified demographic groups that may exceed the target
+maximum, and
+3) any justifiable factors that account for these performance levels and differences. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note.",org,,public,Discriminatory performance impact,"The org must publish information for customers about demographic groups with subpar performance, performance disparities exceeding targets, and any justifiable factors for these differences.",,,TRUE,io_check; repo_check,,1
+Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0009,"Determine and document how often
+ongoing evaluation should be conducted to continue supporting this Goal. Tags: Ongoing Evaluation Checkpoint. F1.9 Publish information for customers about:
+1) identified demographic groups for which performance may not meet any target minimum performance
+level,
+2) any remaining performance disparities between identified demographic groups that may exceed the target
+maximum, and
+3) any justifiable factors that account for these performance levels and differences. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note.",org,,public,Lack of transparency for platform users,The org must include information on performance disparities in the required Transparency Note.,,system is a platform service for external customers or partners,TRUE,repo_check; io_check,Transparency Note,1
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0001,"Microsoft Responsible AI Standard v2
+16
+Goal F2: Allocation of resources and opportunities
+Microsoft AI systems that allocate resources or opportunities in essential domains are designed to do so in a manner
+that minimizes disparities in outcomes for identified demographic groups, including marginalized groups. Applies to: AI systems that generate outputs that directly affect the allocation of resources or opportunities relating
+to finance, education, employment, healthcare, housing, insurance, or social welfare. Requirements
+F2.1 Identify and prioritize demographic groups, including marginalized groups, that may be at risk of being
+differentially impacted by the system based on intended uses and geographic areas where the system will be
+deployed. Include:
+1) groups defined by a single factor, and
+2) groups defined by a combination of factors.",developer,,high-risk; regulated,discriminatory allocation of resources or opportunities,"The developer must identify and prioritize demographic groups, including marginalized and intersectional groups, that may be at risk of differential impact based on the system's intended uses and deployment geographies.",,"system allocates resources or opportunities in essential domains (finance, education, employment, healthcare, housing, insurance, or social welfare)",TRUE,attest_check; repo_check,,1
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0002,"Document the prioritized identified demographic groups using the Impact Assessment template. Tags: Impact Assessment. F2.2 Evaluate all data sets to assess inclusiveness of identified demographic groups and collect data to close any
+gaps. Document this process and its results.",org,,eval,demographic bias,The org must document the prioritized identified demographic groups using the Impact Assessment template.,,,TRUE,attest_check,Impact Assessment template,1
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0002,"Document the prioritized identified demographic groups using the Impact Assessment template. Tags: Impact Assessment. F2.2 Evaluate all data sets to assess inclusiveness of identified demographic groups and collect data to close any
+gaps. Document this process and its results.",evaluator,,eval,demographic bias,The evaluator must evaluate all data sets to assess the inclusiveness of identified demographic groups.,,,TRUE,data_check; attest_check,,2
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0003,"F2.3 Define and document the evaluation that you will perform to support this Goal. Include:
+1) any system components to be evaluated, in addition to the whole system,
+2) the metrics to be used to evaluate the system components and the whole system, and
+3) the data set to be used for this evaluation. Tags: Ongoing Evaluation Checkpoint. F2.4 Define and document Responsible Release Criteria to achieve this Goal, as follows:
+For each metric, document the target maximum difference (absolute or relative) between the rates at which
+resources and opportunities are allocated to groups.",org,,eval,unvalidated system performance,"The org must define and document an evaluation plan that includes the system components to be evaluated, the metrics for evaluation, and the dataset to be used.",,before system evaluation,TRUE,attest_check; repo_check,evaluation plan,1
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0003,"F2.3 Define and document the evaluation that you will perform to support this Goal. Include:
+1) any system components to be evaluated, in addition to the whole system,
+2) the metrics to be used to evaluate the system components and the whole system, and
+3) the data set to be used for this evaluation. Tags: Ongoing Evaluation Checkpoint. F2.4 Define and document Responsible Release Criteria to achieve this Goal, as follows:
+For each metric, document the target maximum difference (absolute or relative) between the rates at which
+resources and opportunities are allocated to groups.",org,,dev; eval,discriminatory resource allocation,The org must define and document Responsible Release Criteria that specify the target maximum difference in resource and opportunity allocation rates between groups for each metric.,,before system release,TRUE,attest_check; repo_check,Responsible Release Criteria document,2
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0004,"Tags: Ongoing Evaluation Checkpoint. F2.5 Evaluate the system according to the defined Responsible Release Criteria. Tags: Ongoing Evaluation Checkpoint. F2.6 Reassess the system design, including the choice of training data, features, objective function, and training
+algorithm, to pursue the goal of minimizing differences between the rates at which resources and opportunities
+are allocated to identified demographic groups, paying particular attention to those that exceed the target
+maximum difference, while recognizing that doing so may appear to affect system performance and it is seldom
+clear how to make such trade-offs.",evaluator,,eval,irresponsible system release,The evaluator must evaluate the system according to the defined Responsible Release Criteria.,,during ongoing evaluation,TRUE,attest_check; ci_gate,Responsible Release Criteria,1
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0004,"Tags: Ongoing Evaluation Checkpoint. F2.5 Evaluate the system according to the defined Responsible Release Criteria. Tags: Ongoing Evaluation Checkpoint. F2.6 Reassess the system design, including the choice of training data, features, objective function, and training
+algorithm, to pursue the goal of minimizing differences between the rates at which resources and opportunities
+are allocated to identified demographic groups, paying particular attention to those that exceed the target
+maximum difference, while recognizing that doing so may appear to affect system performance and it is seldom
+clear how to make such trade-offs.",developer,,training; eval,discriminatory resource allocation,"The developer must reassess the system design, including training data, features, and algorithms, to minimize differences in resource and opportunity allocation rates across identified demographic groups.",,during ongoing evaluation; when allocation rate differences between demographic groups exceed the target maximum,TRUE,attest_check; repo_check; data_check,,2
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0005,"Consult with your attorney to determine your approach to this, including how you will identify and document
+trade-offs. Tags: Ongoing Evaluation Checkpoint.",org,,eval,unmanaged legal risk,The org must consult with its legal counsel to determine its approach to identifying and documenting trade-offs.,,,TRUE,attest_check,legal consultation record,1
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0005,"Consult with your attorney to determine your approach to this, including how you will identify and document
+trade-offs. Tags: Ongoing Evaluation Checkpoint.",org,,eval,undocumented trade-offs,The org must identify and document trade-offs based on its determined approach.,,,TRUE,attest_check,trade-off documentation,2
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0006,"Microsoft Responsible AI Standard v2
+17
+F2.7 Identify and document any justifiable factors that account for any remaining differences between the rates at
+which resources and opportunities are allocated to identified demographic groups. Tags: Ongoing Evaluation Checkpoint. F2.8 Document the pre-release results for the evaluation described by requirements F2.4, F2.5, and F2.6. Determine and document how often ongoing evaluation should be conducted to continue supporting this goal.",org,,eval,Biased resource allocation,The org must identify any justifiable factors that account for remaining differences in resource allocation rates across identified demographic groups.,,When differences in resource allocation rates between demographic groups exist,FALSE,,,1
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0006,"Microsoft Responsible AI Standard v2
+17
+F2.7 Identify and document any justifiable factors that account for any remaining differences between the rates at
+which resources and opportunities are allocated to identified demographic groups. Tags: Ongoing Evaluation Checkpoint. F2.8 Document the pre-release results for the evaluation described by requirements F2.4, F2.5, and F2.6. Determine and document how often ongoing evaluation should be conducted to continue supporting this goal.",org,,eval,Biased resource allocation,The org must document any justifiable factors that account for remaining differences in resource allocation rates across identified demographic groups.,,When differences in resource allocation rates between demographic groups exist,TRUE,attest_check; repo_check,Justifiable factors documentation,2
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0006,"Microsoft Responsible AI Standard v2
+17
+F2.7 Identify and document any justifiable factors that account for any remaining differences between the rates at
+which resources and opportunities are allocated to identified demographic groups. Tags: Ongoing Evaluation Checkpoint. F2.8 Document the pre-release results for the evaluation described by requirements F2.4, F2.5, and F2.6. Determine and document how often ongoing evaluation should be conducted to continue supporting this goal.",org,,eval,Unvalidated system deployment,The org must document the pre-release results for the required fairness evaluation.,,pre-release,TRUE,attest_check; repo_check,Pre-release evaluation results,3
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0006,"Microsoft Responsible AI Standard v2
+17
+F2.7 Identify and document any justifiable factors that account for any remaining differences between the rates at
+which resources and opportunities are allocated to identified demographic groups. Tags: Ongoing Evaluation Checkpoint. F2.8 Document the pre-release results for the evaluation described by requirements F2.4, F2.5, and F2.6. Determine and document how often ongoing evaluation should be conducted to continue supporting this goal.",org,,eval,Unmonitored performance degradation,The org must determine how often ongoing evaluation should be conducted.,,before deployment,FALSE,,,4
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0007,"Tags: Ongoing Evaluation Checkpoint. F2.9 Publish information for customers about:
+1) any remaining differences between the rates at which resources and opportunities are allocated to
+identified demographic groups, and
+2) any justifiable factors that account for these differences. When the system is a platform service made
+available to external customers or partners, include this information in the required Transparency Note. Tags: Transparency Note.",org,,public,algorithmic bias,The org must publish information for customers about any remaining differences in resource allocation rates across identified demographic groups and any justifiable factors for these differences.,,,TRUE,repo_check,,1
+Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0007,"Tags: Ongoing Evaluation Checkpoint. F2.9 Publish information for customers about:
+1) any remaining differences between the rates at which resources and opportunities are allocated to
+identified demographic groups, and
+2) any justifiable factors that account for these differences. When the system is a platform service made
+available to external customers or partners, include this information in the required Transparency Note. Tags: Transparency Note.",org,,public,insufficient transparency,The org must include information on resource allocation differences and their justifications in the required Transparency Note.,,system is a platform service made available to external customers or partners,TRUE,repo_check,Transparency Note,2
+Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0001,"Microsoft Responsible AI Standard v2
+19
+Goal F3: Minimization of stereotyping, demeaning, and erasing outputs
+Microsoft AI systems that describe, depict, or otherwise represent people, cultures, or society are designed to
+minimize the potential for stereotyping, demeaning, or erasing identified demographic groups, including
+marginalized groups. Applies to: AI systems when system outputs include descriptions, depictions, or other representations of people,
+cultures, or society. Requirements
+F3.1 Identify and prioritize demographic groups, including marginalized groups, that may be at risk of being
+subject to stereotyping, demeaning, or erasing outputs of the system. Include:
+1) groups defined by a single factor, and
+2) groups defined by a combination of factors.",org,,dev,Stereotyping of demographic groups,"The org shall identify and prioritize demographic groups, including marginalized and intersectional groups, at risk of being subject to stereotyping, demeaning, or erasing outputs from the system.",,"When system outputs include descriptions, depictions, or other representations of people, cultures, or society",TRUE,attest_check,,1
+Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0002,"Document the prioritized identified demographic groups using the Impact Assessment template. Tags: Impact Assessment. F3.2 Define and document any system components to be evaluated, in addition to the whole system. F3.3 Define and document a plan to evaluate the system components and the whole system for risks of
+stereotyping, demeaning, and erasing the prioritized identified demographic groups.",org,,eval,Demographic stereotyping or erasure,The org must document the prioritized identified demographic groups using the Impact Assessment template.,,,TRUE,attest_check,Impact Assessment template,1
+Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0002,"Document the prioritized identified demographic groups using the Impact Assessment template. Tags: Impact Assessment. F3.2 Define and document any system components to be evaluated, in addition to the whole system. F3.3 Define and document a plan to evaluate the system components and the whole system for risks of
+stereotyping, demeaning, and erasing the prioritized identified demographic groups.",org,,eval,Demographic stereotyping or erasure,"The org must define and document any system components to be evaluated, in addition to the whole system.",,,TRUE,attest_check,,2
+Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0003,"Tags: Ongoing Evaluation Checkpoint. F3.4 Evaluate the system according to the plan defined in requirement F3.3. Tags: Ongoing Evaluation Checkpoint. F3.5 Reassess the system design, including the choice of training data, features, objective function, and training
+algorithm, to pursue the goal of minimizing the potential for stereotyping, demeaning, and erasing the identified
+demographic groups.",evaluator,,eval,unverified system performance,The evaluator must evaluate the system according to the defined plan.,,during ongoing evaluation,TRUE,attest_check,evaluation plan,1
+Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0003,"Tags: Ongoing Evaluation Checkpoint. F3.4 Evaluate the system according to the plan defined in requirement F3.3. Tags: Ongoing Evaluation Checkpoint. F3.5 Reassess the system design, including the choice of training data, features, objective function, and training
+algorithm, to pursue the goal of minimizing the potential for stereotyping, demeaning, and erasing the identified
+demographic groups.",developer,,eval; dev; training,demographic stereotyping and erasure,"The developer must reassess the system design, including training data, features, objective function, and training algorithm, to minimize stereotyping, demeaning, and erasure of identified demographic groups.",,during ongoing evaluation,TRUE,attest_check; repo_check,,2
+Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0004,"Tags: Ongoing Evaluation Checkpoint. F3.6 Document the pre-release results from requirements F3.4 and F3.5. Determine and document how often
+ongoing evaluation should be conducted to continue supporting this goal. Tags: Ongoing Evaluation Checkpoint.",org,,eval,undetected model performance degradation,The org must document the pre-release evaluation results from requirements F3.4 and F3.5.,,before release,TRUE,repo_check; attest_check,,1
+Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0004,"Tags: Ongoing Evaluation Checkpoint. F3.6 Document the pre-release results from requirements F3.4 and F3.5. Determine and document how often
+ongoing evaluation should be conducted to continue supporting this goal. Tags: Ongoing Evaluation Checkpoint.",org,,prod,unmanaged model drift,The org must determine and document the required frequency of ongoing evaluation.,,,TRUE,repo_check; attest_check,,2
+Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0005,"F3.7 Publish information for customers about these risks involving identified demographic groups. When the
+system is a platform service made available to external customers or partners, include this information in the
+required Transparency Note. Tags: Transparency Note.",org,,public,uninformed user risk acceptance,The org must publish information for customers about risks involving identified demographic groups.,,,TRUE,repo_check,,1
+Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0005,"F3.7 Publish information for customers about these risks involving identified demographic groups. When the
+system is a platform service made available to external customers or partners, include this information in the
+required Transparency Note. Tags: Transparency Note.",org,,public; prod,uninformed user risk acceptance,The org must include information about risks involving identified demographic groups in the required Transparency Note.,,system is a platform service made available to external customers or partners,TRUE,repo_check,Transparency Note,2
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0001,"Microsoft Responsible AI Standard v2
+21
+Reliability & Safety Goals
+Goal RS1: Reliability and safety guidance
+Microsoft evaluates the operational factors and ranges within which AI systems are expected to perform reliably and
+safely, remediates issues, and provides related information to customers. Applies to: All AI systems. Requirements
+RS1.1 Document how:
+1) reliable and safe behavior is defined for this system and,
+2) what acceptable error rates are for overall system performance in the context of intended uses. Tags: Ongoing Evaluation Checkpoint.",org,,dev; eval,unspecified system safety behavior,The org must document how reliable and safe behavior is defined for the AI system.,,,TRUE,repo_check,,1
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0001,"Microsoft Responsible AI Standard v2
+21
+Reliability & Safety Goals
+Goal RS1: Reliability and safety guidance
+Microsoft evaluates the operational factors and ranges within which AI systems are expected to perform reliably and
+safely, remediates issues, and provides related information to customers. Applies to: All AI systems. Requirements
+RS1.1 Document how:
+1) reliable and safe behavior is defined for this system and,
+2) what acceptable error rates are for overall system performance in the context of intended uses. Tags: Ongoing Evaluation Checkpoint.",org,,dev; eval,unacceptable system error rates,The org must document what acceptable error rates are for overall system performance in the context of intended uses.,,in the context of intended uses,TRUE,repo_check,,2
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0002,"RS1.2 Evaluate training and test data sets to ensure that they include representation of the intended uses,
+operational factors, and an appropriate range of settings for each factor. Document the evaluation. Tags: Ongoing Evaluation Checkpoint. RS1.3 Determine and document the operational factors, including quality of system input, use, and operational
+context that are critical to manage for reliable and safe use of the system in its deployed context.",developer,,training; eval,biased model outputs,"The developer shall evaluate training and test data sets to ensure they include representation of the intended uses, operational factors, and an appropriate range of settings for each factor.",,,TRUE,data_check; attest_check,,1
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0002,"RS1.2 Evaluate training and test data sets to ensure that they include representation of the intended uses,
+operational factors, and an appropriate range of settings for each factor. Document the evaluation. Tags: Ongoing Evaluation Checkpoint. RS1.3 Determine and document the operational factors, including quality of system input, use, and operational
+context that are critical to manage for reliable and safe use of the system in its deployed context.",org,,training; eval,inability to audit model development,The org shall document the evaluation of training and test data sets.,,after data set evaluation,TRUE,repo_check; attest_check,data evaluation documentation,2
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0002,"RS1.2 Evaluate training and test data sets to ensure that they include representation of the intended uses,
+operational factors, and an appropriate range of settings for each factor. Document the evaluation. Tags: Ongoing Evaluation Checkpoint. RS1.3 Determine and document the operational factors, including quality of system input, use, and operational
+context that are critical to manage for reliable and safe use of the system in its deployed context.",developer,,dev; prod,unsafe system operation,The developer shall determine the operational factors that are critical to manage for reliable and safe use of the system in its deployed context.,,before deployment,TRUE,attest_check,,3
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0002,"RS1.2 Evaluate training and test data sets to ensure that they include representation of the intended uses,
+operational factors, and an appropriate range of settings for each factor. Document the evaluation. Tags: Ongoing Evaluation Checkpoint. RS1.3 Determine and document the operational factors, including quality of system input, use, and operational
+context that are critical to manage for reliable and safe use of the system in its deployed context.",org,,dev; prod,lack of operational guidance,The org shall document the determined operational factors critical for reliable and safe use of the system.,,after determining critical operational factors,TRUE,repo_check; attest_check,operational factors documentation,4
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0003,"Tags: Ongoing Evaluation Checkpoint. RS1.4 Define and document acceptable ranges for each operational factor important to support reliable and safe
+system use. Define and document an acceptable error rate for the system when operating within these ranges. Tags: Ongoing Evaluation Checkpoint.",org,,prod,Unreliable or unsafe system operation,The org must define and document acceptable ranges for each operational factor important to support reliable and safe system use.,,,TRUE,attest_check,System operational range documentation,1
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0003,"Tags: Ongoing Evaluation Checkpoint. RS1.4 Define and document acceptable ranges for each operational factor important to support reliable and safe
+system use. Define and document an acceptable error rate for the system when operating within these ranges. Tags: Ongoing Evaluation Checkpoint.",org,,prod,Unacceptable system error rate,The org must define and document an acceptable error rate for the system when operating within its defined operational ranges.,,when operating within defined ranges,TRUE,attest_check,Acceptable error rate documentation,2
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0004,"RS1.5 Define intended uses, if any, where additional operational factors, more narrow or different acceptable
+ranges, or lower acceptable error rates (including false positive and false negative error rates), are advised to
+ensure reliability and safety. Document your conclusions. Tags: Ongoing Evaluation Checkpoint. RS1.6 Define and document an evaluation plan based on requirements RS1.1, RS1.3, RS1.4, and RS1.5, to include
+the environment in which the system will be evaluated.",org,,dev; eval,unsafe system operation,"The org shall define intended uses where additional operational factors, narrower acceptable ranges, or lower acceptable error rates are advised to ensure reliability and safety.",,,TRUE,attest_check,,1
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0004,"RS1.5 Define intended uses, if any, where additional operational factors, more narrow or different acceptable
+ranges, or lower acceptable error rates (including false positive and false negative error rates), are advised to
+ensure reliability and safety. Document your conclusions. Tags: Ongoing Evaluation Checkpoint. RS1.6 Define and document an evaluation plan based on requirements RS1.1, RS1.3, RS1.4, and RS1.5, to include
+the environment in which the system will be evaluated.",org,,dev; eval,unsafe system operation,The org shall document its conclusions regarding intended uses with special operational factors or error rates.,,,TRUE,attest_check; repo_check,,2
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0004,"RS1.5 Define intended uses, if any, where additional operational factors, more narrow or different acceptable
+ranges, or lower acceptable error rates (including false positive and false negative error rates), are advised to
+ensure reliability and safety. Document your conclusions. Tags: Ongoing Evaluation Checkpoint. RS1.6 Define and document an evaluation plan based on requirements RS1.1, RS1.3, RS1.4, and RS1.5, to include
+the environment in which the system will be evaluated.",org,,eval,inadequate system evaluation,The org shall define and document an evaluation plan that includes the environment in which the system will be evaluated.,,"based on requirements RS1.1, RS1.3, RS1.4, and RS1.5",TRUE,attest_check; repo_check,evaluation plan,3
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0005,"Tags: Ongoing Evaluation Checkpoint. RS1.7 Evaluate the system according to the evaluation plan defined in requirement RS1.6 to ensure reliable and
+safe system behavior. Document the pre-release results of the evaluation. Determine and document how often
+ongoing evaluation should be conducted to continue supporting this goal.",evaluator,,eval,Unsafe system behavior,The evaluator shall evaluate the system according to the evaluation plan to ensure reliable and safe system behavior.,,according to the evaluation plan,TRUE,attest_check,evaluation plan,1
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0005,"Tags: Ongoing Evaluation Checkpoint. RS1.7 Evaluate the system according to the evaluation plan defined in requirement RS1.6 to ensure reliable and
+safe system behavior. Document the pre-release results of the evaluation. Determine and document how often
+ongoing evaluation should be conducted to continue supporting this goal.",evaluator,,eval; qa,Undocumented system risks,The evaluator shall document the pre-release results of the evaluation.,,pre-release,TRUE,attest_check; repo_check,evaluation results document,2
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0005,"Tags: Ongoing Evaluation Checkpoint. RS1.7 Evaluate the system according to the evaluation plan defined in requirement RS1.6 to ensure reliable and
+safe system behavior. Document the pre-release results of the evaluation. Determine and document how often
+ongoing evaluation should be conducted to continue supporting this goal.",org,,eval,Stale safety evaluation,The org shall determine and document the required frequency for ongoing system evaluation.,,,TRUE,attest_check; repo_check,,3
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0006,"Tags: Ongoing Evaluation Checkpoint. RS1.8 In the event of failure cases within operational factors and defined ranges, work to resolve the issues. If the
+Responsible Release Criteria established in requirements RS1.1, RS1.3, RS1.4, and RS1.5 cannot be met, a
+reassessment of intended uses and updated documentation is required. Tags: Ongoing Evaluation Checkpoint.",maintainer,,prod,operational system failure,The maintainer must work to resolve issues when failure cases occur within defined operational factors and ranges.,,in the event of failure cases within operational factors and defined ranges,TRUE,log_check; attest_check,,1
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0006,"Tags: Ongoing Evaluation Checkpoint. RS1.8 In the event of failure cases within operational factors and defined ranges, work to resolve the issues. If the
+Responsible Release Criteria established in requirements RS1.1, RS1.3, RS1.4, and RS1.5 cannot be met, a
+reassessment of intended uses and updated documentation is required. Tags: Ongoing Evaluation Checkpoint.",org,,prod,unsafe or non-compliant system deployment,The org must perform a reassessment of the system's intended uses if the Responsible Release Criteria cannot be met.,,if Responsible Release Criteria cannot be met,TRUE,attest_check,,2
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0007,"RS1.9 Provide documentation to customers and potential customers of the system that includes the outputs of
+requirements RS1.2, RS1.7 and RS1.8, and any unsupported uses defined in the Impact Assessment and in RS1.8. When the system is a platform service made available to external customers or partners, include this information in",provider,,public,uninformed system misuse,"The provider must provide documentation to customers and potential customers that includes the outputs of requirements RS1.2, RS1.7, RS1.8, and any unsupported uses defined in the Impact Assessment.",,,TRUE,repo_check; attest_check,customer documentation; Impact Assessment,1
+Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0007,"RS1.9 Provide documentation to customers and potential customers of the system that includes the outputs of
+requirements RS1.2, RS1.7 and RS1.8, and any unsupported uses defined in the Impact Assessment and in RS1.8. When the system is a platform service made available to external customers or partners, include this information in",developer,,dev; research,physical or psychological harm,developer shall interview safety experts for domains where the system may impact the safety of people.,,where the system may impact the safety of people,TRUE,attest_check,,2
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0001,"Microsoft Responsible AI Standard v2
+23
+Goal RS2: Failures and remediations
+Microsoft AI systems are designed to minimize the time to remediation of predictable or known failures. Applies to: All AI systems. Requirements
+RS2.1 Define predictable failures, including false positive and false negative results for the system as a whole
+and how they would impact stakeholders for each intended use. Use the Impact Assessment template to
+document any adverse impacts of these failures on stakeholders.",org,,dev,unforeseen stakeholder harm from system failures,"The org must define predictable failures, including false positive and false negative results, and their impact on stakeholders for each intended use.",,,TRUE,attest_check,,1
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0001,"Microsoft Responsible AI Standard v2
+23
+Goal RS2: Failures and remediations
+Microsoft AI systems are designed to minimize the time to remediation of predictable or known failures. Applies to: All AI systems. Requirements
+RS2.1 Define predictable failures, including false positive and false negative results for the system as a whole
+and how they would impact stakeholders for each intended use. Use the Impact Assessment template to
+document any adverse impacts of these failures on stakeholders.",org,,dev,undocumented adverse impacts from system failures,The org must use the Impact Assessment template to document any adverse impacts of system failures on stakeholders.,,,TRUE,attest_check; repo_check,Impact Assessment,2
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0002,"Tags: Impact Assessment. RS2.2 For each case of a predictable failure likely to have an adverse impact on a stakeholder, document the
+failure management approach:
+1) When possible, design and build the system to avoid this failure. Describe the design solution. Estimate the time range for resolving predictable failures for each designed solution or indicate that
+the failure will be prevented by design.
+2) When a failure cannot be prevented by design, build a fallback option that may be used when this
+failure occurs.",developer,,dev; high-risk,Preventable system failure,The developer shall design and build the system to avoid predictable failures likely to have an adverse impact on a stakeholder.,,for each predictable failure with adverse impact; when possible,TRUE,repo_check; ci_gate,,1
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0002,"Tags: Impact Assessment. RS2.2 For each case of a predictable failure likely to have an adverse impact on a stakeholder, document the
+failure management approach:
+1) When possible, design and build the system to avoid this failure. Describe the design solution. Estimate the time range for resolving predictable failures for each designed solution or indicate that
+the failure will be prevented by design.
+2) When a failure cannot be prevented by design, build a fallback option that may be used when this
+failure occurs.",developer,,dev; high-risk,System failure without fallback,The developer shall build a fallback option that may be used when a predictable failure with adverse impact occurs.,,when a predictable failure cannot be prevented by design,TRUE,repo_check; ci_gate,,2
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0002,"Tags: Impact Assessment. RS2.2 For each case of a predictable failure likely to have an adverse impact on a stakeholder, document the
+failure management approach:
+1) When possible, design and build the system to avoid this failure. Describe the design solution. Estimate the time range for resolving predictable failures for each designed solution or indicate that
+the failure will be prevented by design.
+2) When a failure cannot be prevented by design, build a fallback option that may be used when this
+failure occurs.",org,,high-risk,Unmanaged system failure,The org shall document the failure management approach for each predictable failure likely to have an adverse impact on a stakeholder.,,for each predictable failure with adverse impact,TRUE,attest_check; repo_check,Impact Assessment,3
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003,"Describe the fallback option and document the estimated time required to invoke and
+use the fallback option.
+3) Provide training and documentation for stakeholders accountable for system oversight that supports
+their resolution of the failure. Describe the documentation and training. RS2.3 Document your plan for managing previously unknown failures that come to light once the system is
+in use:
+1) Describe the system's rollback plan and document the time that may elapse until the entire system,
+across all endpoints can be rolled back.
+2) Describe support for turning features off and document the time that may elapse until the feature can
+be turned off across all endpoints.
+3) Describe the process for updating and releasing updates to each model and document the time that
+may elapse until the system has been updated across all endpoints.
+4) Describe how customers, partners, and end users will be notified of changes to the system, updated
+understandings of failures, and their best mitigations. RS2.4 Provide training and documentation for system owners, developers, customer support and other
+stakeholders responsible for managing the system to support their remediation and mitigation of predictable
+failures identified in requirement RS2.1.",org,,prod,Operational disruption from system failure,"The org shall document the system's fallback option, including the estimated time required to invoke and use it.",,for systems in use,TRUE,repo_check; attest_check,Fallback plan documentation,1
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003,"Describe the fallback option and document the estimated time required to invoke and
+use the fallback option.
+3) Provide training and documentation for stakeholders accountable for system oversight that supports
+their resolution of the failure. Describe the documentation and training. RS2.3 Document your plan for managing previously unknown failures that come to light once the system is
+in use:
+1) Describe the system's rollback plan and document the time that may elapse until the entire system,
+across all endpoints can be rolled back.
+2) Describe support for turning features off and document the time that may elapse until the feature can
+be turned off across all endpoints.
+3) Describe the process for updating and releasing updates to each model and document the time that
+may elapse until the system has been updated across all endpoints.
+4) Describe how customers, partners, and end users will be notified of changes to the system, updated
+understandings of failures, and their best mitigations. RS2.4 Provide training and documentation for system owners, developers, customer support and other
+stakeholders responsible for managing the system to support their remediation and mitigation of predictable
+failures identified in requirement RS2.1.",org,,prod,Inability to recover from failed deployment,"The org shall document the system's rollback plan, including the time required to roll back the entire system across all endpoints.",,for systems in use,TRUE,repo_check; attest_check,Rollback plan documentation,2
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003,"Describe the fallback option and document the estimated time required to invoke and
+use the fallback option.
+3) Provide training and documentation for stakeholders accountable for system oversight that supports
+their resolution of the failure. Describe the documentation and training. RS2.3 Document your plan for managing previously unknown failures that come to light once the system is
+in use:
+1) Describe the system's rollback plan and document the time that may elapse until the entire system,
+across all endpoints can be rolled back.
+2) Describe support for turning features off and document the time that may elapse until the feature can
+be turned off across all endpoints.
+3) Describe the process for updating and releasing updates to each model and document the time that
+may elapse until the system has been updated across all endpoints.
+4) Describe how customers, partners, and end users will be notified of changes to the system, updated
+understandings of failures, and their best mitigations. RS2.4 Provide training and documentation for system owners, developers, customer support and other
+stakeholders responsible for managing the system to support their remediation and mitigation of predictable
+failures identified in requirement RS2.1.",org,,prod,Harm from a malfunctioning feature,"The org shall document the support for turning features off, including the time required to disable a feature across all endpoints.",,for systems in use,TRUE,repo_check; config_check,Operational runbook; Feature deactivation plan,3
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003,"Describe the fallback option and document the estimated time required to invoke and
+use the fallback option.
+3) Provide training and documentation for stakeholders accountable for system oversight that supports
+their resolution of the failure. Describe the documentation and training. RS2.3 Document your plan for managing previously unknown failures that come to light once the system is
+in use:
+1) Describe the system's rollback plan and document the time that may elapse until the entire system,
+across all endpoints can be rolled back.
+2) Describe support for turning features off and document the time that may elapse until the feature can
+be turned off across all endpoints.
+3) Describe the process for updating and releasing updates to each model and document the time that
+may elapse until the system has been updated across all endpoints.
+4) Describe how customers, partners, and end users will be notified of changes to the system, updated
+understandings of failures, and their best mitigations. RS2.4 Provide training and documentation for system owners, developers, customer support and other
+stakeholders responsible for managing the system to support their remediation and mitigation of predictable
+failures identified in requirement RS2.1.",org,,prod,Delayed remediation of model failures,"The org shall document the process for updating and releasing model updates, including the time required for the update to propagate across all endpoints.",,for systems in use,TRUE,repo_check; attest_check,Model release process documentation,4
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003,"Describe the fallback option and document the estimated time required to invoke and
+use the fallback option.
+3) Provide training and documentation for stakeholders accountable for system oversight that supports
+their resolution of the failure. Describe the documentation and training. RS2.3 Document your plan for managing previously unknown failures that come to light once the system is
+in use:
+1) Describe the system's rollback plan and document the time that may elapse until the entire system,
+across all endpoints can be rolled back.
+2) Describe support for turning features off and document the time that may elapse until the feature can
+be turned off across all endpoints.
+3) Describe the process for updating and releasing updates to each model and document the time that
+may elapse until the system has been updated across all endpoints.
+4) Describe how customers, partners, and end users will be notified of changes to the system, updated
+understandings of failures, and their best mitigations. RS2.4 Provide training and documentation for system owners, developers, customer support and other
+stakeholders responsible for managing the system to support their remediation and mitigation of predictable
+failures identified in requirement RS2.1.",org,,public,User harm due to lack of failure information,"The org shall document the process for notifying customers, partners, and end users of system changes, updated understandings of failures, and their best mitigations.",,upon system changes or failure discovery,TRUE,repo_check; attest_check,User communication plan,5
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003,"Describe the fallback option and document the estimated time required to invoke and
+use the fallback option.
+3) Provide training and documentation for stakeholders accountable for system oversight that supports
+their resolution of the failure. Describe the documentation and training. RS2.3 Document your plan for managing previously unknown failures that come to light once the system is
+in use:
+1) Describe the system's rollback plan and document the time that may elapse until the entire system,
+across all endpoints can be rolled back.
+2) Describe support for turning features off and document the time that may elapse until the feature can
+be turned off across all endpoints.
+3) Describe the process for updating and releasing updates to each model and document the time that
+may elapse until the system has been updated across all endpoints.
+4) Describe how customers, partners, and end users will be notified of changes to the system, updated
+understandings of failures, and their best mitigations. RS2.4 Provide training and documentation for system owners, developers, customer support and other
+stakeholders responsible for managing the system to support their remediation and mitigation of predictable
+failures identified in requirement RS2.1.",org; developer; support,,internal,Inadequate failure response by internal teams,"The org shall provide training and documentation to stakeholders, including developers and customer support staff, responsible for managing the system to support remediation and mitigation of failures.",,,TRUE,attest_check; repo_check,Training materials; Training completion records; System documentation,6
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0004,"Document the training and documentation provided. Tools and practices
+Recommendation RS2.1.1 Conduct Failure Mode and Effects Analysis. Recommendation RS2.2.1 Follow the Guidelines for Human-AI Interaction when designing the system to help",org,,internal,inadequate process auditability,The org must document all training and documentation provided to personnel.,,,TRUE,attest_check,training records; system documentation,1
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0004,"Document the training and documentation provided. Tools and practices
+Recommendation RS2.1.1 Conduct Failure Mode and Effects Analysis. Recommendation RS2.2.1 Follow the Guidelines for Human-AI Interaction when designing the system to help",developer,,dev,unidentified system failure modes,The developer must conduct a Failure Mode and Effects Analysis.,,,TRUE,attest_check,Failure Mode and Effects Analysis report,2
+Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0004,"Document the training and documentation provided. Tools and practices
+Recommendation RS2.1.1 Conduct Failure Mode and Effects Analysis. Recommendation RS2.2.1 Follow the Guidelines for Human-AI Interaction when designing the system to help",developer,,dev,poor human-AI interaction,The developer must follow the Guidelines for Human-AI Interaction when designing the system.,,when designing the system,TRUE,attest_check; repo_check,,3
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001,"Microsoft Responsible AI Standard v2
+24
+Goal RS3: Ongoing monitoring, feedback, and evaluation
+Microsoft AI systems are subject to ongoing monitoring, feedback, and evaluation so that we can identify and review
+new uses, identify and troubleshoot issues, manage and maintain the systems, and improve them over time. Applies to: All AI systems. Requirements
+RS3.1 Establish and document a detailed inventory of the system health monitoring methods to be used, to
+include:
+1) data and insights generated from data repositories, system analytics, and associated alerts,
+2) processes by which customers can submit information about failures and concerns, and
+3) processes by which the general public can submit feedback. RS3.2 Define and document a standard operating procedure and system health monitoring action plan for each
+monitoring channel for the system, to include:
+1) processes for reproducing system failures to support troubleshooting and prevention of future failures,
+2) which events will be monitored,
+3) how events will be prioritized for review,
+4) the expected frequency of those reviews,
+5) how events will be prioritized for response and timing to resolution,
+6) how high priority issues related to supporting the Standard and its goals will be escalated to the Office of
+Responsible AI, and
+7) engaging customer service to ensure that they are aware of how to respond to issues for the system.",org,,prod,inadequate issue resolution,"The org must define and document a standard operating procedure and system health monitoring action plan that includes processes for failure reproduction, event monitoring, prioritization, review frequency, response timing, and escalation.",,for each monitoring channel,TRUE,repo_check; attest_check,system health monitoring standard operating procedure; system health monitoring action plan,1
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001,"Microsoft Responsible AI Standard v2
+24
+Goal RS3: Ongoing monitoring, feedback, and evaluation
+Microsoft AI systems are subject to ongoing monitoring, feedback, and evaluation so that we can identify and review
+new uses, identify and troubleshoot issues, manage and maintain the systems, and improve them over time. Applies to: All AI systems. Requirements
+RS3.1 Establish and document a detailed inventory of the system health monitoring methods to be used, to
+include:
+1) data and insights generated from data repositories, system analytics, and associated alerts,
+2) processes by which customers can submit information about failures and concerns, and
+3) processes by which the general public can submit feedback. RS3.2 Define and document a standard operating procedure and system health monitoring action plan for each
+monitoring channel for the system, to include:
+1) processes for reproducing system failures to support troubleshooting and prevention of future failures,
+2) which events will be monitored,
+3) how events will be prioritized for review,
+4) the expected frequency of those reviews,
+5) how events will be prioritized for response and timing to resolution,
+6) how high priority issues related to supporting the Standard and its goals will be escalated to the Office of
+Responsible AI, and
+7) engaging customer service to ensure that they are aware of how to respond to issues for the system.",org,,prod,unaddressed system failures,"The org must establish and document an inventory of system health monitoring methods, including data sources, customer feedback channels, and public feedback channels.",,,TRUE,repo_check; attest_check,system health monitoring methods inventory,2
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002,"RS3.3 When new uses, critical operational factors, or changes in the supported range of an operational factor are
+identified, determine whether any new use or operational factor can be supported with the existing system, will be
+supported but require additional work, or will not be supported.
+•
+When new uses or operational factors identified are to be supported, evaluate the updated system in
+accordance with requirement RS1.6, add the new intended use to the Impact Assessment, and publish
+updated communication in accordance with requirement RS1.9.
+•
+When these new uses or operational factor range changes cannot or will not be accommodated to ensure
+reliable and safe performance of the system update customer documentation described in RS1.9 to include
+the new use as an unsupported use. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Impact Assessment, Transparency Note. RS3.4 When a system is to be used for a Sensitive Use that imposes qualification or quality control requirements
+beyond the intended uses and/or operational factor ranges, conduct an evaluation specific to this use.",org,,,unsupported system use,"The org must determine whether a new use or operational factor can be supported by the existing system, requires additional work, or will not be supported.",,"When new uses, critical operational factors, or changes in an operational factor's supported range are identified",TRUE,attest_check,,1
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002,"RS3.3 When new uses, critical operational factors, or changes in the supported range of an operational factor are
+identified, determine whether any new use or operational factor can be supported with the existing system, will be
+supported but require additional work, or will not be supported.
+•
+When new uses or operational factors identified are to be supported, evaluate the updated system in
+accordance with requirement RS1.6, add the new intended use to the Impact Assessment, and publish
+updated communication in accordance with requirement RS1.9.
+•
+When these new uses or operational factor range changes cannot or will not be accommodated to ensure
+reliable and safe performance of the system update customer documentation described in RS1.9 to include
+the new use as an unsupported use. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Impact Assessment, Transparency Note. RS3.4 When a system is to be used for a Sensitive Use that imposes qualification or quality control requirements
+beyond the intended uses and/or operational factor ranges, conduct an evaluation specific to this use.",developer,,eval,inadequate system evaluation for new uses,The developer must evaluate the updated system in accordance with requirement RS1.6.,,When new uses or operational factors are to be supported,TRUE,attest_check,,2
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002,"RS3.3 When new uses, critical operational factors, or changes in the supported range of an operational factor are
+identified, determine whether any new use or operational factor can be supported with the existing system, will be
+supported but require additional work, or will not be supported.
+•
+When new uses or operational factors identified are to be supported, evaluate the updated system in
+accordance with requirement RS1.6, add the new intended use to the Impact Assessment, and publish
+updated communication in accordance with requirement RS1.9.
+•
+When these new uses or operational factor range changes cannot or will not be accommodated to ensure
+reliable and safe performance of the system update customer documentation described in RS1.9 to include
+the new use as an unsupported use. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Impact Assessment, Transparency Note. RS3.4 When a system is to be used for a Sensitive Use that imposes qualification or quality control requirements
+beyond the intended uses and/or operational factor ranges, conduct an evaluation specific to this use.",org,,,incomplete risk assessment,The org must add the new intended use to the Impact Assessment.,,When new uses or operational factors are to be supported,TRUE,attest_check,Impact Assessment,3
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002,"RS3.3 When new uses, critical operational factors, or changes in the supported range of an operational factor are
+identified, determine whether any new use or operational factor can be supported with the existing system, will be
+supported but require additional work, or will not be supported.
+•
+When new uses or operational factors identified are to be supported, evaluate the updated system in
+accordance with requirement RS1.6, add the new intended use to the Impact Assessment, and publish
+updated communication in accordance with requirement RS1.9.
+•
+When these new uses or operational factor range changes cannot or will not be accommodated to ensure
+reliable and safe performance of the system update customer documentation described in RS1.9 to include
+the new use as an unsupported use. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Impact Assessment, Transparency Note. RS3.4 When a system is to be used for a Sensitive Use that imposes qualification or quality control requirements
+beyond the intended uses and/or operational factor ranges, conduct an evaluation specific to this use.",org,,public,lack of user transparency,The org must publish updated communication about the new intended use.,,When new uses or operational factors are to be supported,TRUE,attest_check,updated communication,4
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002,"RS3.3 When new uses, critical operational factors, or changes in the supported range of an operational factor are
+identified, determine whether any new use or operational factor can be supported with the existing system, will be
+supported but require additional work, or will not be supported.
+•
+When new uses or operational factors identified are to be supported, evaluate the updated system in
+accordance with requirement RS1.6, add the new intended use to the Impact Assessment, and publish
+updated communication in accordance with requirement RS1.9.
+•
+When these new uses or operational factor range changes cannot or will not be accommodated to ensure
+reliable and safe performance of the system update customer documentation described in RS1.9 to include
+the new use as an unsupported use. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Impact Assessment, Transparency Note. RS3.4 When a system is to be used for a Sensitive Use that imposes qualification or quality control requirements
+beyond the intended uses and/or operational factor ranges, conduct an evaluation specific to this use.",org,,public,user misapplication of system,The org must update customer documentation to list the new use as an unsupported use.,,When new uses or operational factor range changes will not be accommodated,TRUE,attest_check,customer documentation,5
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002,"RS3.3 When new uses, critical operational factors, or changes in the supported range of an operational factor are
+identified, determine whether any new use or operational factor can be supported with the existing system, will be
+supported but require additional work, or will not be supported.
+•
+When new uses or operational factors identified are to be supported, evaluate the updated system in
+accordance with requirement RS1.6, add the new intended use to the Impact Assessment, and publish
+updated communication in accordance with requirement RS1.9.
+•
+When these new uses or operational factor range changes cannot or will not be accommodated to ensure
+reliable and safe performance of the system update customer documentation described in RS1.9 to include
+the new use as an unsupported use. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Impact Assessment, Transparency Note. RS3.4 When a system is to be used for a Sensitive Use that imposes qualification or quality control requirements
+beyond the intended uses and/or operational factor ranges, conduct an evaluation specific to this use.",org,,public,lack of partner transparency,The org must include information about the unsupported use in the required Transparency Note.,,When the system is a platform service for external customers or partners; When new uses or operational factor range changes will not be accommodated,TRUE,attest_check,Transparency Note,6
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002,"RS3.3 When new uses, critical operational factors, or changes in the supported range of an operational factor are
+identified, determine whether any new use or operational factor can be supported with the existing system, will be
+supported but require additional work, or will not be supported.
+•
+When new uses or operational factors identified are to be supported, evaluate the updated system in
+accordance with requirement RS1.6, add the new intended use to the Impact Assessment, and publish
+updated communication in accordance with requirement RS1.9.
+•
+When these new uses or operational factor range changes cannot or will not be accommodated to ensure
+reliable and safe performance of the system update customer documentation described in RS1.9 to include
+the new use as an unsupported use. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Impact Assessment, Transparency Note. RS3.4 When a system is to be used for a Sensitive Use that imposes qualification or quality control requirements
+beyond the intended uses and/or operational factor ranges, conduct an evaluation specific to this use.",evaluator,,eval; high-risk,unsafe system performance in sensitive contexts,The evaluator must conduct an evaluation specific to the sensitive use case.,,When a system is to be used for a Sensitive Use with requirements beyond its intended design,TRUE,attest_check,,7
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0003,"If the
+required Responsible Release Criteria cannot be met, the Office of Responsible AI will review the results and decide
+how to proceed. Document any changes to the Responsible Release Criteria and document the results of
+evaluation. RS3.5 Conduct all evaluations tagged as Ongoing Evaluation Checkpoints in other Goals on an ongoing basis.",org,,eval,unsafe model deployment,The org must review evaluation results and decide how to proceed if the required Responsible Release Criteria cannot be met.,,if required Responsible Release Criteria cannot be met,TRUE,attest_check,Responsible Release Criteria; evaluation results,1
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0003,"If the
+required Responsible Release Criteria cannot be met, the Office of Responsible AI will review the results and decide
+how to proceed. Document any changes to the Responsible Release Criteria and document the results of
+evaluation. RS3.5 Conduct all evaluations tagged as Ongoing Evaluation Checkpoints in other Goals on an ongoing basis.",org,,,untracked changes to safety criteria,The org must document any changes to the Responsible Release Criteria.,,,TRUE,repo_check; attest_check,Responsible Release Criteria,2
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0003,"If the
+required Responsible Release Criteria cannot be met, the Office of Responsible AI will review the results and decide
+how to proceed. Document any changes to the Responsible Release Criteria and document the results of
+evaluation. RS3.5 Conduct all evaluations tagged as Ongoing Evaluation Checkpoints in other Goals on an ongoing basis.",org,,eval,inability to audit model performance,The org must document the results of evaluation.,,,TRUE,attest_check,evaluation results,3
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0003,"If the
+required Responsible Release Criteria cannot be met, the Office of Responsible AI will review the results and decide
+how to proceed. Document any changes to the Responsible Release Criteria and document the results of
+evaluation. RS3.5 Conduct all evaluations tagged as Ongoing Evaluation Checkpoints in other Goals on an ongoing basis.",org,,eval,model performance degradation,The org must conduct all evaluations tagged as 'Ongoing Evaluation Checkpoints' on an ongoing basis.,,for evaluations tagged as 'Ongoing Evaluation Checkpoints',TRUE,log_check; attest_check,evaluation records,4
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004,"Microsoft Responsible AI Standard v2
+25
+RS3.6 If there are targets in Ongoing Evaluation Checkpoints that are no longer satisfied, consult with named
+reviewers, and in the case of Sensitive Uses, with the Office of Responsible AI, to develop and implement a plan to
+close any gaps. Document the process, its results, and conclusions. RS3.7 If evidence comes to light that refutes the system is fit for purpose for an intended use at any point in the
+system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue,
+take action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note.",org,,eval; prod,Unmitigated system risk,The org shall consult with named reviewers to develop and implement a plan to close any gaps when ongoing evaluation targets are not met.,,targets in Ongoing Evaluation Checkpoints are no longer satisfied,TRUE,attest_check,remediation plan; consultation record,1
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004,"Microsoft Responsible AI Standard v2
+25
+RS3.6 If there are targets in Ongoing Evaluation Checkpoints that are no longer satisfied, consult with named
+reviewers, and in the case of Sensitive Uses, with the Office of Responsible AI, to develop and implement a plan to
+close any gaps. Document the process, its results, and conclusions. RS3.7 If evidence comes to light that refutes the system is fit for purpose for an intended use at any point in the
+system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue,
+take action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note.",org,,eval; prod; regulated,Unmitigated risk in sensitive applications,The org shall consult with the Office of Responsible AI to develop and implement a plan to close any gaps for Sensitive Uses when ongoing evaluation targets are not met.,,targets in Ongoing Evaluation Checkpoints are no longer satisfied; in the case of Sensitive Uses,TRUE,attest_check,remediation plan; consultation record,2
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004,"Microsoft Responsible AI Standard v2
+25
+RS3.6 If there are targets in Ongoing Evaluation Checkpoints that are no longer satisfied, consult with named
+reviewers, and in the case of Sensitive Uses, with the Office of Responsible AI, to develop and implement a plan to
+close any gaps. Document the process, its results, and conclusions. RS3.7 If evidence comes to light that refutes the system is fit for purpose for an intended use at any point in the
+system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue,
+take action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note.",org,,eval; prod,Poor audit trail,"The org shall document the process, results, and conclusions of the gap-closing plan.",,after developing a plan to close evaluation gaps,TRUE,attest_check,process documentation,3
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004,"Microsoft Responsible AI Standard v2
+25
+RS3.6 If there are targets in Ongoing Evaluation Checkpoints that are no longer satisfied, consult with named
+reviewers, and in the case of Sensitive Uses, with the Office of Responsible AI, to develop and implement a plan to
+close any gaps. Document the process, its results, and conclusions. RS3.7 If evidence comes to light that refutes the system is fit for purpose for an intended use at any point in the
+system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue,
+take action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note.",provider,,prod; public,Harm from unfit system,"The provider shall take corrective action by removing the intended use from customer-facing materials, closing the identified gap, or discontinuing the system if it is found to be unfit for purpose.",,evidence shows system is not fit for an intended purpose,TRUE,attest_check; repo_check,remediation plan; customer communication records,4
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004,"Microsoft Responsible AI Standard v2
+25
+RS3.6 If there are targets in Ongoing Evaluation Checkpoints that are no longer satisfied, consult with named
+reviewers, and in the case of Sensitive Uses, with the Office of Responsible AI, to develop and implement a plan to
+close any gaps. Document the process, its results, and conclusions. RS3.7 If evidence comes to light that refutes the system is fit for purpose for an intended use at any point in the
+system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue,
+take action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note.",provider,,prod; public,Lack of transparency for platform users,The provider shall include information about a system being unfit for an intended use in the required Transparency Note when the system is a platform service.,,evidence shows system is not fit for an intended purpose; system is a platform service,TRUE,repo_check,Transparency Note,6
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004,"Microsoft Responsible AI Standard v2
+25
+RS3.6 If there are targets in Ongoing Evaluation Checkpoints that are no longer satisfied, consult with named
+reviewers, and in the case of Sensitive Uses, with the Office of Responsible AI, to develop and implement a plan to
+close any gaps. Document the process, its results, and conclusions. RS3.7 If evidence comes to light that refutes the system is fit for purpose for an intended use at any point in the
+system's use:
+1) remove the intended use from customer-facing materials and make current customers aware of the issue,
+take action to close the identified gap, or discontinue the system,
+2) revise documentation related to the intended use, and
+3) publish the revised documentation to customers. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note.",provider,,prod; public,Misleading documentation,The provider shall revise documentation related to the intended use and publish the revised documentation to customers if the system is found to be unfit for that purpose.,,evidence shows system is not fit for an intended purpose,TRUE,repo_check; attest_check,system documentation; publication record,5
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0005,"Tags: Transparency Note. RS3.8: Review and update documentation required by Goal T2 when any of the following events occur:
+1) new uses are added,
+2) functionality changes,
+3) new information about reliable and safe performance becomes known as defined by requirement RS3.3, or
+4) new information about system accuracy and performance becomes available. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Transparency Note.",org,,,outdated system documentation,"The org must review and update required documentation when new uses are added, functionality changes, or new information about system performance or accuracy becomes available.",,new uses are added; functionality changes; new information about reliable and safe performance becomes known; new information about system accuracy and performance becomes available,TRUE,repo_check; attest_check,system documentation,1
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0005,"Tags: Transparency Note. RS3.8: Review and update documentation required by Goal T2 when any of the following events occur:
+1) new uses are added,
+2) functionality changes,
+3) new information about reliable and safe performance becomes known as defined by requirement RS3.3, or
+4) new information about system accuracy and performance becomes available. When the system is a platform service made available to external customers or partners, include this information in
+the required Transparency Note. Tags: Transparency Note.",org,,public,misleading information for external customers,The org must include updated system information in the required Transparency Note when the system is a platform service made available to external customers or partners.,,"system is a platform service made available to external customers or partners; when documentation is updated due to new uses, functionality changes, or new performance/accuracy information",TRUE,repo_check,Transparency Note,2
+Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0006,"RS3.9: Escalate unresolved issues related to supporting the Standard and its requirements to the Office of
+Responsible AI.",org,,regulated,unaddressed compliance gaps,The org must escalate unresolved issues related to supporting the Standard and its requirements to the Office of Responsible AI.,,unresolved issues related to supporting the Standard,TRUE,attest_check,,1
+Microsoft/index/privacy-security-goals/goal-ps2-security-policy-compliance/sent_0001,"Microsoft Responsible AI Standard v2
+26
+Privacy & Security Goals
+Goal PS1: Privacy Standard compliance
+Microsoft AI systems are designed to protect privacy in accordance with the Microsoft Privacy Standard. Applies when: Microsoft Privacy Standard applies. Goal PS2: Security Policy compliance
+Microsoft AI systems are designed to be secure in accordance with the Microsoft Security Policy. Applies when: Microsoft Security Policy applies.",developer,,dev,privacy violation,Developers must design AI systems to protect privacy in accordance with the Microsoft Privacy Standard.,,when Microsoft Privacy Standard applies,TRUE,repo_check; config_check; attest_check,Microsoft Privacy Standard,1
+Microsoft/index/privacy-security-goals/goal-ps2-security-policy-compliance/sent_0001,"Microsoft Responsible AI Standard v2
+26
+Privacy & Security Goals
+Goal PS1: Privacy Standard compliance
+Microsoft AI systems are designed to protect privacy in accordance with the Microsoft Privacy Standard. Applies when: Microsoft Privacy Standard applies. Goal PS2: Security Policy compliance
+Microsoft AI systems are designed to be secure in accordance with the Microsoft Security Policy. Applies when: Microsoft Security Policy applies.",developer,,dev,system compromise,Developers must design AI systems to be secure in accordance with the Microsoft Security Policy.,,when Microsoft Security Policy applies,TRUE,repo_check; config_check; ci_gate; attest_check,Microsoft Security Policy,2
+Microsoft/index/inclusiveness-goal/goal-i1-accessibility-standards-compliance/sent_0001,"Microsoft Responsible AI Standard v2
+27
+Inclusiveness Goal
+Goal I1: Accessibility Standards compliance
+Microsoft AI systems are designed to be inclusive in accordance with the Microsoft Accessibility Standards. Applies when: Microsoft Accessibility Standards apply. Scan this code to access responsible AI resources from Microsoft:
+© 2022 Microsoft Corporation. All rights reserved.",org,null,dev,System inaccessibility for users with disabilities,The org must ensure its AI systems are designed to be inclusive in accordance with the Microsoft Accessibility Standards.,null,when Microsoft Accessibility Standards apply,TRUE,repo_check; ci_gate; io_check; attest_check,null,1
+Microsoft/index/inclusiveness-goal/goal-i1-accessibility-standards-compliance/sent_0002,"This document is provided ""as-is."" It has been edited for external release to
+remove internal links, references, and examples. Information and views expressed in this document, including URL and other
+Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only",null,null,null,null,null,null,null,null,null,null,1

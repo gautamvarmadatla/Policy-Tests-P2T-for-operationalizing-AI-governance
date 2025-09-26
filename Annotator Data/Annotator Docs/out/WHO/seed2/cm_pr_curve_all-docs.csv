@@ -1,0 +1,8 @@
+k,span_id,score,tp,fp,precision,recall
+0,,1.0,0,0,1.0,0.0
+1,AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001,0.49444444444444446,1,0,1.0,0.047619047619047616
+2,AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0018,0.47972373462391615,2,0,1.0,0.09523809523809523
+3,AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0006,0.4285829307568438,3,0,1.0,0.14285714285714285
+4,AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0026,0.2894736842105263,4,0,1.0,0.19047619047619047
+5,AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002,0.26565656565656565,5,0,1.0,0.23809523809523808
+6,AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0003,0.0,5,1,0.8333333333333334,0.23809523809523808

@@ -1,0 +1,12 @@
+\begin{tabularx}{\textwidth}{@{}l c c c c c@{}}
+\toprule
+\textbf{Variant} & \textbf{Coverage} & \textbf{CM F$_1$} & \textbf{SE Slot F$_1$} & \textbf{Evidence F$_1$} & \textbf{DupIdx}\,$\downarrow$ \\
+\midrule
+LLM-only ( GPT-5-mini ) & 0.93 & 0.97 & 0.36 & 0.03 & 0.00 \\
++ Judge + Repair ( GPT-5-mini ) & 0.92 & 0.98 & 0.37 & 0.03 & 0.00 \\
++ Judge + Repair + Dedup ( GPT-5-mini ) & 0.89 & 0.96 & 0.36 & 0.03 & 0.15 \\
+LLM-only ( GPT-4o-mini) & 1.00 & 0.93 & 0.35 & 0.03 & 0.00 \\
++ Judge + Repair ( GPT-4o-mini) & 0.80 & 0.88 & 0.29 & 0.01 & 0.01 \\
++ Judge + Repair + Dedup  ( GPT-4o-mini) & 0.82 & 0.88 & 0.29 & 0.01 & 0.20 \\
+\bottomrule
+\end{tabularx}

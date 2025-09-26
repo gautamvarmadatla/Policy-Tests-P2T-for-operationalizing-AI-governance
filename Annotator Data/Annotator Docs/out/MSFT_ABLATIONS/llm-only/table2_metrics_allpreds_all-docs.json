@@ -1,0 +1,40 @@
+{
+  "document_filter": "(all)",
+  "counts": {
+    "gold_spans": 71,
+    "pred_rules_total": 241,
+    "pred_unique_signature_count": 241
+  },
+  "metrics": {
+    "SE Slot F1": 0.3641,
+    "Coverage": 0.9296,
+    "Test Acc": 0.0,
+    "Sig F1": 0.0282
+  },
+  "cm_metrics": {
+    "CM Precision": 0.9855,
+    "CM Recall": 0.9577,
+    "CM F1": 0.9714,
+    "CM AUPRC": 0.9575,
+    "gold_spans": 71,
+    "pred_spans": 69,
+    "tp_at_op": 68,
+    "fp_at_op": 1,
+    "fn_at_op": 3
+  },
+  "slot_f1_breakdown": {
+    "hazard": 0.1326,
+    "scope.actor": 0.5352,
+    "scope.domain": 0.0,
+    "scope.context": 0.169,
+    "conditions": 0.4447,
+    "exceptions": 0.9127,
+    "requirements": 0.5388,
+    "evidence": 0.5155,
+    "evidence_signals": 0.0282
+  },
+  "DupIdx": 0.0,
+  "notes": {
+    "pred_filter": "none (all predictions kept)"
+  }
+}

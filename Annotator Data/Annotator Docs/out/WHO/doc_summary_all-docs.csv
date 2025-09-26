@@ -1,0 +1,2 @@
+Document,Gold spans,Pred spans (mean),SE Slot F1 (mean),SE Slot F1 lo,SE Slot F1 hi,Coverage (mean),Coverage lo,Coverage hi,Test Acc (mean),Test Acc lo,Test Acc hi,Sig F1 (mean),Sig F1 lo,Sig F1 hi,CM F1 (mean),CM F1 lo,CM F1 hi,CM AUPRC (mean),CM AUPRC lo,CM AUPRC hi
+(all),21,7.5,0.1288,0.0692,0.193,0.3333,0.1905,0.4762,0.2857,0.1429,0.4286,0.1115,0.0476,0.1897,0.4898,0.3763,0.5978,0.3254,0.1888,0.4572

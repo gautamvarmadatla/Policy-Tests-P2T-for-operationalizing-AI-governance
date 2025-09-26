@@ -1,0 +1,3345 @@
+- rule_id: spans-passthrough-candidates/sent_0001-e1ff6284
+  source:
+    doc: spans_passthrough_candidates
+    citation: gv-6-2-003/sent_0001
+    span_id: NIST AI RMF profiles_removed/gv-6-2-003/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient incident response to third-party GAI incidents
+  conditions:
+  - for third-party GAI technologies
+  exceptions: []
+  requirements:
+  - Establish incident response plans for third-party GAI technologies.
+  evidence:
+  - incident response plan
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires org to produce incident response plans for third-party GAI; existence
+      can be verified by inspecting policies or repo documents.
+    evidence_signals:
+    - config_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-3fb8414e
+  source:
+    doc: spans_passthrough_candidates
+    citation: gv-6-2-003/sent_0001
+    span_id: NIST AI RMF profiles_removed/gv-6-2-003/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient incident response to third-party GAI incidents
+  conditions:
+  - for third-party GAI technologies
+  exceptions: []
+  requirements:
+  - Align incident response plans with impacts enumerated in MAP 5.1.
+  evidence:
+  - incident response plan
+  severity: high
+  is_testable: true
+  testability:
+    reason: Compare org incident response plan documents to MAP 5.1 impact list to
+      verify alignment.
+    evidence_signals:
+    - config_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-387e3866
+  source:
+    doc: spans_passthrough_candidates
+    citation: gv-6-2-003/sent_0001
+    span_id: NIST AI RMF profiles_removed/gv-6-2-003/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: noncompliance with breach reporting or data protection laws due to misaligned
+    incident plans
+  conditions:
+  - for third-party GAI technologies
+  exceptions: []
+  requirements:
+  - Review incident response plans for alignment with relevant breach reporting, data
+    protection, data privacy, or other laws.
+  evidence:
+  - incident response plan
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective legal judgment and no specified artifacts or acceptance
+      criteria to objectively verify review/alignment.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-a6ea9b66
+  source:
+    doc: spans_passthrough_candidates
+    citation: gv-6-2-003/sent_0002
+    span_id: NIST AI RMF profiles_removed/gv-6-2-003/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain:
+    - general
+    context: []
+  hazard: amplified or deferred liability
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall review vendor contracts for clauses that allow arbitrary or capricious
+    termination, defer or amplify liability, or permit unauthorized data collection
+    by vendors or third parties.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Specific obligation to review vendor contracts for defined clause types;
+      verifiable by inspecting contract documents for such language.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-04660620
+  source:
+    doc: spans_passthrough_candidates
+    citation: gv-6-2-003/sent_0002
+    span_id: NIST AI RMF profiles_removed/gv-6-2-003/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: service disruption due to arbitrary termination
+  conditions:
+  - in vendor contracts
+  exceptions: []
+  requirements:
+  - org shall not include arbitrary or capricious termination clauses for critical
+    GAI technologies or vendor services in vendor contracts.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Phrase 'arbitrary or capricious' is subjective; no objective pass/fail
+      oracle can determine that from contract text alone.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-6850d29b
+  source:
+    doc: spans_passthrough_candidates
+    citation: gv-6-2-003/sent_0002
+    span_id: NIST AI RMF profiles_removed/gv-6-2-003/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain:
+    - general
+    context: []
+  hazard: unauthorized data collection by vendors or third parties
+  conditions:
+  - in vendor contracts
+  - that permit secondary data use
+  exceptions: []
+  requirements:
+  - org shall not include non-standard contract terms that amplify or defer liability
+    or that permit unauthorized data collection (e.g., secondary data use) in vendor
+    contracts.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Vendor contract texts can be inspected for prohibited non-standard liability
+      or unauthorized data-collection clauses.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-d5e546a2
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: harm to individuals and public safety
+  conditions:
+  - 'by assessing: Potential positive and negative impacts to individuals, public
+    safety, groups, communities, organizations, democratic institutions, and the physical
+    environment'
+  exceptions: []
+  requirements:
+  - developer shall assess and document the potential positive and negative impacts
+    of the GAI system on individuals, public safety, groups, communities, organizations,
+    democratic institutions, and the physical environment.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Presence of a documented impact assessment covering the listed categories
+      can be checked in repos or document datasets.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-7e610d78
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: misuse due to unclear context of use
+  conditions:
+  - in collaboration with socio-cultural and other domain experts
+  exceptions: []
+  requirements:
+  - developer shall determine and document the expected and acceptable GAI system
+    context of use in collaboration with socio-cultural and other domain experts.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks objective criteria to verify 'collaboration' and adequacy of the
+      documented context; existence of a document alone is insufficient.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-3607ffde
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: operational failure due to environment or usage mismatch
+  conditions:
+  - 'by assessing: Intended operational environment and observed usage patterns'
+  exceptions: []
+  requirements:
+  - developer shall assess and document the intended operational environment and observed
+    usage patterns for the GAI system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective judgment of whether documentation sufficiently describes
+      environment/usage; presence of docs alone isn't an objective pass/fail.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-a01ce94c
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: failures due to unrecognized assumptions or limitations
+  conditions:
+  - 'by assessing: Assumptions and limitations'
+  exceptions: []
+  requirements:
+  - developer shall assess and document the assumptions and limitations of the GAI
+    system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective criteria or required artifact/location; adequacy of 'assess
+      and document' is subjective and not verifiable.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-fe8d3e78
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: societal harm due to norms mismatch
+  conditions:
+  - 'by assessing: Social norms and expectations'
+  exceptions: []
+  requirements:
+  - developer shall assess and document relevant social norms and expectations related
+    to the GAI system's context of use.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective judgment of which norms are 'relevant'—no objective
+      pass/fail oracle to verify adequacy of the assessment/documentation.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-de4e145a
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: harmful bias in system outputs
+  conditions:
+  - to address identified risks
+  exceptions: []
+  requirements:
+  - org shall document risk measurement plans that address identified risks.
+  evidence:
+  - risk measurement plan
+  severity: high
+  is_testable: false
+  testability:
+    reason: Undefined terms—'identified risks' and what it means to 'address' them—no
+      objective artifact/criterion for pass/fail.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-81af521b
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: illegal use of the GAI system
+  conditions:
+  - that surpass organizational risk tolerances
+  exceptions: []
+  requirements:
+  - org shall identify and document foreseeable illegal uses or applications of the
+    GAI system that surpass organizational risk tolerances.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can verify presence of documented illegal-use list and that items exceed
+      the org's recorded risk-tolerance policy.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-5be60577
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: Harmful bias and homogenization
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall establish and empower interdisciplinary teams across the enterprise
+    to inform and conduct risk measurement and management functions.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective judgement of 'empower' and enterprise coverage; no
+      objective artifact or acceptance criteria specified.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-36728a45
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: Harmful bias and homogenization
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall ensure interdisciplinary teams include representation from a wide range
+    of demographic groups.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague obligation: ''wide range of demographic groups'' lacks defined
+      demographics, thresholds, or team scope, so no objective pass/fail oracle.'
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-440188de
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: Harmful bias and homogenization
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall document participation of interdisciplinary actors in those teams.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Missing explicit teams and documentation location; no observable artifact
+      or log specified to verify compliance.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-4475a6db
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: Harmful bias
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall verify that data or benchmarks used in risk measurement are representative
+    of diverse in-context user populations.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective metric or threshold for 'representative' or 'diverse' to
+      form a pass/fail oracle.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-ce139e5e
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-1-1-002/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-1-1-002/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: Harmful bias
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall verify that users, participants, or subjects involved in structured
+    GAI public feedback exercises are representative of diverse in-context user populations.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Ambiguous 'representative' and 'diverse' lack measurable criteria; no
+      objective pass/fail oracle to verify representativeness.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-e3f28400
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-2-1/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-2-1/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: information integrity compromise
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall define and document the specific tasks and methods the AI system
+    will support.
+  evidence:
+  - documentation
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective judgment whether documentation sufficiently defines
+      ‘specific tasks and methods’; no objective artifact or format specified for
+      automatic checks.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-3961a5ff
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-2-1/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-2-1/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: information integrity compromise
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall establish and record assumptions and practices for determining
+    data origin and content lineage for documentation and evaluation purposes.
+  evidence:
+  - documentation
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to record assumptions/practices is verifiable by checking repository
+      or dataset documentation artifacts.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-f5646804
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-2-1/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-2-1/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: data privacy breach
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall institute test and evaluation of data and content flows within
+    the GAI system, covering original data sources, data transformations, and decision-making
+    criteria.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligates developers to create tests/evaluations of data flows; presence
+      and results can be verified in repo, CI, logs, or datasets.
+    evidence_signals:
+    - repo_check
+    - ci_gate
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-eb3414f0
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-2-1/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-2-1/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: incorrect decision-making due to misunderstood system knowledge limits
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall document the AI system's knowledge limits and how system output
+    may be utilized and overseen by humans.
+  evidence:
+  - documentation
+  severity: high
+  is_testable: true
+  testability:
+    reason: Documentation requirement can be verified by inspecting repository or
+      documentation artifacts for the described content.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-b6263d2a
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-2-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-2-1/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: compromised content provenance
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall identify how the system relies on upstream data sources with specific
+    attention to content provenance.
+  evidence:
+  - documentation
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective pass/fail oracle; 'identify' and 'specific attention to provenance'
+      lack measurable artifacts or criteria.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-d26ff92b
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-2-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-2-1/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: value chain integrity risk
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall document whether the system serves as an upstream dependency for other
+    systems.
+  evidence:
+  - documentation
+  severity: high
+  is_testable: true
+  testability:
+    reason: Org must document if system is an upstream dependency; verifiable by inspecting
+      repository or documentation artifacts.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-23b8ad25
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-2-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-2-1/sent_0002
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: compromised content provenance
+  conditions: []
+  exceptions: []
+  requirements:
+  - deployer shall observe and analyze how the GAI system interacts with external
+    networks and identify any potential negative externalities, particularly where
+    content provenance might be compromised.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No verifiable artifact or measurable predicate specified; cannot objectively
+      check that observation/analysis occurred.
+    evidence_signals:
+    - log_check
+    - ci_gate
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0002-f13e65d5
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-2-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-2-1/sent_0002
+  scope:
+    actor:
+    - evaluator
+    data_domain: []
+    context: []
+  hazard: inaccurate or unauthentic outputs
+  conditions: []
+  exceptions: []
+  requirements:
+  - evaluator shall assess the accuracy, quality, reliability, and authenticity of
+    GAI output by comparing outputs to a set of known ground truth data.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires comparing model outputs to ground truth, verifiable by inspecting
+      outputs against datasets, CI test reports, or runtime logs.
+    evidence_signals:
+    - io_check
+    - ci_gate
+    - data_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0002-aa840797
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-2-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-2-1/sent_0002
+  scope:
+    actor:
+    - evaluator
+    data_domain: []
+    context: []
+  hazard: inaccurate or unauthentic outputs
+  conditions: []
+  exceptions: []
+  requirements:
+  - evaluator shall use a variety of evaluation methods (e.g., human oversight, automated
+    evaluation, cryptographic techniques, review of content inputs) to assess GAI
+    output authenticity and reliability.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'variety' and unspecified methods/thresholds; no measurable pass/fail
+      criterion to objectively verify.
+    evidence_signals:
+    - log_check
+    - io_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-9c5c5d11
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: adversarial vulnerabilities enabling manipulation or misuse
+  conditions:
+  - for GAI systems
+  - regular adversarial testing
+  exceptions: []
+  requirements:
+  - Org shall implement plans that ensure GAI systems undergo regular adversarial
+    testing to identify vulnerabilities and potential manipulation or misuse.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective frequency or acceptance criteria; clause lacks specific artifacts
+      to verify regular adversarial testing.
+    evidence_signals:
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0001-a8c37347
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: harmful bias and homogenization
+  conditions:
+  - used at different stages of AI life cycle
+  exceptions: []
+  requirements:
+  - Developer shall review and document the accuracy, representativeness, relevance,
+    and suitability of data used at different stages of the AI life cycle.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective artifact or criteria defined to verify adequacy of reviews;
+      presence or sufficiency of documentation is subjective.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-e2ef28b6
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: intellectual property infringement
+  conditions:
+  - used at different stages of AI life cycle
+  exceptions: []
+  requirements:
+  - Developer shall review and document the accuracy, representativeness, relevance,
+    and suitability of data used at different stages of the AI life cycle to assess
+    intellectual property risks.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Mandates developers document specified data attributes; presence of review
+      documents and dataset metadata can be objectively checked.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-ad48d953
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: generation and dissemination of inaccurate or unverified information
+  conditions:
+  - especially when the information comes from multiple or unknown sources
+  exceptions: []
+  requirements:
+  - Deployer shall deploy and document fact-checking techniques to verify the accuracy
+    and veracity of information generated by GAI systems.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Presence of deployed fact‑checking components and documentation can be
+      checked in configs, runtime logs, and repository artefacts.
+    evidence_signals:
+    - config_check
+    - log_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-f6398537
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: generation and dissemination of inaccurate or unverified information
+  conditions:
+  - especially when the information comes from multiple or unknown sources
+  exceptions: []
+  requirements:
+  - Deployer shall ensure fact-checking is applied especially when information comes
+    from multiple or unknown sources.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague: ''ensure fact-checking is applied'' lacks objective criteria and
+      observable artifacts to verify when/how fact-checking occurs.'
+    evidence_signals:
+    - io_check
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-fed34e42
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: undetected synthetic content indistinguishable from human-generated content
+  conditions:
+  - content that might be indistinguishable from human-generated content
+  exceptions: []
+  requirements:
+  - Developer shall develop testing techniques to identify GAI-produced content such
+    as synthetic media that might be indistinguishable from human-generated content.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No measurable acceptance criteria or required artifacts; cannot objectively
+      verify pass/fail.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-3a839850
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: operator misuse due to inadequate proficiency
+  conditions:
+  - for operator and practitioner proficiency with AI system performance and trustworthiness
+    and relevant technical standards and certifications
+  exceptions: []
+  requirements:
+  - org shall define processes for operator and practitioner proficiency with AI system
+    performance and trustworthiness and relevant technical standards and certifications.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Presence of defined processes can be checked by inspecting organizational
+      policies or repository process documents.
+    evidence_signals:
+    - config_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-f6941a9d
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0003
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: incorrect evaluation of GAI capabilities due to conflating human and system
+    tests
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall delineate human proficiency tests from tests of GAI capabilities.
+  evidence: []
+  severity: medium
+  is_testable: false
+  testability:
+    reason: No objective artifact or metric defined to verify delineation; cannot
+      check via I/O, logs, config, repo, CI, or datasets.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-05e871bf
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0003
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0003
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: undetected failures or regressions in human-GAI configurations
+  conditions: []
+  exceptions: []
+  requirements:
+  - deployer shall implement systems to continually monitor and track the outcomes
+    of human-GAI configurations for future refinement and improvements.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''monitor and track outcomes'' and ''continually'' lack measurable criteria
+      or pass/fail predicates for objective verification.'
+    evidence_signals:
+    - log_check
+    - config_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0003-c49f1b57
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0003
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: insufficient stakeholder involvement in prototyping and testing
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall involve end-users, practitioners, and operators in GAI system
+    prototyping and testing activities.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague mandate to 'involve' lacks measurable criteria or required artifacts
+      (attendance, test records) for objective verification.
+    evidence_signals:
+    - log_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-69bc81a9
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-2-3-002/sent_0003
+    span_id: NIST AI RMF profiles_removed/mp-2-3-002/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: insufficient testing coverage for crisis or ethically sensitive scenarios
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall ensure tests cover various scenarios, such as crisis situations
+    or ethically sensitive contexts.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague obligation: ''various scenarios'' and examples lack explicit scenarios,
+      coverage criteria, or pass/fail metrics.'
+    evidence_signals:
+    - repo_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0001-3f672301
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PII
+    context: []
+  hazard: unauthorized PII disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall conduct periodic monitoring of AI-generated content for privacy risks
+    and address any instances of PII or sensitive data exposure.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires periodic monitoring and remediation of PII in AI outputs; verifiable
+      via monitoring logs or periodic risk reports.
+    evidence_signals:
+    - log_check
+    - ci_gate
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-92d661d0
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: undetected third-party rights infringement
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall establish, follow, and document approaches for mapping AI technology
+    and legal risks of its components, including the use of third-party data or software,
+    and for mapping risks of infringement of a third-party's intellectual property
+    or other rights.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Mandates documented risk‑mapping; existence of documentation, policies,
+      risk‑mapping artifacts or execution logs can be objectively checked.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - data_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0001-a0caa18b
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: third-party IP infringement
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall implement processes for responding to potential intellectual property
+    infringement claims or other rights.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Requires org to implement response processes; existence of policies/runbooks
+      or incident logs can be checked.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0001-7cf9ca44
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: governance gaps leading to unaddressed legal or compliance risks
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall connect new GAI policies, procedures, and processes to existing model,
+    data, software development, and IT governance and to legal, compliance, and risk
+    management activities.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Obligation can be verified by inspecting policies/configs or repository
+      artifacts for documented links/mappings between GAI and existing governance.
+    evidence_signals:
+    - config_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-d62cd479
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unauthorized disclosure of training data
+  conditions: []
+  exceptions:
+  - to the extent possible and according to applicable laws and policies
+  requirements:
+  - The org shall document training data curation policies.
+  evidence:
+  - training data curation policy
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires the org to produce documented training-data curation policies;
+      presence of such documents can be checked in repo/config.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-e07261a7
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: disclosure of CBRN information
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall establish policies for collection, retention, and minimum quality
+    of data.
+  evidence:
+  - data collection, retention, and quality policy
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to establish policies can be verified by inspecting policy
+      documents/configs for collection, retention, and data quality coverage.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-99a297e1
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: use of illegal or dangerous content in training data
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall establish policies for collection, retention, and minimum quality
+    of data.
+  evidence:
+  - data collection, retention, and quality policy
+  severity: high
+  is_testable: true
+  testability:
+    reason: Existence of formal data collection, retention, and quality policies can
+      be verified in policy/config files or repo documents.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-45e9da20
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inclusion of offensive cyber capabilities in training data
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall establish policies for collection, retention, and minimum quality
+    of data.
+  evidence:
+  - data collection, retention, and quality policy
+  severity: high
+  is_testable: true
+  testability:
+    reason: Existence of written policies can be checked in org docs/configs via repo
+      or config inspection.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-fe04a10a
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PII
+    - image
+    context: []
+  hazard: leak of personally identifiable information including facial likenesses
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall establish policies for collection, retention, and minimum quality
+    of data.
+  evidence:
+  - data collection, retention, and quality policy
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to create data collection, retention, and quality policies;
+      presence and content can be checked in repo or config artifacts.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-d2fbbc91
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unauthorized disclosure or misuse of third-party intellectual property or
+    training data
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall implement policies and practices defining how third-party intellectual
+    property and training data will be used, stored, and protected.
+  evidence:
+  - third-party IP and training data use policy
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires unspecified policy documents and content; no objective artifact
+      or measurable predicate to determine pass/fail.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-47b12494
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unaddressed risks inherited from fine-tuned third-party models
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall re-evaluate models that were fine-tuned or enhanced on top of third-party
+    models.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague obligation: ''re-evaluate'' lacks measurable criteria or required
+      evidence; no specific artifact or oracle to verify compliance.'
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-0bb1b05f
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0003
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: unidentified security or safety risks when adapting models to new domains
+  conditions:
+  - when adapting GAI models to new domains
+  exceptions: []
+  requirements:
+  - Developer shall re-evaluate risks when adapting GAI models to new domains.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Not testable: clause lacks required artifacts or measurable criteria
+      to objectively verify that a risk re-evaluation occurred.'
+    evidence_signals:
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0003-d7ee73ea
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0003
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0003
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: domain-shift causing invalid safety or security assumptions
+  conditions:
+  - if a GAI system is being used in a new domain where previous assumptions may no
+    longer hold
+  exceptions: []
+  requirements:
+  - Deployer shall establish warning systems to determine if a GAI system is being
+    used in a new domain where previous assumptions (relating to context of use or
+    mapped risks such as security and safety) may no longer hold.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective criterion for what constitutes a 'new domain' or how warnings
+      deterministically indicate broken assumptions.
+    evidence_signals:
+    - log_check
+    - config_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0003-7fea4668
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-4-1/sent_0003
+    span_id: NIST AI RMF profiles_removed/map-4-1/sent_0003
+  scope:
+    actor:
+    - deployer
+    data_domain:
+    - PII
+    - text
+    - image
+    - video
+    - audio
+    context:
+    - inference
+  hazard: unauthorized disclosure of PII in generated outputs
+  conditions:
+  - in generated output text, image, video, or audio
+  exceptions: []
+  requirements:
+  - Deployer shall implement approaches to detect the presence of PII or sensitive
+    data in generated output text, image, video, or audio.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Explicit obligation; presence of detection can be verified via generated
+      I/O, detection logs, or configuration.
+    evidence_signals:
+    - io_check
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-80307834
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-4-1-010/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-4-1-010/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - training
+  hazard: intellectual property infringement
+  conditions: []
+  exceptions: []
+  requirements:
+  - Org shall conduct appropriate diligence on training data use to assess intellectual
+    property risks.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'appropriate diligence' lacks measurable artifacts or acceptance
+      criteria; cannot be objectively checked.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-34ac9f56
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-4-1-010/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-4-1-010/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - training
+  hazard: unauthorized disclosure of sensitive or private data
+  conditions: []
+  exceptions: []
+  requirements:
+  - Org shall conduct appropriate diligence on training data use to assess privacy
+    risks.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'appropriate diligence' lacks defined artifacts, metrics, or criteria
+      for an objective pass/fail check.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-775ca7c4
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-4-1-010/sent_0001
+    span_id: NIST AI RMF profiles_removed/mp-4-1-010/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - training
+  hazard: legal non-compliance with applicable laws on proprietary or sensitive data
+  conditions: []
+  exceptions: []
+  requirements:
+  - Org shall examine whether use of proprietary or sensitive training data is consistent
+    with applicable laws.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective legal judgment and specifies no observable artifact
+      or objective oracle to verify compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-2e7b52f4
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-4-1-010/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-4-1-010/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: anomalous or unforeseen failure modes
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall conduct adversarial role-playing exercises, GAI red-teaming, or
+    chaos testing to identify anomalous or unforeseen failure modes.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Actionable but lacks objective observable acceptance criteria or required
+      artifacts; cannot verify pass/fail without subjective judgment.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-adf1d4a4
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-4-1-010/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-4-1-010/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: Information Integrity
+  conditions:
+  - based on their likelihood and potential impact
+  exceptions: []
+  requirements:
+  - org shall enumerate risks and rank them based on their likelihood and potential
+    impact.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Presence of a risk register with likelihood and impact ratings can be
+      inspected.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-3748cbfa
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-4-1-010/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-4-1-010/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: Information Integrity
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall determine how well provenance solutions address specific risks and/or
+    harms.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague: no metrics, criteria, or required artifact to objectively verify
+      the organization''s determination.'
+    evidence_signals:
+    - ci_gate
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-952af77a
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-4-1-010/sent_0002
+    span_id: NIST AI RMF profiles_removed/mp-4-1-010/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: Harmful Bias and Homogenization
+  conditions:
+  - based on risk assessment estimates
+  exceptions: []
+  requirements:
+  - org shall prioritize GAI structured public feedback processes based on risk assessment
+    estimates.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague/unbounded: ''prioritize'' and ''GAI structured public feedback
+      processes'' lack measurable criteria or required artifacts for objective verification.'
+    evidence_signals:
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0003-34a2440c
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-4-1-010/sent_0003
+    span_id: NIST AI RMF profiles_removed/mp-4-1-010/sent_0003
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: misleading content generation
+  conditions: []
+  exceptions: []
+  requirements:
+  - deployer shall profile threats and negative impacts arising from GAI systems interacting
+    with, manipulating, or generating content.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective artifact or measurable criterion specified to verify that
+      'profiling threats and impacts' was performed.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-29793a8f
+  source:
+    doc: spans_passthrough_candidates
+    citation: mp-4-1-010/sent_0003
+    span_id: NIST AI RMF profiles_removed/mp-4-1-010/sent_0003
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: exploitation of vulnerabilities
+  conditions: []
+  exceptions: []
+  requirements:
+  - deployer shall outline known and potential vulnerabilities and the likelihood
+    of their occurrence.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective assessment of adequacy; no specified artifact or schema
+      to objectively verify listed vulnerabilities and likelihoods.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-c5be349e
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-5-2/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-5-2/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unaddressed unanticipated impacts
+  conditions: []
+  exceptions: []
+  requirements:
+  - Establish and document practices and assign personnel to support regular engagement
+    with relevant AI Actors and integrate feedback about positive, negative, and unanticipated
+    impacts.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague terms ('regular', 'relevant AI Actors', 'integrate') prevent an
+      objective pass/fail and no concrete artifact or metric is specified.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-3018aeaf
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-5-2/sent_0001
+    span_id: NIST AI RMF profiles_removed/map-5-2/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient measurement of significant AI risks
+  conditions: []
+  exceptions: []
+  requirements:
+  - Select and implement approaches and metrics for measurement of AI risks enumerated
+    during the MAP function, prioritizing implementation starting with the most significant
+    AI risks.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Presence of documented selected metrics and implemented measurement artifacts,
+      prioritized by risk, can be verified in org repos/configs or measurement reports.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0002-e64ab8a7
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-5-2/sent_0002
+    span_id: NIST AI RMF profiles_removed/map-5-2/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: undocumented trustworthiness characteristics that cannot be measured
+  conditions:
+  - will not or cannot be measured
+  exceptions: []
+  requirements:
+  - org shall document the risks or trustworthiness characteristics that will not
+    or cannot be measured.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Requires org to document unmeasurable risks — verifiable by inspecting
+      repository or documentation artifacts for the required listing.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-7169e388
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-5-2/sent_0003
+    span_id: NIST AI RMF profiles_removed/map-5-2/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: harmful bias and homogenization
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall develop a suite of metrics to evaluate structured public feedback
+    exercises informed by representative AI Actors.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'No objective pass/fail: ''suite of metrics'' and ''informed by representative
+      AI Actors'' are undefined, so artifacts cannot be unambiguously verified.'
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-a7b5551e
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-5-2/sent_0003
+    span_id: NIST AI RMF profiles_removed/map-5-2/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: content provenance risk
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall evaluate novel methods and technologies for the measurement of
+    GAI-related risks in content provenance.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague obligation: ''evaluate'' and ''novel methods'' lack measurable
+      criteria or required artifacts, so no objective pass/fail oracle.'
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0003-d2758858
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-5-2/sent_0003
+    span_id: NIST AI RMF profiles_removed/map-5-2/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: offensive cyber risk
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall evaluate novel methods and technologies for the measurement of
+    GAI-related risks in offensive cyber.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective criteria, required artifacts, timeframe, or measurable acceptance
+      criteria for what constitutes an 'evaluate'.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-e98a2f41
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-5-2/sent_0003
+    span_id: NIST AI RMF profiles_removed/map-5-2/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: CBRN information or capabilities
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall evaluate novel methods and technologies for the measurement of
+    GAI-related risks related to CBRN.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague mandate: ''evaluate novel methods'' lacks defined criteria, required
+      artifacts, timeframe, or success predicates for objective verification.'
+    evidence_signals:
+    - repo_check
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0003-8a87389f
+  source:
+    doc: spans_passthrough_candidates
+    citation: map-5-2/sent_0003
+    span_id: NIST AI RMF profiles_removed/map-5-2/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: invalid, unreliable, or factually inaccurate outputs
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall maintain the models' ability to produce valid, reliable, and factually
+    accurate outputs when evaluating novel methods and technologies for the measurement
+    of GAI-related risks.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks objective metrics, test datasets or pass/fail criteria; cannot be
+      verified via data/CI artifacts.
+    evidence_signals:
+    - data_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0001-e0bcaacd
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0001
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: harmful bias
+  conditions:
+  - across various sub-populations
+  exceptions: []
+  requirements:
+  - deployer shall implement continuous monitoring of GAI system impacts to identify
+    whether GAI outputs are equitable across various sub-populations.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks measurable definition of “equitable” and specified sub-populations;
+      no objective metric/config to enable pass/fail checking.
+    evidence_signals:
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-680e275d
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0001
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: undetected harmful impacts
+  conditions: []
+  exceptions: []
+  requirements:
+  - deployer shall seek active and direct feedback from affected communities via structured
+    feedback mechanisms or redteaming to monitor and improve outputs.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Existence of feedback mechanisms and records (logs, red-team reports,
+      or config) can be checked objectively.
+    evidence_signals:
+    - log_check
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-1c59eb74
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0001
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: data integrity issues
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall evaluate the quality and integrity of data used in training.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Presence of documented evaluation artifacts (reports/logs/CI results)
+      can be checked objectively.
+    evidence_signals:
+    - repo_check
+    - log_check
+    - ci_gate
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-665fe6a8
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0001
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: misleading provenance
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall evaluate the provenance of AI-generated content.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Obligation is vague—'evaluate provenance' lacks measurable criteria or
+      required evidence, so no objective oracle can determine pass/fail.
+    evidence_signals:
+    - io_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-037a0c77
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0001
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: insufficient risk measurement
+  conditions:
+  - where structured human feedback exercises would be most beneficial for GAI risk
+    measurement and management based on the context of use
+  exceptions: []
+  requirements:
+  - developer shall define use cases, contexts of use, capabilities, and negative
+    impacts where structured human feedback exercises, e.g., GAI red-teaming, would
+    be most beneficial for GAI risk measurement and management based on the context
+    of use.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to produce definitions is verifiable by inspecting repo/config
+      artifacts for documented use cases, contexts, capabilities, and negative impacts.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-fcca9eeb
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0002
+  scope:
+    actor:
+    - developer
+    - evaluator
+    data_domain: []
+    context: []
+  hazard: undocumented unmeasured GAI risks
+  conditions:
+  - risks that cannot be measured quantitatively
+  exceptions: []
+  requirements:
+  - developer and evaluator shall track and document risks or opportunities related
+    to all GAI risks that cannot be measured quantitatively and include explanations
+    as to why those risks cannot be measured.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective oracle to verify completeness of “all GAI risks” or that
+      every unmeasured risk is documented with explanation.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-ef468136
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0002
+  scope:
+    actor:
+    - developer
+    - evaluator
+    data_domain: []
+    context: []
+  hazard: unmeasured risks omitted from marginal risks
+  conditions:
+  - risks that cannot be measured quantitatively
+  exceptions: []
+  requirements:
+  - developer and evaluator shall include unmeasured risks in marginal risks.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Terms 'unmeasured risks' and 'marginal risks' lack objective identifiers;
+      no observable predicate to verify inclusion.
+    evidence_signals:
+    - io_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-d16cf7c4
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient independent expert involvement in assessments
+  conditions:
+  - regular assessments and updates
+  exceptions: []
+  requirements:
+  - org shall involve internal experts who did not serve as front-line developers
+    for the system and/or independent assessors in regular assessments and updates.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify assessment reports/attendance and personnel metadata show non–front-line
+      internal experts or independent assessors participated in assessments/updates.
+    evidence_signals:
+    - repo_check
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-5cd221d8
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: missing stakeholder consultation in assessments
+  conditions:
+  - in support of assessments
+  - as necessary per organizational risk tolerance
+  exceptions: []
+  requirements:
+  - org shall consult domain experts, users, AI Actors external to the team that developed
+    or deployed the AI system, and affected communities in support of assessments
+    as necessary per organizational risk tolerance.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective "as necessary per organizational risk tolerance" and
+      no specified artifacts for objective verification.
+    evidence_signals:
+    - config_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0003-23cb15cb
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0003
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: harmful bias
+  conditions:
+  - within the context of use
+  - as part of plans for gathering structured public feedback
+  exceptions: []
+  requirements:
+  - org shall define relevant groups of interest (e.g., demographic groups, subject
+    matter experts, experience with GAI technology) within the context of use as part
+    of plans for gathering structured public feedback.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Presence of documented plans/policies can be checked for defined groups
+      of interest in org artifacts (plans, policy docs).
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-aee00029
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0003
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: harmful bias
+  conditions:
+  - in consultation with representative AI Actors with expertise and familiarity in
+    the context of use
+  - representative of the populations associated with the context of use
+  exceptions: []
+  requirements:
+  - org shall engage in internal and external evaluations, GAI red-teaming, impact
+    assessments, or other structured human feedback exercises conducted in consultation
+    with representative AI Actors who have expertise and are representative of the
+    populations associated with the context of use.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Clause requires ‘representative’ participants but gives no objective criteria
+      to verify representativeness from artifacts/logs.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0003-166d38b1
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-1-1-006/sent_0003
+    span_id: NIST AI RMF profiles_removed/ms-1-1-006/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: conflict of interest compromising feedback
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall verify that individuals conducting structured human feedback exercises
+    are not directly involved in system development tasks for the same GAI model.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Compare feedback participants against development contributor/access records
+      (repo commits, access logs, IAM/config).
+    evidence_signals:
+    - repo_check
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-2a0c40fa
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-2/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-2/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - eval
+  hazard: non-compliance with human subject protection
+  conditions:
+  - evaluation involves human subjects
+  exceptions: []
+  requirements:
+  - Produce and retain documented evidence that the evaluation complies with applicable
+    requirements, including human subject protection requirements.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Missing objective criteria for what documented evidence proves compliance
+      with human subject protection; cannot be checked objectively.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-40652b51
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-2/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-2/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - eval
+  hazard: biased evaluation due to non-representative sample
+  conditions:
+  - evaluation involves human subjects
+  exceptions: []
+  requirements:
+  - Design and document a sampling and evaluation plan that demonstrates the evaluation
+    is representative of the relevant population.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''Representative'' is not quantitatively defined, so no objective pass/fail
+      oracle can verify compliance.'
+    evidence_signals:
+    - repo_check
+    - data_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0002-f64e332b
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-2/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-2/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: continued processing of a subject's data after withdrawal
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall provide human subjects with an option to withdraw participation in GAI
+    applications.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Presence of a withdrawal option can be verified by inspecting app I/O,
+      code/repo, or static configs for a withdrawal endpoint or UI element.
+    evidence_signals:
+    - io_check
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-ddd99a37
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-2/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-2/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: use of personal data after consent revoked
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall provide human subjects with an option to revoke their consent for present
+    or future use of their data in GAI applications.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Presence of a revocation option can be checked by inspecting interfaces,
+      config/policy, or runtime revocation logs.
+    evidence_signals:
+    - io_check
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0002-c7c434c9
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-2/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-2/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: re-identification of human subjects from AI-generated content
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall use techniques such as anonymization, differential privacy, or
+    other privacy-enhancing technologies to minimize risks of linking AI-generated
+    content back to individual human subjects.
+  evidence: []
+  severity: medium
+  is_testable: false
+  testability:
+    reason: Unbounded 'minimize risks' and unspecified techniques—no measurable threshold
+      or artifact to objectively verify compliance.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-8d23937d
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0001
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - prod
+  hazard: deployment of an invalid or unreliable system
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - deployer shall demonstrate the AI system is valid and reliable before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague requirement—'valid and reliable' and 'demonstrate' lack objective
+      criteria or artifacts, so no observable pass/fail oracle.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-20164921
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0001
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - eval
+    - prod
+  hazard: extrapolation of capabilities from inadequate assessments
+  conditions:
+  - when assessments are narrow, nonsystematic, and anecdotal
+  exceptions: []
+  requirements:
+  - developer shall not extrapolate GAI system performance or capabilities from narrow,
+    nonsystematic, and anecdotal assessments.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague subjective terms ('extrapolate', 'narrow/nonsystematic/anecdotal')
+      prevent an objective pass/fail oracle.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-586821e0
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0001
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - eval
+  hazard: misleading claims from inadequate empirical evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall utilize a purpose-built testing environment such as NIST Dioptra
+    to empirically evaluate GAI trustworthy characteristics.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to use a purpose-built test environment (e.g., NIST Dioptra),
+      verifiable via CI/config/log artifacts.
+    evidence_signals:
+    - config_check
+    - ci_gate
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0001-65d7879d
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0001
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - eval
+  hazard: overgeneralization beyond development conditions
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall document limitations of the system's generalizability beyond the
+    conditions under which the technology was developed.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Checkable by inspecting developer documentation for explicit descriptions
+      of limits on generalizability beyond development conditions.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-2809e299
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: confabulation
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall document the extent to which human domain knowledge is employed
+    to improve the GAI system's performance, including use of RLHF, fine-tuning, retrieval-augmented
+    generation, content moderation, or business rules.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Obligation to document is verifiable by checking repository/docs for a
+      statement describing use/degree of RLHF, fine-tuning, RAG, moderation, or rules.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-7bd8288a
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0002
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - eval
+    - prod
+  hazard: confabulation
+  conditions:
+  - during predeployment risk measurement
+  - during ongoing monitoring activities
+  exceptions: []
+  requirements:
+  - deployer shall review and verify sources and citations in GAI system outputs during
+    predeployment risk measurement.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No verifiable artifact proving the deployer's review/verification; requires
+      predeployment logs or reports (log_check/ci_gate).
+    evidence_signals:
+    - log_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0002-f05b5360
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - prod
+  hazard: confabulation
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall track instances of anthropomorphization in GAI system interfaces,
+    including human images, mentions of human feelings, and cyborg imagery or motifs.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Requires developers to record specific anthropomorphization instances
+      in production; verifiable by inspecting logs, interface I/O, or tracking config.
+    evidence_signals:
+    - log_check
+    - io_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-917123e2
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - prod
+  hazard: confabulation
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall document tracked instances of anthropomorphization and their locations
+    in the system interface.
+  evidence: []
+  severity: medium
+  is_testable: false
+  testability:
+    reason: No precise artifact format or objective criteria to verify documentation
+      of instances and locations.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-d59ba8c1
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: confabulation
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall verify GAI system training data provenance.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligates verifying training-data provenance; checkable by inspecting
+      dataset metadata or provenance records.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-1d36fc18
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0002
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: confabulation
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall verify that fine-tuning and retrieval-augmented generation data
+    used by the GAI system is grounded.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''Grounded'' is undefined; no objective criterion provided to verify
+      dataset grounding.'
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0003-58abcb8b
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0003
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0003
+  scope:
+    actor:
+    - evaluator
+    data_domain: []
+    context: []
+  hazard: deployment of unsafe GAI
+  conditions:
+  - being operated in novel circumstances
+  exceptions: []
+  requirements:
+  - Evaluator shall regularly review security and safety guardrails for the GAI system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation—'regularly review' lacks frequency, required artifacts,
+      or observable evidence to enable an objective pass/fail check.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-8ce82543
+  source:
+    doc: spans_passthrough_candidates
+    citation: ms-2-3-004/sent_0003
+    span_id: NIST AI RMF profiles_removed/ms-2-3-004/sent_0003
+  scope:
+    actor:
+    - evaluator
+    data_domain: []
+    context: []
+  hazard: deployment of unsafe GAI
+  conditions: []
+  exceptions: []
+  requirements:
+  - Evaluator shall review the reasons why the GAI system was initially assessed as
+    being safe to deploy.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective artifact or evidence type specified to verify that the evaluator
+      actually reviewed the initial safety-assessment reasons.
+    evidence_signals:
+    - log_check
+    - repo_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0001-4789cdf4
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: safety risks
+  conditions:
+  - regularly
+  - as identified in the MAP function
+  exceptions: []
+  requirements:
+  - The developer shall evaluate the AI system regularly for safety risks as identified
+    in the MAP function.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'regularly' and no measurable criteria or required artifacts; cannot
+      determine pass/fail objectively.
+    evidence_signals:
+    - log_check
+    - ci_gate
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-2a542de2
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: unsafe deployment
+  conditions:
+  - to be deployed
+  exceptions: []
+  requirements:
+  - The deployer shall demonstrate that the AI system to be deployed is safe before
+    deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague; 'safe' and 'demonstrate' lack objective criteria or required artifacts,
+      so no observable pass/fail oracle.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-9e7d5fe7
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: excess residual negative risk
+  conditions:
+  - to be deployed
+  exceptions: []
+  requirements:
+  - The deployer shall verify that the AI system's residual negative risk does not
+    exceed the defined risk tolerance before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective metric or artifact specified for 'residual negative risk'
+      or 'defined risk tolerance', so pass/fail cannot be verified.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-cb89669c
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: unsafe failure behavior when beyond knowledge limits
+  conditions:
+  - when made to operate beyond its knowledge limits
+  exceptions: []
+  requirements:
+  - The deployer shall ensure the AI system can fail safely, including when the system
+    is made to operate beyond its knowledge limits.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: “Fail safely” is vague—no objective criteria or observable oracle to verify
+      safe failure beyond knowledge limits.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-8dd1396b
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: insufficient safety monitoring and response
+  conditions: []
+  exceptions: []
+  requirements:
+  - The deployer shall maintain safety metrics that reflect system reliability and
+    robustness, include real-time monitoring, and measure response times for AI system
+    failures.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires deployer to maintain metrics, real-time monitoring, and measure
+      failure response times—verifiable via monitoring configuration and runtime logs.
+    evidence_signals:
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0001-093bc5ff
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: adverse health and wellbeing impacts
+  conditions:
+  - during GAI training and maintenance
+  exceptions: []
+  requirements:
+  - The developer shall assess adverse impacts, including health and wellbeing impacts,
+    for value chain or other AI Actors exposed to sexually explicit, offensive, or
+    violent information during GAI training and maintenance.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires an assessment but specifies no observable artifact, metric, or
+      verification method; no applicable audit signal available.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-c720a3d0
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: CBRN information in training data
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall assess existence or levels of CBRN information in system training
+    data.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Training datasets/metadata can be inspected to determine presence or levels
+      of CBRN content, enabling objective pass/fail assessment.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-1599a5f7
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: harmful bias in training data
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall assess existence or levels of harmful bias in system training
+    data.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No required metric, method, or artifact; assessment not observable or
+      objectively verifiable.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-e64f68c4
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: data privacy violations in training data
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall assess existence or levels of data privacy violations in system
+    training data.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Mandates performing an assessment but provides no verifiable artifact
+      or observable oracle to prove the developer actually assessed training data.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-75903fc5
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0002
+  scope:
+    actor:
+    - evaluator
+    data_domain:
+    - code
+    context:
+    - inference
+  hazard: unreliable downstream decision-making from generated code
+  conditions: []
+  exceptions: []
+  requirements:
+  - evaluator shall review generated code to assess risks that may arise from unreliable
+    downstream decision-making.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Subjective requirement: ''assess risks'' lacks objective criteria or
+      required artifacts, so no definitive io/log/config oracle to verify compliance.'
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-cd337780
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0002
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - finetune
+  hazard: unsafe behavior of fine-tuned models
+  conditions:
+  - when the negative risk exceeds organizational risk tolerance
+  exceptions: []
+  requirements:
+  - deployer shall re-evaluate safety features of fine-tuned models when the negative
+    risk exceeds organizational risk tolerance.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to re-evaluate when measured risk exceeds defined tolerance
+      — verifiable by risk metrics, threshold config, and re-evaluation logs.
+    evidence_signals:
+    - log_check
+    - config_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0002-3b2994a8
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0002
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - prod
+  hazard: unhandled security incidents
+  conditions:
+  - when security anomalies, threats and impacts are detected
+  exceptions: []
+  requirements:
+  - deployer shall verify that the GAI system architecture can handle, recover from,
+    and repair errors when security anomalies, threats and impacts are detected.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective pass/fail criteria for 'handle/recover/repair'; cannot be
+      verified definitively via logs/config.
+    evidence_signals:
+    - log_check
+    - ci_gate
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-82f81ad5
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0003
+  scope:
+    actor:
+    - deployer
+    - evaluator
+    - practitioner
+    - provider
+    data_domain: []
+    context: []
+  hazard: facilitating weapons creation
+  conditions:
+  - queries that may give rise to facilitating weapons creation
+  exceptions: []
+  requirements:
+  - deployer, evaluator, practitioner, and operator must verify that systems properly
+    handle queries that may facilitate weapons creation.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''Properly handle'' is undefined—no objective pass/fail predicate for
+      system behavior on weapons-related queries.'
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0003-0b0f2889
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0003
+  scope:
+    actor:
+    - deployer
+    - evaluator
+    - practitioner
+    - provider
+    data_domain: []
+    context: []
+  hazard: facilitating cyber-attacks
+  conditions:
+  - queries that may give rise to facilitating cyber-attacks
+  exceptions: []
+  requirements:
+  - deployer, evaluator, practitioner, and operator must verify that systems properly
+    handle queries that may facilitate cyber-attacks.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires verifying 'properly handle' but undefined; no objective pass/fail
+      criteria for queries that facilitate cyber-attacks.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0003-6ee6b0e8
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0003
+  scope:
+    actor:
+    - deployer
+    - evaluator
+    - practitioner
+    - provider
+    data_domain: []
+    context: []
+  hazard: targeted impersonation
+  conditions:
+  - queries that may give rise to targeted impersonation
+  exceptions: []
+  requirements:
+  - deployer, evaluator, practitioner, and operator must verify that systems properly
+    handle queries that may give rise to targeted impersonation.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague obligation: ''properly handle'' lacks objective pass/fail criteria;
+      cannot verify from I/O/logs without explicit measurable predicate.'
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0003-1d113420
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-6/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-6/sent_0003
+  scope:
+    actor:
+    - evaluator
+    - deployer
+    - provider
+    data_domain: []
+    context: []
+  hazard: circumvention of safety measures
+  conditions:
+  - vulnerabilities that could allow possible circumvention of safety measures
+  exceptions: []
+  requirements:
+  - evaluator must regularly evaluate GAI system vulnerabilities to possible circumvention
+    of safety measures.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation — 'regularly evaluate' lacks defined frequency, method,
+      or required artifacts, so no objective oracle to verify.
+    evidence_signals:
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0001-969a0ab8
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unaddressed vulnerabilities and resilience gaps
+  conditions:
+  - as identified in the MAP function
+  exceptions: []
+  requirements:
+  - org shall evaluate AI system security and resilience and produce documentation
+    of the evaluation.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires org to evaluate security/resilience and produce documentation;
+      presence of evaluation documents can be checked in repository or artifacts.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-4f6213be
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: exploitation of vulnerabilities leading to data breaches or model theft
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall apply established security measures to assess the likelihood and magnitude
+    of vulnerabilities and threats, including backdoors, compromised dependencies,
+    data breaches, eavesdropping, man-in-the-middle attacks, reverse engineering,
+    autonomous agents, model theft or exposure of model weights, AI inference bypass,
+    extraction, and other baseline security concerns.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation; lacks specific measures, artifacts, or metrics—no objective
+      oracle to determine pass/fail.
+    evidence_signals:
+    - config_check
+    - ci_gate
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0001-59c5c852
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient content provenance security relative to industry standards
+  conditions:
+  - related to content provenance
+  exceptions: []
+  requirements:
+  - org shall benchmark GAI system security and resilience related to content provenance
+    against industry standards and best practices.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No specific standards, metrics, methods, or pass/fail criteria; cannot
+      objectively verify benchmarking against 'industry standards'.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-e472a42b
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0001
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: outdated security features or provenance methods compared to state-of-the-art
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall compare GAI system security features and content provenance methods
+    against industry state-of-the-art.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective 'industry state-of-the-art' benchmark and unspecified
+      comparison method; no objective artifact or metric to check pass/fail.
+    evidence_signals:
+    - config_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0002-0f16d9b9
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: user misperception of AI-generated content authenticity
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall conduct user surveys to gather user satisfaction with AI-generated
+    content and user perceptions of content authenticity.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Survey instruments and collected responses provide objective artifacts
+      to verify the surveys were conducted.
+    evidence_signals:
+    - repo_check
+    - data_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0002-2592e30d
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of user understanding of content provenance and labels
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall analyze user feedback to identify concerns and current literacy
+    levels related to content provenance and understanding of labels on content.
+  evidence: []
+  severity: medium
+  is_testable: false
+  testability:
+    reason: No objective artifact, metric, or reporting format specified to verify
+      analysis of user feedback.
+    evidence_signals:
+    - repo_check
+    - data_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0002-35c327e4
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ineffective security measures leading to unauthorized access or data extraction
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall identify metrics that reflect the effectiveness of security measures,
+    including data provenance and counts of unauthorized access attempts, inference,
+    bypass, extraction, or penetrations, and provenance verification.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Existence of documented metrics (counts of unauthorized attempts, provenance,
+      verification) can be objectively checked in configs or repo artifacts.
+    evidence_signals:
+    - config_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-0774d478
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0002
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unreliable content authentication allowing unauthenticated content
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall measure the reliability of content authentication methods such as
+    watermarking, cryptographic signatures, digital fingerprints, access controls,
+    conformity assessment, and model integrity verification.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to “measure” is verifiable by checking for measurement artifacts
+      (reports, tests, metrics, logs).
+    evidence_signals:
+    - repo_check
+    - ci_gate
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0003-fbf43d7c
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: incorrect content provenance verification
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall evaluate the rate of false positives and false negatives in content
+    provenance.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligates developer to produce measurable FP/FN rates that can be verified
+      via evaluation artifacts in repo or CI.
+    evidence_signals:
+    - repo_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0003-489f7d92
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: incorrect verification outcomes
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall evaluate the rate of true positives and true negatives for verification.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires producing measurable TP/TN rates; checkable via evaluation reports,
+      labeled datasets, or model I/O metrics.
+    evidence_signals:
+    - ci_gate
+    - data_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0003-605f98a5
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: unimplemented security recommendations
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall measure the rate at which recommendations from security checks
+    and incidents are implemented.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to measure an implementation rate can be verified by checking
+      metrics/reports or logs showing recommendations issued vs implemented.
+    evidence_signals:
+    - log_check
+    - ci_gate
+    - data_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-f47e15fc
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: delayed adaptation to security incidents
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall assess how quickly the AI system can adapt and improve based on
+    lessons learned from security incidents and feedback.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No measurable metric, timeframe, or required artifacts specified to objectively
+      verify assessment outcomes.
+    evidence_signals:
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0003-3a2cbf10
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: abuse enabling attacks on other systems
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall perform AI red-teaming to assess resilience against abuse to facilitate
+    attacks on other systems (e.g., malicious code generation, enhanced phishing content).
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to perform red‑teaming; compliance verifiable by presence of
+      red‑team reports, execution logs, or CI/deployment risk reports.
+    evidence_signals:
+    - repo_check
+    - log_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0003-ce178a43
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0003
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: prompt injection and ML attack vulnerabilities
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall perform AI red-teaming to assess resilience against GAI attacks
+    (e.g., prompt injection) and ML attacks (e.g., adversarial examples/prompts, data
+    poisoning, membership inference, model extraction, sponge examples).
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No verifiable artifacts, metrics, or required reporting specified to objectively
+      confirm red‑teaming was performed.
+    evidence_signals:
+    - repo_check
+    - log_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0004-f381721b
+  source:
+    doc: spans_passthrough_candidates
+    citation: measure-2-7/sent_0004
+    span_id: NIST AI RMF profiles_removed/measure-2-7/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - finetune
+  hazard: compromised safety and security controls
+  conditions:
+  - during fine-tuning
+  exceptions: []
+  requirements:
+  - developer shall verify that fine-tuning does not compromise safety and security
+    controls.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague criterion: ''does not compromise safety/security controls'' lacks
+      measurable metrics, artifacts, or pass/fail oracle for objective verification.'
+    evidence_signals: []

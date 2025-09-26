@@ -1,0 +1,1144 @@
+- rule_id: spans-passthrough-candidates/sent_0001-dbcc600b
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - health
+    context:
+    - inference
+  hazard: unsafe health-care outputs
+  conditions:
+  - when a user prompts an LMM to generate health-care related outputs
+  - when a provider is permitted by the developer to integrate the LMM into a health-care
+    application, product or service
+  exceptions: []
+  requirements:
+  - developer shall identify and implement mitigation measures for novel risks introduced
+    by the use of a general-purpose foundation model when a user prompts the LMM to
+    generate health-care related outputs or when the provider integrates the LMM into
+    a health-care application, product or service.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague criteria: ''novel risks'' and acceptable mitigations lack objective
+      predicates or required artifacts to allow pass/fail verification.'
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-061ff6a6
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: unsafe health-care outputs
+  conditions:
+  - when a user prompts an LMM to generate health-care related outputs
+  - when the provider integrates the LMM into a health-care application, product or
+    service
+  exceptions: []
+  requirements:
+  - provider shall identify and implement mitigation measures for novel risks introduced
+    by the use of a general-purpose foundation model when a user prompts the LMM to
+    generate health-care related outputs or when the provider integrates the LMM into
+    a health-care application, product or service.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Mandates providers identify and implement mitigations for LMM health-care
+      outputs; verifiable via risk docs, configs, runtime logs, and I/O behavior.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0001-af6f8e89
+  source:
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    doc: spans_passthrough_candidates
+  scope:
+    data_domain:
+    - health
+    context:
+    - internal
+    actor:
+    - developer
+  hazard: harm from unsafe medical information
+  conditions:
+  - queries that request health or medical information
+  exceptions: []
+  requirements:
+  - Block queries that request health or medical information.
+  - Attach a clear warning to any responses that include health or medical information.
+  - Direct users to information or services that can provide appropriate assistance.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligations to block, warn, and refer are explicit and can be verified
+      by inspecting model I/O and configuration.
+    evidence_signals:
+    - io_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-02b5cb25
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - health
+    context: []
+  hazard: harm from unsafe medical information
+  conditions:
+  - such measures are not taken
+  - developer intends that users apply its LMM for health care, either directly or
+    indirectly through a provider
+  exceptions: []
+  requirements:
+  - If such measures are not taken or if the developer intends that users apply its
+    LMM for health care, the developer shall assume and perform the specific responsibilities
+    that only it can satisfy to address risks associated with use of the LMM in health
+    care.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague obligation: ''such measures'' and ''specific responsibilities''
+      undefined, so no concrete observable predicate to check.'
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-9d7298f1
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: harm from unsafe medical information
+  conditions: []
+  exceptions: []
+  requirements:
+  - Developers and providers shall implement measures to address the risks associated
+    with use of LMMs in health care.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation without specific, verifiable measures or criteria; no
+      observable artifact or oracle can determine pass/fail.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-f10b2d3c
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: deployment without agreed responsibilities
+  conditions:
+  - if an LMM is to be used in health care
+  exceptions: []
+  requirements:
+  - developers and providers shall fulfil mutual responsibilities if an LMM is to
+    be used in health care.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Obligation is vague ('mutual responsibilities' unspecified) with no measurable
+      conditions or artifacts to verify compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-1fcbf808
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - deployer
+    data_domain:
+    - health
+    context: []
+  hazard: system-wide bias
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - deployer shall address system-wide bias before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Obligation vague—'address system-wide bias' lacks measurable criteria
+      or required artifacts for objective verification.
+    evidence_signals:
+    - io_check
+    - data_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0002-d4fa9670
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - deployer
+    data_domain:
+    - health
+    context: []
+  hazard: false information or hallucinations
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - deployer shall address false information or hallucinations for health-care uses
+    before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'address' obligation lacks measurable criteria or required artifacts;
+      no objective oracle (IO/config/CI) defined to determine pass/fail.
+    evidence_signals:
+    - io_check
+    - config_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0002-fb55b232
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - deployer
+    data_domain:
+    - health
+    context: []
+  hazard: privacy of data entered into an LMM
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - deployer shall address privacy of data entered into an LMM before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Obligation 'address privacy' is vague and lacks measurable criteria or
+      observable predicate to verify before deployment.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0002-7ec3ef8f
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - deployer
+    data_domain:
+    - health
+    context: []
+  hazard: manipulation
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - deployer shall address manipulation before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague obligation: ''address manipulation'' lacks defined measures or
+      artifacts to check, so no objective oracle can verify pass/fail.'
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-d8c833b3
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002
+  scope:
+    actor:
+    - deployer
+    data_domain:
+    - health
+    context: []
+  hazard: automation bias
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - deployer shall address automation bias before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague obligation: ''address automation bias'' lacks measurable criteria
+      or observable artifacts; no concrete predicate to pass/fail before deployment.'
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0005-c93e59cb
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0005
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: use of AI in health care that does not meet minimum legal or policy requirements
+  conditions:
+  - when required
+  - intended for use in health care
+  exceptions: []
+  requirements:
+  - Demonstrate that an AI technology intended for use in health care meets the minimum
+    requirements set out in a law or policy when required.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'demonstrate' obligation and unspecified 'minimum requirements'
+      prevent an objective pass/fail check with available oracles.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0006-d16de30e
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0006
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: incorrect medical decisions due to model hallucinations
+  conditions:
+  - general-purpose foundation model
+  exceptions: []
+  requirements:
+  - The developer shall disclose the performance of a general-purpose foundation model,
+    including its propensity to hallucinate.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective definition of ‘disclose’ or measurable ‘propensity to hallucinate’,
+      so pass/fail cannot be determined.
+    evidence_signals:
+    - repo_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0006-4b7c9260
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0006
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: incorrect medical decisions due to model hallucinations
+  conditions:
+  - general-purpose foundation model
+  exceptions: []
+  requirements:
+  - The provider shall disclose the performance of a general-purpose foundation model,
+    including its propensity to hallucinate.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Check for published documentation or model card disclosing performance
+      metrics including measured hallucination propensity.
+    evidence_signals:
+    - repo_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0009-f8748f17
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0009
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PII
+    context: []
+  hazard: unauthorized PII disclosure
+  conditions:
+  - personal information may be disclosed either accidentally or through prompts
+  exceptions: []
+  requirements:
+  - org shall prohibit their own employees from using such algorithms.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Clear obligation for org to prohibit employees; compliance can be checked
+      via policies or employee usage logs.
+    evidence_signals:
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0009-5b813348
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0009
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - PII
+    context: []
+  hazard: unauthorized PII disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall protect user autonomy by preventing disclosures of personal information
+    by their models.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Obligates developers to prevent model PII disclosures; can be checked
+      by inspecting model I/O and runtime logs for PII leaks.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0012-0f7a84f9
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0012
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - health
+    context: []
+  hazard: violation of human rights (dignity, autonomy or privacy)
+  conditions:
+  - for AI systems or tools used in health care and medicine
+  - includes general-purpose foundation models
+  - irrespective of the risk associated with the AI technology
+  exceptions: []
+  requirements:
+  - developer shall ensure AI systems and tools used in health care and medicine respect
+    human rights and ethical obligations that affect a person's dignity, autonomy
+    or privacy.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation — ‘respect human rights’ lacks measurable criteria or
+      concrete predicates; no oracle can objectively verify pass/fail.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0012-96d6fddb
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0012
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: violation of human rights (dignity, autonomy or privacy)
+  conditions:
+  - for AI systems or tools used in health care and medicine
+  - includes general-purpose foundation models
+  - irrespective of the risk associated with the AI technology
+  exceptions: []
+  requirements:
+  - provider shall ensure AI systems and tools used in health care and medicine respect
+    human rights and ethical obligations that affect a person's dignity, autonomy
+    or privacy.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation without measurable criteria or concrete indicators; no
+      objective predicate or artifacts to enable I/O or log/config/data checks.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0012-f0a5f770
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0012
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - health
+    context: []
+  hazard: failure to scrutinize human-rights impacts for low-risk systems
+  conditions:
+  - when an AI algorithm is considered "low risk"
+  - for AI systems or tools used in health care and medicine
+  exceptions: []
+  requirements:
+  - developer shall not treat an algorithm's classification as "low risk" as a basis
+    to avoid scrutiny of its compliance with human rights and ethical obligations.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague predicate ('avoid scrutiny') with no specified observable artifact
+      or metric; cannot be objectively checked from available artifacts.
+    evidence_signals:
+    - repo_check
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0012-26e54396
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0012
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context: []
+  hazard: failure to scrutinize human-rights impacts for low-risk systems
+  conditions:
+  - when an AI algorithm is considered "low risk"
+  - for AI systems or tools used in health care and medicine
+  exceptions: []
+  requirements:
+  - provider shall not treat an algorithm's classification as "low risk" as a basis
+    to avoid scrutiny of its compliance with human rights and ethical obligations.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Phrase 'treat ... as a basis to avoid scrutiny' is ambiguous and lacks
+      an objectively observable predicate or required artifact to verify.
+    evidence_signals:
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0013-701f832d
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unaddressed human rights, safety, or data protection risks
+  conditions:
+  - throughout the life cycle of an AI system
+  exceptions: []
+  requirements:
+  - The org shall conduct an impact assessment of the AI technology that addresses
+    ethics, human rights, safety and data protection throughout the life cycle of
+    the AI system.
+  evidence:
+  - impact assessment
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective pass/fail criteria or required artifacts; 'addresses' and
+      'throughout the life cycle' are vague/unobservable.
+    evidence_signals:
+    - repo_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0013-8f9745eb
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: undetected safety or human rights risks due to lack of independent audit
+  conditions:
+  - before and after introduction of an AI technology
+  exceptions: []
+  requirements:
+  - The org shall ensure the impact assessment is audited by an independent third
+    party before and after introduction of the AI technology.
+  evidence:
+  - impact assessment
+  severity: high
+  is_testable: true
+  testability:
+    reason: Presence and timestamps of independent third‑party audit reports before/after
+      deployment can be checked in records/artifacts.
+    evidence_signals:
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0013-d7828f65
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of public disclosure of impact assessment results preventing scrutiny
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall publish the results of the impact assessment and make them available
+    to the public and groups that may be affected while accounting for proprietary
+    or sensitive information.
+  evidence:
+  - impact assessment
+  severity: high
+  is_testable: false
+  testability:
+    reason: Publication is observable, but "accounting for proprietary/sensitive information"
+      lacks an objective pass/fail oracle.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0021-2c0844dc
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0021
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain: []
+    context: []
+  hazard: action based on unverified device performance
+  conditions:
+  - If an LMM or application is to be regulated as a medical device
+  exceptions: []
+  requirements:
+  - The developer or provider shall provide evidence that the device performs as marketed.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation for developer/provider to supply evidence that device meets
+      marketed claims; checkable via claims, test artifacts, and outputs.
+    evidence_signals:
+    - io_check
+    - repo_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0021-4995a74b
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0021
+  scope:
+    actor:
+    - developer
+    - provider
+    data_domain: []
+    context: []
+  hazard: non-compliance with medical device law
+  conditions:
+  - If an LMM or application is to be regulated as a medical device
+  exceptions: []
+  requirements:
+  - The developer or provider shall provide evidence that the device meets the requirements
+    of current or amended national laws.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'evidence' and 'national laws' unspecified; no objective artifact
+      or criterion to verify compliance.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0022-5f2aee06
+  source:
+    doc: spans_passthrough_candidates
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0022
+  scope:
+    actor:
+    - developer
+    data_domain:
+    - health
+    context:
+    - research
+    - regulated
+  hazard: harm to patients from uncontrolled clinical experiments
+  conditions:
+  - when conducting experiments of LMMs for clinical decision support
+  exceptions: []
+  requirements:
+  - Do not conduct experiments of LMMs for clinical decision support except in an
+    authorized clinical trial setting under appropriate controls to protect patients
+    and to produce clinically relevant outcomes.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Exception terms ('authorized clinical trial', 'appropriate controls',
+      'clinically relevant outcomes') lack objective, verifiable criteria.
+    evidence_signals:
+    - log_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-0712d3da
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: inaccurate or false responses
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - Deployer shall implement and retain records of mitigation measures to prevent
+    or detect inaccurate or false responses when deploying an LMM.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to implement mitigation and retain records; existence of records/config
+      entries and logs can be objectively checked.
+    evidence_signals:
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-dea0ae7e
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: biased outputs
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - Deployer shall implement and document measures to detect, evaluate and mitigate
+    bias in LMM outputs when deploying an LMM.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to implement and document bias-detection/mitigation — presence
+      of docs, code, or CI risk checks can be verified in repo/config/CI.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - ci_gate
+- rule_id: spans-passthrough-candidates/sent_0001-59c9ba9a
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: privacy breach of input/output data
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - Deployer shall implement and demonstrate privacy protections for data entered
+    into and produced by the LMM and keep evidence of those protections when deploying
+    an LMM.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective pass/fail criteria for what counts as 'privacy protections'
+      or acceptable 'evidence', so cannot be checked objectively.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-e35e53bf
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: reduced accessibility or affordability
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - Deployer shall assess and implement measures to ensure accessibility and affordability
+    of the LMM and retain records of those assessments and measures when deploying
+    an LMM.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Retention of assessments/measures at deployment can be objectively checked
+      by inspecting retained records or repository documents.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-6f4eb472
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: automation bias and skills degradation
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - Deployer shall implement safeguards, monitoring or user guidance to mitigate automation
+    bias and skills degradation and keep records of such measures when deploying an
+    LMM.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires deployer to implement safeguards/monitoring/user guidance and
+      retain records; presence of these artifacts can be inspected (logs, configs,
+      I/O).
+    evidence_signals:
+    - log_check
+    - config_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0001-cb4751b0
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: reduced quality of interactions between health-care providers and patients
+  conditions:
+  - when deploying an LMM
+  exceptions: []
+  requirements:
+  - Deployer shall implement and document measures to preserve and monitor the quality
+    of interactions between health‑care providers and patients when deploying an LMM.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can verify whether deployer implemented and documented monitoring measures
+      by inspecting documentation, monitoring configs, and runtime logs.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0003-2b885f84
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0003
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: unmitigated risks from LMM use
+  conditions: []
+  exceptions: []
+  requirements:
+  - deployer shall avoid or mitigate risks associated with use of an LMM or application.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation with no specific risks, mitigation actions, or measurable
+      criteria; cannot determine pass/fail from observable artifacts.
+    evidence_signals:
+    - io_check
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0003-9431736c
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0003
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: harm from deployment in inappropriate settings due to bias or avoidable
+    errors
+  conditions:
+  - biases in the training data
+  - contextual bias that renders the LMM inappropriate for the setting
+  - other avoidable errors or potential risks known to the deployer
+  exceptions: []
+  requirements:
+  - deployer shall use information from developers or providers to assess whether
+    an LMM or application is inappropriate for a given setting and refrain from deploying
+    it when the assessment identifies biases, contextual bias, avoidable errors, or
+    other known risks.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No mandatory, observable artifact (assessment records or deployment gate)
+      is specified to objectively verify compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0004-7fc6ad17
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0004
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: harm from inappropriate LMM use
+  conditions:
+  - received clear, adequate warning of such risks
+  - still offers the LMM for use in inappropriate settings
+  exceptions: []
+  requirements:
+  - Deployer shall be held accountable for any resulting harm when the conditions
+    are met.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Obligation lacks specific, verifiable conditions and 'held accountable'
+      is not an observable, checkable outcome.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0004-6033ceda
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices/sent_0004
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    - health
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - when health-care workers use an LMM professionally
+  exceptions: []
+  requirements:
+  - Provider shall provide training to health-care workers on legal obligations and
+    the protection of health data and information when using LMMs professionally.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to provide training is verifiable via training materials in
+      repositories and delivery/attendance records in logs.
+    evidence_signals:
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0004-66237c6e
+  source:
+    doc: spans_passthrough_candidates
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices/sent_0004
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    - health
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - into an LMM chatbot
+  exceptions: []
+  requirements:
+  - Provider shall implement controls to prevent health-care workers from inputting
+    protected health information into LMM chatbots.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation is explicit and can be verified by attempting PHI inputs and
+      inspecting I/O, logs, or config for blocking behavior.
+    evidence_signals:
+    - io_check
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-e5da909d
+  source:
+    doc: spans_passthrough_candidates
+    citation: 7-liability-for-lmms/sent_0001
+    span_id: AI in health - WHO_removed/7-liability-for-lmms/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain:
+    - health
+    context: []
+  hazard: harm to individuals from LMM errors or misuse
+  conditions:
+  - harm to individuals from errors or misuse of LMMs
+  exceptions: []
+  requirements:
+  - The org shall use liability rules to compensate individuals for harm caused by
+    errors or misuse of large multi-modal models (LMMs).
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No verifiable artifact or metrics specified to prove existence/use of
+      liability rules or actual compensation events.
+    evidence_signals:
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0001-96d47e7f
+  source:
+    doc: spans_passthrough_candidates
+    citation: 7-liability-for-lmms/sent_0001
+    span_id: AI in health - WHO_removed/7-liability-for-lmms/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain:
+    - health
+    context: []
+  hazard: insufficient redress for harm
+  conditions:
+  - when current approaches are insufficient or out of date
+  exceptions: []
+  requirements:
+  - The org shall establish new forms of redress when current approaches are insufficient
+    or out of date to compensate individuals for harm from LMMs.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Condition ('insufficient or out of date') and 'new forms of redress' are
+      vague; no objective pass/fail predicate provided.
+    evidence_signals:
+    - config_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0004-8de69843
+  source:
+    doc: spans_passthrough_candidates
+    citation: 7-liability-for-lmms/sent_0004
+    span_id: AI in health - WHO_removed/7-liability-for-lmms/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: liability for harm due to non-compliance
+  conditions:
+  - victim demonstrates one or more entities did not comply with an obligation relevant
+    to the harm and a causal link with AI performance is likely
+  - court presumes that non-compliance was the cause of the damage
+  exceptions: []
+  requirements:
+  - org must rebut the court's presumption that non-compliance caused the damage when
+    the victim demonstrates non-compliance and a likely causal link with AI performance.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Courtroom rebuttal is a legal outcome; no allowed artifact (I/O, logs,
+      config, CI, data, repo) provides an objective pass/fail oracle.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0006-9f387234
+  source:
+    doc: spans_passthrough_candidates
+    citation: 7-liability-for-lmms/sent_0006
+    span_id: AI in health - WHO_removed/7-liability-for-lmms/sent_0006
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: failure to compensate harmed patient
+  conditions:
+  - error affects the patient
+  exceptions:
+  - compensation may depend on whether the patient knew that an LMM was used
+  - situations or jurisdictions in which a person is unable to recover damages
+  requirements:
+  - developer shall compensate a patient when an error affects the patient.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No observable artifact specified (payments/logs/records) to verify compensation,
+      so pass/fail cannot be checked objectively.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0006-9a5a0d59
+  source:
+    doc: spans_passthrough_candidates
+    citation: 7-liability-for-lmms/sent_0006
+    span_id: AI in health - WHO_removed/7-liability-for-lmms/sent_0006
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context: []
+  hazard: failure to compensate harmed patient
+  conditions:
+  - error affects the patient
+  exceptions:
+  - compensation may depend on whether the patient knew that an LMM was used
+  - situations or jurisdictions in which a person is unable to recover damages
+  requirements:
+  - deployer shall compensate a patient when an error affects the patient.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective artifact or criteria (payment record, timeframe) specified
+      to verify compensation; cannot be automatically observed.
+    evidence_signals:
+    - log_check

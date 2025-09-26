@@ -1,0 +1,1832 @@
+span_id,text,rule_id,scope.actor,scope.domain,scope.context,hazard,requirement,exceptions,conditions,is_testable,evidence_signals,evidence
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0001,"GV-6.2-003
+Establish incident response plans for third-party GAI technologies: Align incident
+response plans with impacts enumerated in MAP 5.1; Communicate third-party
+GAI incident response plans to all relevant AI Actors; Define ownership of GAI
+incident response functions; Rehearse third-party GAI incident response plans at
+a regular cadence; Improve incident response plans based on retrospective
+learning; Review incident response plans for alignment with relevant breach
+reporting, data protection, data privacy, or other laws. Data Privacy; Human-AI
+Configuration; Information
+Security; Value Chain and
+Component Integration; Harmful
+Bias and Homogenization
+GV-6.2-004
+Establish policies and procedures for continuous monitoring of third-party GAI
+systems in deployment. Value Chain and Component
+Integration
+GV-6.2-005
+Establish policies and procedures that address GAI data redundancy, including
+model weights and other system artifacts. Harmful Bias and Homogenization
+GV-6.2-006
+Establish policies and procedures to test and manage risks related to rollover and
+fallback technologies for GAI systems, acknowledging that rollover and fallback
+may include manual processing.",-,,,,,,,,,,
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",1,org,[],[],service disruption,org shall avoid contract terms that permit arbitrary or capricious termination of critical GAI technologies or vendor services.,[],"critical GAI technologies or vendor services, during contract review",TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",2,org,general,[],unauthorized data collection,"org shall avoid non-standard terms in vendor contracts that contribute to unauthorized data collection by vendors or third parties, including secondary data use.",[],"vendor or third-party contracts, secondary data use, during contract review",TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",3,org,[],[],unassigned liability for harm,org must include clear assignment of liability and responsibility for incidents and account for GAI system changes over time in vendor contracts.,[],"vendor contracts, GAI system changes over time (fine-tuning, drift, decay)",TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",4,org,[],[],lack of transparency for incidents,org must require notification and disclosure by vendors for serious incidents arising from third-party data and systems.,[],"serious incidents arising from third-party data and systems, in vendor relationship",TRUE,"attest_check, config_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",5,org,[],[],service unavailability,"org must include Service Level Agreements in vendor contracts that address incident response, response times, and availability of critical support.",[],"vendor contracts, critical support for GAI technologies",TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",1,org,[],[],service disruption,org shall avoid contract terms that permit arbitrary or capricious termination of critical GAI technologies or vendor services.,[],"critical GAI technologies or vendor services, during contract review",TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",2,org,general,[],unauthorized data collection,"org shall avoid non-standard terms in vendor contracts that contribute to unauthorized data collection by vendors or third parties, including secondary data use.",[],"vendor or third-party contracts, secondary data use, during contract review",TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",3,org,[],[],unassigned liability for harm,org must include clear assignment of liability and responsibility for incidents and account for GAI system changes over time in vendor contracts.,[],"vendor contracts, GAI system changes over time (fine-tuning, drift, decay)",TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",4,org,[],[],lack of transparency for incidents,org must require notification and disclosure by vendors for serious incidents arising from third-party data and systems.,[],"serious incidents arising from third-party data and systems, in vendor relationship",TRUE,"attest_check, config_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0002,"Information Integrity
+GV-6.2-007
+Review vendor contracts and avoid arbitrary or capricious termination of critical
+GAI technologies or vendor services and non-standard terms that may amplify or
+defer liability in unexpected ways and/or contribute to unauthorized data
+collection by vendors or third-parties (e.g., secondary data use). Consider: Clear
+assignment of liability and responsibility for incidents, GAI system changes over
+time (e.g., fine-tuning, drift, decay); Request: Notification and disclosure for
+serious incidents arising from third-party data and systems; Service Level
+Agreements (SLAs) in vendor contracts that address incident response, response
+times, and availability of critical support. Human-AI Configuration;
+Information Security; Value Chain
+and Component Integration
+AI Actor Tasks: AI Deployment, Operation and Monitoring, TEVV, Third-party entities
+MAP 1.1: Intended purposes, potentially beneficial uses, context specific laws, norms and expectations, and prospective settings in
+which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users
+along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations,
+society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or
+product AI lifecycle; and related TEVV and system metrics.",5,org,[],[],service unavailability,"org must include Service Level Agreements in vendor contracts that address incident response, response times, and availability of critical support.",[],"vendor contracts, critical support for GAI technologies",TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/gv-6-2-003/sent_0003,"Action ID
+Suggested Action
+GAI Risks
+MP-1.1-001
+When identifying intended purposes, consider factors such as internal vs.
+external use, narrow vs. broad application scope, fine-tuning, and varieties of
+data sources (e.g., grounding, retrieval-augmented generation). Data Privacy; Intellectual
+Property",-,-,-,-,-,-,-,-,-,-,-
+NIST AI RMF profiles_removed/mp-1-1-002/sent_0001,"MP-1.1-002
+Determine and document the expected and acceptable GAI system context of
+use in collaboration with socio-cultural and other domain experts, by assessing:
+Assumptions and limitations; Direct value to the organization; Intended
+operational environment and observed usage patterns; Potential positive and
+negative impacts to individuals, public safety, groups, communities,
+organizations, democratic institutions, and the physical environment; Social
+norms and expectations. Harmful Bias and Homogenization
+MP-1.1-003
+Document risk measurement plans to address identified risks. Plans may
+include, as applicable: Individual and group cognitive biases (e.g., confirmation
+bias, funding bias, groupthink) for AI Actors involved in the design,
+implementation, and use of GAI systems; Known past GAI system incidents and
+failure modes; In-context use and foreseeable misuse, abuse, and off-label use;
+Over reliance on quantitative metrics and methodologies without sufficient
+awareness of their limitations in the context(s) of use; Standard measurement
+and structured human feedback approaches; Anticipated human-AI
+configurations. Human-AI Configuration; Harmful
+Bias and Homogenization;
+Dangerous, Violent, or Hateful
+Content
+MP-1.1-004
+Identify and document foreseeable illegal uses or applications of the GAI system
+that surpass organizational risk tolerances.",1,org,[],[],biased or homogenized outputs in unsuitable contexts,org must determine and document the expected and acceptable GAI system context of use in collaboration with domain experts.,[],when determining context of use,TRUE,"attest_check, config_check",[]
+NIST AI RMF profiles_removed/mp-1-1-002/sent_0001,"MP-1.1-002
+Determine and document the expected and acceptable GAI system context of
+use in collaboration with socio-cultural and other domain experts, by assessing:
+Assumptions and limitations; Direct value to the organization; Intended
+operational environment and observed usage patterns; Potential positive and
+negative impacts to individuals, public safety, groups, communities,
+organizations, democratic institutions, and the physical environment; Social
+norms and expectations. Harmful Bias and Homogenization
+MP-1.1-003
+Document risk measurement plans to address identified risks. Plans may
+include, as applicable: Individual and group cognitive biases (e.g., confirmation
+bias, funding bias, groupthink) for AI Actors involved in the design,
+implementation, and use of GAI systems; Known past GAI system incidents and
+failure modes; In-context use and foreseeable misuse, abuse, and off-label use;
+Over reliance on quantitative metrics and methodologies without sufficient
+awareness of their limitations in the context(s) of use; Standard measurement
+and structured human feedback approaches; Anticipated human-AI
+configurations. Human-AI Configuration; Harmful
+Bias and Homogenization;
+Dangerous, Violent, or Hateful
+Content
+MP-1.1-004
+Identify and document foreseeable illegal uses or applications of the GAI system
+that surpass organizational risk tolerances.",2,org,[],[],dangerous or hateful outputs,org must document risk measurement plans to address identified risks.,[],identified risks exist,TRUE,"attest_check, config_check",[]
+NIST AI RMF profiles_removed/mp-1-1-002/sent_0001,"MP-1.1-002
+Determine and document the expected and acceptable GAI system context of
+use in collaboration with socio-cultural and other domain experts, by assessing:
+Assumptions and limitations; Direct value to the organization; Intended
+operational environment and observed usage patterns; Potential positive and
+negative impacts to individuals, public safety, groups, communities,
+organizations, democratic institutions, and the physical environment; Social
+norms and expectations. Harmful Bias and Homogenization
+MP-1.1-003
+Document risk measurement plans to address identified risks. Plans may
+include, as applicable: Individual and group cognitive biases (e.g., confirmation
+bias, funding bias, groupthink) for AI Actors involved in the design,
+implementation, and use of GAI systems; Known past GAI system incidents and
+failure modes; In-context use and foreseeable misuse, abuse, and off-label use;
+Over reliance on quantitative metrics and methodologies without sufficient
+awareness of their limitations in the context(s) of use; Standard measurement
+and structured human feedback approaches; Anticipated human-AI
+configurations. Human-AI Configuration; Harmful
+Bias and Homogenization;
+Dangerous, Violent, or Hateful
+Content
+MP-1.1-004
+Identify and document foreseeable illegal uses or applications of the GAI system
+that surpass organizational risk tolerances.",3,org,[],[],organizational legal liability,org must identify and document foreseeable illegal uses or applications of the GAI system.,[],surpasses organizational risk tolerances,TRUE,"attest_check, config_check",[]
+NIST AI RMF profiles_removed/mp-1-1-002/sent_0002,"CBRN Information or Capabilities;
+Dangerous, Violent, or Hateful
+Content; Obscene, Degrading,
+and/or Abusive Content
+AI Actor Tasks: AI Deployment
+MAP 1.2: Interdisciplinary AI Actors, competencies, skills, and capacities for establishing context reflect demographic diversity and
+broad domain and user experience expertise, and their participation is documented. Opportunities for interdisciplinary
+collaboration are prioritized. Action ID
+Suggested Action
+GAI Risks
+MP-1.2-001
+Establish and empower interdisciplinary teams that reflect a wide range of
+capabilities, competencies, demographic groups, domain expertise, educational
+backgrounds, lived experiences, professions, and skills across the enterprise to
+inform and conduct risk measurement and management functions. Human-AI Configuration; Harmful
+Bias and Homogenization
+MP-1.2-002
+Verify that data or benchmarks used in risk measurement, and users,
+participants, or subjects involved in structured GAI public feedback exercises
+are representative of diverse in-context user populations.",1,org,[],[],biased system behavior,org must establish and empower interdisciplinary teams that reflect a wide range of diversity to inform and conduct risk measurement and management functions.,[],establishing risk management functions,TRUE,"attest_check, config_check",[]
+NIST AI RMF profiles_removed/mp-1-1-002/sent_0002,"CBRN Information or Capabilities;
+Dangerous, Violent, or Hateful
+Content; Obscene, Degrading,
+and/or Abusive Content
+AI Actor Tasks: AI Deployment
+MAP 1.2: Interdisciplinary AI Actors, competencies, skills, and capacities for establishing context reflect demographic diversity and
+broad domain and user experience expertise, and their participation is documented. Opportunities for interdisciplinary
+collaboration are prioritized. Action ID
+Suggested Action
+GAI Risks
+MP-1.2-001
+Establish and empower interdisciplinary teams that reflect a wide range of
+capabilities, competencies, demographic groups, domain expertise, educational
+backgrounds, lived experiences, professions, and skills across the enterprise to
+inform and conduct risk measurement and management functions. Human-AI Configuration; Harmful
+Bias and Homogenization
+MP-1.2-002
+Verify that data or benchmarks used in risk measurement, and users,
+participants, or subjects involved in structured GAI public feedback exercises
+are representative of diverse in-context user populations.",2,org,[],[],inaccurate risk measurement,"org must verify that data, benchmarks, and participants in structured GAI public feedback exercises are representative of diverse in-context user populations.",[],"risk measurement data/benchmarks, structured public feedback participants, in-context user populations",TRUE,"data_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-1-1-002/sent_0003,"Human-AI Configuration; Harmful
+Bias and Homogenization
+AI Actor Tasks: AI Deployment",-,-,-,-,-,-,-,-,-,-,-
+NIST AI RMF profiles_removed/map-2-1/sent_0001,"MAP 2.1: The specific tasks and methods used to implement the tasks that the AI system will support are defined (e.g., classifiers,
+generative models, recommenders). Action ID
+Suggested Action
+GAI Risks
+MP-2.1-001
+Establish known assumptions and practices for determining data origin and
+content lineage, for documentation and evaluation purposes. Information Integrity
+MP-2.1-002
+Institute test and evaluation for data and content flows within the GAI system,
+including but not limited to, original data sources, data transformations, and
+decision-making criteria. Intellectual Property; Data Privacy
+AI Actor Tasks: TEVV
+MAP 2.2: Information about the AI system's knowledge limits and how system output may be utilized and overseen by humans is
+documented.",1,org,[],[],undocumented data provenance and content lineage,org must establish and document assumptions and practices to determine data origin and content lineage for documentation and evaluation purposes.,[],for documentation and evaluation purposes,TRUE,"config_check, repo_check, data_check, attest_check",[]
+NIST AI RMF profiles_removed/map-2-1/sent_0001,"MAP 2.1: The specific tasks and methods used to implement the tasks that the AI system will support are defined (e.g., classifiers,
+generative models, recommenders). Action ID
+Suggested Action
+GAI Risks
+MP-2.1-001
+Establish known assumptions and practices for determining data origin and
+content lineage, for documentation and evaluation purposes. Information Integrity
+MP-2.1-002
+Institute test and evaluation for data and content flows within the GAI system,
+including but not limited to, original data sources, data transformations, and
+decision-making criteria. Intellectual Property; Data Privacy
+AI Actor Tasks: TEVV
+MAP 2.2: Information about the AI system's knowledge limits and how system output may be utilized and overseen by humans is
+documented.",2,org,[],[],uncontrolled data and content flows,"org must institute test and evaluation of data and content flows within the GAI system, including original data sources, data transformations, and decision-making criteria.",[],within the GAI system,TRUE,"data_check, log_check, config_check, ci_gate",[]
+NIST AI RMF profiles_removed/map-2-1/sent_0002,"Documentation provides sufficient information to assist relevant AI Actors when making decisions and taking
+subsequent actions. Action ID
+Suggested Action
+GAI Risks
+MP-2.2-001
+Identify and document how the system relies on upstream data sources,
+including for content provenance, and if it serves as an upstream dependency for
+other systems. Information Integrity; Value Chain
+and Component Integration
+MP-2.2-002
+Observe and analyze how the GAI system interacts with external networks, and
+identify any potential for negative externalities, particularly where content
+provenance might be compromised. Information Integrity
+AI Actor Tasks: End Users
+MAP 2.3: Scientific integrity and TEVV considerations are identified and documented, including those related to experimental
+design, data collection and selection (e.g., availability, representativeness, suitability), system trustworthiness, and construct
+validation
+Action ID
+Suggested Action
+GAI Risks
+MP-2.3-001
+Assess the accuracy, quality, reliability, and authenticity of GAI output by
+comparing it to a set of known ground truth data and by using a variety of
+evaluation methods (e.g., human oversight and automated evaluation, proven
+cryptographic techniques, review of content inputs).",1,org,,,unknown upstream dependencies,"org must identify and document how the system relies on upstream data sources, including content provenance, and whether it serves as an upstream dependency for other systems.",,,TRUE,"data_check, repo_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/map-2-1/sent_0002,"Documentation provides sufficient information to assist relevant AI Actors when making decisions and taking
+subsequent actions. Action ID
+Suggested Action
+GAI Risks
+MP-2.2-001
+Identify and document how the system relies on upstream data sources,
+including for content provenance, and if it serves as an upstream dependency for
+other systems. Information Integrity; Value Chain
+and Component Integration
+MP-2.2-002
+Observe and analyze how the GAI system interacts with external networks, and
+identify any potential for negative externalities, particularly where content
+provenance might be compromised. Information Integrity
+AI Actor Tasks: End Users
+MAP 2.3: Scientific integrity and TEVV considerations are identified and documented, including those related to experimental
+design, data collection and selection (e.g., availability, representativeness, suitability), system trustworthiness, and construct
+validation
+Action ID
+Suggested Action
+GAI Risks
+MP-2.3-001
+Assess the accuracy, quality, reliability, and authenticity of GAI output by
+comparing it to a set of known ground truth data and by using a variety of
+evaluation methods (e.g., human oversight and automated evaluation, proven
+cryptographic techniques, review of content inputs).",2,org,,,provenance compromise via external interactions,"org must observe and analyze the GAI system’s interactions with external networks and identify any potential for negative externalities, particularly where content provenance might be compromised.",,external network interactions,TRUE,"log_check, config_check, data_check, io_check",[]
+NIST AI RMF profiles_removed/map-2-1/sent_0002,"Documentation provides sufficient information to assist relevant AI Actors when making decisions and taking
+subsequent actions. Action ID
+Suggested Action
+GAI Risks
+MP-2.2-001
+Identify and document how the system relies on upstream data sources,
+including for content provenance, and if it serves as an upstream dependency for
+other systems. Information Integrity; Value Chain
+and Component Integration
+MP-2.2-002
+Observe and analyze how the GAI system interacts with external networks, and
+identify any potential for negative externalities, particularly where content
+provenance might be compromised. Information Integrity
+AI Actor Tasks: End Users
+MAP 2.3: Scientific integrity and TEVV considerations are identified and documented, including those related to experimental
+design, data collection and selection (e.g., availability, representativeness, suitability), system trustworthiness, and construct
+validation
+Action ID
+Suggested Action
+GAI Risks
+MP-2.3-001
+Assess the accuracy, quality, reliability, and authenticity of GAI output by
+comparing it to a set of known ground truth data and by using a variety of
+evaluation methods (e.g., human oversight and automated evaluation, proven
+cryptographic techniques, review of content inputs).",3,evaluator,,,inaccurate or inauthentic output,"evaluator must assess the accuracy, quality, reliability, and authenticity of GAI output by comparing it to known ground truth and using a variety of evaluation methods.",,comparison against known ground truth,TRUE,"io_check, data_check, log_check, config_check, ci_gate",[]
+NIST AI RMF profiles_removed/map-2-1/sent_0003,Information Integrity,-,-,-,-,-,-,-,-,-,-,[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0001,"MP-2.3-002 Review and document accuracy, representativeness, relevance, suitability of data
+used at different stages of AI life cycle. Harmful Bias and Homogenization;
+Intellectual Property
+MP-2.3-003
+Deploy and document fact-checking techniques to verify the accuracy and
+veracity of information generated by GAI systems, especially when the
+information comes from multiple (or unknown) sources. Information Integrity
+MP-2.3-004 Develop and implement testing techniques to identify GAI produced content (e.g.,
+synthetic media) that might be indistinguishable from human-generated content. Information Integrity
+MP-2.3-005 Implement plans for GAI systems to undergo regular adversarial testing to identify
+vulnerabilities and potential manipulation or misuse.",1,org,,,harmful bias from low-quality data,"org must review the accuracy, representativeness, relevance, and suitability of data used at different stages of the AI lifecycle.",,at different stages of the AI lifecycle,TRUE,"data_check, repo_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0001,"MP-2.3-002 Review and document accuracy, representativeness, relevance, suitability of data
+used at different stages of AI life cycle. Harmful Bias and Homogenization;
+Intellectual Property
+MP-2.3-003
+Deploy and document fact-checking techniques to verify the accuracy and
+veracity of information generated by GAI systems, especially when the
+information comes from multiple (or unknown) sources. Information Integrity
+MP-2.3-004 Develop and implement testing techniques to identify GAI produced content (e.g.,
+synthetic media) that might be indistinguishable from human-generated content. Information Integrity
+MP-2.3-005 Implement plans for GAI systems to undergo regular adversarial testing to identify
+vulnerabilities and potential manipulation or misuse.",2,org,,,harmful bias from low-quality data,"org must document the accuracy, representativeness, relevance, and suitability of data used at different stages of the AI lifecycle.",,at different stages of the AI lifecycle,TRUE,"data_check, repo_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0001,"MP-2.3-002 Review and document accuracy, representativeness, relevance, suitability of data
+used at different stages of AI life cycle. Harmful Bias and Homogenization;
+Intellectual Property
+MP-2.3-003
+Deploy and document fact-checking techniques to verify the accuracy and
+veracity of information generated by GAI systems, especially when the
+information comes from multiple (or unknown) sources. Information Integrity
+MP-2.3-004 Develop and implement testing techniques to identify GAI produced content (e.g.,
+synthetic media) that might be indistinguishable from human-generated content. Information Integrity
+MP-2.3-005 Implement plans for GAI systems to undergo regular adversarial testing to identify
+vulnerabilities and potential manipulation or misuse.",3,org,,,misinformation in GAI outputs,org must deploy fact-checking techniques to verify the accuracy and veracity of information generated by GAI systems.,,"outputs come from multiple sources, outputs come from unknown sources",TRUE,"io_check, log_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0001,"MP-2.3-002 Review and document accuracy, representativeness, relevance, suitability of data
+used at different stages of AI life cycle. Harmful Bias and Homogenization;
+Intellectual Property
+MP-2.3-003
+Deploy and document fact-checking techniques to verify the accuracy and
+veracity of information generated by GAI systems, especially when the
+information comes from multiple (or unknown) sources. Information Integrity
+MP-2.3-004 Develop and implement testing techniques to identify GAI produced content (e.g.,
+synthetic media) that might be indistinguishable from human-generated content. Information Integrity
+MP-2.3-005 Implement plans for GAI systems to undergo regular adversarial testing to identify
+vulnerabilities and potential manipulation or misuse.",4,org,,,misinformation in GAI outputs,org must document the fact-checking techniques used to verify the accuracy and veracity of information generated by GAI systems.,,"outputs come from multiple sources, outputs come from unknown sources",TRUE,"repo_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0001,"MP-2.3-002 Review and document accuracy, representativeness, relevance, suitability of data
+used at different stages of AI life cycle. Harmful Bias and Homogenization;
+Intellectual Property
+MP-2.3-003
+Deploy and document fact-checking techniques to verify the accuracy and
+veracity of information generated by GAI systems, especially when the
+information comes from multiple (or unknown) sources. Information Integrity
+MP-2.3-004 Develop and implement testing techniques to identify GAI produced content (e.g.,
+synthetic media) that might be indistinguishable from human-generated content. Information Integrity
+MP-2.3-005 Implement plans for GAI systems to undergo regular adversarial testing to identify
+vulnerabilities and potential manipulation or misuse.",5,developer,,,undetected synthetic media,developer must develop testing techniques to identify GAI-produced content that may be indistinguishable from human-generated content.,,content may be indistinguishable from human-generated,TRUE,"repo_check, io_check, data_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0001,"MP-2.3-002 Review and document accuracy, representativeness, relevance, suitability of data
+used at different stages of AI life cycle. Harmful Bias and Homogenization;
+Intellectual Property
+MP-2.3-003
+Deploy and document fact-checking techniques to verify the accuracy and
+veracity of information generated by GAI systems, especially when the
+information comes from multiple (or unknown) sources. Information Integrity
+MP-2.3-004 Develop and implement testing techniques to identify GAI produced content (e.g.,
+synthetic media) that might be indistinguishable from human-generated content. Information Integrity
+MP-2.3-005 Implement plans for GAI systems to undergo regular adversarial testing to identify
+vulnerabilities and potential manipulation or misuse.",6,developer,,,undetected synthetic media,developer must implement testing techniques to identify GAI-produced content that may be indistinguishable from human-generated content.,,content may be indistinguishable from human-generated,TRUE,"ci_gate, log_check, config_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0001,"MP-2.3-002 Review and document accuracy, representativeness, relevance, suitability of data
+used at different stages of AI life cycle. Harmful Bias and Homogenization;
+Intellectual Property
+MP-2.3-003
+Deploy and document fact-checking techniques to verify the accuracy and
+veracity of information generated by GAI systems, especially when the
+information comes from multiple (or unknown) sources. Information Integrity
+MP-2.3-004 Develop and implement testing techniques to identify GAI produced content (e.g.,
+synthetic media) that might be indistinguishable from human-generated content. Information Integrity
+MP-2.3-005 Implement plans for GAI systems to undergo regular adversarial testing to identify
+vulnerabilities and potential manipulation or misuse.",7,org,,,adversarial manipulation of the system,org must implement plans for GAI systems to undergo regular adversarial testing to identify vulnerabilities and potential manipulation or misuse.,,on a regular schedule,TRUE,"ci_gate, log_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0002,"Information Security
+AI Actor Tasks: AI Development, Domain Experts, TEVV
+MAP 3.4: Processes for operator and practitioner proficiency with AI system performance and trustworthiness – and relevant
+technical standards and certifications – are defined, assessed, and documented. Action ID
+Suggested Action
+GAI Risks
+MP-3.4-001
+Evaluate whether GAI operators and end-users can accurately understand
+content lineage and origin. Human-AI Configuration;
+Information Integrity
+MP-3.4-002 Adapt existing training programs to include modules on digital content
+transparency. Information Integrity
+MP-3.4-003 Develop certification programs that test proficiency in managing GAI risks and
+interpreting content provenance, relevant to specific industry and context.",1,org,,,misinterpretation of content provenance,org must evaluate whether GAI operators and end-users can accurately understand content lineage and origin.,,,TRUE,"attest_check, repo_check, log_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0002,"Information Security
+AI Actor Tasks: AI Development, Domain Experts, TEVV
+MAP 3.4: Processes for operator and practitioner proficiency with AI system performance and trustworthiness – and relevant
+technical standards and certifications – are defined, assessed, and documented. Action ID
+Suggested Action
+GAI Risks
+MP-3.4-001
+Evaluate whether GAI operators and end-users can accurately understand
+content lineage and origin. Human-AI Configuration;
+Information Integrity
+MP-3.4-002 Adapt existing training programs to include modules on digital content
+transparency. Information Integrity
+MP-3.4-003 Develop certification programs that test proficiency in managing GAI risks and
+interpreting content provenance, relevant to specific industry and context.",2,org,,,insufficient transparency training,org must adapt existing training programs to include modules on digital content transparency.,,,TRUE,"attest_check, repo_check, config_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0002,"Information Security
+AI Actor Tasks: AI Development, Domain Experts, TEVV
+MAP 3.4: Processes for operator and practitioner proficiency with AI system performance and trustworthiness – and relevant
+technical standards and certifications – are defined, assessed, and documented. Action ID
+Suggested Action
+GAI Risks
+MP-3.4-001
+Evaluate whether GAI operators and end-users can accurately understand
+content lineage and origin. Human-AI Configuration;
+Information Integrity
+MP-3.4-002 Adapt existing training programs to include modules on digital content
+transparency. Information Integrity
+MP-3.4-003 Develop certification programs that test proficiency in managing GAI risks and
+interpreting content provenance, relevant to specific industry and context.",3,org,,,unverified proficiency in GAI risk management,org must develop certification programs that test proficiency in managing GAI risks and interpreting content provenance relevant to the specific industry and context.,,industry- and context-specific,TRUE,"attest_check, repo_check, log_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0003,"Information Integrity
+MP-3.4-004 Delineate human proficiency tests from tests of GAI capabilities. Human-AI Configuration
+MP-3.4-005 Implement systems to continually monitor and track the outcomes of human-GAI
+configurations for future refinement and improvements. Human-AI Configuration;
+Information Integrity
+MP-3.4-006
+Involve the end-users, practitioners, and operators in GAI system in prototyping
+and testing activities. Make sure these tests cover various scenarios, such as crisis
+situations or ethically sensitive contexts.",1,org,,,misattribution of human versus system performance,org must delineate human proficiency tests from tests of GAI capabilities.,,,TRUE,"repo_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0003,"Information Integrity
+MP-3.4-004 Delineate human proficiency tests from tests of GAI capabilities. Human-AI Configuration
+MP-3.4-005 Implement systems to continually monitor and track the outcomes of human-GAI
+configurations for future refinement and improvements. Human-AI Configuration;
+Information Integrity
+MP-3.4-006
+Involve the end-users, practitioners, and operators in GAI system in prototyping
+and testing activities. Make sure these tests cover various scenarios, such as crisis
+situations or ethically sensitive contexts.",2,org,,,unmonitored human–GAI configuration outcomes,org must implement systems to continually monitor and track outcomes of human–GAI configurations for future refinement and improvements.,,human–GAI configurations,TRUE,"log_check, config_check, io_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0003,"Information Integrity
+MP-3.4-004 Delineate human proficiency tests from tests of GAI capabilities. Human-AI Configuration
+MP-3.4-005 Implement systems to continually monitor and track the outcomes of human-GAI
+configurations for future refinement and improvements. Human-AI Configuration;
+Information Integrity
+MP-3.4-006
+Involve the end-users, practitioners, and operators in GAI system in prototyping
+and testing activities. Make sure these tests cover various scenarios, such as crisis
+situations or ethically sensitive contexts.",3,org,,,insufficient stakeholder involvement in testing,"org must involve end-users, practitioners, and operators in prototyping and testing activities.",,"prototyping, testing",TRUE,"attest_check, repo_check, log_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0003,"Information Integrity
+MP-3.4-004 Delineate human proficiency tests from tests of GAI capabilities. Human-AI Configuration
+MP-3.4-005 Implement systems to continually monitor and track the outcomes of human-GAI
+configurations for future refinement and improvements. Human-AI Configuration;
+Information Integrity
+MP-3.4-006
+Involve the end-users, practitioners, and operators in GAI system in prototyping
+and testing activities. Make sure these tests cover various scenarios, such as crisis
+situations or ethically sensitive contexts.",4,org,,,inadequate scenario coverage in testing,org must ensure tests cover varied scenarios including crisis situations and ethically sensitive contexts.,,"crisis scenarios, ethically sensitive contexts",TRUE,"repo_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-2-3-002/sent_0004,"Human-AI Configuration;
+Information Integrity; Harmful Bias
+and Homogenization; Dangerous,
+Violent, or Hateful Content
+AI Actor Tasks: AI Design, AI Development, Domain Experts, End-Users, Human Factors, Operation and Monitoring",-,,,,,,,,,,
+NIST AI RMF profiles_removed/map-4-1/sent_0001,"MAP 4.1: Approaches for mapping AI technology and legal risks of its components – including the use of third-party data or
+software – are in place, followed, and documented, as are risks of infringement of a third-party's intellectual property or other
+rights. Action ID
+Suggested Action
+GAI Risks
+MP-4.1-001 Conduct periodic monitoring of AI-generated content for privacy risks; address any
+possible instances of PII or sensitive data exposure. Data Privacy
+MP-4.1-002 Implement processes for responding to potential intellectual property infringement
+claims or other rights. Intellectual Property
+MP-4.1-003
+Connect new GAI policies, procedures, and processes to existing model, data,
+software development, and IT governance and to legal, compliance, and risk
+management activities.",1,org,PII,[],unauthorized PII exposure,org must conduct periodic monitoring of AI-generated content and remediate detected PII or sensitive-data exposure.,[],AI-generated content,TRUE,"io_check, data_check, log_check",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0001,"MAP 4.1: Approaches for mapping AI technology and legal risks of its components – including the use of third-party data or
+software – are in place, followed, and documented, as are risks of infringement of a third-party's intellectual property or other
+rights. Action ID
+Suggested Action
+GAI Risks
+MP-4.1-001 Conduct periodic monitoring of AI-generated content for privacy risks; address any
+possible instances of PII or sensitive data exposure. Data Privacy
+MP-4.1-002 Implement processes for responding to potential intellectual property infringement
+claims or other rights. Intellectual Property
+MP-4.1-003
+Connect new GAI policies, procedures, and processes to existing model, data,
+software development, and IT governance and to legal, compliance, and risk
+management activities.",2,org,[],[],intellectual property infringement,org must maintain a process for responding to potential intellectual-property or other rights claims.,[],IP infringement claim or other rights claim received,TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0001,"MAP 4.1: Approaches for mapping AI technology and legal risks of its components – including the use of third-party data or
+software – are in place, followed, and documented, as are risks of infringement of a third-party's intellectual property or other
+rights. Action ID
+Suggested Action
+GAI Risks
+MP-4.1-001 Conduct periodic monitoring of AI-generated content for privacy risks; address any
+possible instances of PII or sensitive data exposure. Data Privacy
+MP-4.1-002 Implement processes for responding to potential intellectual property infringement
+claims or other rights. Intellectual Property
+MP-4.1-003
+Connect new GAI policies, procedures, and processes to existing model, data,
+software development, and IT governance and to legal, compliance, and risk
+management activities.",3,org,[],[],non-compliance due to unintegrated governance,"org must connect new GAI policies and procedures to existing model, data, software-development, IT governance, legal, compliance, and risk-management activities.",[],new GAI policies or procedures,TRUE,"config_check, attest_check, ci_gate",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0002,"Information Security; Data Privacy
+MP-4.1-004 Document training data curation policies, to the extent possible and according to
+applicable laws and policies. Intellectual Property; Data Privacy;
+Obscene, Degrading, and/or
+Abusive Content
+MP-4.1-005
+Establish policies for collection, retention, and minimum quality of data, in
+consideration of the following risks: Disclosure of inappropriate CBRN information;
+Use of Illegal or dangerous content; Offensive cyber capabilities; Training data
+imbalances that could give rise to harmful biases; Leak of personally identifiable
+information, including facial likenesses of individuals. CBRN Information or Capabilities;
+Intellectual Property; Information
+Security; Harmful Bias and
+Homogenization; Dangerous,
+Violent, or Hateful Content; Data
+Privacy
+MP-4.1-006 Implement policies and practices defining how third-party intellectual property and
+training data will be used, stored, and protected. Intellectual Property; Value Chain
+and Component Integration
+MP-4.1-007 Re-evaluate models that were fine-tuned or enhanced on top of third-party
+models.",1,org,[],[],non-compliance with data policies,org must document training data curation policies to the extent possible and according to applicable laws and policies.,[],training data curation,TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0002,"Information Security; Data Privacy
+MP-4.1-004 Document training data curation policies, to the extent possible and according to
+applicable laws and policies. Intellectual Property; Data Privacy;
+Obscene, Degrading, and/or
+Abusive Content
+MP-4.1-005
+Establish policies for collection, retention, and minimum quality of data, in
+consideration of the following risks: Disclosure of inappropriate CBRN information;
+Use of Illegal or dangerous content; Offensive cyber capabilities; Training data
+imbalances that could give rise to harmful biases; Leak of personally identifiable
+information, including facial likenesses of individuals. CBRN Information or Capabilities;
+Intellectual Property; Information
+Security; Harmful Bias and
+Homogenization; Dangerous,
+Violent, or Hateful Content; Data
+Privacy
+MP-4.1-006 Implement policies and practices defining how third-party intellectual property and
+training data will be used, stored, and protected. Intellectual Property; Value Chain
+and Component Integration
+MP-4.1-007 Re-evaluate models that were fine-tuned or enhanced on top of third-party
+models.",2,org,[],[],training data imbalance causing harmful bias,"org must establish policies for data collection, retention, and minimum quality that consider training data imbalances that could give rise to harmful biases.",[],data collection policies are established,TRUE,"config_check, data_check, attest_check",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0002,"Information Security; Data Privacy
+MP-4.1-004 Document training data curation policies, to the extent possible and according to
+applicable laws and policies. Intellectual Property; Data Privacy;
+Obscene, Degrading, and/or
+Abusive Content
+MP-4.1-005
+Establish policies for collection, retention, and minimum quality of data, in
+consideration of the following risks: Disclosure of inappropriate CBRN information;
+Use of Illegal or dangerous content; Offensive cyber capabilities; Training data
+imbalances that could give rise to harmful biases; Leak of personally identifiable
+information, including facial likenesses of individuals. CBRN Information or Capabilities;
+Intellectual Property; Information
+Security; Harmful Bias and
+Homogenization; Dangerous,
+Violent, or Hateful Content; Data
+Privacy
+MP-4.1-006 Implement policies and practices defining how third-party intellectual property and
+training data will be used, stored, and protected. Intellectual Property; Value Chain
+and Component Integration
+MP-4.1-007 Re-evaluate models that were fine-tuned or enhanced on top of third-party
+models.",3,org,"PII, biometric",[],unauthorized PII leakage,"org must establish policies for data collection, retention, and minimum quality that consider the risk of personally identifiable information leakage, including facial likenesses of individuals.",[],data collection policies are established,TRUE,"config_check, data_check, attest_check, io_check",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0002,"Information Security; Data Privacy
+MP-4.1-004 Document training data curation policies, to the extent possible and according to
+applicable laws and policies. Intellectual Property; Data Privacy;
+Obscene, Degrading, and/or
+Abusive Content
+MP-4.1-005
+Establish policies for collection, retention, and minimum quality of data, in
+consideration of the following risks: Disclosure of inappropriate CBRN information;
+Use of Illegal or dangerous content; Offensive cyber capabilities; Training data
+imbalances that could give rise to harmful biases; Leak of personally identifiable
+information, including facial likenesses of individuals. CBRN Information or Capabilities;
+Intellectual Property; Information
+Security; Harmful Bias and
+Homogenization; Dangerous,
+Violent, or Hateful Content; Data
+Privacy
+MP-4.1-006 Implement policies and practices defining how third-party intellectual property and
+training data will be used, stored, and protected. Intellectual Property; Value Chain
+and Component Integration
+MP-4.1-007 Re-evaluate models that were fine-tuned or enhanced on top of third-party
+models.",4,org,[],[],use of illegal content,"org must establish policies for data collection, retention, and minimum quality that consider the risk of using illegal or dangerous content.",[],data collection policies are established,TRUE,"config_check, data_check, attest_check",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0002,"Information Security; Data Privacy
+MP-4.1-004 Document training data curation policies, to the extent possible and according to
+applicable laws and policies. Intellectual Property; Data Privacy;
+Obscene, Degrading, and/or
+Abusive Content
+MP-4.1-005
+Establish policies for collection, retention, and minimum quality of data, in
+consideration of the following risks: Disclosure of inappropriate CBRN information;
+Use of Illegal or dangerous content; Offensive cyber capabilities; Training data
+imbalances that could give rise to harmful biases; Leak of personally identifiable
+information, including facial likenesses of individuals. CBRN Information or Capabilities;
+Intellectual Property; Information
+Security; Harmful Bias and
+Homogenization; Dangerous,
+Violent, or Hateful Content; Data
+Privacy
+MP-4.1-006 Implement policies and practices defining how third-party intellectual property and
+training data will be used, stored, and protected. Intellectual Property; Value Chain
+and Component Integration
+MP-4.1-007 Re-evaluate models that were fine-tuned or enhanced on top of third-party
+models.",5,org,[],[],unauthorized use of third-party IP,"org must implement policies and practices defining how third-party intellectual property and training data will be used, stored, and protected.",[],third-party IP or training data used,TRUE,"config_check, attest_check, access_check",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0003,"Value Chain and Component
+Integration
+MP-4.1-008
+Re-evaluate risks when adapting GAI models to new domains. Additionally,
+establish warning systems to determine if a GAI system is being used in a new
+domain where previous assumptions (relating to context of use or mapped risks
+such as security, and safety) may no longer hold. CBRN Information or Capabilities;
+Intellectual Property; Harmful Bias
+and Homogenization; Dangerous,
+Violent, or Hateful Content; Data
+Privacy
+MP-4.1-009 Leverage approaches to detect the presence of PII or sensitive data in generated
+output text, image, video, or audio. Data Privacy",1,org,[],[],uncontrolled risk from domain shift,org must re-evaluate risks when adapting GAI models to new domains.,[],new-domain adaptation,TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0003,"Value Chain and Component
+Integration
+MP-4.1-008
+Re-evaluate risks when adapting GAI models to new domains. Additionally,
+establish warning systems to determine if a GAI system is being used in a new
+domain where previous assumptions (relating to context of use or mapped risks
+such as security, and safety) may no longer hold. CBRN Information or Capabilities;
+Intellectual Property; Harmful Bias
+and Homogenization; Dangerous,
+Violent, or Hateful Content; Data
+Privacy
+MP-4.1-009 Leverage approaches to detect the presence of PII or sensitive data in generated
+output text, image, video, or audio. Data Privacy",2,org,[],[],uncontrolled risk from domain shift,org must establish warning systems to detect when a GAI system is used in a new domain where prior assumptions may no longer hold.,[],use in new domain,TRUE,"config_check, log_check",[]
+NIST AI RMF profiles_removed/map-4-1/sent_0003,"Value Chain and Component
+Integration
+MP-4.1-008
+Re-evaluate risks when adapting GAI models to new domains. Additionally,
+establish warning systems to determine if a GAI system is being used in a new
+domain where previous assumptions (relating to context of use or mapped risks
+such as security, and safety) may no longer hold. CBRN Information or Capabilities;
+Intellectual Property; Harmful Bias
+and Homogenization; Dangerous,
+Violent, or Hateful Content; Data
+Privacy
+MP-4.1-009 Leverage approaches to detect the presence of PII or sensitive data in generated
+output text, image, video, or audio. Data Privacy",3,org,PII,[],unauthorized PII leakage,org must implement approaches to detect the presence of PII or sensitive data in generated outputs.,[],generated outputs (text/image/video/audio),TRUE,"io_check, data_check, config_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0001,"MP-4.1-010
+Conduct appropriate diligence on training data use to assess intellectual property,
+and privacy, risks, including to examine whether use of proprietary or sensitive
+training data is consistent with applicable laws. Intellectual Property; Data Privacy
+AI Actor Tasks: Governance and Oversight, Operation and Monitoring, Procurement, Third-party entities
+MAP 5.1: Likelihood and magnitude of each identified impact (both potentially beneficial and harmful) based on expected use, past
+uses of AI systems in similar contexts, public incident reports, feedback from those external to the team that developed or deployed
+the AI system, or other data are identified and documented. Action ID
+Suggested Action
+GAI Risks
+MP-5.1-001 Apply TEVV practices for content provenance (e.g., probing a system's synthetic
+data generation capabilities for potential misuse or vulnerabilities. Information Integrity; Information
+Security
+MP-5.1-002
+Identify potential content provenance harms of GAI, such as misinformation or
+disinformation, deepfakes, including NCII, or tampered content.",1,org,[],training,intellectual property infringement,org must conduct diligence on training data use to assess intellectual-property risks and confirm consistency with applicable laws.,[],proprietary training data used,TRUE,"data_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0001,"MP-4.1-010
+Conduct appropriate diligence on training data use to assess intellectual property,
+and privacy, risks, including to examine whether use of proprietary or sensitive
+training data is consistent with applicable laws. Intellectual Property; Data Privacy
+AI Actor Tasks: Governance and Oversight, Operation and Monitoring, Procurement, Third-party entities
+MAP 5.1: Likelihood and magnitude of each identified impact (both potentially beneficial and harmful) based on expected use, past
+uses of AI systems in similar contexts, public incident reports, feedback from those external to the team that developed or deployed
+the AI system, or other data are identified and documented. Action ID
+Suggested Action
+GAI Risks
+MP-5.1-001 Apply TEVV practices for content provenance (e.g., probing a system's synthetic
+data generation capabilities for potential misuse or vulnerabilities. Information Integrity; Information
+Security
+MP-5.1-002
+Identify potential content provenance harms of GAI, such as misinformation or
+disinformation, deepfakes, including NCII, or tampered content.",2,org,"PII, PHI",training,unauthorized sensitive data disclosure,org must conduct diligence on training data use to assess privacy risks and confirm consistency with applicable laws.,[],sensitive training data used,TRUE,"data_check, config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0001,"MP-4.1-010
+Conduct appropriate diligence on training data use to assess intellectual property,
+and privacy, risks, including to examine whether use of proprietary or sensitive
+training data is consistent with applicable laws. Intellectual Property; Data Privacy
+AI Actor Tasks: Governance and Oversight, Operation and Monitoring, Procurement, Third-party entities
+MAP 5.1: Likelihood and magnitude of each identified impact (both potentially beneficial and harmful) based on expected use, past
+uses of AI systems in similar contexts, public incident reports, feedback from those external to the team that developed or deployed
+the AI system, or other data are identified and documented. Action ID
+Suggested Action
+GAI Risks
+MP-5.1-001 Apply TEVV practices for content provenance (e.g., probing a system's synthetic
+data generation capabilities for potential misuse or vulnerabilities. Information Integrity; Information
+Security
+MP-5.1-002
+Identify potential content provenance harms of GAI, such as misinformation or
+disinformation, deepfakes, including NCII, or tampered content.",3,org,[],[],tampered content due to weak provenance,"org must apply TEVV practices for content provenance, including probing the system’s synthetic-generation capabilities for potential misuse or vulnerabilities.",[],content provenance TEVV,TRUE,"io_check, log_check, config_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0001,"MP-4.1-010
+Conduct appropriate diligence on training data use to assess intellectual property,
+and privacy, risks, including to examine whether use of proprietary or sensitive
+training data is consistent with applicable laws. Intellectual Property; Data Privacy
+AI Actor Tasks: Governance and Oversight, Operation and Monitoring, Procurement, Third-party entities
+MAP 5.1: Likelihood and magnitude of each identified impact (both potentially beneficial and harmful) based on expected use, past
+uses of AI systems in similar contexts, public incident reports, feedback from those external to the team that developed or deployed
+the AI system, or other data are identified and documented. Action ID
+Suggested Action
+GAI Risks
+MP-5.1-001 Apply TEVV practices for content provenance (e.g., probing a system's synthetic
+data generation capabilities for potential misuse or vulnerabilities. Information Integrity; Information
+Security
+MP-5.1-002
+Identify potential content provenance harms of GAI, such as misinformation or
+disinformation, deepfakes, including NCII, or tampered content.",4,org,[],[],harm from misinformation/disinformation,"org must identify potential content-provenance harms of GAI, such as misinformation or disinformation, deepfakes including NCII, or tampered content.",[],generated content provenance,TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0002,"Enumerate and
+rank risks based on their likelihood and potential impact, and determine how well
+provenance solutions address specific risks and/or harms. Information Integrity; Dangerous,
+Violent, or Hateful Content;
+Obscene, Degrading, and/or
+Abusive Content
+MP-5.1-003
+Consider disclosing use of GAI to end users in relevant contexts, while considering
+the objective of disclosure, the context of use, the likelihood and magnitude of the
+risk posed, the audience of the disclosure, as well as the frequency of the
+disclosures. Human-AI Configuration
+MP-5.1-004 Prioritize GAI structured public feedback processes based on risk assessment
+estimates. Information Integrity; CBRN
+Information or Capabilities;
+Dangerous, Violent, or Hateful
+Content; Harmful Bias and
+Homogenization
+MP-5.1-005 Conduct adversarial role-playing exercises, GAI red-teaming, or chaos testing to
+identify anomalous or unforeseen failure modes.",1,org,[],[],uncontrolled system risk,org must enumerate and rank risks based on their likelihood and potential impact.,[],risk likelihood and impact,TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0002,"Enumerate and
+rank risks based on their likelihood and potential impact, and determine how well
+provenance solutions address specific risks and/or harms. Information Integrity; Dangerous,
+Violent, or Hateful Content;
+Obscene, Degrading, and/or
+Abusive Content
+MP-5.1-003
+Consider disclosing use of GAI to end users in relevant contexts, while considering
+the objective of disclosure, the context of use, the likelihood and magnitude of the
+risk posed, the audience of the disclosure, as well as the frequency of the
+disclosures. Human-AI Configuration
+MP-5.1-004 Prioritize GAI structured public feedback processes based on risk assessment
+estimates. Information Integrity; CBRN
+Information or Capabilities;
+Dangerous, Violent, or Hateful
+Content; Harmful Bias and
+Homogenization
+MP-5.1-005 Conduct adversarial role-playing exercises, GAI red-teaming, or chaos testing to
+identify anomalous or unforeseen failure modes.",2,org,[],[],uncontrolled system risk,org must determine how well provenance solutions address specific risks and/or harms.,[],provenance solutions,TRUE,"attest_check, config_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0002,"Enumerate and
+rank risks based on their likelihood and potential impact, and determine how well
+provenance solutions address specific risks and/or harms. Information Integrity; Dangerous,
+Violent, or Hateful Content;
+Obscene, Degrading, and/or
+Abusive Content
+MP-5.1-003
+Consider disclosing use of GAI to end users in relevant contexts, while considering
+the objective of disclosure, the context of use, the likelihood and magnitude of the
+risk posed, the audience of the disclosure, as well as the frequency of the
+disclosures. Human-AI Configuration
+MP-5.1-004 Prioritize GAI structured public feedback processes based on risk assessment
+estimates. Information Integrity; CBRN
+Information or Capabilities;
+Dangerous, Violent, or Hateful
+Content; Harmful Bias and
+Homogenization
+MP-5.1-005 Conduct adversarial role-playing exercises, GAI red-teaming, or chaos testing to
+identify anomalous or unforeseen failure modes.",3,org,[],[],lack of transparency to end users,"org must consider disclosing the use of GAI to end users, taking into account the disclosure objective, context of use, risk likelihood and magnitude, audience, and frequency.",[],relevant user contexts,TRUE,"config_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0002,"Enumerate and
+rank risks based on their likelihood and potential impact, and determine how well
+provenance solutions address specific risks and/or harms. Information Integrity; Dangerous,
+Violent, or Hateful Content;
+Obscene, Degrading, and/or
+Abusive Content
+MP-5.1-003
+Consider disclosing use of GAI to end users in relevant contexts, while considering
+the objective of disclosure, the context of use, the likelihood and magnitude of the
+risk posed, the audience of the disclosure, as well as the frequency of the
+disclosures. Human-AI Configuration
+MP-5.1-004 Prioritize GAI structured public feedback processes based on risk assessment
+estimates. Information Integrity; CBRN
+Information or Capabilities;
+Dangerous, Violent, or Hateful
+Content; Harmful Bias and
+Homogenization
+MP-5.1-005 Conduct adversarial role-playing exercises, GAI red-teaming, or chaos testing to
+identify anomalous or unforeseen failure modes.",4,org,[],[],delayed detection of high-risk harms due to insufficient feedback,org must prioritize structured public feedback processes for GAI based on risk assessment estimates.,[],risk assessment estimates,TRUE,"config_check, attest_check, log_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0002,"Enumerate and
+rank risks based on their likelihood and potential impact, and determine how well
+provenance solutions address specific risks and/or harms. Information Integrity; Dangerous,
+Violent, or Hateful Content;
+Obscene, Degrading, and/or
+Abusive Content
+MP-5.1-003
+Consider disclosing use of GAI to end users in relevant contexts, while considering
+the objective of disclosure, the context of use, the likelihood and magnitude of the
+risk posed, the audience of the disclosure, as well as the frequency of the
+disclosures. Human-AI Configuration
+MP-5.1-004 Prioritize GAI structured public feedback processes based on risk assessment
+estimates. Information Integrity; CBRN
+Information or Capabilities;
+Dangerous, Violent, or Hateful
+Content; Harmful Bias and
+Homogenization
+MP-5.1-005 Conduct adversarial role-playing exercises, GAI red-teaming, or chaos testing to
+identify anomalous or unforeseen failure modes.",5,org,[],[],unforeseen system failure,"org must conduct adversarial role-playing, GAI red-teaming, or chaos testing to identify anomalous or unforeseen failure modes.",[],"adversarial role-playing, red-teaming, chaos testing",TRUE,"io_check, log_check, attest_check",[]
+NIST AI RMF profiles_removed/mp-4-1-010/sent_0003,"Information Security
+MP-5.1-006
+Profile threats and negative impacts arising from GAI systems interacting with,
+manipulating, or generating content, and outlining known and potential
+vulnerabilities and the likelihood of their occurrence. Information Security
+AI Actor Tasks: AI Deployment, AI Design, AI Development, AI Impact Assessment, Affected Individuals and Communities, EndUsers, Operation and Monitoring",1,"[""org""]",[],"[""regulated""]",unauthorized data access,org must profile threats and negative impacts arising from GAI systems and outline known and potential vulnerabilities and the likelihood of their occurrence.,[],"[""GAI systems interacting with content"", ""GAI systems manipulating content"", ""GAI systems generating content""]",TRUE,"[""log_check"", ""config_check"", ""repo_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/map-5-2/sent_0001,"MAP 5.2: Practices and personnel for supporting regular engagement with relevant AI Actors and integrating feedback about
+positive, negative, and unanticipated impacts are in place and documented. Action ID
+Suggested Action
+GAI Risks
+MP-5.2-001
+Determine context-based measures to identify if new impacts are present due to
+the GAI system, including regular engagements with downstream AI Actors to
+identify and quantify new contexts of unanticipated impacts of GAI systems. Human-AI Configuration; Value
+Chain and Component Integration
+MP-5.2-002
+Plan regular engagements with AI Actors responsible for inputs to GAI systems,
+including third-party data and algorithms, to review and evaluate unanticipated
+impacts. Human-AI Configuration; Value
+Chain and Component Integration
+AI Actor Tasks: AI Deployment, AI Design, AI Impact Assessment, Affected Individuals and Communities, Domain Experts, EndUsers, Human Factors, Operation and Monitoring
+MEASURE 1.1: Approaches and metrics for measurement of AI risks enumerated during the MAP function are selected for
+implementation starting with the most significant AI risks.",1,"[""org""]",[],"[""regulated""]",unanticipated impact harm,org must determine context-based measures to identify if new impacts are present due to the GAI system and quantify new contexts of unanticipated impacts.,[],"[""GAI system in operation"", ""downstream AI Actors present""]",TRUE,"[""config_check"", ""attest_check"", ""log_check""]",[]
+NIST AI RMF profiles_removed/map-5-2/sent_0001,"MAP 5.2: Practices and personnel for supporting regular engagement with relevant AI Actors and integrating feedback about
+positive, negative, and unanticipated impacts are in place and documented. Action ID
+Suggested Action
+GAI Risks
+MP-5.2-001
+Determine context-based measures to identify if new impacts are present due to
+the GAI system, including regular engagements with downstream AI Actors to
+identify and quantify new contexts of unanticipated impacts of GAI systems. Human-AI Configuration; Value
+Chain and Component Integration
+MP-5.2-002
+Plan regular engagements with AI Actors responsible for inputs to GAI systems,
+including third-party data and algorithms, to review and evaluate unanticipated
+impacts. Human-AI Configuration; Value
+Chain and Component Integration
+AI Actor Tasks: AI Deployment, AI Design, AI Impact Assessment, Affected Individuals and Communities, Domain Experts, EndUsers, Human Factors, Operation and Monitoring
+MEASURE 1.1: Approaches and metrics for measurement of AI risks enumerated during the MAP function are selected for
+implementation starting with the most significant AI risks.",2,"[""org""]",[],"[""regulated""]",unanticipated impact harm,org must plan regular engagements with AI Actors responsible for inputs to the GAI system to review and evaluate unanticipated impacts.,[],"[""AI Actors responsible for inputs to GAI systems"", ""third-party data or algorithms used""]",TRUE,"[""attest_check"", ""log_check"", ""config_check""]",[]
+NIST AI RMF profiles_removed/map-5-2/sent_0002,"The risks or trustworthiness characteristics that will not – or cannot – be
+measured are properly documented. Action ID
+Suggested Action
+GAI Risks
+MS-1.1-001 Employ methods to trace the origin and modifications of digital content. Information Integrity
+MS-1.1-002
+Integrate tools designed to analyze content provenance and detect data
+anomalies, verify the authenticity of digital signatures, and identify patterns
+associated with misinformation or manipulation. Information Integrity
+MS-1.1-003
+Disaggregate evaluation metrics by demographic factors to identify any
+discrepancies in how content provenance mechanisms work across diverse
+populations.",1,"[""developer""]",[],[],misinformation,developer must employ methods to trace the origin and modifications of digital content.,[],"[""GAI processes or produces digital content""]",TRUE,"[""log_check"", ""config_check"", ""repo_check""]",[]
+NIST AI RMF profiles_removed/map-5-2/sent_0002,"The risks or trustworthiness characteristics that will not – or cannot – be
+measured are properly documented. Action ID
+Suggested Action
+GAI Risks
+MS-1.1-001 Employ methods to trace the origin and modifications of digital content. Information Integrity
+MS-1.1-002
+Integrate tools designed to analyze content provenance and detect data
+anomalies, verify the authenticity of digital signatures, and identify patterns
+associated with misinformation or manipulation. Information Integrity
+MS-1.1-003
+Disaggregate evaluation metrics by demographic factors to identify any
+discrepancies in how content provenance mechanisms work across diverse
+populations.",2,"[""developer""]",[],[],information integrity compromise,"developer must integrate tools that analyze content provenance, detect data anomalies, verify digital signatures, and identify patterns of misinformation or manipulation.",[],"[""provenance analysis required"", ""digital signatures present or expected""]",TRUE,"[""repo_check"", ""config_check"", ""log_check"", ""ci_gate""]",[]
+NIST AI RMF profiles_removed/map-5-2/sent_0002,"The risks or trustworthiness characteristics that will not – or cannot – be
+measured are properly documented. Action ID
+Suggested Action
+GAI Risks
+MS-1.1-001 Employ methods to trace the origin and modifications of digital content. Information Integrity
+MS-1.1-002
+Integrate tools designed to analyze content provenance and detect data
+anomalies, verify the authenticity of digital signatures, and identify patterns
+associated with misinformation or manipulation. Information Integrity
+MS-1.1-003
+Disaggregate evaluation metrics by demographic factors to identify any
+discrepancies in how content provenance mechanisms work across diverse
+populations.",3,"[""evaluator""]",[],"[""eval""]",algorithmic bias,evaluator must disaggregate evaluation metrics by demographic factors to identify discrepancies in how content provenance mechanisms work across populations.,[],"[""evaluation of provenance mechanisms""]",TRUE,"[""data_check"", ""log_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/map-5-2/sent_0003,"Information Integrity; Harmful
+Bias and Homogenization
+MS-1.1-004 Develop a suite of metrics to evaluate structured public feedback exercises
+informed by representative AI Actors. Human-AI Configuration; Harmful
+Bias and Homogenization; CBRN
+Information or Capabilities
+MS-1.1-005
+Evaluate novel methods and technologies for the measurement of GAI-related
+risks including in content provenance, offensive cyber, and CBRN, while
+maintaining the models' ability to produce valid, reliable, and factually accurate
+outputs. Information Integrity; CBRN
+Information or Capabilities;
+Obscene, Degrading, and/or
+Abusive Content",1,"[""evaluator""]",[],"[""eval""]",harmful bias in feedback evaluation,evaluator must develop a suite of metrics to evaluate structured public feedback exercises informed by representative AI actors.,[],"[""structured public feedback exercises run"", ""representative AI actors consulted""]",TRUE,"[""repo_check"", ""config_check"", ""data_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/map-5-2/sent_0003,"Information Integrity; Harmful
+Bias and Homogenization
+MS-1.1-004 Develop a suite of metrics to evaluate structured public feedback exercises
+informed by representative AI Actors. Human-AI Configuration; Harmful
+Bias and Homogenization; CBRN
+Information or Capabilities
+MS-1.1-005
+Evaluate novel methods and technologies for the measurement of GAI-related
+risks including in content provenance, offensive cyber, and CBRN, while
+maintaining the models' ability to produce valid, reliable, and factually accurate
+outputs. Information Integrity; CBRN
+Information or Capabilities;
+Obscene, Degrading, and/or
+Abusive Content",2,"[""evaluator""]",[],"[""eval""]",information integrity failure,"evaluator must evaluate novel methods and technologies for measuring GAI-related risks while maintaining the model’s validity, reliability, and factual accuracy.",[],"[""evaluation of methods for measuring GAI-related risks"", ""domains include content provenance, offensive cyber, or CBRN""]",TRUE,"[""data_check"", ""log_check"", ""attest_check"", ""ci_gate""]",[]
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0001,"MS-1.1-006
+Implement continuous monitoring of GAI system impacts to identify whether GAI
+outputs are equitable across various sub-populations. Seek active and direct
+feedback from affected communities via structured feedback mechanisms or redteaming to monitor and improve outputs. Harmful Bias and Homogenization
+MS-1.1-007
+Evaluate the quality and integrity of data used in training and the provenance of
+AI-generated content, for example by employing techniques like chaos
+engineering and seeking stakeholder feedback. Information Integrity
+MS-1.1-008
+Define use cases, contexts of use, capabilities, and negative impacts where
+structured human feedback exercises, e.g., GAI red-teaming, would be most
+beneficial for GAI risk measurement and management based on the context of
+use.",1,"[""deployer""]",[],[],algorithmic bias,deployer must implement continuous monitoring of GAI system impacts to identify whether outputs are equitable across sub-populations and must seek active feedback from affected communities via structured feedback mechanisms or red-teaming.,[],"[""GAI in operation"", ""outputs provided to multiple sub-populations""]",TRUE,"[""log_check"", ""data_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0001,"MS-1.1-006
+Implement continuous monitoring of GAI system impacts to identify whether GAI
+outputs are equitable across various sub-populations. Seek active and direct
+feedback from affected communities via structured feedback mechanisms or redteaming to monitor and improve outputs. Harmful Bias and Homogenization
+MS-1.1-007
+Evaluate the quality and integrity of data used in training and the provenance of
+AI-generated content, for example by employing techniques like chaos
+engineering and seeking stakeholder feedback. Information Integrity
+MS-1.1-008
+Define use cases, contexts of use, capabilities, and negative impacts where
+structured human feedback exercises, e.g., GAI red-teaming, would be most
+beneficial for GAI risk measurement and management based on the context of
+use.",2,"[""evaluator""]",[],"[""eval""]",data integrity failure,"evaluator must evaluate the quality and integrity of data used in training and the provenance of AI-generated content, including by employing techniques like chaos engineering and seeking stakeholder feedback.",[],"[""training data in use"", ""AI-generated content present""]",TRUE,"[""data_check"", ""log_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0001,"MS-1.1-006
+Implement continuous monitoring of GAI system impacts to identify whether GAI
+outputs are equitable across various sub-populations. Seek active and direct
+feedback from affected communities via structured feedback mechanisms or redteaming to monitor and improve outputs. Harmful Bias and Homogenization
+MS-1.1-007
+Evaluate the quality and integrity of data used in training and the provenance of
+AI-generated content, for example by employing techniques like chaos
+engineering and seeking stakeholder feedback. Information Integrity
+MS-1.1-008
+Define use cases, contexts of use, capabilities, and negative impacts where
+structured human feedback exercises, e.g., GAI red-teaming, would be most
+beneficial for GAI risk measurement and management based on the context of
+use.",3,"[""org""]",[],[],ineffective risk management,"org must define use cases, contexts of use, capabilities, and negative impacts where structured human feedback exercises, including GAI red-teaming, are most beneficial for GAI risk measurement and management based on context of use.",[],"[""structured human feedback considered for risk measurement""]",TRUE,"[""attest_check"", ""config_check"", ""repo_check""]",[]
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0002,"Harmful Bias and
+Homogenization; CBRN
+Information or Capabilities
+MS-1.1-009
+Track and document risks or opportunities related to all GAI risks that cannot be
+measured quantitatively, including explanations as to why some risks cannot be
+measured (e.g., due to technological limitations, resource constraints, or
+trustworthy considerations). Include unmeasured risks in marginal risks. Information Integrity
+AI Actor Tasks: AI Development, Domain Experts, TEVV
+MEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are
+involved in regular assessments and updates. Domain experts, users, AI Actors external to the team that developed or deployed the
+AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.",1,"[""admin""]",[],[],harmful bias,admin must implement continuous monitoring of GAI system impacts to identify whether outputs are equitable across sub-populations.,[],"[""across sub-populations""]",TRUE,"[""log_check"", ""io_check""]",[]
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0002,"Harmful Bias and
+Homogenization; CBRN
+Information or Capabilities
+MS-1.1-009
+Track and document risks or opportunities related to all GAI risks that cannot be
+measured quantitatively, including explanations as to why some risks cannot be
+measured (e.g., due to technological limitations, resource constraints, or
+trustworthy considerations). Include unmeasured risks in marginal risks. Information Integrity
+AI Actor Tasks: AI Development, Domain Experts, TEVV
+MEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are
+involved in regular assessments and updates. Domain experts, users, AI Actors external to the team that developed or deployed the
+AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.",2,"[""admin""]",[],[],harmful bias,"admin must seek active, direct feedback from affected communities via structured mechanisms or red-teaming to monitor and improve outputs.",[],"[""structured feedback mechanisms or red-teaming used""]",TRUE,"[""config_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0002,"Harmful Bias and
+Homogenization; CBRN
+Information or Capabilities
+MS-1.1-009
+Track and document risks or opportunities related to all GAI risks that cannot be
+measured quantitatively, including explanations as to why some risks cannot be
+measured (e.g., due to technological limitations, resource constraints, or
+trustworthy considerations). Include unmeasured risks in marginal risks. Information Integrity
+AI Actor Tasks: AI Development, Domain Experts, TEVV
+MEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are
+involved in regular assessments and updates. Domain experts, users, AI Actors external to the team that developed or deployed the
+AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.",3,"[""developer""]","[""general""]","[""training""]",information integrity loss,developer must evaluate the quality and integrity of data used in training.,[],"[""training data used""]",TRUE,"[""data_check"", ""repo_check""]",[]
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0002,"Harmful Bias and
+Homogenization; CBRN
+Information or Capabilities
+MS-1.1-009
+Track and document risks or opportunities related to all GAI risks that cannot be
+measured quantitatively, including explanations as to why some risks cannot be
+measured (e.g., due to technological limitations, resource constraints, or
+trustworthy considerations). Include unmeasured risks in marginal risks. Information Integrity
+AI Actor Tasks: AI Development, Domain Experts, TEVV
+MEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are
+involved in regular assessments and updates. Domain experts, users, AI Actors external to the team that developed or deployed the
+AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.",4,"[""developer""]","[""general""]",[],information integrity loss,developer must evaluate the provenance of AI-generated content.,[],"[""AI-generated content used""]",TRUE,"[""data_check"", ""repo_check""]",[]
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0002,"Harmful Bias and
+Homogenization; CBRN
+Information or Capabilities
+MS-1.1-009
+Track and document risks or opportunities related to all GAI risks that cannot be
+measured quantitatively, including explanations as to why some risks cannot be
+measured (e.g., due to technological limitations, resource constraints, or
+trustworthy considerations). Include unmeasured risks in marginal risks. Information Integrity
+AI Actor Tasks: AI Development, Domain Experts, TEVV
+MEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are
+involved in regular assessments and updates. Domain experts, users, AI Actors external to the team that developed or deployed the
+AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.",5,"[""org""]",[],[],unmanaged AI risk,"org must define use cases, contexts of use, capabilities, and negative impacts where structured human feedback (e.g., GAI red-teaming) is most beneficial for risk measurement and management.",[],"[""based on context of use""]",TRUE,"[""config_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0003,"Action ID
+Suggested Action
+GAI Risks
+MS-1.3-001
+Define relevant groups of interest (e.g., demographic groups, subject matter
+experts, experience with GAI technology) within the context of use as part of
+plans for gathering structured public feedback. Human-AI Configuration; Harmful
+Bias and Homogenization; CBRN
+Information or Capabilities
+MS-1.3-002
+Engage in internal and external evaluations, GAI red-teaming, impact
+assessments, or other structured human feedback exercises in consultation
+with representative AI Actors with expertise and familiarity in the context of
+use, and/or who are representative of the populations associated with the
+context of use. Human-AI Configuration; Harmful
+Bias and Homogenization; CBRN
+Information or Capabilities
+MS-1.3-003
+Verify those conducting structured human feedback exercises are not directly
+involved in system development tasks for the same GAI model. Human-AI Configuration; Data
+Privacy
+AI Actor Tasks: AI Deployment, AI Development, AI Impact Assessment, Affected Individuals and Communities, Domain Experts,
+End-Users, Operation and Monitoring, TEVV",1,"[""org""]",[],[],harmful bias,org must define relevant groups of interest within the context of use as part of plans for gathering structured public feedback.,[],"[""based on context of use"", ""as part of structured public feedback planning""]",TRUE,"[""config_check"", ""attest_check""]","[""public feedback plan""]"
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0003,"Action ID
+Suggested Action
+GAI Risks
+MS-1.3-001
+Define relevant groups of interest (e.g., demographic groups, subject matter
+experts, experience with GAI technology) within the context of use as part of
+plans for gathering structured public feedback. Human-AI Configuration; Harmful
+Bias and Homogenization; CBRN
+Information or Capabilities
+MS-1.3-002
+Engage in internal and external evaluations, GAI red-teaming, impact
+assessments, or other structured human feedback exercises in consultation
+with representative AI Actors with expertise and familiarity in the context of
+use, and/or who are representative of the populations associated with the
+context of use. Human-AI Configuration; Harmful
+Bias and Homogenization; CBRN
+Information or Capabilities
+MS-1.3-003
+Verify those conducting structured human feedback exercises are not directly
+involved in system development tasks for the same GAI model. Human-AI Configuration; Data
+Privacy
+AI Actor Tasks: AI Deployment, AI Development, AI Impact Assessment, Affected Individuals and Communities, Domain Experts,
+End-Users, Operation and Monitoring, TEVV",1,"[""org""]",[],[],harmful bias,"org must engage in internal and external evaluations, GAI red-teaming, impact assessments, or other structured human feedback exercises in consultation with representative actors and populations familiar with the context of use.",[],"[""in consultation with representative actors or populations"", ""familiar with the context of use""]",TRUE,"[""attest_check"", ""log_check""]","[""impact assessment""]"
+NIST AI RMF profiles_removed/ms-1-1-006/sent_0003,"Action ID
+Suggested Action
+GAI Risks
+MS-1.3-001
+Define relevant groups of interest (e.g., demographic groups, subject matter
+experts, experience with GAI technology) within the context of use as part of
+plans for gathering structured public feedback. Human-AI Configuration; Harmful
+Bias and Homogenization; CBRN
+Information or Capabilities
+MS-1.3-002
+Engage in internal and external evaluations, GAI red-teaming, impact
+assessments, or other structured human feedback exercises in consultation
+with representative AI Actors with expertise and familiarity in the context of
+use, and/or who are representative of the populations associated with the
+context of use. Human-AI Configuration; Harmful
+Bias and Homogenization; CBRN
+Information or Capabilities
+MS-1.3-003
+Verify those conducting structured human feedback exercises are not directly
+involved in system development tasks for the same GAI model. Human-AI Configuration; Data
+Privacy
+AI Actor Tasks: AI Deployment, AI Development, AI Impact Assessment, Affected Individuals and Communities, Domain Experts,
+End-Users, Operation and Monitoring, TEVV",1,"[""org""]",[],[],biased evaluation,org must verify that personnel conducting structured human feedback exercises are not directly involved in system development tasks for the same GAI model.,[],"[""same GAI model""]",TRUE,"[""access_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/measure-2-2/sent_0001,"MEASURE 2.2: Evaluations involving human subjects meet applicable requirements (including human subject protection) and are
+representative of the relevant population. Action ID
+Suggested Action
+GAI Risks
+MS-2.2-001 Assess and manage statistical biases related to GAI content provenance through
+techniques such as re-sampling, re-weighting, or adversarial training. Information Integrity; Information
+Security; Harmful Bias and
+Homogenization
+MS-2.2-002
+Document how content provenance data is tracked and how that data interacts
+with privacy and security. Consider: Anonymizing data to protect the privacy of
+human subjects; Leveraging privacy output filters; Removing any personally
+identifiable information (PII) to prevent potential harm or misuse.",1,"[""developer""]",[],[],harmful bias,developer must assess and manage statistical biases related to GAI content provenance.,[],"[""content provenance-related bias""]",TRUE,"[""data_check"", ""repo_check""]",[]
+NIST AI RMF profiles_removed/measure-2-2/sent_0001,"MEASURE 2.2: Evaluations involving human subjects meet applicable requirements (including human subject protection) and are
+representative of the relevant population. Action ID
+Suggested Action
+GAI Risks
+MS-2.2-001 Assess and manage statistical biases related to GAI content provenance through
+techniques such as re-sampling, re-weighting, or adversarial training. Information Integrity; Information
+Security; Harmful Bias and
+Homogenization
+MS-2.2-002
+Document how content provenance data is tracked and how that data interacts
+with privacy and security. Consider: Anonymizing data to protect the privacy of
+human subjects; Leveraging privacy output filters; Removing any personally
+identifiable information (PII) to prevent potential harm or misuse.",1,"[""org""]","[""PII""]",[],unauthorized PII disclosure,org must document how content provenance data is tracked and how that data interacts with privacy and security.,[],"[""content provenance data tracked"", ""privacy/security interactions documented""]",TRUE,"[""config_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/measure-2-2/sent_0001,"MEASURE 2.2: Evaluations involving human subjects meet applicable requirements (including human subject protection) and are
+representative of the relevant population. Action ID
+Suggested Action
+GAI Risks
+MS-2.2-001 Assess and manage statistical biases related to GAI content provenance through
+techniques such as re-sampling, re-weighting, or adversarial training. Information Integrity; Information
+Security; Harmful Bias and
+Homogenization
+MS-2.2-002
+Document how content provenance data is tracked and how that data interacts
+with privacy and security. Consider: Anonymizing data to protect the privacy of
+human subjects; Leveraging privacy output filters; Removing any personally
+identifiable information (PII) to prevent potential harm or misuse.",2,"[""org""]","[""PII""]",[],unauthorized PII disclosure,"org must consider anonymizing data, leveraging privacy output filters, or removing PII to protect the privacy of human subjects and prevent potential harm or misuse.",[],"[""processing content provenance data""]",TRUE,"[""data_check"", ""config_check"", ""io_check""]",[]
+NIST AI RMF profiles_removed/measure-2-2/sent_0002,"Data Privacy; Human AI
+Configuration; Information
+Integrity; Information Security;
+Dangerous, Violent, or Hateful
+Content
+MS-2.2-003 Provide human subjects with options to withdraw participation or revoke their
+consent for present or future use of their data in GAI applications. Data Privacy; Human-AI
+Configuration; Information
+Integrity
+MS-2.2-004
+Use techniques such as anonymization, differential privacy or other privacyenhancing technologies to minimize the risks associated with linking AI-generated
+content back to individual human subjects. Data Privacy; Human-AI
+Configuration
+AI Actor Tasks: AI Development, Human Factors, TEVV
+MEASURE 2.3: AI system performance or assurance criteria are measured qualitatively or quantitatively and demonstrated for
+conditions similar to deployment setting(s). Measures are documented.",1,"[""org""]",[],[],unauthorized data use,org must provide human subjects with options to withdraw participation or revoke consent for present or future use of their data in GAI applications.,[],"[""GAI applications"", ""present or future use of data"", ""human subjects""]",TRUE,"[""io_check"", ""config_check"", ""attest_check""]",[]
+NIST AI RMF profiles_removed/measure-2-2/sent_0002,"Data Privacy; Human AI
+Configuration; Information
+Integrity; Information Security;
+Dangerous, Violent, or Hateful
+Content
+MS-2.2-003 Provide human subjects with options to withdraw participation or revoke their
+consent for present or future use of their data in GAI applications. Data Privacy; Human-AI
+Configuration; Information
+Integrity
+MS-2.2-004
+Use techniques such as anonymization, differential privacy or other privacyenhancing technologies to minimize the risks associated with linking AI-generated
+content back to individual human subjects. Data Privacy; Human-AI
+Configuration
+AI Actor Tasks: AI Development, Human Factors, TEVV
+MEASURE 2.3: AI system performance or assurance criteria are measured qualitatively or quantitatively and demonstrated for
+conditions similar to deployment setting(s). Measures are documented.",1,"[""developer""]",[],[],re-identification of human subjects,"developer must use techniques such as anonymization, differential privacy, or other privacy-enhancing technologies to minimize the risk of linking AI-generated content back to individual human subjects.",[],"[""linking AI-generated content to individuals""]",TRUE,"[""data_check"", ""config_check"", ""repo_check""]",[]
+NIST AI RMF profiles_removed/measure-2-2/sent_0003,"Action ID
+Suggested Action
+GAI Risks
+MS-2.3-001 Consider baseline model performance on suites of benchmarks when selecting a
+model for fine tuning or enhancement with retrieval-augmented generation. Information Security;
+Confabulation
+MS-2.3-002 Evaluate claims of model capabilities using empirically validated methods. Confabulation; Information
+Security
+MS-2.3-003 Share results of pre-deployment testing with relevant GAI Actors, such as those
+with system release approval authority. Human-AI Configuration",1,['developer'],[],['finetune'],confabulation,The developer must consider baseline model performance on suites of benchmarks when selecting a model for fine-tuning or enhancement with retrieval-augmented generation.,[],"['model selection for fine-tuning', 'RAG enhancement']",TRUE,"['data_check', 'repo_check']",[]
+NIST AI RMF profiles_removed/measure-2-2/sent_0003,"Action ID
+Suggested Action
+GAI Risks
+MS-2.3-001 Consider baseline model performance on suites of benchmarks when selecting a
+model for fine tuning or enhancement with retrieval-augmented generation. Information Security;
+Confabulation
+MS-2.3-002 Evaluate claims of model capabilities using empirically validated methods. Confabulation; Information
+Security
+MS-2.3-003 Share results of pre-deployment testing with relevant GAI Actors, such as those
+with system release approval authority. Human-AI Configuration",1,['evaluator'],[],['eval'],confabulation,The evaluator must evaluate claims of model capabilities using empirically validated methods.,[],[],TRUE,"['attest_check', 'log_check']",[]
+NIST AI RMF profiles_removed/ms-2-3-004/sent_0001,"MS-2.3-004
+Utilize a purpose-built testing environment such as NIST Dioptra to empirically
+evaluate GAI trustworthy characteristics. CBRN Information or Capabilities;
+Data Privacy; Confabulation;
+Information Integrity; Information
+Security; Dangerous, Violent, or
+Hateful Content; Harmful Bias and
+Homogenization
+AI Actor Tasks: AI Deployment, TEVV
+MEASURE 2.5: The AI system to be deployed is demonstrated to be valid and reliable. Limitations of the generalizability beyond the
+conditions under which the technology was developed are documented. Action ID
+Suggested Action
+Risks
+MS-2.5-001 Avoid extrapolating GAI system performance or capabilities from narrow, nonsystematic, and anecdotal assessments.",1,['evaluator'],[],['eval'],information integrity loss,The evaluator must utilize a purpose-built testing environment to empirically evaluate GAI trustworthy characteristics.,[],['empirical evaluation of trustworthy characteristics'],TRUE,"['log_check', 'attest_check']",[]
+NIST AI RMF profiles_removed/ms-2-3-004/sent_0001,"MS-2.3-004
+Utilize a purpose-built testing environment such as NIST Dioptra to empirically
+evaluate GAI trustworthy characteristics. CBRN Information or Capabilities;
+Data Privacy; Confabulation;
+Information Integrity; Information
+Security; Dangerous, Violent, or
+Hateful Content; Harmful Bias and
+Homogenization
+AI Actor Tasks: AI Deployment, TEVV
+MEASURE 2.5: The AI system to be deployed is demonstrated to be valid and reliable. Limitations of the generalizability beyond the
+conditions under which the technology was developed are documented. Action ID
+Suggested Action
+Risks
+MS-2.5-001 Avoid extrapolating GAI system performance or capabilities from narrow, nonsystematic, and anecdotal assessments.",1,['evaluator'],[],['eval'],inaccurate capability claims,"The evaluator must not extrapolate GAI system performance or capabilities from narrow, non-systematic, or anecdotal assessments.",[],"['narrow assessments', 'non-systematic assessments', 'anecdotal assessments']",TRUE,"['repo_check', 'data_check']",[]
+NIST AI RMF profiles_removed/ms-2-3-004/sent_0002,"Human-AI Configuration;
+Confabulation
+MS-2.5-002
+Document the extent to which human domain knowledge is employed to
+improve GAI system performance, via, e.g., RLHF, fine-tuning, retrievalaugmented generation, content moderation, business rules. Human-AI Configuration
+MS-2.5-003 Review and verify sources and citations in GAI system outputs during predeployment risk measurement and ongoing monitoring activities. Confabulation
+MS-2.5-004 Track and document instances of anthropomorphization (e.g., human images,
+mentions of human feelings, cyborg imagery or motifs) in GAI system interfaces. Human-AI Configuration
+MS-2.5-005 Verify GAI system training data and TEVV data provenance, and that fine-tuning
+or retrieval-augmented generation data is grounded.",1,['evaluator'],[],"['eval', 'prod']",confabulation,The evaluator must review and verify sources and citations in GAI system outputs.,[],"['pre-deployment risk measurement', 'ongoing monitoring activities']",TRUE,"['io_check', 'log_check', 'attest_check']",['sources/citations']
+NIST AI RMF profiles_removed/ms-2-3-004/sent_0002,"Human-AI Configuration;
+Confabulation
+MS-2.5-002
+Document the extent to which human domain knowledge is employed to
+improve GAI system performance, via, e.g., RLHF, fine-tuning, retrievalaugmented generation, content moderation, business rules. Human-AI Configuration
+MS-2.5-003 Review and verify sources and citations in GAI system outputs during predeployment risk measurement and ongoing monitoring activities. Confabulation
+MS-2.5-004 Track and document instances of anthropomorphization (e.g., human images,
+mentions of human feelings, cyborg imagery or motifs) in GAI system interfaces. Human-AI Configuration
+MS-2.5-005 Verify GAI system training data and TEVV data provenance, and that fine-tuning
+or retrieval-augmented generation data is grounded.",1,['developer'],[],"['training', 'eval', 'finetune']",data integrity loss,"The developer must verify GAI system training data and TEVV data provenance, and that fine-tuning or retrieval-augmented generation data is grounded.",[],[],TRUE,"['data_check', 'attest_check']","['training data (provenance)', 'TEVV data (provenance)']"
+NIST AI RMF profiles_removed/ms-2-3-004/sent_0003,"Information Integrity
+MS-2.5-006
+Regularly review security and safety guardrails, especially if the GAI system is
+being operated in novel circumstances. This includes reviewing reasons why the
+GAI system was initially assessed as being safe to deploy. Information Security; Dangerous,
+Violent, or Hateful Content
+AI Actor Tasks: Domain Experts, TEVV",1,['deployer'],[],['prod'],dangerous content generation,"The deployer must regularly review security and safety guardrails, including the reasons the GAI system was initially assessed as safe to deploy, especially when the system operates in novel circumstances.",[],['novel operating circumstances'],TRUE,"['config_check', 'attest_check', 'log_check']",[]
+NIST AI RMF profiles_removed/measure-2-6/sent_0001,"MEASURE 2.6: The AI system is evaluated regularly for safety risks – as identified in the MAP function. The AI system to be
+deployed is demonstrated to be safe, its residual negative risk does not exceed the risk tolerance, and it can fail safely, particularly if
+made to operate beyond its knowledge limits. Safety metrics reflect system reliability and robustness, real-time monitoring, and
+response times for AI system failures. Action ID
+Suggested Action
+GAI Risks
+MS-2.6-001
+Assess adverse impacts, including health and wellbeing impacts for value chain
+or other AI Actors that are exposed to sexually explicit, offensive, or violent
+information during GAI training and maintenance.",1,['evaluator'],[],['training'],wellbeing harm from exposure to toxic content,"The evaluator must assess adverse impacts, including health and wellbeing impacts, on value-chain or other AI actors who are exposed to sexually explicit, offensive, or violent information during training and maintenance.",[],"['during training', 'during maintenance', 'exposure to sexually explicit content', 'exposure to offensive content', 'exposure to violent content']",TRUE,"['attest_check', 'log_check']",[]
+NIST AI RMF profiles_removed/measure-2-6/sent_0002,"Human-AI Configuration; Obscene,
+Degrading, and/or Abusive
+Content; Value Chain and
+Component Integration;
+Dangerous, Violent, or Hateful
+Content
+MS-2.6-002
+Assess existence or levels of harmful bias, intellectual property infringement,
+data privacy violations, obscenity, extremism, violence, or CBRN information in
+system training data. Data Privacy; Intellectual Property;
+Obscene, Degrading, and/or
+Abusive Content; Harmful Bias and
+Homogenization; Dangerous,
+Violent, or Hateful Content; CBRN
+Information or Capabilities
+MS-2.6-003 Re-evaluate safety features of fine-tuned models when the negative risk exceeds
+organizational risk tolerance. Dangerous, Violent, or Hateful
+Content
+MS-2.6-004 Review GAI system outputs for validity and safety: Review generated code to
+assess risks that may arise from unreliable downstream decision-making. Value Chain and Component
+Integration; Dangerous, Violent, or
+Hateful Content
+MS-2.6-005
+Verify that GAI system architecture can monitor outputs and performance, and
+handle, recover from, and repair errors when security anomalies, threats and
+impacts are detected.",1,['evaluator'],[],['training'],harmful bias in training data,"The evaluator must assess the existence or levels of harmful bias, IP infringement, data privacy violations, obscenity, extremism, violence, or CBRN information in system training data.",[],[],TRUE,"['data_check', 'repo_check', 'attest_check']",['training data']
+NIST AI RMF profiles_removed/measure-2-6/sent_0002,"Human-AI Configuration; Obscene,
+Degrading, and/or Abusive
+Content; Value Chain and
+Component Integration;
+Dangerous, Violent, or Hateful
+Content
+MS-2.6-002
+Assess existence or levels of harmful bias, intellectual property infringement,
+data privacy violations, obscenity, extremism, violence, or CBRN information in
+system training data. Data Privacy; Intellectual Property;
+Obscene, Degrading, and/or
+Abusive Content; Harmful Bias and
+Homogenization; Dangerous,
+Violent, or Hateful Content; CBRN
+Information or Capabilities
+MS-2.6-003 Re-evaluate safety features of fine-tuned models when the negative risk exceeds
+organizational risk tolerance. Dangerous, Violent, or Hateful
+Content
+MS-2.6-004 Review GAI system outputs for validity and safety: Review generated code to
+assess risks that may arise from unreliable downstream decision-making. Value Chain and Component
+Integration; Dangerous, Violent, or
+Hateful Content
+MS-2.6-005
+Verify that GAI system architecture can monitor outputs and performance, and
+handle, recover from, and repair errors when security anomalies, threats and
+impacts are detected.",2,['evaluator'],[],"['finetune', 'prod']",dangerous content generation,The evaluator must re-evaluate safety features of fine-tuned models when the negative risk exceeds organizational risk tolerance.,[],"['negative risk exceeds organizational risk tolerance', 'fine-tuned models']",TRUE,"['config_check', 'attest_check', 'log_check']",[]
+NIST AI RMF profiles_removed/measure-2-6/sent_0002,"Human-AI Configuration; Obscene,
+Degrading, and/or Abusive
+Content; Value Chain and
+Component Integration;
+Dangerous, Violent, or Hateful
+Content
+MS-2.6-002
+Assess existence or levels of harmful bias, intellectual property infringement,
+data privacy violations, obscenity, extremism, violence, or CBRN information in
+system training data. Data Privacy; Intellectual Property;
+Obscene, Degrading, and/or
+Abusive Content; Harmful Bias and
+Homogenization; Dangerous,
+Violent, or Hateful Content; CBRN
+Information or Capabilities
+MS-2.6-003 Re-evaluate safety features of fine-tuned models when the negative risk exceeds
+organizational risk tolerance. Dangerous, Violent, or Hateful
+Content
+MS-2.6-004 Review GAI system outputs for validity and safety: Review generated code to
+assess risks that may arise from unreliable downstream decision-making. Value Chain and Component
+Integration; Dangerous, Violent, or
+Hateful Content
+MS-2.6-005
+Verify that GAI system architecture can monitor outputs and performance, and
+handle, recover from, and repair errors when security anomalies, threats and
+impacts are detected.",3,['evaluator'],['code'],['eval'],unsafe code generation leading to unreliable downstream decisions,"The evaluator must review GAI system outputs for validity and safety, including reviewing generated code to assess risks that may arise from unreliable downstream decision-making.",[],[],TRUE,"['io_check', 'repo_check', 'attest_check']",['generated code']
+NIST AI RMF profiles_removed/measure-2-6/sent_0002,"Human-AI Configuration; Obscene,
+Degrading, and/or Abusive
+Content; Value Chain and
+Component Integration;
+Dangerous, Violent, or Hateful
+Content
+MS-2.6-002
+Assess existence or levels of harmful bias, intellectual property infringement,
+data privacy violations, obscenity, extremism, violence, or CBRN information in
+system training data. Data Privacy; Intellectual Property;
+Obscene, Degrading, and/or
+Abusive Content; Harmful Bias and
+Homogenization; Dangerous,
+Violent, or Hateful Content; CBRN
+Information or Capabilities
+MS-2.6-003 Re-evaluate safety features of fine-tuned models when the negative risk exceeds
+organizational risk tolerance. Dangerous, Violent, or Hateful
+Content
+MS-2.6-004 Review GAI system outputs for validity and safety: Review generated code to
+assess risks that may arise from unreliable downstream decision-making. Value Chain and Component
+Integration; Dangerous, Violent, or
+Hateful Content
+MS-2.6-005
+Verify that GAI system architecture can monitor outputs and performance, and
+handle, recover from, and repair errors when security anomalies, threats and
+impacts are detected.",4,['security'],[],['prod'],information security breach,"The security team must verify that the GAI system architecture can monitor outputs and performance and handle, recover from, and repair errors when security anomalies, threats, and impacts are detected.",[],"['security anomalies detected', 'threats detected', 'impacts detected']",TRUE,"['config_check', 'log_check', 'attest_check']",[]
+NIST AI RMF profiles_removed/measure-2-6/sent_0003,"Confabulation; Information
+Integrity; Information Security
+MS-2.6-006
+Verify that systems properly handle queries that may give rise to inappropriate,
+malicious, or illegal usage, including facilitating manipulation, extortion, targeted
+impersonation, cyber-attacks, and weapons creation. CBRN Information or Capabilities;
+Information Security
+MS-2.6-007 Regularly evaluate GAI system vulnerabilities to possible circumvention of safety
+measures. CBRN Information or Capabilities;
+Information Security
+AI Actor Tasks: AI Deployment, AI Impact Assessment, Domain Experts, Operation and Monitoring, TEVV",1,evaluator,,,manipulation,The evaluator must verify that systems properly handle queries that could facilitate manipulation.,,"handling user queries; queries may give rise to inappropriate, malicious, or illegal usage",TRUE,"io_check, log_check, config_check",
+NIST AI RMF profiles_removed/measure-2-6/sent_0003,"Confabulation; Information
+Integrity; Information Security
+MS-2.6-006
+Verify that systems properly handle queries that may give rise to inappropriate,
+malicious, or illegal usage, including facilitating manipulation, extortion, targeted
+impersonation, cyber-attacks, and weapons creation. CBRN Information or Capabilities;
+Information Security
+MS-2.6-007 Regularly evaluate GAI system vulnerabilities to possible circumvention of safety
+measures. CBRN Information or Capabilities;
+Information Security
+AI Actor Tasks: AI Deployment, AI Impact Assessment, Domain Experts, Operation and Monitoring, TEVV",2,evaluator,,,extortion,The evaluator must verify that systems properly handle queries that could facilitate extortion.,,"handling user queries; queries may give rise to inappropriate, malicious, or illegal usage",TRUE,"io_check, log_check, config_check",
+NIST AI RMF profiles_removed/measure-2-6/sent_0003,"Confabulation; Information
+Integrity; Information Security
+MS-2.6-006
+Verify that systems properly handle queries that may give rise to inappropriate,
+malicious, or illegal usage, including facilitating manipulation, extortion, targeted
+impersonation, cyber-attacks, and weapons creation. CBRN Information or Capabilities;
+Information Security
+MS-2.6-007 Regularly evaluate GAI system vulnerabilities to possible circumvention of safety
+measures. CBRN Information or Capabilities;
+Information Security
+AI Actor Tasks: AI Deployment, AI Impact Assessment, Domain Experts, Operation and Monitoring, TEVV",3,evaluator,,,targeted impersonation,The evaluator must verify that systems properly handle queries that could facilitate targeted impersonation.,,"handling user queries; queries may give rise to inappropriate, malicious, or illegal usage",TRUE,"io_check, log_check, config_check",
+NIST AI RMF profiles_removed/measure-2-6/sent_0003,"Confabulation; Information
+Integrity; Information Security
+MS-2.6-006
+Verify that systems properly handle queries that may give rise to inappropriate,
+malicious, or illegal usage, including facilitating manipulation, extortion, targeted
+impersonation, cyber-attacks, and weapons creation. CBRN Information or Capabilities;
+Information Security
+MS-2.6-007 Regularly evaluate GAI system vulnerabilities to possible circumvention of safety
+measures. CBRN Information or Capabilities;
+Information Security
+AI Actor Tasks: AI Deployment, AI Impact Assessment, Domain Experts, Operation and Monitoring, TEVV",4,evaluator,,,cyber-attacks,The evaluator must verify that systems properly handle queries that could facilitate cyber-attacks.,,"handling user queries; queries may give rise to inappropriate, malicious, or illegal usage",TRUE,"io_check, log_check, config_check",
+NIST AI RMF profiles_removed/measure-2-6/sent_0003,"Confabulation; Information
+Integrity; Information Security
+MS-2.6-006
+Verify that systems properly handle queries that may give rise to inappropriate,
+malicious, or illegal usage, including facilitating manipulation, extortion, targeted
+impersonation, cyber-attacks, and weapons creation. CBRN Information or Capabilities;
+Information Security
+MS-2.6-007 Regularly evaluate GAI system vulnerabilities to possible circumvention of safety
+measures. CBRN Information or Capabilities;
+Information Security
+AI Actor Tasks: AI Deployment, AI Impact Assessment, Domain Experts, Operation and Monitoring, TEVV",5,evaluator,,,weapons creation,The evaluator must verify that systems properly handle queries that could facilitate weapons creation.,,"handling user queries; queries may give rise to inappropriate, malicious, or illegal usage",TRUE,"io_check, log_check, config_check",
+NIST AI RMF profiles_removed/measure-2-6/sent_0003,"Confabulation; Information
+Integrity; Information Security
+MS-2.6-006
+Verify that systems properly handle queries that may give rise to inappropriate,
+malicious, or illegal usage, including facilitating manipulation, extortion, targeted
+impersonation, cyber-attacks, and weapons creation. CBRN Information or Capabilities;
+Information Security
+MS-2.6-007 Regularly evaluate GAI system vulnerabilities to possible circumvention of safety
+measures. CBRN Information or Capabilities;
+Information Security
+AI Actor Tasks: AI Deployment, AI Impact Assessment, Domain Experts, Operation and Monitoring, TEVV",6,evaluator,,,circumvention of safety measures,The evaluator must evaluate GAI system vulnerabilities to possible circumvention of safety measures.,,regularly,TRUE,"log_check, config_check, ci_gate",
+NIST AI RMF profiles_removed/measure-2-7/sent_0001,"MEASURE 2.7: AI system security and resilience – as identified in the MAP function – are evaluated and documented. Action ID
+Suggested Action
+GAI Risks
+MS-2.7-001
+Apply established security measures to: Assess likelihood and magnitude of
+vulnerabilities and threats such as backdoors, compromised dependencies, data
+breaches, eavesdropping, man-in-the-middle attacks, reverse engineering,
+autonomous agents, model theft or exposure of model weights, AI inference,
+bypass, extraction, and other baseline security concerns. Data Privacy; Information Integrity;
+Information Security; Value Chain
+and Component Integration
+MS-2.7-002
+Benchmark GAI system security and resilience related to content provenance
+against industry standards and best practices. Compare GAI system security
+features and content provenance methods against industry state-of-the-art.",1,evaluator,,,backdoors,The evaluator must apply established security measures to assess the likelihood and magnitude of backdoors.,,assessing likelihood and magnitude,TRUE,repo_check; config_check; ci_gate,
+NIST AI RMF profiles_removed/measure-2-7/sent_0001,"MEASURE 2.7: AI system security and resilience – as identified in the MAP function – are evaluated and documented. Action ID
+Suggested Action
+GAI Risks
+MS-2.7-001
+Apply established security measures to: Assess likelihood and magnitude of
+vulnerabilities and threats such as backdoors, compromised dependencies, data
+breaches, eavesdropping, man-in-the-middle attacks, reverse engineering,
+autonomous agents, model theft or exposure of model weights, AI inference,
+bypass, extraction, and other baseline security concerns. Data Privacy; Information Integrity;
+Information Security; Value Chain
+and Component Integration
+MS-2.7-002
+Benchmark GAI system security and resilience related to content provenance
+against industry standards and best practices. Compare GAI system security
+features and content provenance methods against industry state-of-the-art.",2,evaluator,,,compromised dependencies,The evaluator must apply established security measures to assess the likelihood and magnitude of compromised dependencies.,,assessing likelihood and magnitude,TRUE,repo_check; config_check; ci_gate,
+NIST AI RMF profiles_removed/measure-2-7/sent_0001,"MEASURE 2.7: AI system security and resilience – as identified in the MAP function – are evaluated and documented. Action ID
+Suggested Action
+GAI Risks
+MS-2.7-001
+Apply established security measures to: Assess likelihood and magnitude of
+vulnerabilities and threats such as backdoors, compromised dependencies, data
+breaches, eavesdropping, man-in-the-middle attacks, reverse engineering,
+autonomous agents, model theft or exposure of model weights, AI inference,
+bypass, extraction, and other baseline security concerns. Data Privacy; Information Integrity;
+Information Security; Value Chain
+and Component Integration
+MS-2.7-002
+Benchmark GAI system security and resilience related to content provenance
+against industry standards and best practices. Compare GAI system security
+features and content provenance methods against industry state-of-the-art.",3,evaluator,,,data breaches,The evaluator must apply established security measures to assess the likelihood and magnitude of data breaches.,,assessing likelihood and magnitude,TRUE,access_check; config_check; log_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0001,"MEASURE 2.7: AI system security and resilience – as identified in the MAP function – are evaluated and documented. Action ID
+Suggested Action
+GAI Risks
+MS-2.7-001
+Apply established security measures to: Assess likelihood and magnitude of
+vulnerabilities and threats such as backdoors, compromised dependencies, data
+breaches, eavesdropping, man-in-the-middle attacks, reverse engineering,
+autonomous agents, model theft or exposure of model weights, AI inference,
+bypass, extraction, and other baseline security concerns. Data Privacy; Information Integrity;
+Information Security; Value Chain
+and Component Integration
+MS-2.7-002
+Benchmark GAI system security and resilience related to content provenance
+against industry standards and best practices. Compare GAI system security
+features and content provenance methods against industry state-of-the-art.",4,evaluator,,,man-in-the-middle attacks,The evaluator must apply established security measures to assess the likelihood and magnitude of man-in-the-middle attacks.,,assessing likelihood and magnitude,TRUE,config_check; log_check; access_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0001,"MEASURE 2.7: AI system security and resilience – as identified in the MAP function – are evaluated and documented. Action ID
+Suggested Action
+GAI Risks
+MS-2.7-001
+Apply established security measures to: Assess likelihood and magnitude of
+vulnerabilities and threats such as backdoors, compromised dependencies, data
+breaches, eavesdropping, man-in-the-middle attacks, reverse engineering,
+autonomous agents, model theft or exposure of model weights, AI inference,
+bypass, extraction, and other baseline security concerns. Data Privacy; Information Integrity;
+Information Security; Value Chain
+and Component Integration
+MS-2.7-002
+Benchmark GAI system security and resilience related to content provenance
+against industry standards and best practices. Compare GAI system security
+features and content provenance methods against industry state-of-the-art.",5,evaluator,,,model theft,The evaluator must apply established security measures to assess the likelihood and magnitude of model theft.,,assessing likelihood and magnitude,TRUE,access_check; repo_check; attest_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0001,"MEASURE 2.7: AI system security and resilience – as identified in the MAP function – are evaluated and documented. Action ID
+Suggested Action
+GAI Risks
+MS-2.7-001
+Apply established security measures to: Assess likelihood and magnitude of
+vulnerabilities and threats such as backdoors, compromised dependencies, data
+breaches, eavesdropping, man-in-the-middle attacks, reverse engineering,
+autonomous agents, model theft or exposure of model weights, AI inference,
+bypass, extraction, and other baseline security concerns. Data Privacy; Information Integrity;
+Information Security; Value Chain
+and Component Integration
+MS-2.7-002
+Benchmark GAI system security and resilience related to content provenance
+against industry standards and best practices. Compare GAI system security
+features and content provenance methods against industry state-of-the-art.",6,evaluator,,,model extraction,The evaluator must apply established security measures to assess the likelihood and magnitude of model extraction.,,assessing likelihood and magnitude,TRUE,io_check; log_check; access_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0002,"Information Integrity; Information
+Security
+MS-2.7-003
+Conduct user surveys to gather user satisfaction with the AI-generated content
+and user perceptions of content authenticity. Analyze user feedback to identify
+concerns and/or current literacy levels related to content provenance and
+understanding of labels on content. Human-AI Configuration;
+Information Integrity
+MS-2.7-004
+Identify metrics that reflect the effectiveness of security measures, such as data
+provenance, the number of unauthorized access attempts, inference, bypass,
+extraction, penetrations, or provenance verification. Information Integrity; Information
+Security
+MS-2.7-005
+Measure reliability of content authentication methods, such as watermarking,
+cryptographic signatures, digital fingerprints, as well as access controls,
+conformity assessment, and model integrity verification, which can help support
+the effective implementation of content provenance techniques.",1,evaluator,,,misperception of content authenticity,The evaluator must conduct user surveys to gather user satisfaction with AI-generated content and perceptions of content authenticity.,,conducting user surveys,TRUE,data_check; attest_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0002,"Information Integrity; Information
+Security
+MS-2.7-003
+Conduct user surveys to gather user satisfaction with the AI-generated content
+and user perceptions of content authenticity. Analyze user feedback to identify
+concerns and/or current literacy levels related to content provenance and
+understanding of labels on content. Human-AI Configuration;
+Information Integrity
+MS-2.7-004
+Identify metrics that reflect the effectiveness of security measures, such as data
+provenance, the number of unauthorized access attempts, inference, bypass,
+extraction, penetrations, or provenance verification. Information Integrity; Information
+Security
+MS-2.7-005
+Measure reliability of content authentication methods, such as watermarking,
+cryptographic signatures, digital fingerprints, as well as access controls,
+conformity assessment, and model integrity verification, which can help support
+the effective implementation of content provenance techniques.",2,evaluator,,,low content provenance literacy,The evaluator must analyze user feedback to identify concerns and current literacy levels related to content provenance and understanding of labels on content.,,analyzing user feedback,TRUE,data_check; attest_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0002,"Information Integrity; Information
+Security
+MS-2.7-003
+Conduct user surveys to gather user satisfaction with the AI-generated content
+and user perceptions of content authenticity. Analyze user feedback to identify
+concerns and/or current literacy levels related to content provenance and
+understanding of labels on content. Human-AI Configuration;
+Information Integrity
+MS-2.7-004
+Identify metrics that reflect the effectiveness of security measures, such as data
+provenance, the number of unauthorized access attempts, inference, bypass,
+extraction, penetrations, or provenance verification. Information Integrity; Information
+Security
+MS-2.7-005
+Measure reliability of content authentication methods, such as watermarking,
+cryptographic signatures, digital fingerprints, as well as access controls,
+conformity assessment, and model integrity verification, which can help support
+the effective implementation of content provenance techniques.",3,evaluator,,,unauthorized access,The evaluator must identify metrics that reflect the effectiveness of security measures for unauthorized access attempts.,,identifying effectiveness metrics,TRUE,log_check; access_check; config_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0002,"Information Integrity; Information
+Security
+MS-2.7-003
+Conduct user surveys to gather user satisfaction with the AI-generated content
+and user perceptions of content authenticity. Analyze user feedback to identify
+concerns and/or current literacy levels related to content provenance and
+understanding of labels on content. Human-AI Configuration;
+Information Integrity
+MS-2.7-004
+Identify metrics that reflect the effectiveness of security measures, such as data
+provenance, the number of unauthorized access attempts, inference, bypass,
+extraction, penetrations, or provenance verification. Information Integrity; Information
+Security
+MS-2.7-005
+Measure reliability of content authentication methods, such as watermarking,
+cryptographic signatures, digital fingerprints, as well as access controls,
+conformity assessment, and model integrity verification, which can help support
+the effective implementation of content provenance techniques.",4,evaluator,,,provenance verification failure,The evaluator must identify metrics that reflect the effectiveness of security measures for provenance verification.,,identifying effectiveness metrics,TRUE,config_check; repo_check; attest_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0002,"Information Integrity; Information
+Security
+MS-2.7-003
+Conduct user surveys to gather user satisfaction with the AI-generated content
+and user perceptions of content authenticity. Analyze user feedback to identify
+concerns and/or current literacy levels related to content provenance and
+understanding of labels on content. Human-AI Configuration;
+Information Integrity
+MS-2.7-004
+Identify metrics that reflect the effectiveness of security measures, such as data
+provenance, the number of unauthorized access attempts, inference, bypass,
+extraction, penetrations, or provenance verification. Information Integrity; Information
+Security
+MS-2.7-005
+Measure reliability of content authentication methods, such as watermarking,
+cryptographic signatures, digital fingerprints, as well as access controls,
+conformity assessment, and model integrity verification, which can help support
+the effective implementation of content provenance techniques.",5,evaluator,,,unreliable content authentication,"The evaluator must measure the reliability of content authentication methods such as watermarking, cryptographic signatures, and digital fingerprints.",,measuring reliability,TRUE,io_check; config_check; attest_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0002,"Information Integrity; Information
+Security
+MS-2.7-003
+Conduct user surveys to gather user satisfaction with the AI-generated content
+and user perceptions of content authenticity. Analyze user feedback to identify
+concerns and/or current literacy levels related to content provenance and
+understanding of labels on content. Human-AI Configuration;
+Information Integrity
+MS-2.7-004
+Identify metrics that reflect the effectiveness of security measures, such as data
+provenance, the number of unauthorized access attempts, inference, bypass,
+extraction, penetrations, or provenance verification. Information Integrity; Information
+Security
+MS-2.7-005
+Measure reliability of content authentication methods, such as watermarking,
+cryptographic signatures, digital fingerprints, as well as access controls,
+conformity assessment, and model integrity verification, which can help support
+the effective implementation of content provenance techniques.",6,evaluator,,,model integrity compromise,The evaluator must measure the reliability of conformity assessment and model integrity verification that support content provenance techniques.,,measuring reliability,TRUE,config_check; repo_check; attest_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0003,"Evaluate the
+rate of false positives and false negatives in content provenance, as well as true
+positives and true negatives for verification. Information Integrity
+MS-2.7-006
+Measure the rate at which recommendations from security checks and incidents
+are implemented. Assess how quickly the AI system can adapt and improve
+based on lessons learned from security incidents and feedback. Information Integrity; Information
+Security
+MS-2.7-007
+Perform AI red-teaming to assess resilience against: Abuse to facilitate attacks on
+other systems (e.g., malicious code generation, enhanced phishing content), GAI
+attacks (e.g., prompt injection), ML attacks (e.g., adversarial examples/prompts,
+data poisoning, membership inference, model extraction, sponge examples).",1,evaluator,,,provenance verification error,"The evaluator must evaluate the rates of false positives, false negatives, true positives, and true negatives for content provenance verification.",,evaluating rates,TRUE,data_check; io_check; log_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0003,"Evaluate the
+rate of false positives and false negatives in content provenance, as well as true
+positives and true negatives for verification. Information Integrity
+MS-2.7-006
+Measure the rate at which recommendations from security checks and incidents
+are implemented. Assess how quickly the AI system can adapt and improve
+based on lessons learned from security incidents and feedback. Information Integrity; Information
+Security
+MS-2.7-007
+Perform AI red-teaming to assess resilience against: Abuse to facilitate attacks on
+other systems (e.g., malicious code generation, enhanced phishing content), GAI
+attacks (e.g., prompt injection), ML attacks (e.g., adversarial examples/prompts,
+data poisoning, membership inference, model extraction, sponge examples).",2,evaluator,,,slow implementation of security recommendations,The evaluator must measure the rate at which recommendations from security checks and incidents are implemented.,,recommendations from security checks and incidents,TRUE,log_check; attest_check; ci_gate,
+NIST AI RMF profiles_removed/measure-2-7/sent_0003,"Evaluate the
+rate of false positives and false negatives in content provenance, as well as true
+positives and true negatives for verification. Information Integrity
+MS-2.7-006
+Measure the rate at which recommendations from security checks and incidents
+are implemented. Assess how quickly the AI system can adapt and improve
+based on lessons learned from security incidents and feedback. Information Integrity; Information
+Security
+MS-2.7-007
+Perform AI red-teaming to assess resilience against: Abuse to facilitate attacks on
+other systems (e.g., malicious code generation, enhanced phishing content), GAI
+attacks (e.g., prompt injection), ML attacks (e.g., adversarial examples/prompts,
+data poisoning, membership inference, model extraction, sponge examples).",3,evaluator,,,slow post-incident adaptation,The evaluator must assess how quickly the AI system adapts and improves based on lessons learned from security incidents and feedback.,,lessons learned from security incidents and feedback,TRUE,log_check; attest_check; ci_gate,
+NIST AI RMF profiles_removed/measure-2-7/sent_0003,"Evaluate the
+rate of false positives and false negatives in content provenance, as well as true
+positives and true negatives for verification. Information Integrity
+MS-2.7-006
+Measure the rate at which recommendations from security checks and incidents
+are implemented. Assess how quickly the AI system can adapt and improve
+based on lessons learned from security incidents and feedback. Information Integrity; Information
+Security
+MS-2.7-007
+Perform AI red-teaming to assess resilience against: Abuse to facilitate attacks on
+other systems (e.g., malicious code generation, enhanced phishing content), GAI
+attacks (e.g., prompt injection), ML attacks (e.g., adversarial examples/prompts,
+data poisoning, membership inference, model extraction, sponge examples).",4,evaluator,,,attack facilitation to other systems,"The evaluator must perform AI red-teaming to assess resilience against abuse that facilitates attacks on other systems, such as malicious code generation and enhanced phishing content.",,performing AI red-teaming; assessing resilience,TRUE,io_check; config_check; log_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0003,"Evaluate the
+rate of false positives and false negatives in content provenance, as well as true
+positives and true negatives for verification. Information Integrity
+MS-2.7-006
+Measure the rate at which recommendations from security checks and incidents
+are implemented. Assess how quickly the AI system can adapt and improve
+based on lessons learned from security incidents and feedback. Information Integrity; Information
+Security
+MS-2.7-007
+Perform AI red-teaming to assess resilience against: Abuse to facilitate attacks on
+other systems (e.g., malicious code generation, enhanced phishing content), GAI
+attacks (e.g., prompt injection), ML attacks (e.g., adversarial examples/prompts,
+data poisoning, membership inference, model extraction, sponge examples).",5,evaluator,,,prompt injection,The evaluator must perform AI red-teaming to assess resilience against GAI attacks such as prompt injection.,,performing AI red-teaming; assessing resilience,TRUE,io_check; config_check; log_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0003,"Evaluate the
+rate of false positives and false negatives in content provenance, as well as true
+positives and true negatives for verification. Information Integrity
+MS-2.7-006
+Measure the rate at which recommendations from security checks and incidents
+are implemented. Assess how quickly the AI system can adapt and improve
+based on lessons learned from security incidents and feedback. Information Integrity; Information
+Security
+MS-2.7-007
+Perform AI red-teaming to assess resilience against: Abuse to facilitate attacks on
+other systems (e.g., malicious code generation, enhanced phishing content), GAI
+attacks (e.g., prompt injection), ML attacks (e.g., adversarial examples/prompts,
+data poisoning, membership inference, model extraction, sponge examples).",6,evaluator,,,ML model compromise,"The evaluator must perform AI red-teaming to assess resilience against ML attacks, including adversarial examples/prompts, data poisoning, membership inference, model extraction, and sponge examples.",,performing AI red-teaming; assessing resilience,TRUE,io_check; data_check; repo_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0004,"Information Security; Harmful Bias
+and Homogenization; Dangerous,
+Violent, or Hateful Content
+MS-2.7-008 Verify fine-tuning does not compromise safety and security controls. Information Integrity; Information
+Security; Dangerous, Violent, or
+Hateful Content",1,evaluator,,finetune,compromised safety controls,The evaluator must verify that fine-tuning does not compromise safety controls.,,fine-tuning,TRUE,config_check; ci_gate; attest_check; io_check; log_check,
+NIST AI RMF profiles_removed/measure-2-7/sent_0004,"Information Security; Harmful Bias
+and Homogenization; Dangerous,
+Violent, or Hateful Content
+MS-2.7-008 Verify fine-tuning does not compromise safety and security controls. Information Integrity; Information
+Security; Dangerous, Violent, or
+Hateful Content",2,evaluator,,finetune,compromised security controls,The evaluator must verify that fine-tuning does not compromise security controls.,,fine-tuning,TRUE,config_check; ci_gate; attest_check; io_check; log_check,

@@ -1,0 +1,841 @@
+- rule_id: spans-candidates-filtered/sent_0008-6c107288
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0008
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context:
+    - prod
+  hazard: system-wide bias
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - provider must address system-wide bias before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Missing oracle to check if system-wide bias is adequately addressed.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0008-bab117b6
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0008
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context:
+    - prod
+  hazard: false information or hallucinations
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - provider must address false information or hallucinations for health-care uses
+    before deployment.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Clause specifies an obligation for providers addressing false information,
+      allowing for input/output inspection.
+    evidence_signals:
+    - io_check
+- rule_id: spans-candidates-filtered/sent_0008-8da98816
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0008
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context:
+    - prod
+  hazard: privacy of data
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - provider must ensure the privacy of data entered into an LMM before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks observable action or verification method for ensuring privacy.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0008-49eafa4c
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0008
+  scope:
+    data_domain:
+    - health
+    actor:
+    - provider
+    context:
+    - prod
+  hazard: manipulation and automation bias
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - provider must address manipulation and automation bias before deployment.
+  - provider must address system-wide bias before deployment.
+  - provider must address false information or hallucinations for health-care uses
+    before deployment.
+  - provider must address privacy of data entered into an LMM before deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague outcomes without observable predicate; lacks objective criteria
+      for verification.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0022-47b232af
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0022
+  scope:
+    data_domain:
+    - general
+    actor:
+    - developer
+    context:
+    - regulated
+  hazard: incorrect information
+  conditions:
+  - in the assessment of a general-purpose foundation model or application
+  exceptions: []
+  requirements:
+  - developer must provide transparency in the assessment of a general-purpose foundation
+    model or application.
+  - developer must improve the explainability and intelligibility of the AI-based
+    system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Clause lacks specific obligations that can be objectively verified.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0045-3f39b847
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0045
+  scope:
+    data_domain:
+    - general
+    actor:
+    - developer
+    context:
+    - internal
+  hazard: failure to uphold human rights and ethical obligations
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - developer must ensure the algorithm respects human rights and ethical obligations.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague outcomes without observable predicate.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0045-05682b5a
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0045
+  scope:
+    data_domain:
+    - general
+    actor:
+    - provider
+    - developer
+    context:
+    - internal
+  hazard: failure to uphold human rights and ethical obligations
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - provider must ensure the algorithm respects human rights and ethical obligations.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague outcomes without observable predicate.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0048-270cc693
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0048
+  scope:
+    data_domain:
+    - general
+    actor:
+    - deployer
+    context:
+    - regulated
+  hazard: unaudited AI technology impacts
+  conditions:
+  - before introduction of an AI technology
+  exceptions: []
+  requirements:
+  - deployer must ensure impact assessments are audited by an independent third party
+    before introduction of an AI technology.
+  - deployer must ensure impact assessments are audited by an independent third party
+    after introduction of an AI technology.
+  - deployer must ensure impact assessments are published after introduction of an
+    AI technology.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Auditing of impact assessments can be verified through document reviews
+      or audit logs.
+    evidence_signals:
+    - log_check
+    - io_check
+- rule_id: spans-candidates-filtered/sent_0052-bd50270e
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0052
+  scope:
+    data_domain:
+    - PII
+    actor:
+    - provider
+    - developer
+    context:
+    - internal
+  hazard: risk to privacy
+  conditions:
+  - when developing LMMs
+  exceptions: []
+  requirements:
+  - providers must collaborate with developers to address risks to privacy when developing
+    LMMs.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks a specific verifiable obligation with an observable outcome.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0054-60cd46c4
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0054
+  scope:
+    data_domain:
+    - health
+    actor:
+    - user
+    context:
+    - prod
+  hazard: automation bias
+  conditions:
+  - user receives false information
+  - user receives misinformation
+  - health-care provider relies uncritically on output
+  exceptions: []
+  requirements:
+  - user must ensure that use of a general-purpose foundation model maintains humans
+    in the loop to avoid automated decision-making
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks observable criteria to verify if users maintain humans in the loop.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0068-752730c0
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0068
+  scope:
+    data_domain:
+    - general
+    actor:
+    - provider
+    context:
+    - prod
+  hazard: non-compliance with LMM requirements
+  conditions:
+  - in health care and medicine
+  exceptions: []
+  requirements:
+  - provider must comply with requirements for use of LMMs in health care and medicine.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Missing observable oracle to verify compliance with requirements.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0073-8d72c8e1
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0073
+  scope:
+    data_domain:
+    - health
+    actor:
+    - developer
+    context:
+    - prod
+  hazard: mischaracterization of medical device status
+  conditions:
+  - when claims are made about medical purpose
+  exceptions: []
+  requirements:
+  - developer must ensure that claims about LMMs indicate compliance with medical
+    device regulations
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation for developers to ensure compliance can be verified through
+      model outputs.
+    evidence_signals:
+    - io_check
+- rule_id: spans-candidates-filtered/sent_0076-fafdd8a1
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0076
+  scope:
+    data_domain:
+    - general
+    actor:
+    - developer
+    - provider
+    context:
+    - regulated
+  hazard: misleading device performance claims
+  conditions:
+  - if regulated as a medical device
+  exceptions: []
+  requirements:
+  - developer must provide evidence that the device performs as marketed
+  - developer must provide evidence that the device meets the requirements of current
+    or amended national laws
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Missing an observable oracle to verify evidence provided against claims.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0076-3b120177
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0076
+  scope:
+    data_domain:
+    - general
+    actor:
+    - developer
+    - provider
+    context:
+    - internal
+  hazard: misleading device performance claims
+  conditions:
+  - before regulation as a medical device
+  exceptions: []
+  requirements:
+  - provider must provide evidence that the device performs as marketed
+  - provider must provide evidence that the device meets the requirements of current
+    or amended national laws
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligations on provider to provide evidence of device performance can
+      be verified through io_check.
+    evidence_signals:
+    - io_check
+- rule_id: spans-candidates-filtered/sent_0081-bd7aae3e
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0081
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - health
+    context:
+    - regulated
+  hazard: unintended consequences
+  conditions:
+  - in an unauthorized clinical trial setting
+  exceptions: []
+  requirements:
+  - provider must implement appropriate controls to protect patients and to produce
+    clinically relevant outcomes
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague outcomes without observable predicate; does not specify verifiable
+      metrics or controls.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0093-56239f22
+  source:
+    doc: spans_candidates_filtered
+    citation: 5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-
+    span_id: AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0093
+  scope:
+    data_domain:
+    - general
+    actor:
+    - provider
+    - developer
+    context:
+    - regulated
+  hazard: regulatory burden increase if product changes substantially
+  conditions:
+  - before and after introduction of an AI technology
+  exceptions: []
+  requirements:
+  - impact assessments must be audited by an independent third party before and after
+    introduction of an AI technology and should be in the public domain.
+  evidence: []
+  severity: medium
+  is_testable: false
+  testability:
+    reason: Lacks observable predicate to verify independent audits and public domain
+      status without subjective judgment.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0001-deb64410
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001
+  scope:
+    data_domain:
+    - general
+    actor:
+    - deployer
+    context:
+    - internal
+  hazard: unpredictable responses from LMMs
+  conditions:
+  - when deploying an AI health-care application
+  exceptions: []
+  requirements:
+  - deployer must address the risks associated with unpredictable responses from LMMs.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks a specific observable action or measurable outcome.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0002-b3319929
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0002
+  scope:
+    data_domain:
+    - general
+    actor:
+    - deployer
+    - developer
+    - provider
+    - org
+    context:
+    - regulated
+  hazard: inaccurate or false responses
+  conditions:
+  - during deployment
+  exceptions: []
+  requirements:
+  - deployer must address the risk of inaccurate or false responses during deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation without clear metrics for assessing 'risk of inaccurate
+      or false responses'.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0002-cc61a60b
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0002
+  scope:
+    data_domain:
+    - health
+    actor:
+    - deployer
+    context:
+    - prod
+  hazard: bias
+  conditions:
+  - during deployment
+  exceptions: []
+  requirements:
+  - deployer must address the risk of bias during deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Missing specific observable obligations or prohibitions regarding bias
+      mitigation methods.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0002-809e86e5
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0002
+  scope:
+    data_domain:
+    - health
+    actor:
+    - deployer
+    - developer
+    - provider
+    context:
+    - prod
+  hazard: privacy of data
+  conditions:
+  - during deployment
+  exceptions: []
+  requirements:
+  - deployer must address the risk to the privacy of data entered into and put out
+    by an LMM during deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks observable predicate; no clear oracle can verify compliance.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0002-9e0e3690
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0002
+  scope:
+    data_domain:
+    - health
+    actor:
+    - deployer
+    - developer
+    - provider
+    context:
+    - prod
+  hazard: unpredictability of LMMs
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - deployer must address the risk related to accessibility and affordability of an
+    LMM during deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Missing an observable oracle to verify risk addressing is complete.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0002-78ef8b8e
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0002
+  scope:
+    data_domain:
+    - health
+    actor:
+    - deployer
+    - developer
+    - provider
+    context:
+    - prod
+  hazard: impacts on labour and employment
+  conditions:
+  - during deployment
+  exceptions: []
+  requirements:
+  - deployer must address the risk of impacts on labour and employment during deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks observable criteria to verify if the risk of impacts on labor and
+      employment is addressed.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0002-63b67c4d
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0002
+  scope:
+    data_domain:
+    - health
+    actor:
+    - deployer
+    context:
+    - prod
+  hazard: automation bias and skills degradation
+  conditions:
+  - during deployment
+  exceptions: []
+  requirements:
+  - deployer must address the risk of automation bias and skills degradation during
+    deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Missing oracle to verify addressing of risks; lack of specific, observable
+      outcomes.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0002-c462fc96
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0002
+  scope:
+    data_domain:
+    - health
+    actor:
+    - deployer
+    context:
+    - prod
+  hazard: quality of interactions between health-care providers and patients
+  conditions:
+  - during deployment
+  exceptions: []
+  requirements:
+  - deployer must address the risk to the quality of interactions between health-care
+    providers and patients during deployment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks observable predicate to verify compliance regarding risk addressal.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0003-c3d23aad
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0003
+  scope:
+    data_domain:
+    - PHI
+    actor:
+    - deployer
+    context:
+    - prod
+  hazard: privacy of data
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - deployer must address privacy of data when deploying an LMM.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No observable predicate defined for checking compliance with data privacy
+      obligations.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0009-87592f3a
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0009
+  scope:
+    data_domain:
+    - general
+    actor:
+    - developer
+    context:
+    - regulated
+  hazard: tendency of LMMs to hallucinate
+  conditions:
+  - if an LMM is integrated into a service that is within the scope of regulation
+    of digital services
+  exceptions: []
+  requirements:
+  - developer must provide ongoing operational disclosures for safe use of LMMs.
+  - developer must ensure adherence to regulatory oversight requirements.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague outcomes without observable predicate; lacks specific verifiable
+      artifacts.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0009-a7f926f9
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0009
+  scope:
+    data_domain:
+    - general
+    actor:
+    - provider
+    context:
+    - regulated
+  hazard: tendency of LMMs to hallucinate
+  conditions:
+  - if an LMM is integrated into a service that is within the scope of regulation
+    of digital services
+  exceptions: []
+  requirements:
+  - provider must provide ongoing operational disclosures for safe use of LMMs.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Lacks specific observable actions or conditions for verification.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0013-59d927f0
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices/sent_0013
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: violation of health data protection laws
+  conditions:
+  - when they use an LMM professionally
+  exceptions: []
+  requirements:
+  - provider must ensure that their duties do not unknowingly violate laws related
+    to the protection of health data and information.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague outcomes without observable predicate; no clear verifiable artifact.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0018-8da39e5b
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices/sent_0018
+  scope:
+    data_domain:
+    - general
+    actor:
+    - provider
+    context:
+    - internal
+  hazard: lack of public engagement in AI development for health
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - provider must engage the public in the development of AI for health.
+  - provider must understand forms of data sharing and use.
+  - provider must allow the public to comment on socially and culturally acceptable
+    forms of AI.
+  - provider must provide a platform for the public to express their concerns and
+    expectations.
+  evidence: []
+  severity: medium
+  is_testable: false
+  testability:
+    reason: Vague outcomes without observable predicate; lacks a clear measurable
+      obligation.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0018-8c61a4fd
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices/sent_0018
+  scope:
+    data_domain:
+    - general
+    actor:
+    - provider
+    context:
+    - public
+  hazard: lack of public understanding of data sharing and AI use
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - provider must improve public awareness of data sharing and use of AI in health.
+  evidence: []
+  severity: medium
+  is_testable: false
+  testability:
+    reason: Lacks an observable condition for measuring improvement in public awareness.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0018-e8a1993e
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices/sent_0018
+  scope:
+    data_domain:
+    - health
+    actor:
+    - provider
+    context:
+    - public
+  hazard: low public literacy in AI technology
+  conditions:
+  - before deployment
+  exceptions: []
+  requirements:
+  - provider must improve the general public's literacy in AI technology.
+  - provider must engage the public in the development of AI for health.
+  evidence: []
+  severity: medium
+  is_testable: false
+  testability:
+    reason: No observable predicate or verifiable artifact provided.
+    evidence_signals: []
+- rule_id: spans-candidates-filtered/sent_0027-f053f70a
+  source:
+    doc: spans_candidates_filtered
+    citation: 6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices
+    span_id: AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-4-government-programmes-and-practices/sent_0027
+  scope:
+    data_domain:
+    - general
+    actor:
+    - deployer
+    context:
+    - internal
+  hazard: inaccurate, false or toxic content
+  conditions:
+  - inappropriate setting
+  exceptions: []
+  requirements:
+  - deployer must ensure that warnings about risks are not in fine print
+  - deployer must communicate any known risks from use of an LMM
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Clause requires verification of risk communication, actionable by inspecting
+      I/O for risk disclosures.
+    evidence_signals:
+    - io_check

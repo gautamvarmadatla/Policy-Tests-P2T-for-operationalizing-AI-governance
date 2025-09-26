@@ -1,0 +1,562 @@
+span_id,text,scope.actor,scope.domain,scope.context,hazard,requirement,exceptions,conditions,is_testable,evidence_signals,evidence,rule_id
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi/sent_0001,"45
+5   Provision with general-purpose foundation models (LMMs)
+5 Provision with general-purpose
+foundation models (LMMs)
+The uses of general-purpose foundation models depend on whether a user prompts an
+LMM to generate health-care related outputs or a provider is permitted by the developer
+to integrate the LMM into a health-care related application, product or service. Either
+case introduces novel risks that must be addressed by developers, providers or both. Governments are responsible for assessing and regulating uses of such technologies before
+their deployment.
+5.1
+Risks to be addressed when providing a health-care
+service or application with a general-purpose foundation
+model (LMM)
+There is likely to be disagreement about whether both general-purpose foundation models
+and applications should be assessed and approved when they are used in a product for
+health-care purposes or used directly by a user. Several of the largest technology companies
+have been quietly lobbying government officials (for example in the European Union) to
+abandon an evaluation framework for LMMs and to focus oversight instead on applications
+that might be used in ways that a government might consider ""risky"" (145).",developer,null,regulated; high-risk,Patient harm from AI-generated health advice,"Developers must address novel risks when a general-purpose foundation model is used in a health-care related application, product, or service.",null,"when a general-purpose foundation model is used in a health-care related application, product or service",TRUE,attest_check,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-1-risks-to-be-addressed-when-providing-a-health-care-servi/sent_0001,"45
+5   Provision with general-purpose foundation models (LMMs)
+5 Provision with general-purpose
+foundation models (LMMs)
+The uses of general-purpose foundation models depend on whether a user prompts an
+LMM to generate health-care related outputs or a provider is permitted by the developer
+to integrate the LMM into a health-care related application, product or service. Either
+case introduces novel risks that must be addressed by developers, providers or both. Governments are responsible for assessing and regulating uses of such technologies before
+their deployment.
+5.1
+Risks to be addressed when providing a health-care
+service or application with a general-purpose foundation
+model (LMM)
+There is likely to be disagreement about whether both general-purpose foundation models
+and applications should be assessed and approved when they are used in a product for
+health-care purposes or used directly by a user. Several of the largest technology companies
+have been quietly lobbying government officials (for example in the European Union) to
+abandon an evaluation framework for LMMs and to focus oversight instead on applications
+that might be used in ways that a government might consider ""risky"" (145).",provider,null,regulated; high-risk,Patient harm from AI-generated health advice,"Providers must address novel risks when a general-purpose foundation model is used in a health-care related application, product, or service.",null,"when a general-purpose foundation model is used in a health-care related application, product or service",TRUE,attest_check,null,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001,"46
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 
+purpose, by blocking queries or attaching a clear warning to any responses that include
+health or medical information and to direct users to information or services that can provide
+appropriate assistance. If such measures are not taken or if the developer intends that users apply its LMM for
+health care, either directly or indirectly through a provider, the developer will have specific
+responsibilities that only it can satisfy. Furthermore, both developers and providers have
+further obligations to address the risks associated with use of LMMs in health care.",developer,null,inference,unsafe medical guidance,A developer must block queries that include health or medical information.,if a clear warning is attached to the response,if the LMM is not intended for health care use,TRUE,io_check,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001,"46
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 
+purpose, by blocking queries or attaching a clear warning to any responses that include
+health or medical information and to direct users to information or services that can provide
+appropriate assistance. If such measures are not taken or if the developer intends that users apply its LMM for
+health care, either directly or indirectly through a provider, the developer will have specific
+responsibilities that only it can satisfy. Furthermore, both developers and providers have
+further obligations to address the risks associated with use of LMMs in health care.",developer,null,inference,unsafe medical guidance,A developer must attach a clear warning to any responses that include health or medical information.,if queries including health or medical information are blocked,if the LMM is not intended for health care use,TRUE,io_check,null,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0001,"46
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 
+purpose, by blocking queries or attaching a clear warning to any responses that include
+health or medical information and to direct users to information or services that can provide
+appropriate assistance. If such measures are not taken or if the developer intends that users apply its LMM for
+health care, either directly or indirectly through a provider, the developer will have specific
+responsibilities that only it can satisfy. Furthermore, both developers and providers have
+further obligations to address the risks associated with use of LMMs in health care.",developer,null,inference,user harm from lack of professional help,A developer must direct users to information or services that can provide appropriate assistance.,null,when a response includes health or medical information,TRUE,io_check,null,3
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002,"The responsibilities, detailed below, are defined in government-mandated laws, policies and
+regulations, as it is governments that must ultimately determine whether an AI-based system
+should be permitted for use in health care. Developers and providers must also fulfil mutual
+responsibilities if an LMM is to be used in health care. Such responsibilities could be defined by
+governments or negotiated between the two parties through a contract if laws have not been
+written or updated to account for them. Major risks that must be addressed before deployment include system-wide bias, false
+information or hallucinations for health-care uses, privacy of data entered into an LMM,
+manipulation and automation bias.
+5.2 Measures that governments can introduce to address such
+risks and ethical principles that should be upheld
+The speed of development of LMMs and of applications that include an LMM requires that
+governments rapidly develop regulations and specific criteria for using these AI algorithms
+in health-care systems and for other scientific and medical purposes.",null,null,null,null,null,null,null,null,null,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002,"The approach should
+consist of assessment and approval of AI technologies intended for use in health care or
+medicine by a regulatory agency, such as a medical device or pharmaceutical agency,
+although governments could establish a new agency for this purpose. One challenge for lowand middle-income countries is that their regulatory agencies are already under-resourced
+and overwhelmed by pharmaceutical regulation. The government of at least one high-income country has agreed with the largest technology
+companies that its foundation models will be assessed in a voluntary public evaluation, with
+disclosure of outcomes to provide information to the public and researchers about the models
+and to encourage the companies to correct any errors (146); however, a voluntary approach is
+likely to be neither sufficient nor sustainable. Evaluation of LMMs and applications should not address only the AI systems or algorithms
+used in the health-care system, as there are also significant risks associated with the use of
+LMMs and applications in a grey zone between clinical and ""wellness"" applications.",org,null,eval; public,Lack of public transparency on model performance,The org shall disclose the outcomes of a voluntary public evaluation of its foundation models to provide information to the public and researchers.,null,following a voluntary public evaluation of foundation models,TRUE,attest_check,Disclosure of outcomes,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0002,"The approach should
+consist of assessment and approval of AI technologies intended for use in health care or
+medicine by a regulatory agency, such as a medical device or pharmaceutical agency,
+although governments could establish a new agency for this purpose. One challenge for lowand middle-income countries is that their regulatory agencies are already under-resourced
+and overwhelmed by pharmaceutical regulation. The government of at least one high-income country has agreed with the largest technology
+companies that its foundation models will be assessed in a voluntary public evaluation, with
+disclosure of outcomes to provide information to the public and researchers about the models
+and to encourage the companies to correct any errors (146); however, a voluntary approach is
+likely to be neither sufficient nor sustainable. Evaluation of LMMs and applications should not address only the AI systems or algorithms
+used in the health-care system, as there are also significant risks associated with the use of
+LMMs and applications in a grey zone between clinical and ""wellness"" applications.",evaluator,null,eval,Unassessed health risks in 'wellness' AI applications,"The evaluator shall ensure that the evaluation of LMMs and applications addresses risks in both clinical and 'wellness' contexts, not only those in the formal health-care system.",null,when evaluating LMMs and applications for health-related use,TRUE,attest_check,null,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0005,"47
+5   Provision with general-purpose foundation models (LMMs)
+applications, set common standards and regulations and prohibit applications that do not
+meet the standards and regulations from being deployed to the public. Developers and providers should bear the burden of proof, when required, to demonstrate
+that an AI technology intended for use in health care meets the minimum requirements set
+out in a law or policy. It should not be assumed that, given the known risks and challenges
+associated with LMMs, AI algorithms and applications with an LMM are safe and effective or
+that they are superior to AI or non-AI based approaches that are already in wide use. Several laws, policies and cross-cutting requirements that could apply to use of LMMs in
+health care and medicine are described below.",developer; provider,null,regulated,non-compliant AI in healthcare,"Developers and providers must, when required, demonstrate that an AI technology intended for use in health care meets the minimum requirements set out in a law or policy.",null,when required; for AI technology intended for use in health care,TRUE,attest_check,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0006,"Disclosure (transparency) requirements: Appropriate regulation requires not only that
+governments have the capacity and discretion to decide what they can assess and approve
+for use but also adequate information for conducting such an evaluation. Disclosure is
+necessary to both adequately regulate an AI technology and to ensure that other actors in the
+AI value chain can use the technology safely. For example, unless a developer discloses the
+performance of a general-purpose foundation model (such as its propensity to hallucinate), a
+provider may not have the necessary information to fine-tune the model or to avoid marketing
+the technology. Such forms of disclosure by a provider or developer can also assist users, such
+as medical providers, in deciding not to use an LMM that could provide incorrect information
+or to scrutinize outputs more carefully.",developer,null,public,unsafe model deployment due to lack of performance data,"The developer shall disclose the performance of a general-purpose foundation model, such as its propensity to hallucinate, to enable safe downstream use by providers.",null,for a general-purpose foundation model,TRUE,repo_check; attest_check,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0006,"Disclosure (transparency) requirements: Appropriate regulation requires not only that
+governments have the capacity and discretion to decide what they can assess and approve
+for use but also adequate information for conducting such an evaluation. Disclosure is
+necessary to both adequately regulate an AI technology and to ensure that other actors in the
+AI value chain can use the technology safely. For example, unless a developer discloses the
+performance of a general-purpose foundation model (such as its propensity to hallucinate), a
+provider may not have the necessary information to fine-tune the model or to avoid marketing
+the technology. Such forms of disclosure by a provider or developer can also assist users, such
+as medical providers, in deciding not to use an LMM that could provide incorrect information
+or to scrutinize outputs more carefully.",provider,null,public,patient harm from incorrect medical information,"The provider shall disclose model performance information, such as the potential for incorrect outputs, to assist users in making safe usage decisions.",null,when providing a model to users,TRUE,repo_check; attest_check; io_check,null,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0007,"Disclosure and transparency are WHO guiding principles, as well as measures to improve
+the ""explainability"" and intelligibility of an AI-based system, and should be required in the
+assessment of a general-purpose foundation model or application. The WHO guidance on
+the ethics and governance of AI for health (1) recommended that ""government regulators
+should require the transparency of certain aspects of an AI technology, while accounting
+for proprietary rights, to improve oversight and assessment of safety and efficacy. This may
+include an AI technology's source code, data inputs and analytical approach"". New forms of
+disclosure that are relevant for LMMs may include their performance in internal testing and
+their carbon and water footprints.",provider,null,public,misinformation about model capabilities,A provider must make disclosures describing the capability and limitations of a foundation model.,null,null,TRUE,io_check; repo_check,model capability and limitation disclosure,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0007,"Disclosure and transparency are WHO guiding principles, as well as measures to improve
+the ""explainability"" and intelligibility of an AI-based system, and should be required in the
+assessment of a general-purpose foundation model or application. The WHO guidance on
+the ethics and governance of AI for health (1) recommended that ""government regulators
+should require the transparency of certain aspects of an AI technology, while accounting
+for proprietary rights, to improve oversight and assessment of safety and efficacy. This may
+include an AI technology's source code, data inputs and analytical approach"". New forms of
+disclosure that are relevant for LMMs may include their performance in internal testing and
+their carbon and water footprints.",provider,null,eval,unverified model performance,A provider must disclose the evaluation of the model according to public or industry standard benchmarks.,null,null,TRUE,repo_check; attest_check,model evaluation report,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0007,"Disclosure and transparency are WHO guiding principles, as well as measures to improve
+the ""explainability"" and intelligibility of an AI-based system, and should be required in the
+assessment of a general-purpose foundation model or application. The WHO guidance on
+the ethics and governance of AI for health (1) recommended that ""government regulators
+should require the transparency of certain aspects of an AI technology, while accounting
+for proprietary rights, to improve oversight and assessment of safety and efficacy. This may
+include an AI technology's source code, data inputs and analytical approach"". New forms of
+disclosure that are relevant for LMMs may include their performance in internal testing and
+their carbon and water footprints.",provider,null,eval,hidden model flaws,A provider must report the results of internal and external testing of the model and its optimization.,null,null,TRUE,repo_check; attest_check,model testing results report,3
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0009,"48
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 
+personal information may be disclosed either accidentally or through prompts. Potential
+disclosures are the reason that many large companies, including technology companies that
+are developing and commercializing LMMs, prohibit their own employees from using such
+algorithms (149). Disclosures of data violate the developer's responsibility to protect autonomy.",developer,null,prod; inference,unauthorized disclosure of personal information,The developer shall implement measures to prevent the accidental or prompt-induced disclosure of personal information.,null,null,TRUE,io_check; log_check; config_check; data_check,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0012,"All AI systems or tools used in health care and medicine should have to respect ethical
+obligations and human rights standards that affect, for example, a person's dignity, autonomy
+or privacy. These include general-purpose foundation models. Human rights and ethical
+principles are non-negotiable and must be upheld, irrespective of the risk associated with an
+AI technology or the benefit it may confer (153). The fact that an AI algorithm is considered
+""low risk"" does not exempt it from scrutiny, and a developer or provider should ensure the
+algorithm respects human rights and ethical obligations.",developer; provider,null,regulated,Violation of human rights,"A developer or provider must ensure their AI algorithm respects human rights and ethical obligations, irrespective of the algorithm's risk level.",null,AI system used in health care and medicine,FALSE,null,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0012,"All AI systems or tools used in health care and medicine should have to respect ethical
+obligations and human rights standards that affect, for example, a person's dignity, autonomy
+or privacy. These include general-purpose foundation models. Human rights and ethical
+principles are non-negotiable and must be upheld, irrespective of the risk associated with an
+AI technology or the benefit it may confer (153). The fact that an AI algorithm is considered
+""low risk"" does not exempt it from scrutiny, and a developer or provider should ensure the
+algorithm respects human rights and ethical obligations.",developer; provider,null,regulated,Violation of privacy,"A developer or provider must ensure their AI algorithm respects a person's privacy, irrespective of the algorithm's risk level.",null,AI system used in health care and medicine,FALSE,null,null,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013,"A human rights impact assessment
+can be conducted to determine whether an LMM or an application adheres to such
+commitments and can therefore be used safely. The WHO guidance on the ethics and governance of AI for health (1) recommended that
+""governments should enact laws and policies that require government agencies and
+companies to conduct impact assessments of AI technologies, which should address ethics,
+human rights, safety and data protection, throughout the life cycle of an AI system"". The
+guidance also noted that ""impact assessments should be audited by an independent third
+party before and after introduction of an AI technology and published"" (1). The results of
+impact assessments should be disclosed publicly, while accounting for proprietary or sensitive
+information, and should be available to the public and groups that may be affected.",org,null,regulated,Unassessed AI safety and rights risks,"The org shall conduct impact assessments of AI technologies to address ethics, human rights, safety and data protection throughout the life cycle of an AI system.",null,throughout the life cycle of an AI system,TRUE,attest_check,impact assessment,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013,"A human rights impact assessment
+can be conducted to determine whether an LMM or an application adheres to such
+commitments and can therefore be used safely. The WHO guidance on the ethics and governance of AI for health (1) recommended that
+""governments should enact laws and policies that require government agencies and
+companies to conduct impact assessments of AI technologies, which should address ethics,
+human rights, safety and data protection, throughout the life cycle of an AI system"". The
+guidance also noted that ""impact assessments should be audited by an independent third
+party before and after introduction of an AI technology and published"" (1). The results of
+impact assessments should be disclosed publicly, while accounting for proprietary or sensitive
+information, and should be available to the public and groups that may be affected.",org,null,regulated,Lack of independent verification of AI risks,The org shall ensure impact assessments are audited by an independent third party before and after the introduction of an AI technology.,null,before introduction of an AI technology; after introduction of an AI technology,TRUE,attest_check,null,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0013,"A human rights impact assessment
+can be conducted to determine whether an LMM or an application adheres to such
+commitments and can therefore be used safely. The WHO guidance on the ethics and governance of AI for health (1) recommended that
+""governments should enact laws and policies that require government agencies and
+companies to conduct impact assessments of AI technologies, which should address ethics,
+human rights, safety and data protection, throughout the life cycle of an AI system"". The
+guidance also noted that ""impact assessments should be audited by an independent third
+party before and after introduction of an AI technology and published"" (1). The results of
+impact assessments should be disclosed publicly, while accounting for proprietary or sensitive
+information, and should be available to the public and groups that may be affected.",org,null,regulated; public,Lack of public transparency on AI impact,The org shall publicly disclose the results of impact assessments and make them available to the public and groups that may be affected.,while accounting for proprietary or sensitive information,null,TRUE,attest_check,impact assessment results,3
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0015,"49
+5   Provision with general-purpose foundation models (LMMs)
+Impact assessments can reveal, for example, whether an AI technology might introduce
+system-wide bias, risk the privacy of users who share personal data or lead to manipulation
+of a user. Risks to privacy should be addressed by collaboration between providers and
+developers in developing LMMs that preserve individual privacy. Work on such an LMM
+is under way by one company and a hospital system in the USA, although the project is
+considered unlikely to succeed because the data cannot be fully de-identified (154). Impact
+assessments can also ensure that use of a general-purpose foundation model or application
+maintains humans in the loop to avoid automated decision-making in which a user receives
+false information or misinformation or a health-care provider or patient relies uncritically on
+the output of an LMM, which would be a form of automation bias.",provider; developer,null,dev,user privacy violation,Providers and developers must collaborate to address privacy risks when developing LMMs that preserve individual privacy.,null,when developing LMMs,TRUE,attest_check; repo_check,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0015,"49
+5   Provision with general-purpose foundation models (LMMs)
+Impact assessments can reveal, for example, whether an AI technology might introduce
+system-wide bias, risk the privacy of users who share personal data or lead to manipulation
+of a user. Risks to privacy should be addressed by collaboration between providers and
+developers in developing LMMs that preserve individual privacy. Work on such an LMM
+is under way by one company and a hospital system in the USA, although the project is
+considered unlikely to succeed because the data cannot be fully de-identified (154). Impact
+assessments can also ensure that use of a general-purpose foundation model or application
+maintains humans in the loop to avoid automated decision-making in which a user receives
+false information or misinformation or a health-care provider or patient relies uncritically on
+the output of an LMM, which would be a form of automation bias.",deployer,null,prod; inference,automation bias,A deployer must maintain humans in the loop when using a general-purpose foundation model or application to avoid automation bias in decision-making.,null,when using a general-purpose foundation model or application for automated decision-making,TRUE,log_check; config_check; attest_check,Impact assessment,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0018,"This concern
+has gained the attention of competition authorities, which have found that first-movers may
+use ""unfair methods of competition to entrench their current power or use that power to
+gain control over a new generative AI market"" (141). Competition authorities are expected
+to exercise greater scrutiny of the use of LMMs, although they focus on the practices used by
+companies that develop LMMs (156). Providers should also be subject to AI regulatory assessments, as their use of an LMM may
+change its purpose and function from those determined by the developer but is controlled by
+the provider. Thus, if a general-purpose foundation model is adapted for use in health care or
+medicine by a provider, to which the developer agrees, both the developer and the provider",provider,null,high-risk; regulated,unassessed risk from model repurposing,A provider must be subject to AI regulatory assessments when their use of a large language model (LMM) changes its purpose and function from those determined by the developer.,null,when a provider's use of an LMM changes its purpose and function from those determined by the developer,TRUE,attest_check,AI regulatory assessment,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0021,"The WHO guidance
+on the ethics and governance of AI for health (1) recommended that: ""government regulators
+should require that an AI system's performance be tested, and sound evidence obtained from
+prospective testing in randomized trials and not merely from comparison of the system to
+existing datasets in a laboratory"". If an LMM or application is to be regulated as a medical device, the developer and/or provider
+should bear the burden of proof by providing evidence that the device performs as marketed
+and that it meets the requirements of current or amended national laws. This may include
+various requirements, such as adhering to ethical obligations related to bias and privacy. Newly proposed regulations on AI technologies for medical devices in the European Union and
+the USA will probably integrate ethical principles related to the use of AI in health, including
+""explainability"", control of bias and transparency.",developer; provider,null,regulated; high-risk,ineffective or unsafe medical device performance,The developer or provider must provide evidence that the device performs as marketed.,null,if an LMM or application is regulated as a medical device,TRUE,attest_check,performance evidence,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0021,"The WHO guidance
+on the ethics and governance of AI for health (1) recommended that: ""government regulators
+should require that an AI system's performance be tested, and sound evidence obtained from
+prospective testing in randomized trials and not merely from comparison of the system to
+existing datasets in a laboratory"". If an LMM or application is to be regulated as a medical device, the developer and/or provider
+should bear the burden of proof by providing evidence that the device performs as marketed
+and that it meets the requirements of current or amended national laws. This may include
+various requirements, such as adhering to ethical obligations related to bias and privacy. Newly proposed regulations on AI technologies for medical devices in the European Union and
+the USA will probably integrate ethical principles related to the use of AI in health, including
+""explainability"", control of bias and transparency.",developer; provider,null,regulated; high-risk,non-compliance with medical device laws,The developer or provider must provide evidence that the device meets the requirements of current or amended national laws.,null,if an LMM or application is regulated as a medical device,TRUE,attest_check,legal compliance evidence,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0022,"It is unlikely that current chatbots that
+include LMMs could meet such standards (158). LMMs for clinical decision support are already being used experimentally. Although
+these LMMs include disclaimers, they do not obviate application of medical device laws,
+""which dictate that such experiments should take place only in an authorized clinical trial
+setting under appropriate controls to protect patients and to produce clinically relevant
+outcomes"" (158). Governments could examine controlled experimental uses of such LMMs
+in regulatory ""sandboxes"", which would allow testing in a live environment in actual clinical
+settings with safeguards and oversight to protect health systems from risks or unintended
+consequences.",org,null,eval; research; regulated,patient harm from unregulated experiments,The org shall only conduct experiments with LMMs for clinical decision support within an authorized clinical trial setting.,null,when using LMMs for clinical decision support experimentally,TRUE,attest_check,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0024,"51
+5   Provision with general-purpose foundation models (LMMs)
+would be tantamount to manipulation (159). In the USA, several government departments
+and agencies are applying consumer protection laws and other regulations to prevent
+discrimination and bias in automated systems (159). Such laws can enable governments to
+require entities that seek to commercialize such technologies to address the causes of any
+negative consequences and to protect patients and their families from any current or future
+harm (93). Consumer protection laws, or other regulations, could be used to require that LMMs
+and applications are restricted in use of language that could misdirect or mislead an end-user
+into ascribing human-like qualities to an LMM.",entity,null,prod; regulated,discrimination and bias in automated systems,"The entity must address the causes of any negative consequences, such as discrimination and bias, from its automated systems.",null,when commercializing technologies,FALSE,null,null,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0024,"51
+5   Provision with general-purpose foundation models (LMMs)
+would be tantamount to manipulation (159). In the USA, several government departments
+and agencies are applying consumer protection laws and other regulations to prevent
+discrimination and bias in automated systems (159). Such laws can enable governments to
+require entities that seek to commercialize such technologies to address the causes of any
+negative consequences and to protect patients and their families from any current or future
+harm (93). Consumer protection laws, or other regulations, could be used to require that LMMs
+and applications are restricted in use of language that could misdirect or mislead an end-user
+into ascribing human-like qualities to an LMM.",entity,null,prod; regulated,patient harm,The entity must protect patients and their families from any current or future harm from its technologies.,null,when commercializing technologies,FALSE,null,null,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0025,"Such laws could therefore restrict use of or
+prevent LMMs or applications from using words such as ""I think"", ""I suppose"" or ""I suggest"". Recommendations:
+• Governments should, as resources permit, assign an existing or new regulatory
+agency to assess and approve LMMs and applications intended for use in health care
+or medicine.
+• Certain aspects of an LMM and its applications should be transparent to allow
+oversight and assessment of its safety and efficacy by regulators. This may include
+the source code, data inputs, model weights and analytical approach. Additional
+forms of disclosure to be considered by a government are the performance of an LMM
+or application in internal testing and its carbon and water footprints.
+• Governments should ensure that data protection rules apply to data entered into an
+LMM or application by a user.
+• Government laws, policies and regulations should ensure that LMMs and applications
+used in health care and medicine, irrespective of the risk or benefit associated with
+the AI technology, meet ethical obligations and human rights standards that affect,
+for example, a person's dignity, autonomy or privacy.
+• Governments should enact laws and policies that require providers and developers to
+conduct impact assessments of LMMs and applications, which should address ethics,
+human rights, safety and data protection, throughout the life cycle of an AI system.",developer,null,regulated,Impaired safety and efficacy oversight,"A developer shall make the source code, data inputs, model weights, and analytical approach of an LMM and its applications transparent to regulators.",null,for regulatory oversight and assessment,TRUE,repo_check; data_check; attest_check,source code; data inputs documentation; model weights file; analytical approach documentation,1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0025,"Such laws could therefore restrict use of or
+prevent LMMs or applications from using words such as ""I think"", ""I suppose"" or ""I suggest"". Recommendations:
+• Governments should, as resources permit, assign an existing or new regulatory
+agency to assess and approve LMMs and applications intended for use in health care
+or medicine.
+• Certain aspects of an LMM and its applications should be transparent to allow
+oversight and assessment of its safety and efficacy by regulators. This may include
+the source code, data inputs, model weights and analytical approach. Additional
+forms of disclosure to be considered by a government are the performance of an LMM
+or application in internal testing and its carbon and water footprints.
+• Governments should ensure that data protection rules apply to data entered into an
+LMM or application by a user.
+• Government laws, policies and regulations should ensure that LMMs and applications
+used in health care and medicine, irrespective of the risk or benefit associated with
+the AI technology, meet ethical obligations and human rights standards that affect,
+for example, a person's dignity, autonomy or privacy.
+• Governments should enact laws and policies that require providers and developers to
+conduct impact assessments of LMMs and applications, which should address ethics,
+human rights, safety and data protection, throughout the life cycle of an AI system.",provider; developer,null,null,Unaddressed safety and data protection risks,"Providers and developers shall conduct impact assessments of LMMs and applications, addressing ethics, human rights, safety, and data protection.",null,throughout the life cycle of an AI system,TRUE,attest_check,impact assessment,2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0025,"Such laws could therefore restrict use of or
+prevent LMMs or applications from using words such as ""I think"", ""I suppose"" or ""I suggest"". Recommendations:
+• Governments should, as resources permit, assign an existing or new regulatory
+agency to assess and approve LMMs and applications intended for use in health care
+or medicine.
+• Certain aspects of an LMM and its applications should be transparent to allow
+oversight and assessment of its safety and efficacy by regulators. This may include
+the source code, data inputs, model weights and analytical approach. Additional
+forms of disclosure to be considered by a government are the performance of an LMM
+or application in internal testing and its carbon and water footprints.
+• Governments should ensure that data protection rules apply to data entered into an
+LMM or application by a user.
+• Government laws, policies and regulations should ensure that LMMs and applications
+used in health care and medicine, irrespective of the risk or benefit associated with
+the AI technology, meet ethical obligations and human rights standards that affect,
+for example, a person's dignity, autonomy or privacy.
+• Governments should enact laws and policies that require providers and developers to
+conduct impact assessments of LMMs and applications, which should address ethics,
+human rights, safety and data protection, throughout the life cycle of an AI system.",org,null,eval; research; regulated,generation of clinically irrelevant outcomes,The org shall implement appropriate controls to produce clinically relevant outcomes during experimental use of LMMs for clinical decision support.,null,when using LMMs for clinical decision support experimentally,TRUE,attest_check,null,3
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0026,"The impact assessments should be audited by an independent third party before and
+after introduction of an AI technology and should be in the public domain.
+• The regulatory burden on a provider should increase if the product or application
+substantially diverges from or changes the foundation model in ways that are out of
+the control of the developer of the model.
+• Governments should ensure that, for an LMM or application that is regulated as a
+medical device, the developer and/or provider is responsible for the burden of proof",org; provider,null,staging,Unverified risk assessment prior to deployment,The org shall have impact assessments audited by an independent third party before the introduction of an AI technology.,null,before introduction of an AI technology,TRUE,attest_check,impact assessment (audit report),1
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0026,"The impact assessments should be audited by an independent third party before and
+after introduction of an AI technology and should be in the public domain.
+• The regulatory burden on a provider should increase if the product or application
+substantially diverges from or changes the foundation model in ways that are out of
+the control of the developer of the model.
+• Governments should ensure that, for an LMM or application that is regulated as a
+medical device, the developer and/or provider is responsible for the burden of proof",org; provider,null,prod,Outdated risk assessment post-deployment,The org shall have impact assessments audited by an independent third party after the introduction of an AI technology.,null,after introduction of an AI technology,TRUE,attest_check,impact assessment (audit report),2
+AI in health - WHO_removed/5-provision-with-general-purpose-foundation-models-lmms/5-2-measures-that-governments-can-introduce-to-address-such-/sent_0026,"The impact assessments should be audited by an independent third party before and
+after introduction of an AI technology and should be in the public domain.
+• The regulatory burden on a provider should increase if the product or application
+substantially diverges from or changes the foundation model in ways that are out of
+the control of the developer of the model.
+• Governments should ensure that, for an LMM or application that is regulated as a
+medical device, the developer and/or provider is responsible for the burden of proof",org,null,public,Lack of public transparency on AI risks,The org shall make its impact assessments available in the public domain.,null,null,FALSE,null,publicly available impact assessment,3
+AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001,"53
+6   Deployment with general-purpose foundation models (LMMs)
+6 Deployment with generalpurpose foundation models
+(LMMs)
+Even when an LMM or an application with an LMM has been ethically designed and undergone
+appropriate regulatory scrutiny, it may still carry risks when commercialized. The deployer of
+an AI health-care application or tool could be either the developer or the provider of an LMM
+or application or, for example, a ministry of health, a hospital, a health-care company or a
+pharmaceutical company.
+6.1
+Risks to be addressed when deploying a health-care
+service or application with a general-purpose foundation
+model (LMM)
+Risks during deployment may be due to the unpredictability of LMMs and the responses they
+provide, the possibility of use of a general-purpose foundation model in a manner that was
+not anticipated by either the developer or the provider, and because responses generated by
+an LMM may change over time. Major risks that must be addressed when deploying an LMM are:
+• inaccurate or false responses,
+• bias,
+• privacy of data entered into and put out by an LMM,
+• accessibility and affordability of an LMM,
+• impacts on labour and employment,
+• automation bias and skills degradation, and
+• the quality of interactions between health-care providers and patients. This section describes how the actors in the AI value chain, including users, can mitigate or
+prevent risks and the role of governments in regulating the use of AI tools once an LMM has
+been deployed, while equipping and training health-care workers and other actors in health
+systems to maximize appropriate use of an LMM.",deployer,null,prod; regulated,inaccurate or false responses,The deployer must address the risk of inaccurate or false responses when deploying an LMM for a health-care service or application.,null,when deploying an LMM,FALSE,null,null,1
+AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001,"53
+6   Deployment with general-purpose foundation models (LMMs)
+6 Deployment with generalpurpose foundation models
+(LMMs)
+Even when an LMM or an application with an LMM has been ethically designed and undergone
+appropriate regulatory scrutiny, it may still carry risks when commercialized. The deployer of
+an AI health-care application or tool could be either the developer or the provider of an LMM
+or application or, for example, a ministry of health, a hospital, a health-care company or a
+pharmaceutical company.
+6.1
+Risks to be addressed when deploying a health-care
+service or application with a general-purpose foundation
+model (LMM)
+Risks during deployment may be due to the unpredictability of LMMs and the responses they
+provide, the possibility of use of a general-purpose foundation model in a manner that was
+not anticipated by either the developer or the provider, and because responses generated by
+an LMM may change over time. Major risks that must be addressed when deploying an LMM are:
+• inaccurate or false responses,
+• bias,
+• privacy of data entered into and put out by an LMM,
+• accessibility and affordability of an LMM,
+• impacts on labour and employment,
+• automation bias and skills degradation, and
+• the quality of interactions between health-care providers and patients. This section describes how the actors in the AI value chain, including users, can mitigate or
+prevent risks and the role of governments in regulating the use of AI tools once an LMM has
+been deployed, while equipping and training health-care workers and other actors in health
+systems to maximize appropriate use of an LMM.",deployer,null,prod; regulated,bias,The deployer must address the risk of bias when deploying an LMM for a health-care service or application.,null,when deploying an LMM,FALSE,null,null,2
+AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001,"53
+6   Deployment with general-purpose foundation models (LMMs)
+6 Deployment with generalpurpose foundation models
+(LMMs)
+Even when an LMM or an application with an LMM has been ethically designed and undergone
+appropriate regulatory scrutiny, it may still carry risks when commercialized. The deployer of
+an AI health-care application or tool could be either the developer or the provider of an LMM
+or application or, for example, a ministry of health, a hospital, a health-care company or a
+pharmaceutical company.
+6.1
+Risks to be addressed when deploying a health-care
+service or application with a general-purpose foundation
+model (LMM)
+Risks during deployment may be due to the unpredictability of LMMs and the responses they
+provide, the possibility of use of a general-purpose foundation model in a manner that was
+not anticipated by either the developer or the provider, and because responses generated by
+an LMM may change over time. Major risks that must be addressed when deploying an LMM are:
+• inaccurate or false responses,
+• bias,
+• privacy of data entered into and put out by an LMM,
+• accessibility and affordability of an LMM,
+• impacts on labour and employment,
+• automation bias and skills degradation, and
+• the quality of interactions between health-care providers and patients. This section describes how the actors in the AI value chain, including users, can mitigate or
+prevent risks and the role of governments in regulating the use of AI tools once an LMM has
+been deployed, while equipping and training health-care workers and other actors in health
+systems to maximize appropriate use of an LMM.",deployer,null,prod; regulated,privacy violation of patient data,The deployer must address the risk to privacy of data entered into and put out by an LMM when deploying it for a health-care service or application.,null,when deploying an LMM,FALSE,null,null,3
+AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001,"53
+6   Deployment with general-purpose foundation models (LMMs)
+6 Deployment with generalpurpose foundation models
+(LMMs)
+Even when an LMM or an application with an LMM has been ethically designed and undergone
+appropriate regulatory scrutiny, it may still carry risks when commercialized. The deployer of
+an AI health-care application or tool could be either the developer or the provider of an LMM
+or application or, for example, a ministry of health, a hospital, a health-care company or a
+pharmaceutical company.
+6.1
+Risks to be addressed when deploying a health-care
+service or application with a general-purpose foundation
+model (LMM)
+Risks during deployment may be due to the unpredictability of LMMs and the responses they
+provide, the possibility of use of a general-purpose foundation model in a manner that was
+not anticipated by either the developer or the provider, and because responses generated by
+an LMM may change over time. Major risks that must be addressed when deploying an LMM are:
+• inaccurate or false responses,
+• bias,
+• privacy of data entered into and put out by an LMM,
+• accessibility and affordability of an LMM,
+• impacts on labour and employment,
+• automation bias and skills degradation, and
+• the quality of interactions between health-care providers and patients. This section describes how the actors in the AI value chain, including users, can mitigate or
+prevent risks and the role of governments in regulating the use of AI tools once an LMM has
+been deployed, while equipping and training health-care workers and other actors in health
+systems to maximize appropriate use of an LMM.",deployer,null,prod; regulated,inequitable access to healthcare,The deployer must address risks related to the accessibility and affordability of an LMM when deploying it for a health-care service or application.,null,when deploying an LMM,FALSE,null,null,4
+AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001,"53
+6   Deployment with general-purpose foundation models (LMMs)
+6 Deployment with generalpurpose foundation models
+(LMMs)
+Even when an LMM or an application with an LMM has been ethically designed and undergone
+appropriate regulatory scrutiny, it may still carry risks when commercialized. The deployer of
+an AI health-care application or tool could be either the developer or the provider of an LMM
+or application or, for example, a ministry of health, a hospital, a health-care company or a
+pharmaceutical company.
+6.1
+Risks to be addressed when deploying a health-care
+service or application with a general-purpose foundation
+model (LMM)
+Risks during deployment may be due to the unpredictability of LMMs and the responses they
+provide, the possibility of use of a general-purpose foundation model in a manner that was
+not anticipated by either the developer or the provider, and because responses generated by
+an LMM may change over time. Major risks that must be addressed when deploying an LMM are:
+• inaccurate or false responses,
+• bias,
+• privacy of data entered into and put out by an LMM,
+• accessibility and affordability of an LMM,
+• impacts on labour and employment,
+• automation bias and skills degradation, and
+• the quality of interactions between health-care providers and patients. This section describes how the actors in the AI value chain, including users, can mitigate or
+prevent risks and the role of governments in regulating the use of AI tools once an LMM has
+been deployed, while equipping and training health-care workers and other actors in health
+systems to maximize appropriate use of an LMM.",deployer,null,prod; regulated,automation bias and skills degradation,The deployer must address the risks of automation bias and skills degradation when deploying an LMM for a health-care service or application.,null,when deploying an LMM,FALSE,null,null,5
+AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-1-risks-to-be-addressed-when-deploying-a-health-care-servi/sent_0001,"53
+6   Deployment with general-purpose foundation models (LMMs)
+6 Deployment with generalpurpose foundation models
+(LMMs)
+Even when an LMM or an application with an LMM has been ethically designed and undergone
+appropriate regulatory scrutiny, it may still carry risks when commercialized. The deployer of
+an AI health-care application or tool could be either the developer or the provider of an LMM
+or application or, for example, a ministry of health, a hospital, a health-care company or a
+pharmaceutical company.
+6.1
+Risks to be addressed when deploying a health-care
+service or application with a general-purpose foundation
+model (LMM)
+Risks during deployment may be due to the unpredictability of LMMs and the responses they
+provide, the possibility of use of a general-purpose foundation model in a manner that was
+not anticipated by either the developer or the provider, and because responses generated by
+an LMM may change over time. Major risks that must be addressed when deploying an LMM are:
+• inaccurate or false responses,
+• bias,
+• privacy of data entered into and put out by an LMM,
+• accessibility and affordability of an LMM,
+• impacts on labour and employment,
+• automation bias and skills degradation, and
+• the quality of interactions between health-care providers and patients. This section describes how the actors in the AI value chain, including users, can mitigate or
+prevent risks and the role of governments in regulating the use of AI tools once an LMM has
+been deployed, while equipping and training health-care workers and other actors in health
+systems to maximize appropriate use of an LMM.",deployer,null,prod; regulated,degraded quality of patient-provider interactions,The deployer must address risks to the quality of interactions between health-care providers and patients when deploying an LMM for a health-care service or application.,null,when deploying an LMM,FALSE,null,null,6
+AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0002,"Post-release auditing and impact
+assessments should be published and should address outcomes and impacts disaggregated
+by type of user, for example by age, race or disability. Secondly, governments could hold providers or developers responsible for inaccurate, false
+or toxic content from an LMM after its release that neither the provider nor the developer took
+steps to correct or avoid. The Chinese Government's regulation on generative AI, for example,
+stipulates that it must not produce information that is ""false and harmful"" (151), with possible
+enforcement by the Government. In the European Union, addition of an LMM to a product or
+service could create additional responsibilities for the developer and the provider of the LMM.",org,null,prod,discriminatory model impact,The org must publish post-release auditing and impact assessments.,null,post-release,TRUE,repo_check; attest_check,auditing report; impact assessment,1
+AI in health - WHO_removed/6-deployment-with-general-purpose-foundation-models-lmms/6-3-responsibilities-of-deployers/sent_0004,"If a deployer receives clear, adequate warning of such
+risks and still offers the LMM for use in inappropriate settings, the deployer should be held
+accountable for any resulting harm.",deployer,null,prod,Harm from LMM use in inappropriate settings,A deployer shall not offer a Large Language Model (LMM) for use in inappropriate settings after receiving a clear and adequate warning of the associated risks.,null,after receiving clear and adequate warning of risks,FALSE,null,null,1
+AI in health - WHO_removed/7-liability-for-lmms/sent_0001,"58
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 
+7 Liability for LMMs
+As LMMs gain broader use in health care and medicine, errors, misuse and ultimately harm
+to individuals are inevitable. Liability rules will have to be used to compensate individuals
+for such harm, with establishment of new forms of redress when current approaches are
+insufficient or out of date. The design, development, quality assurance and deployment of AI technologies involve
+various entities, each of which plays a distinct role.",deployer,null,prod; public,user harm from unknown risks,The deployer shall communicate any risks they should reasonably know could result from use of a large multimodal model (LMM) in a manner that is not in fine print or easy to miss.,null,null,TRUE,io_check; repo_check,null,1
+AI in health - WHO_removed/7-liability-for-lmms/sent_0001,"58
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 
+7 Liability for LMMs
+As LMMs gain broader use in health care and medicine, errors, misuse and ultimately harm
+to individuals are inevitable. Liability rules will have to be used to compensate individuals
+for such harm, with establishment of new forms of redress when current approaches are
+insufficient or out of date. The design, development, quality assurance and deployment of AI technologies involve
+various entities, each of which plays a distinct role.",deployer,null,prod; public,user harm from uncommunicated errors,The deployer shall communicate any errors or mistakes that have harmed users in a manner that is not in fine print or easy to miss.,null,null,TRUE,io_check; repo_check; attest_check,null,2
+AI in health - WHO_removed/7-liability-for-lmms/sent_0004,"Thus, if a victim can demonstrate
+that one or more entities did not comply with an obligation relevant to the harm and that
+a causal link with AI performance is likely, the court can presume that non-compliance
+was the cause of the damage (162). The onus is thus placed on the liable party to rebut the
+presumption, for example by indicating another party as the cause of the damage. The
+scope of the legislation is not limited to the original maker of an AI system but includes any
+participant in the AI value chain (162). When all the actors in the AI value chain are held jointly
+liable, they can demonstrate their effectiveness in assessing and mitigating risks in order to
+reduce their liability.",practitioner,null,inference; regulated,unauthorized disclosure of protected health information,A practitioner shall not introduce protected health information into a large multi-modal model (LMM) chatbot.,null,when introducing protected health information into a large multi-modal model (LMM) chatbot,TRUE,io_check; log_check; config_check,null,1

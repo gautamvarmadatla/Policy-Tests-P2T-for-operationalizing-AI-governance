@@ -1,0 +1,4189 @@
+- rule_id: spans-passthrough-candidates/sent_0001-482976ad
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete impact assessment
+  conditions:
+  - early in the system's development
+  - when defining the product vision and requirements
+  exceptions: []
+  requirements:
+  - Assess the impact of the system on people, organizations, and society by completing
+    an Impact Assessment.
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-b5161cde
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of compliance approval
+  conditions:
+  - before development starts
+  exceptions: []
+  requirements:
+  - Review the completed Impact Assessment with the reviewers identified according
+    to your organization's compliance process
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-7dea7348
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of compliance approval
+  conditions:
+  - before development starts
+  exceptions: []
+  requirements:
+  - Secure all required approvals from those reviewers
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-bfe2f9a7
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete impact assessment
+  conditions:
+  - at least annually
+  - when new intended uses are added
+  - before advancing to a new release stage
+  exceptions: []
+  requirements:
+  - Update the Impact Assessment at least annually
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-1ac21f47
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete impact assessment
+  conditions:
+  - at least annually
+  - when new intended uses are added
+  - before advancing to a new release stage
+  exceptions: []
+  requirements:
+  - Review the Impact Assessment when new intended uses are added
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-c7918c4a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a1-impact-assessment/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete impact assessment
+  conditions:
+  - at least annually
+  - when new intended uses are added
+  - before advancing to a new release stage
+  exceptions: []
+  requirements:
+  - Review the Impact Assessment before advancing to a new release stage
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-a99aa2c1
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: significant adverse impact on people, organizations, and society
+  conditions: []
+  exceptions: []
+  requirements:
+  - Review defined Restricted Uses to determine whether the system meets the definition
+    of any Restricted Use.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-a5e2a8ed
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: significant adverse impact on people, organizations, and society
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document this in the Impact Assessment if the system meets the definition of any
+    Restricted Use.
+  evidence:
+  - Impact Assessment
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-9d62eab9
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: significant adverse impact on people, organizations, and society
+  conditions: []
+  exceptions: []
+  requirements:
+  - Follow the requirements for the Restricted Use if the system meets the definition
+    of any Restricted Use.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-10f21067
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to report sensitive use
+  conditions: []
+  exceptions: []
+  requirements:
+  - Answer prompts in the Impact Assessment template to determine whether the system
+    meets the definition of a Sensitive Use.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-3cc6dc21
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to escalate sensitive use
+  conditions:
+  - if the system meets the definition of a Sensitive Use
+  exceptions: []
+  requirements:
+  - report it to the Office of Responsible AI.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-904d9d66
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: non-compliance with additional requirements
+  conditions:
+  - after reporting to the Office of Responsible AI
+  exceptions: []
+  requirements:
+  - follow any additional requirements resulting from a Sensitive Uses review.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-489da8e5
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to identify sensitive or restricted uses
+  conditions: []
+  exceptions: []
+  requirements:
+  - Review systems at least annually against the definitions for Sensitive Uses and
+    Restricted Uses.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-111e7e69
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to report sensitive uses
+  conditions:
+  - if there are systems that meet the criteria for Sensitive Uses
+  exceptions: []
+  requirements:
+  - Report systems that meet the criteria for Sensitive Uses to the Office of Responsible
+    AI.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-b511f0de
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a2-oversight-of-significant-adverse-impacts/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to notify about restricted uses
+  conditions:
+  - if there are systems that meet the criteria for Restricted Uses
+  exceptions: []
+  requirements:
+  - Notify the Office of Responsible AI about systems that meet the criteria for Restricted
+    Uses.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-f0e101d8
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: invalid solution to the problem
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document in the Impact Assessment how the system's use will solve the problem
+    posed by each intended use.
+  evidence:
+  - Impact Assessment
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-7880d427
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete model representation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document the model's proposed inputs and analyze the limitations of
+    this representation.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-d61fb7c5
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete model representation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document the model's proposed outputs and analyze the limitations of
+    this representation.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-6191b330
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete model representation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the limitations to the generalizability of the resulting model based
+    on training and testing data.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-24d535a5
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: undefined responsible release criteria
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document Responsible Release Criteria including a concise definition
+    of the problem being solved in the intended use.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-ca5d0396
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: undefined responsible release criteria
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define performance metrics and their Responsible Release Criteria.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-d26e7d1a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: undefined responsible release criteria
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define error types and their Responsible Release Criteria.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-aaad6e8a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of performance evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document an evaluation plan for each of the performance metrics and error types.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-fb3c13c4
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation documentation
+  conditions: []
+  exceptions: []
+  requirements:
+  - conduct evaluations using the methods defined in requirement A3.4
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-f348b498
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation documentation
+  conditions: []
+  exceptions: []
+  requirements:
+  - document the pre-release results of the evaluations
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-dc2e369f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation documentation
+  conditions: []
+  exceptions: []
+  requirements:
+  - determine and document how often ongoing evaluation should be conducted
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-953ff708
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of transparency in intended uses
+  conditions: []
+  exceptions: []
+  requirements:
+  - Provide documentation to customers that describes the system's intended uses.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-c62da179
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: misuse of the system due to unclear purpose
+  conditions: []
+  exceptions: []
+  requirements:
+  - Provide evidence that the system is fit for purpose for each intended use.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0005-917438c6
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: misleading customer information
+  conditions:
+  - if an intended use is not supported by evidence
+  - if evidence comes to light that refutes that the system is fit for purpose
+  exceptions: []
+  requirements:
+  - remove the intended use from customer-facing materials
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-d7c11104
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: misleading customer information
+  conditions:
+  - if an intended use is not supported by evidence
+  - if evidence comes to light that refutes that the system is fit for purpose
+  exceptions: []
+  requirements:
+  - make current customers aware of the issue
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-f5b37893
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: misleading customer information
+  conditions:
+  - if an intended use is not supported by evidence
+  - if evidence comes to light that refutes that the system is fit for purpose
+  exceptions: []
+  requirements:
+  - take action to close the identified gap
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-99963df0
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: misleading customer information
+  conditions:
+  - if an intended use is not supported by evidence
+  - if evidence comes to light that refutes that the system is fit for purpose
+  exceptions: []
+  requirements:
+  - discontinue the system
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-bcc1ef01
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete documentation
+  conditions:
+  - if an intended use is not supported by evidence
+  - if evidence comes to light that refutes that the system is fit for purpose
+  exceptions: []
+  requirements:
+  - revise documentation related to the intended use
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0005-b840d925
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of updated information to customers
+  conditions:
+  - if an intended use is not supported by evidence
+  - if evidence comes to light that refutes that the system is fit for purpose
+  exceptions: []
+  requirements:
+  - publish the revised documentation to customers
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0005-5333055a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a3-fit-for-purpose/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of transparency
+  conditions:
+  - when the system is a platform service made available to external customers or
+    partners
+  exceptions: []
+  requirements:
+  - include this information in the required Transparency Note
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-bea5c726
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate data governance
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define data requirements with respect to the system's intended uses, stakeholders,
+    and the geographic areas where the system will be deployed.
+  evidence:
+  - impact assessment
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-d5e67a14
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate data governance
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the data requirements in the Impact Assessment.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-cf87177a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate data processing procedures
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document procedures for the collection and processing of data, including
+    annotation, labelling, cleaning, enrichment, and aggregation where relevant.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-31dc2b6b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unsuitable data sets for training
+  conditions: []
+  exceptions: []
+  requirements:
+  - Assess the quantity and suitability of available data sets needed by the system
+    in relation to the data requirements defined in A4.1.
+  evidence:
+  - Impact Assessment
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-6072b4f1
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of documentation for data set assessment
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the assessment of existing data sets in the Impact Assessment.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-cb93a894
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate data evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document methods for evaluating data to be used by the system against
+    the requirements defined in A4.1.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-5e2ec17c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate data evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Evaluate all data sets using the methods defined in requirement A4.4.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-535e9f54
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a4-data-governance-and-management/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate documentation of evaluation results
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the results of the evaluation.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-7cfecab0
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of human oversight
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify the stakeholders who are responsible for troubleshooting, managing, operating,
+    overseeing, and controlling the system during and after deployment.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-95aa35de
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of documented oversight
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document these stakeholders and their oversight and control responsibilities using
+    the Impact Assessment template.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-7b959036
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of stakeholder oversight understanding
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify the system elements necessary for stakeholders to effectively understand
+    their oversight responsibilities.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-a3cee5be
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of stakeholder oversight understanding
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the system design elements that will support relevant stakeholders for
+    each oversight and control function.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-7732cbcc
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of human oversight
+  conditions: []
+  exceptions: []
+  requirements:
+  - providing guidance on human oversight considerations to the third party responsible
+    for implementing the system elements identified in A5.2
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-9e822df8
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ineffective evaluation of oversight functions
+  conditions: []
+  exceptions: []
+  requirements:
+  - defining and documenting the method to evaluate whether each oversight or control
+    function can be accomplished by stakeholders in realistic conditions of system
+    use
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-132dcfd9
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete evaluation criteria for oversight functions
+  conditions: []
+  exceptions: []
+  requirements:
+  - including the metrics or rubrics that will be used in the evaluations
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-5da04165
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of oversight and control
+  conditions: []
+  exceptions: []
+  requirements:
+  - provide guidance on evaluating oversight and control functions to the third party
+    responsible for evaluating oversight or control functions.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-6d944f22
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate release criteria
+  conditions: []
+  exceptions: []
+  requirements:
+  - define and document Responsible Release Criteria to achieve this Goal.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-d5b64680
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of effective evaluations
+  conditions: []
+  exceptions: []
+  requirements:
+  - conduct evaluations defined by requirement A5.4 using a near-release version of
+    the system.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-845d63e4
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of documented results
+  conditions: []
+  exceptions: []
+  requirements:
+  - document the results of evaluations.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0005-daa57421
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: gaps in Responsible Release Criteria management
+  conditions: []
+  exceptions: []
+  requirements:
+  - consult with the reviewers named in the Impact Assessment if Responsible Release
+    Criteria are not met
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-456fe4dd
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/accountability-goals
+    span_id: Microsoft/index/accountability-goals/goal-a5-human-oversight-and-control/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: gaps in Responsible Release Criteria management
+  conditions: []
+  exceptions: []
+  requirements:
+  - develop a plan detailing how the gap will be managed until it can be closed
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-67b219c5
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of stakeholder identification
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify stakeholders who will use the outputs of the system to make decisions.
+  evidence:
+  - Impact Assessment template
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-eb63bbe8
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of stakeholder identification
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify stakeholders who are subject to decisions informed by the system.
+  evidence:
+  - Impact Assessment template
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-f2351da7
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: automation bias
+  conditions: []
+  exceptions: []
+  requirements:
+  - Design the system including UX, features, reporting functions, and educational
+    materials to help stakeholders understand the system's intended uses.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-ace2ec1a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: automation bias
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document how the system design will support stakeholders' understanding of the
+    system's intended uses.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-cc15861b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: automation bias
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document how the system aids stakeholders in interpreting relevant system responses.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-4359c9eb
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: automation bias
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document how the system design discourages automation bias.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-e1f790ac
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate stakeholder understanding
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document the method to evaluate whether each stakeholder can interpret
+    relevant system responses reasonably well.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-12d1f81e
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document a Responsible Release Plan.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-b16b359e
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Include metrics or rubrics that will be used in the evaluations.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-ff6b2851
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation results documentation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Conduct evaluations defined by requirement T1.3.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-2c2fb20d
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation results documentation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the pre-release results of the evaluations.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-b36c2c39
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate determination of evaluation frequency
+  conditions: []
+  exceptions: []
+  requirements:
+  - Determine and document how often ongoing evaluation should be conducted to continue
+    supporting this Goal.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-14ec19fb
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to address Responsible Release Criteria gaps
+  conditions: []
+  exceptions: []
+  requirements:
+  - consult with the reviewers named in the Impact Assessment
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-44ba401a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to address Responsible Release Criteria gaps
+  conditions: []
+  exceptions: []
+  requirements:
+  - develop a plan detailing how the gap will be managed until it can be closed
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-ad7cbe25
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to address Responsible Release Criteria gaps
+  conditions: []
+  exceptions: []
+  requirements:
+  - document that plan
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-5ad3022c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0006
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: lack of understanding of model predictions
+  conditions: []
+  exceptions: []
+  requirements:
+  - follow the Guidelines for Human-AI Interaction when designing the system
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-2098118f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0006
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: lack of understanding of model predictions
+  conditions: []
+  exceptions: []
+  requirements:
+  - use one or more techniques available as part of the Interpret ML toolkit to understand
+    the impact of features on system behavior
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-08285d49
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t1-system-intelligibility-for-decision-making/sent_0006
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: inadequate evaluations of the system
+  conditions: []
+  exceptions: []
+  requirements:
+  - assign user researchers to define, design, and prioritize evaluations in appropriately
+    realistic contexts of use
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-fbc71f83
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of informed decision-making by stakeholders
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify stakeholders who make decisions about whether to employ a system for
+    particular tasks.
+  evidence:
+  - Impact Assessment template
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-2893277a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of informed decision-making by stakeholders
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify stakeholders who develop or deploy systems that integrate with this system.
+  evidence:
+  - Impact Assessment template
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-c46c5442
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of stakeholder understanding of system
+  conditions: []
+  exceptions: []
+  requirements:
+  - publish documentation for the system so that stakeholders can understand the system
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-e546f61f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of clarity on system capabilities
+  conditions: []
+  exceptions: []
+  requirements:
+  - include capabilities in the documentation
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-d6e32039
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: misuse of the system
+  conditions: []
+  exceptions: []
+  requirements:
+  - include intended uses in the documentation
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-1bc9263a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unsafe system use
+  conditions: []
+  exceptions: []
+  requirements:
+  - include uses that require extra care or guidance in the documentation
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-b97df671
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ineffective system use
+  conditions: []
+  exceptions: []
+  requirements:
+  - include operational factors and settings that allow for effective and responsible
+    system use in the documentation
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-d8cda868
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unawareness of system limitations
+  conditions: []
+  exceptions: []
+  requirements:
+  - include limitations in the documentation
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-bf94201c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inaccurate or outdated documentation
+  conditions:
+  - when new uses are added
+  - when functionality changes
+  - when the product moves to a new release stage
+  - when new information about reliable and safe performance becomes known as defined
+    by requirement RS3.3
+  - when new information about system accuracy and performance becomes available
+  exceptions: []
+  requirements:
+  - review and update documentation annually
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-7492fde4
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t2-communication-to-stakeholders/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inaccurate or outdated documentation
+  conditions:
+  - when new uses are added
+  - when functionality changes
+  - when the product moves to a new release stage
+  - when new information about reliable and safe performance becomes known as defined
+    by requirement RS3.3
+  - when new information about system accuracy and performance becomes available
+  exceptions: []
+  requirements:
+  - include information in the required Transparency Note
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-f657fe4e
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: misleading AI interactions
+  conditions: []
+  exceptions: []
+  requirements:
+  - identify stakeholders who will use or be exposed to the system in accordance with
+    the Impact Assessment requirements.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-99b0d511
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of stakeholder awareness
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document stakeholders using the Impact Assessment template.
+  evidence:
+  - Impact Assessment template
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-49dd2a39
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: stakeholder unawareness
+  conditions: []
+  exceptions: []
+  requirements:
+  - Design the system to inform stakeholders identified in T3.1 about the type of
+    AI system they are interacting with.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-27c9927f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: misuse of AI outputs
+  conditions: []
+  exceptions: []
+  requirements:
+  - Ensure that outputs intended to be used outside the system are labelled as being
+    produced by AI.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-30c9a02a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: stakeholders not informed about AI system
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document the method to evaluate whether each stakeholder is informed
+    of the type of AI system they are interacting with.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-0eb8f948
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of responsible release criteria
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document Responsible Release Criteria to achieve this Goal.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-a3295cb9
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0004
+  scope:
+    actor:
+    - admin
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation documentation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Conduct evaluations defined by requirement T3.3.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-52879d74
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0004
+  scope:
+    actor:
+    - admin
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation documentation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the pre-release results of the evaluations.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-e6f5201f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/transparency-goals
+    span_id: Microsoft/index/transparency-goals/goal-t3-disclosure-of-ai-interaction/sent_0004
+  scope:
+    actor:
+    - admin
+    data_domain: []
+    context: []
+  hazard: lack of ongoing evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Determine and document how often ongoing evaluation should be conducted.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-4499c25f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unequal quality of service
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify demographic groups that may face worse quality of service based on intended
+    uses.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-474dd006
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unequal quality of service
+  conditions: []
+  exceptions: []
+  requirements:
+  - Prioritize marginalized groups at risk of unequal quality of service.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-0556b042
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of inclusiveness in data sets
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the prioritized identified demographic groups using the Impact Assessment
+    template.
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-26f68f58
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of inclusiveness in data sets
+  conditions: []
+  exceptions: []
+  requirements:
+  - Evaluate all data sets to assess inclusiveness of identified demographic groups
+    and collect data to close gaps.
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-289a6d06
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate system evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document the evaluation to support this Goal, including any system
+    components to be evaluated, in addition to the whole system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-9a9849d3
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate system evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the metrics to be used to evaluate the system components and the whole
+    system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-137c5981
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate system evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Provide a description of the data set to be used for this evaluation.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-6e0ddd08
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to document release criteria
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document Responsible Release Criteria to achieve this Goal, including
+    any target minimum performance level for all groups and the target maximum performance
+    difference between groups.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-af2409d1
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: performance disparities among demographic groups
+  conditions: []
+  exceptions: []
+  requirements:
+  - Evaluate the system according to the defined Responsible Release Criteria.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-2ea65ab3
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: performance disparities among demographic groups
+  conditions: []
+  exceptions: []
+  requirements:
+  - Reassess the system design, including the choice of training data, features, objective
+    function, and training algorithm.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-804edd33
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unclear legal compliance
+  conditions: []
+  exceptions: []
+  requirements:
+  - consult with attorney to determine approach
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-e5335a37
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to address demographic performance disparities
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify and document justifiable factors accounting for inability to meet target
+    minimum performance levels for demographic groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-7eb73f5f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to address demographic performance disparities
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify and document justifiable factors accounting for performance differences
+    between identified demographic groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0007-e1903d82
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: performance disparities
+  conditions:
+  - based on ongoing evaluation
+  exceptions: []
+  requirements:
+  - determine how often ongoing evaluation should be conducted
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0007-357b3f2e
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: performance disparities
+  conditions:
+  - based on ongoing evaluation
+  exceptions: []
+  requirements:
+  - publish information about identified demographic groups for which performance
+    may not meet any target minimum performance level
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0007-3d93c4cc
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: performance disparities
+  conditions:
+  - based on ongoing evaluation
+  exceptions: []
+  requirements:
+  - publish information about remaining performance disparities between identified
+    demographic groups that may exceed the target maximum
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0007-698a8d1f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: performance disparities
+  conditions:
+  - based on ongoing evaluation
+  exceptions: []
+  requirements:
+  - publish information about justifiable factors that account for performance levels
+    and differences
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0009-15b8f07b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0009
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: differences in quality of service
+  conditions: []
+  exceptions: []
+  requirements:
+  - use Best Practices for Age, Gender Identity, and Ancestry for identifying people
+    by age, gender identity, and ancestry in North America
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0009-82cd41d7
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0009
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: differences in demographic group performance
+  conditions: []
+  exceptions: []
+  requirements:
+  - work with user researchers to understand variations in demographic groups across
+    intended uses and geographic areas
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0009-47a1d07b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0009
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: factors impacting system performance
+  conditions: []
+  exceptions: []
+  requirements:
+  - work with domain-specific subject matter experts to understand the factors that
+    impact performance of your system and how they vary across identified demographic
+    groups in this domain
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0009-2f9f2f36
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0009
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: risks and impacts associated with differences in quality of service
+  conditions: []
+  exceptions: []
+  requirements:
+  - work with members of identified demographic groups to understand the risks of
+    and impacts associated with differences in quality of service
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0010-115e11c7
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0010
+  scope:
+    actor:
+    - org
+    data_domain:
+    - general
+    context: []
+  hazard: unrepresentative demographic data
+  conditions: []
+  exceptions: []
+  requirements:
+  - use Analysis Platform to understand the representation of identified demographic
+    groups in data sets for training and evaluating the system
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0010-b6a46ae0
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0010
+  scope:
+    actor:
+    - org
+    data_domain:
+    - general
+    context: []
+  hazard: lack of documentation on demographic representation
+  conditions: []
+  exceptions: []
+  requirements:
+  - document the representation of identified demographic groups in a Datasheet
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0011-7e30e85f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: performance level disparities
+  conditions: []
+  exceptions: []
+  requirements:
+  - Use Error Analysis to help understand factors that may account for performance
+    levels and differences.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0011-982b687c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: performance level disparities
+  conditions: []
+  exceptions: []
+  requirements:
+  - Use one or more techniques available as part of the Interpret ML toolkit to help
+    understand factors that may account for performance levels and differences.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0011-a5a2b1a2
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: performance level disparities
+  conditions: []
+  exceptions: []
+  requirements:
+  - Use the Fairlearn Python toolkit's assessment and mitigation capabilities.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0011-690ec25e
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: potential inadequacy of training data
+  conditions: []
+  exceptions: []
+  requirements:
+  - Be prepared to collect additional training data for identified demographic groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0012-600808de
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of understanding of performance factors
+  conditions:
+  - if appropriate for the system
+  exceptions: []
+  requirements:
+  - use error analysis to understand factors that may account for performance levels
+    and differences
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0012-5f2c4e31
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f1-quality-of-service/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of understanding of performance factors
+  conditions:
+  - if appropriate for the system
+  exceptions: []
+  requirements:
+  - use techniques from the Interpret ML toolkit to understand factors that may account
+    for performance levels and differences
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-9e3f6654
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: disparities in outcomes for demographic groups
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify demographic groups that may be at risk of being differentially impacted
+    by the system based on intended uses and geographic areas.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-728a5e0d
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: disparities in outcomes for demographic groups
+  conditions: []
+  exceptions: []
+  requirements:
+  - Prioritize groups defined by a single factor that may be at risk.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-5dab9dae
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: disparities in outcomes for demographic groups
+  conditions: []
+  exceptions: []
+  requirements:
+  - Prioritize groups defined by a combination of factors that may be at risk.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-8731965b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of inclusiveness in demographic data
+  conditions: []
+  exceptions: []
+  requirements:
+  - document the prioritized identified demographic groups using the Impact Assessment
+    template
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-5b512d91
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of inclusiveness in demographic data
+  conditions: []
+  exceptions: []
+  requirements:
+  - evaluate all data sets to assess inclusiveness of identified demographic groups
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-98e0e5ef
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of inclusiveness in demographic data
+  conditions: []
+  exceptions: []
+  requirements:
+  - collect data to close any gaps
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-f9bfc335
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of documented evaluation and criteria
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document the evaluation that will be performed to support this Goal.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-077db426
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of documented evaluation and criteria
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document Responsible Release Criteria to achieve this Goal.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-a7a4258b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unfair allocation of resources
+  conditions: []
+  exceptions: []
+  requirements:
+  - Evaluate the system according to the defined Responsible Release Criteria.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-f6c6b646
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unfair allocation of resources
+  conditions: []
+  exceptions: []
+  requirements:
+  - Reassess the system design, including the choice of training data, features, objective
+    function, and training algorithm.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-dee41d55
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate identification of trade-offs
+  conditions: []
+  exceptions: []
+  requirements:
+  - consult with your attorney to determine your approach to this
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0005-5597b555
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient documentation of trade-offs
+  conditions: []
+  exceptions: []
+  requirements:
+  - identify and document trade-offs
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-ff9ed2ce
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: resource allocation disparity
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify and document any justifiable factors that account for any remaining differences
+    between the rates at which resources and opportunities are allocated to identified
+    demographic groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-520df811
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: pre-release evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the pre-release results for the evaluation described by requirements
+    F2.4, F2.5, and F2.6.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-4b991168
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ongoing evaluation frequency
+  conditions: []
+  exceptions: []
+  requirements:
+  - Determine and document how often ongoing evaluation should be conducted to continue
+    supporting this goal.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0007-ad42d8c6
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unjust resource allocation
+  conditions: []
+  exceptions: []
+  requirements:
+  - publish information for customers about any remaining differences between the
+    rates at which resources and opportunities are allocated to identified demographic
+    groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0007-badbc70b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unjust resource allocation
+  conditions: []
+  exceptions: []
+  requirements:
+  - publish information for customers about any justifiable factors that account for
+    differences in resource allocation.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0008-904aaf5b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inequitable allocation of resources
+  conditions: []
+  exceptions: []
+  requirements:
+  - use Best Practices for Age, Gender Identity, and Ancestry to help identify demographic
+    groups and methods for collecting demographic information.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0008-93fbdad9
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inequitable allocation of resources
+  conditions: []
+  exceptions: []
+  requirements:
+  - work with user researchers to understand variations in demographic groups across
+    intended uses and geographic areas.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0008-38ea3314
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inequitable allocation of resources
+  conditions: []
+  exceptions: []
+  requirements:
+  - work with domain-specific subject matter experts to understand the facts that
+    impact performance of your system and how they vary across identified demographic
+    groups in this domain.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0008-b45e4fd4
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inequitable allocation of resources
+  conditions: []
+  exceptions: []
+  requirements:
+  - work with members of identified demographic groups to understand risks of and
+    impacts associated with differences between the rates at which resources and opportunities
+    are allocated.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0009-6cee7e7f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0009
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unauthorized use of sensitive data
+  conditions: []
+  exceptions: []
+  requirements:
+  - use Analysis Platform to understand the representation of identified demographic
+    groups
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0009-26f0e7ca
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0009
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unauthorized use of sensitive data
+  conditions: []
+  exceptions: []
+  requirements:
+  - document the representation of identified demographic groups in a Datasheet
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0009-03a5eacd
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0009
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unauthorized use of sensitive data
+  conditions: []
+  exceptions: []
+  requirements:
+  - use the Fairlearn Python toolkit's assessment and mitigation capabilities
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0009-f1b66c21
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0009
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unauthorized use of sensitive data
+  conditions: []
+  exceptions: []
+  requirements:
+  - use Error Analysis to help understand factors that may account for differences
+    in resource allocation
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0010-f732aa28
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0010
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unequal resource allocation
+  conditions:
+  - if appropriate for the system
+  exceptions: []
+  requirements:
+  - Use one or more techniques available as part of the Interpret ML toolkit to help
+    understand factors that may account for differences between the rates at which
+    resources and opportunities are allocated to the identified demographic groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0010-25b9bb42
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0010
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unequal resource allocation
+  conditions:
+  - if appropriate for the system
+  exceptions: []
+  requirements:
+  - Use the Fairlearn Python toolkit's assessment and mitigation capabilities.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0010-c5198ebc
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0010
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unequal resource allocation
+  conditions:
+  - if appropriate for the system
+  exceptions: []
+  requirements:
+  - Use Error Analysis to help understand factors that may account for differences
+    between the rates at which resources and opportunities are allocated to the identified
+    demographic groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0010-a3f9aa6a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f2-allocation-of-resources-and-opportunities/sent_0010
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unequal resource allocation
+  conditions:
+  - if appropriate for the system
+  exceptions: []
+  requirements:
+  - Use Interpret ML to help understand factors that may account for differences between
+    the rates at which resources and opportunities are allocated to the identified
+    demographic groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-027f9fd3
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: stereotyping outputs
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify and prioritize demographic groups that may be at risk of being subject
+    to stereotyping outputs of the system.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-a0bc3637
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: demeaning outputs
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify and prioritize marginalized groups that may be at risk of being subject
+    to demeaning outputs of the system.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-41c6969f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: erasing outputs
+  conditions: []
+  exceptions: []
+  requirements:
+  - Identify and prioritize demographic groups that may be at risk of being subject
+    to erasing outputs of the system.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-bd6675d2
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: risk of stereotyping
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the prioritized identified demographic groups using the Impact Assessment
+    template.
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-9c46c52f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: risk of stereotyping
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document any system components to be evaluated, in addition to the
+    whole system.
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-296e08de
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: risk of stereotyping
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document a plan to evaluate the system components and the whole system
+    for risks of stereotyping, demeaning, and erasing the prioritized identified demographic
+    groups.
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-54e2c65c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0003
+  scope:
+    actor:
+    - evaluator
+    data_domain: []
+    context: []
+  hazard: stereotyping in system outcomes
+  conditions: []
+  exceptions: []
+  requirements:
+  - Evaluate the system according to the plan defined in requirement F3.3.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-4f9ee287
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0003
+  scope:
+    actor:
+    - evaluator
+    data_domain: []
+    context: []
+  hazard: stereotyping in system design
+  conditions: []
+  exceptions: []
+  requirements:
+  - Reassess the system design, including the choice of training data, features, objective
+    function, and training algorithm.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-dcd83a2f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation of fairness goals
+  conditions: []
+  exceptions: []
+  requirements:
+  - document the pre-release results from requirements F3.4 and F3.5
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-3c958bfc
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient support for ongoing evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - determine and document how often ongoing evaluation should be conducted to continue
+    supporting this goal
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0005-25a5d32b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: misleading information for customers
+  conditions: []
+  exceptions: []
+  requirements:
+  - Publish information for customers about risks involving identified demographic
+    groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0005-3919b6d4
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of transparency about risks
+  conditions:
+  - when the system is a platform service made available to external customers or
+    partners
+  exceptions: []
+  requirements:
+  - Include this information in the required Transparency Note.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-b7fa7ad9
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: risks affecting demographic groups
+  conditions: []
+  exceptions: []
+  requirements:
+  - Work with user researchers, subject matter experts, and members of identified
+    demographic groups to understand these risks and their impacts.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-e7295f10
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: risks affecting demographic groups
+  conditions: []
+  exceptions: []
+  requirements:
+  - Use CheckList to help evaluate these risks involving identified demographic groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-101b5e78
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: risks affecting demographic groups
+  conditions: []
+  exceptions: []
+  requirements:
+  - Use red teaming exercises to evaluate these risks involving identified demographic
+    groups.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-4be51271
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: harms to identified demographic groups
+  conditions: []
+  exceptions: []
+  requirements:
+  - Mitigate any risks of these types of harms that you can.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0007-690f53d0
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: risk of stereotyping and demeaning
+  conditions: []
+  exceptions: []
+  requirements:
+  - establish feedback mechanisms
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0007-8b5a61ae
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/fairness-goals
+    span_id: Microsoft/index/fairness-goals/goal-f3-minimization-of-stereotyping-demeaning-and-erasing-o/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: risk of stereotyping and demeaning
+  conditions: []
+  exceptions: []
+  requirements:
+  - create a plan for addressing problems
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-a6f106ed
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unreliable AI system performance
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document how reliable and safe behavior is defined for this system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-59c99b4f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unreliable AI system performance
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document what acceptable error rates are for overall system performance in the
+    context of intended uses.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-11d2b6f1
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: incomplete data evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - evaluate training and test data sets for representation of intended uses, operational
+    factors, and an appropriate range of settings for each factor
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-666ab96d
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: incomplete data evaluation
+  conditions: []
+  exceptions: []
+  requirements:
+  - document the evaluation of training and test data sets
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-97a45048
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: lack of operational factors documentation
+  conditions: []
+  exceptions: []
+  requirements:
+  - determine and document the operational factors critical for reliable and safe
+    use of the system in its deployed context
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-acfc78db
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unreliable system use
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document acceptable ranges for each operational factor important to
+    support reliable and safe system use.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-6efa7ced
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unreliable system use
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document an acceptable error rate for the system when operating within
+    these ranges.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-66d1faad
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: low acceptable error rates
+  conditions: []
+  exceptions: []
+  requirements:
+  - define intended uses for operational factors, acceptable ranges, or error rates
+    to ensure reliability and safety
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-90a3e58c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: low acceptable error rates
+  conditions: []
+  exceptions: []
+  requirements:
+  - document conclusions on defined intended uses
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-1a0ff4fe
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of evaluation plan
+  conditions: []
+  exceptions: []
+  requirements:
+  - define and document an evaluation plan based on requirements RS1.1, RS1.3, RS1.4,
+    and RS1.5
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0005-58855faf
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unreliable system behavior
+  conditions: []
+  exceptions: []
+  requirements:
+  - Evaluate the system according to the evaluation plan defined in requirement RS1.6
+    to ensure reliable and safe system behavior.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-087a0c0d
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of documented evaluation results
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document the pre-release results of the evaluation.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0005-4004c999
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: infrequent evaluations leading to safety risks
+  conditions: []
+  exceptions: []
+  requirements:
+  - Determine and document how often ongoing evaluation should be conducted to continue
+    supporting this goal.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-268d696b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to resolve issues
+  conditions:
+  - in the event of failure cases within operational factors and defined ranges
+  exceptions: []
+  requirements:
+  - work to resolve the issues
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-47b2b754
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inability to meet Responsible Release Criteria
+  conditions:
+  - if the Responsible Release Criteria cannot be met
+  exceptions: []
+  requirements:
+  - conduct a reassessment of intended uses and update documentation
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0007-b45af444
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient documentation for unsupported uses
+  conditions: []
+  exceptions: []
+  requirements:
+  - Provide documentation to customers and potential customers that includes the outputs
+    of requirements RS1.2, RS1.7 and RS1.8.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0007-5fff1578
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: insufficient information about unsupported uses
+  conditions:
+  - when the system is a platform service made available to external customers or
+    partners
+  exceptions: []
+  requirements:
+  - Include unsupported uses defined in the Impact Assessment and in RS1.8 in the
+    documentation.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0008-5860c127
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unsafe system impact on people
+  conditions: []
+  exceptions: []
+  requirements:
+  - interview safety experts
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0008-fba7d829
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unsafe system impact on people
+  conditions: []
+  exceptions: []
+  requirements:
+  - review relevant literature
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0008-ef910a73
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of understanding of operational factors
+  conditions: []
+  exceptions: []
+  requirements:
+  - interview customers to understand operational factors
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0008-dc906c14
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs1-reliability-and-safety-guidance/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of understanding of operational factors
+  conditions: []
+  exceptions: []
+  requirements:
+  - understand variations in operational factors
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-b602e3e9
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure impact on stakeholders
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define predictable failures for the system as a whole and their impact on stakeholders
+    for each intended use.
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-cc108771
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure impact on stakeholders
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document any adverse impacts of these failures on stakeholders using the Impact
+    Assessment template.
+  evidence:
+  - Impact Assessment template
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-74d00d73
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: adverse impact on a stakeholder
+  conditions: []
+  exceptions: []
+  requirements:
+  - design and build the system to avoid predictable failures
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-eb7e1c19
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: adverse impact on a stakeholder
+  conditions: []
+  exceptions: []
+  requirements:
+  - document the failure management approach
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-4edbae35
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: adverse impact on a stakeholder
+  conditions: []
+  exceptions: []
+  requirements:
+  - build a fallback option that may be used when the failure occurs
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-df231940
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure resolution delay
+  conditions: []
+  exceptions: []
+  requirements:
+  - Describe the fallback option and document the estimated time required to invoke
+    and use the fallback option.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-62e690e3
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure resolution delay
+  conditions: []
+  exceptions: []
+  requirements:
+  - Provide training and documentation for stakeholders accountable for system oversight
+    that supports their resolution of the failure.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-7aaa1160
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: previous unknown failures
+  conditions: []
+  exceptions: []
+  requirements:
+  - Document your plan for managing previously unknown failures that come to light
+    once the system is in use.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-1c6cc5ec
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: rollback delays
+  conditions: []
+  exceptions: []
+  requirements:
+  - Describe the system's rollback plan and document the time that may elapse until
+    the entire system, across all endpoints can be rolled back.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-5fce6c4a
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: feature shutdown delays
+  conditions: []
+  exceptions: []
+  requirements:
+  - Describe support for turning features off and document the time that may elapse
+    until the feature can be turned off across all endpoints.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-7e0ffa3d
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: update delays
+  conditions: []
+  exceptions: []
+  requirements:
+  - Describe the process for updating and releasing updates to each model and document
+    the time that may elapse until the system has been updated across all endpoints.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-7f82cb96
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: failure in system design
+  conditions: []
+  exceptions: []
+  requirements:
+  - conduct Failure Mode and Effects Analysis
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-c586ec78
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs2-failures-and-remediations/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: poor human-AI interaction
+  conditions: []
+  exceptions: []
+  requirements:
+  - follow the Guidelines for Human-AI Interaction when designing the system
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-a89501ba
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to monitor system health
+  conditions: []
+  exceptions: []
+  requirements:
+  - Establish and document a detailed inventory of the system health monitoring methods
+    to be used.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-20e1b2fc
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: failure to monitor system health
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define and document a standard operating procedure and system health monitoring
+    action plan for each monitoring channel for the system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-de7e4066
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete reporting of issues and feedback
+  conditions: []
+  exceptions: []
+  requirements:
+  - Include processes by which customers can submit information about failures and
+    concerns.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-79c897e5
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: incomplete reporting of issues and feedback
+  conditions: []
+  exceptions: []
+  requirements:
+  - Include processes by which the general public can submit feedback.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-50ac76b3
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ineffective troubleshooting of system failures
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define which events will be monitored.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-fb508ec5
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ineffective troubleshooting of system failures
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define how events will be prioritized for review.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-ee15888c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ineffective troubleshooting of system failures
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define the expected frequency of those reviews.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-d4fcd445
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ineffective troubleshooting of system failures
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define how events will be prioritized for response and timing to resolution.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-abe52dca
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ineffective troubleshooting of system failures
+  conditions: []
+  exceptions: []
+  requirements:
+  - Define how high priority issues related to supporting the Standard and its goals
+    will be escalated to the Office of Responsible AI.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-a8284c3c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: ineffective troubleshooting of system failures
+  conditions: []
+  exceptions: []
+  requirements:
+  - Engage customer service to ensure that they are aware of how to respond to issues
+    for the system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-46aeaa2c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unsupported operational factor
+  conditions:
+  - when new uses or operational factors are identified
+  exceptions: []
+  requirements:
+  - evaluate the updated system in accordance with requirement RS1.6
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-e765876f
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unsupported operational factor
+  conditions:
+  - when new uses or operational factors are identified
+  exceptions: []
+  requirements:
+  - add the new intended use to the Impact Assessment
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-c6ad4b60
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unsupported operational factor
+  conditions:
+  - when new uses or operational factors are identified
+  exceptions: []
+  requirements:
+  - publish updated communication in accordance with requirement RS1.9
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-5d9c71b2
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unsupported operational factor
+  conditions:
+  - when new uses or operational factor range changes cannot or will not be accommodated
+  exceptions: []
+  requirements:
+  - update customer documentation to include the new use as an unsupported use
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-1df6d344
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unsupported operational factor
+  conditions:
+  - when new uses or operational factor range changes cannot or will not be accommodated
+  exceptions: []
+  requirements:
+  - include this information in the required Transparency Note if the system is a
+    platform service made available to external customers or partners
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-4dc63769
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: sensitive use evaluation
+  conditions:
+  - when a system is to be used for a Sensitive Use
+  exceptions: []
+  requirements:
+  - conduct an evaluation specific to this use
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-44c81782
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate release criteria management
+  conditions: []
+  exceptions: []
+  requirements:
+  - document any changes to the Responsible Release Criteria
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-ca7d83bb
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate release criteria management
+  conditions: []
+  exceptions: []
+  requirements:
+  - document the results of evaluation
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0003-c72b0fa5
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inadequate evaluation checkpoints
+  conditions: []
+  exceptions: []
+  requirements:
+  - conduct all evaluations tagged as Ongoing Evaluation Checkpoints on an ongoing
+    basis
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-ce8d7e67
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: system not fit for intended use
+  conditions:
+  - if there are targets in Ongoing Evaluation Checkpoints that are no longer satisfied
+  exceptions: []
+  requirements:
+  - consult with named reviewers
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-86279d08
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: system not fit for intended use
+  conditions:
+  - if there are targets in Ongoing Evaluation Checkpoints that are no longer satisfied
+  exceptions: []
+  requirements:
+  - document the process, its results, and conclusions
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-04924508
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: system not fit for intended use
+  conditions:
+  - if evidence comes to light that refutes the system is fit for purpose
+  exceptions: []
+  requirements:
+  - remove the intended use from customer-facing materials
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-d16d2d3b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: system not fit for intended use
+  conditions:
+  - if evidence comes to light that refutes the system is fit for purpose
+  exceptions: []
+  requirements:
+  - make current customers aware of the issue
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-88bf9c71
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: system not fit for intended use
+  conditions:
+  - if evidence comes to light that refutes the system is fit for purpose
+  exceptions: []
+  requirements:
+  - take action to close the identified gap
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-47be4904
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: system not fit for intended use
+  conditions:
+  - if evidence comes to light that refutes the system is fit for purpose
+  exceptions: []
+  requirements:
+  - revise documentation related to the intended use
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-436688de
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: system not fit for intended use
+  conditions:
+  - if evidence comes to light that refutes the system is fit for purpose
+  exceptions: []
+  requirements:
+  - publish the revised documentation to customers
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-1dc34b71
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inaccurate documentation
+  conditions:
+  - when new uses are added
+  - when functionality changes
+  - when new information about reliable and safe performance becomes known as defined
+    by requirement RS3.3
+  - when new information about system accuracy and performance becomes available
+  exceptions: []
+  requirements:
+  - review and update documentation required by Goal T2
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0006-0e82213c
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/reliability-safety-goals
+    span_id: Microsoft/index/reliability-safety-goals/goal-rs3-ongoing-monitoring-feedback-and-evaluation/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unresolved issues related to Standard requirements
+  conditions: []
+  exceptions: []
+  requirements:
+  - escalate unresolved issues related to supporting the Standard and its requirements
+    to the Office of Responsible AI.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0001-20086fe8
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/privacy-security-goals
+    span_id: Microsoft/index/privacy-security-goals/goal-ps2-security-policy-compliance/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: security policy non-compliance
+  conditions:
+  - when Microsoft Security Policy applies
+  exceptions: []
+  requirements:
+  - design AI systems to be secure in accordance with the Microsoft Security Policy
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-f39f082b
+  source:
+    doc: spans_passthrough_candidates
+    citation: index/inclusiveness-goal
+    span_id: Microsoft/index/inclusiveness-goal/goal-i1-accessibility-standards-compliance/sent_0001
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: non-compliance with accessibility standards
+  conditions:
+  - when Microsoft Accessibility Standards apply
+  exceptions: []
+  requirements:
+  - design Microsoft AI systems to be inclusive in accordance with the Microsoft Accessibility
+    Standards
+  evidence: []
+  severity: high

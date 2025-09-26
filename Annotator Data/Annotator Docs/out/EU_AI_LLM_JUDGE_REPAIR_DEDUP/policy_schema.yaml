@@ -1,0 +1,1698 @@
+- rule_id: spans-passthrough-candidates/sent_0001-051aaad4
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0001
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: non-compliance with Union harmonisation legislation
+  conditions:
+  - product contains an AI system to which the requirements of this Regulation and
+    the Union harmonisation legislation listed in Section A of Annex I apply
+  exceptions: []
+  requirements:
+  - Providers shall ensure that their product is fully compliant with all applicable
+    requirements under the Union harmonisation legislation listed in Section A of
+    Annex I.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-a268b98f
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unmanaged risks to health, safety or fundamental rights
+  conditions: []
+  exceptions: []
+  requirements:
+  - Establish, implement, document and maintain a risk management system in relation
+    to high-risk AI systems.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-3dae10ef
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: outdated or insufficient risk controls over lifecycle
+  conditions: []
+  exceptions: []
+  requirements:
+  - Plan and run the risk management system as a continuous iterative process throughout
+    the entire lifecycle of the high-risk AI system and perform regular systematic
+    review and updating.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-80abef72
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: undetected risks to health, safety or fundamental rights
+  conditions:
+  - risks limited to those reasonably mitigable or eliminable through development
+    or design or the provision of adequate technical information
+  exceptions: []
+  requirements:
+  - Identify and analyze the known and the reasonably foreseeable risks that the high-risk
+    AI system can pose to health, safety or fundamental rights when the system is
+    used in accordance with its intended purpose.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-804c7472
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unassessed risks from misuse or intended use
+  conditions:
+  - risks limited to those reasonably mitigable or eliminable through development
+    or design or the provision of adequate technical information
+  exceptions: []
+  requirements:
+  - Estimate and evaluate the risks that may emerge when the high-risk AI system is
+    used in accordance with its intended purpose and under conditions of reasonably
+    foreseeable misuse.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-eaff12b3
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: emergent post-deployment risks not evaluated
+  conditions:
+  - based on analysis of data gathered from the post-market monitoring system (Article
+    72)
+  - risks limited to those reasonably mitigable or eliminable through development
+    or design or the provision of adequate technical information
+  exceptions: []
+  requirements:
+  - Evaluate other risks possibly arising based on analysis of data gathered from
+    the post-market monitoring system (Article 72).
+  evidence:
+  - post-market monitoring data
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-628411df
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unmitigated risks despite available design or information measures
+  conditions:
+  - to address the risks identified pursuant to point (a)
+  - risks limited to those reasonably mitigable or eliminable through development
+    or design or the provision of adequate technical information
+  exceptions: []
+  requirements:
+  - Adopt appropriate and targeted risk management measures designed to address the
+    risks identified pursuant to point (a).
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-a5a06e22
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: risk from interacting requirements
+  conditions:
+  - risk management measures referred to in paragraph 2, point (d)
+  exceptions: []
+  requirements:
+  - org shall give due consideration to the effects and possible interaction resulting
+    from the combined application of the requirements set out in this Section, with
+    a view to minimising risks and achieving an appropriate balance in implementing
+    the measures.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-ae8457c4
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unacceptable residual risk
+  conditions:
+  - risk management measures referred to in paragraph 2, point (d)
+  exceptions: []
+  requirements:
+  - org shall ensure that the relevant residual risk associated with each hazard,
+    as well as the overall residual risk of the high-risk AI systems, is judged to
+    be acceptable.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-4a62316d
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unmitigated residual risks
+  conditions:
+  - in identifying the most appropriate risk management measures
+  - where appropriate
+  exceptions: []
+  requirements:
+  - org shall implement adequate mitigation and control measures addressing risks
+    that cannot be eliminated.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-53980801
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: deployers uninformed leading to unsafe deployment
+  conditions:
+  - in identifying the most appropriate risk management measures
+  exceptions: []
+  requirements:
+  - org shall provide the information required pursuant to Article 13 to deployers.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-0c187feb
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: deployers not trained to mitigate risks
+  conditions:
+  - in identifying the most appropriate risk management measures
+  - where appropriate
+  exceptions: []
+  requirements:
+  - org shall provide training to deployers where appropriate.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-f1369e50
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: inadequate risk management measures
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall conduct testing of the high-risk AI system for the purpose of
+    identifying the most appropriate and targeted risk management measures and produce
+    test results that identify the selected measures.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-7f538651
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: inconsistent system performance for intended purpose
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall conduct testing that demonstrates the high-risk AI system performs
+    consistently for its intended purpose and produce test results demonstrating that
+    consistency.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-bce9c4a4
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: non-compliance with Section requirements
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall test the high-risk AI system and produce test results demonstrating
+    compliance with the requirements set out in this Section.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-c3c4502f
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - dev
+    - prod
+  hazard: unsafe deployment of high-risk AI system
+  conditions:
+  - at any time throughout the development process
+  - prior to being placed on the market or put into service
+  exceptions: []
+  requirements:
+  - developer shall perform testing of the high-risk AI system during development
+    and, in any event, prior to the system being placed on the market or put into
+    service.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-6672d222
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - dev
+    - prod
+  hazard: deployment with unverified performance relative to intended purpose
+  conditions:
+  - against prior defined metrics and probabilistic thresholds
+  - appropriate to the intended purpose of the high-risk AI system
+  exceptions: []
+  requirements:
+  - developer shall carry out testing against prior defined metrics and probabilistic
+    thresholds that are appropriate to the intended purpose of the high-risk AI system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-2c8a99ba
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: adverse impact on persons under the age of 18
+  conditions:
+  - when implementing the risk management system as provided for in paragraphs 1 to
+    7
+  - in view of its intended purpose
+  exceptions: []
+  requirements:
+  - provider shall give consideration to whether, in view of its intended purpose,
+    the high-risk AI system is likely to have an adverse impact on persons under the
+    age of 18 and, as appropriate, other vulnerable groups.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-ab8dbddd
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: model failures due to poor-quality training data
+  conditions:
+  - whenever such data sets are used
+  exceptions: []
+  requirements:
+  - developer shall develop high-risk AI systems that make use of techniques involving
+    the training of AI models on the basis of training, validation and testing data
+    sets that meet the quality criteria referred to in paragraphs 2 to 5.
+  evidence:
+  - training, validation and testing data sets
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-91e2f015
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: insufficient data governance causing regulatory non-compliance
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall subject training, validation and testing data sets to data governance
+    and management practices appropriate for the intended purpose of the high-risk
+    AI system.
+  evidence:
+  - training, validation and testing data sets
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-8a606923
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: undocumented data origins leading to privacy violations
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall ensure data governance practices cover the data collection processes
+    and the origin of the data and, in the case of personal data, document the original
+    purpose of the data collection.
+  evidence:
+  - training, validation and testing data sets
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-f73b67aa
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: unmitigated biases causing harm or discrimination
+  conditions:
+  - for biases identified according to point (f)
+  exceptions: []
+  requirements:
+  - developer shall put in place appropriate measures to detect, prevent and mitigate
+    possible biases identified according to the examination required in point (f).
+  evidence:
+  - training, validation and testing data sets
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-b9f66e60
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - training
+  hazard: non-compliance due to data gaps or shortcomings
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall identify relevant data gaps or shortcomings that prevent compliance
+    with this Regulation and document how those gaps and shortcomings can be addressed.
+  evidence:
+  - training, validation and testing data sets
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-3a4ed50b
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+    - training
+    - eval
+  hazard: incorrect system behavior due to irrelevant training/validation/testing
+    data
+  conditions: []
+  exceptions:
+  - characteristics may be met at individual data set level or by a combination of
+    data sets
+  requirements:
+  - Developer shall ensure training, validation and testing data sets are relevant
+    in view of the intended purpose.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-a6efd9aa
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+    - training
+    - eval
+  hazard: model bias due to unrepresentative datasets
+  conditions: []
+  exceptions:
+  - characteristics may be met at individual data set level or by a combination of
+    data sets
+  requirements:
+  - Developer shall ensure training, validation and testing data sets are sufficiently
+    representative in view of the intended purpose.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-5e1310c7
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+    - training
+    - eval
+  hazard: incorrect outputs due to errors or incomplete data
+  conditions: []
+  exceptions:
+  - characteristics may be met at individual data set level or by a combination of
+    data sets
+  requirements:
+  - Developer shall ensure training, validation and testing data sets are, to the
+    best extent possible, free of errors and complete in view of the intended purpose.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-96fcaf11
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+    - training
+    - eval
+  hazard: unequal performance across persons or groups due to inappropriate statistical
+    properties
+  conditions:
+  - where applicable, regarding the persons or groups of persons the high-risk AI
+    system is intended to be used for
+  exceptions:
+  - characteristics may be met at individual data set level or by a combination of
+    data sets
+  requirements:
+  - Developer shall ensure training, validation and testing data sets have appropriate
+    statistical properties.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-dee2ed0a
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: unauthorized transmission or access of special categories of personal data
+  conditions:
+  - processing is strictly necessary for the purpose of ensuring bias detection and
+    correction in relation to the high-risk AI systems in accordance with paragraph
+    (2), points (f) and (g) of this Article
+  - in addition to the provisions set out in Regulations (EU) 2016/679 and (EU) 2018/1725
+    and Directive (EU) 2016/680
+  exceptions: []
+  requirements:
+  - Provider shall not transmit, transfer or otherwise permit access to the special
+    categories of personal data by other parties.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-21092f78
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: unauthorised access or misuse of special categories of personal data
+  conditions:
+  - processing is strictly necessary for the purpose of ensuring bias detection and
+    correction in relation to the high-risk AI systems in accordance with paragraph
+    (2), points (f) and (g) of this Article
+  - in addition to the provisions set out in Regulations (EU) 2016/679 and (EU) 2018/1725
+    and Directive (EU) 2016/680
+  exceptions: []
+  requirements:
+  - Provider shall implement measures to ensure the special categories of personal
+    data are secured and protected with suitable safeguards, including strict access
+    controls and documentation of access, to avoid misuse and ensure only authorised
+    persons with appropriate confidentiality obligations have access.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-a6f3bfb3
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: insufficient technical safeguards leading to data breach
+  conditions:
+  - processing is strictly necessary for the purpose of ensuring bias detection and
+    correction in relation to the high-risk AI systems in accordance with paragraph
+    (2), points (f) and (g) of this Article
+  - in addition to the provisions set out in Regulations (EU) 2016/679 and (EU) 2018/1725
+    and Directive (EU) 2016/680
+  exceptions: []
+  requirements:
+  - Provider shall apply technical limitations on the re-use of the special categories
+    of personal data and implement state-of-the-art security and privacy-preserving
+    measures, including pseudonymisation.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-a96e10da
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: retention of sensitive data beyond need
+  conditions:
+  - processing is strictly necessary for the purpose of ensuring bias detection and
+    correction in relation to the high-risk AI systems in accordance with paragraph
+    (2), points (f) and (g) of this Article
+  - in addition to the provisions set out in Regulations (EU) 2016/679 and (EU) 2018/1725
+    and Directive (EU) 2016/680
+  exceptions: []
+  requirements:
+  - Provider shall delete the special categories of personal data once the bias has
+    been corrected or the personal data has reached the end of its retention period,
+    whichever comes first.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-5009f171
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: unnecessary processing of special categories of personal data
+  conditions:
+  - processing is strictly necessary for the purpose of ensuring bias detection and
+    correction in relation to the high-risk AI systems in accordance with paragraph
+    (2), points (f) and (g) of this Article
+  - in addition to the provisions set out in Regulations (EU) 2016/679 and (EU) 2018/1725
+    and Directive (EU) 2016/680
+  exceptions: []
+  requirements:
+  - Provider shall document and demonstrate that bias detection and correction cannot
+    be effectively fulfilled by processing other data, including synthetic or anonymised
+    data, before processing special categories of personal data.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-1a0f996c
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: lack of documented justification for processing special categories of personal
+    data
+  conditions:
+  - processing is strictly necessary for the purpose of ensuring bias detection and
+    correction in relation to the high-risk AI systems in accordance with paragraph
+    (2), points (f) and (g) of this Article
+  - in addition to the provisions set out in Regulations (EU) 2016/679 and (EU) 2018/1725
+    and Directive (EU) 2016/680
+  exceptions: []
+  requirements:
+  - Provider shall ensure that the records of processing activities pursuant to Regulations
+    (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680 include the reasons
+    why the processing of special categories of personal data was strictly necessary
+    to detect and correct biases and why that objective could not be achieved by processing
+    other data.
+  evidence:
+  - records of processing activities
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-70fcc1c4
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: failure to demonstrate compliance with regulatory requirements
+  conditions:
+  - before that system is placed on the market or put into service
+  exceptions: []
+  requirements:
+  - org shall draw up the technical documentation of a high-risk AI system before
+    that system is placed on the market or put into service.
+  evidence:
+  - technical documentation
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-d347da61
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: outdated technical documentation preventing compliance assessment
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall keep the technical documentation up-to-date.
+  evidence:
+  - technical documentation
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-7bdce7d4
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inability to show that the system meets Section requirements
+  conditions:
+  - before that system is placed on the market or put into service
+  exceptions: []
+  requirements:
+  - org shall draw up the technical documentation in a way that demonstrates that
+    the high-risk AI system complies with the requirements set out in this Section.
+  evidence:
+  - technical documentation
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-20b14c55
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: national authorities cannot assess system compliance
+  conditions:
+  - before that system is placed on the market or put into service
+  exceptions: []
+  requirements:
+  - org shall draw up the technical documentation to provide national competent authorities
+    and notified bodies with the necessary information in a clear and comprehensive
+    form to assess the compliance of the AI system with those requirements.
+  evidence:
+  - technical documentation
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-7a1c5032
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: missing required documentation elements from Annex IV
+  conditions:
+  - Annex IV
+  - before that system is placed on the market or put into service
+  exceptions: []
+  requirements:
+  - org shall ensure the technical documentation contains, at a minimum, the elements
+    set out in Annex IV.
+  evidence:
+  - technical documentation
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-40273bea
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0003
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: non-acceptance of technical documentation for conformity assessment
+  conditions:
+  - opts to provide the information required in Annex IV in a simplified manner
+  exceptions: []
+  requirements:
+  - Where the organisation opts to provide the information required in Annex IV in
+    a simplified manner, the organisation shall use the simplified technical documentation
+    form referred to in this paragraph.
+  evidence:
+  - simplified technical documentation form
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0004-00b5e218
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0004
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0004
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: non-compliance with Union harmonisation legislation
+  conditions:
+  - related to a product covered by the Union harmonisation legislation listed in
+    Section A of Annex I
+  - placed on the market or put into service
+  exceptions: []
+  requirements:
+  - The deployer shall draw up a single set of technical documentation when the system
+    is related to a product covered by the Union harmonisation legislation listed
+    in Section A of Annex I and is placed on the market or put into service.
+  evidence:
+  - technical documentation
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-fa6727d1
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0004
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0004
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: omission of legally required information from technical documentation
+  conditions:
+  - related to a product covered by the Union harmonisation legislation listed in
+    Section A of Annex I
+  - placed on the market or put into service
+  exceptions: []
+  requirements:
+  - The deployer shall ensure that the technical documentation contains all the information
+    set out in paragraph 1.
+  evidence:
+  - technical documentation
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-0a450dce
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0004
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0004
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: omission of legally required information from technical documentation
+  conditions:
+  - related to a product covered by the Union harmonisation legislation listed in
+    Section A of Annex I
+  - placed on the market or put into service
+  exceptions: []
+  requirements:
+  - The deployer shall ensure that the technical documentation contains the information
+    required under those legal acts.
+  evidence:
+  - technical documentation
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-7842af30
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient event logging preventing traceability
+  conditions:
+  - over the lifetime of the system
+  exceptions: []
+  requirements:
+  - developer shall ensure high-risk AI systems technically allow automatic recording
+    of events (logs) over the lifetime of the system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-90cfcdf6
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: undetected situations that cause the system to present a risk or undergo
+    substantial modification
+  conditions:
+  - events relevant for "identifying situations that may result in the high-risk AI
+    system presenting a risk within the meaning of Article 79(1) or in a substantial
+    modification"
+  exceptions: []
+  requirements:
+  - developer shall implement logging capabilities that record events relevant for
+    identifying situations that may result in the high-risk AI system presenting a
+    risk within the meaning of Article 79(1) or in a substantial modification.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-e99b1d0b
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: lack of data to support post-market monitoring
+  conditions:
+  - to facilitate the post-market monitoring referred to in Article 72
+  exceptions: []
+  requirements:
+  - developer shall implement logging capabilities that record events to facilitate
+    the post-market monitoring referred to in Article 72.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-d0ef4098
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inability to monitor ongoing operation of high-risk systems
+  conditions:
+  - for monitoring the operation of high-risk AI systems referred to in Article 26(5)
+  exceptions: []
+  requirements:
+  - developer shall implement logging capabilities that record events for monitoring
+    the operation of high-risk AI systems referred to in Article 26(5).
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-4c3518c1
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: missing records of system usage periods impairing traceability
+  conditions:
+  - For high-risk AI systems referred to in point 1 (a), of Annex III
+  exceptions: []
+  requirements:
+  - developer shall ensure that, for systems referred to in point 1(a) of Annex III,
+    logging records the period of each use of the system (start date and time and
+    end date and time of each use).
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-d8be5371
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: lack of provenance for data checks undermining auditability
+  conditions:
+  - For high-risk AI systems referred to in point 1 (a), of Annex III
+  exceptions: []
+  requirements:
+  - developer shall ensure that, for systems referred to in point 1(a) of Annex III,
+    logging records the reference database against which input data has been checked
+    by the system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-cf840997
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0002
+    span_id: EU_AI_2024_removed/article-12/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: deployers misinterpret system output and use it inappropriately
+  conditions:
+  - High-risk AI system
+  exceptions: []
+  requirements:
+  - Developer shall design and develop high-risk AI systems such that their operation
+    is sufficiently transparent to enable deployers to interpret the system's output
+    and use it appropriately.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-0bbc9c00
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0002
+    span_id: EU_AI_2024_removed/article-12/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: deployers misinterpret system output and use it inappropriately
+  conditions:
+  - High-risk AI system
+  - '"with a view to achieving compliance with the relevant obligations of the provider
+    and deployer set out in Section 3"'
+  exceptions: []
+  requirements:
+  - Developer shall ensure an appropriate type and degree of transparency in high-risk
+    AI systems with a view to achieving compliance with the relevant obligations of
+    the provider and deployer set out in Section 3.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-9b0fc191
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0002
+    span_id: EU_AI_2024_removed/article-12/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: deployers misinterpret system output and use it inappropriately
+  conditions:
+  - High-risk AI system
+  exceptions: []
+  requirements:
+  - Developer shall accompany high-risk AI systems with instructions for use in an
+    appropriate digital format or otherwise.
+  evidence:
+  - instructions for use
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-736fe5b2
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0002
+    span_id: EU_AI_2024_removed/article-12/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: deployers misinterpret system output and use it inappropriately
+  conditions:
+  - High-risk AI system
+  exceptions: []
+  requirements:
+  - Developer shall include in the instructions for use concise, complete, correct
+    and clear information that is relevant, accessible and comprehensible to deployers.
+  evidence:
+  - instructions for use
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-06307431
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0003
+    span_id: EU_AI_2024_removed/article-12/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inability to contact provider / lack of accountability
+  conditions:
+  - as part of the instructions for use
+  - high-risk AI system
+  exceptions:
+  - if no authorised representative
+  requirements:
+  - The org shall include in the instructions for use the identity and the contact
+    details of the provider and, where applicable, of its authorised representative.
+  evidence:
+  - instructions for use
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-eb988cf7
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0003
+    span_id: EU_AI_2024_removed/article-12/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: misuse due to unclear system capabilities or limits
+  conditions:
+  - as part of the instructions for use
+  - high-risk AI system
+  exceptions: []
+  requirements:
+  - The org shall include in the instructions for use the characteristics, capabilities
+    and limitations of performance of the high-risk AI system.
+  evidence:
+  - instructions for use
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-a1e56648
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0003
+    span_id: EU_AI_2024_removed/article-12/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: incorrect use due to unclear intended purpose
+  conditions:
+  - as part of the instructions for use
+  - high-risk AI system
+  exceptions: []
+  requirements:
+  - The org shall include in the instructions for use the intended purpose of the
+    high-risk AI system.
+  evidence:
+  - instructions for use
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-38c3babc
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0003
+    span_id: EU_AI_2024_removed/article-12/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inaccurate expectations of accuracy, robustness or cybersecurity
+  conditions:
+  - as part of the instructions for use
+  - high-risk AI system
+  exceptions: []
+  requirements:
+  - The org shall include in the instructions for use the level of accuracy, including
+    its metrics, robustness and cybersecurity referred to in Article 15 against which
+    the high-risk AI system has been tested and validated and which can be expected,
+    and any known and foreseeable circumstances that may have an impact on that expected
+    level of accuracy, robustness and cybersecurity.
+  evidence:
+  - instructions for use
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-867b1373
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0003
+    span_id: EU_AI_2024_removed/article-12/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: risks to health
+  conditions:
+  - as part of the instructions for use
+  - high-risk AI system
+  - use in accordance with its intended purpose or under conditions of reasonably
+    foreseeable misuse
+  exceptions: []
+  requirements:
+  - The org shall include in the instructions for use any known or foreseeable circumstance,
+    related to the use of the high-risk AI system in accordance with its intended
+    purpose or under conditions of reasonably foreseeable misuse, which may lead to
+    risks to the health.
+  evidence:
+  - instructions for use
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-27cd0659
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: lack of effective human oversight
+  conditions:
+  - during the period in which they are in use
+  exceptions: []
+  requirements:
+  - developer shall design and develop high-risk AI systems with appropriate human-machine
+    interface tools that enable natural persons to effectively oversee the system
+    during the period in which they are in use.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-767fa926
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: risks to health
+  conditions:
+  - when used in accordance with its intended purpose or under conditions of reasonably
+    foreseeable misuse
+  exceptions: []
+  requirements:
+  - deployer shall implement human oversight measures that aim to prevent or minimise
+    risks to health when the high-risk AI system is used in accordance with its intended
+    purpose or under conditions of reasonably foreseeable misuse.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-6f6dffba
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: risks to safety
+  conditions:
+  - when used in accordance with its intended purpose or under conditions of reasonably
+    foreseeable misuse
+  exceptions: []
+  requirements:
+  - deployer shall implement human oversight measures that aim to prevent or minimise
+    risks to safety when the high-risk AI system is used in accordance with its intended
+    purpose or under conditions of reasonably foreseeable misuse.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-84898e86
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: risks to fundamental rights
+  conditions:
+  - when used in accordance with its intended purpose or under conditions of reasonably
+    foreseeable misuse
+  exceptions: []
+  requirements:
+  - deployer shall implement human oversight measures that aim to prevent or minimise
+    risks to fundamental rights when the high-risk AI system is used in accordance
+    with its intended purpose or under conditions of reasonably foreseeable misuse.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-595e20d3
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: insufficient human oversight
+  conditions:
+  - commensurate with the risks, level of autonomy and context of use
+  - ensured through one or both of the following types of measures
+  exceptions: []
+  requirements:
+  - The provider shall ensure that oversight measures for the high-risk AI system
+    are commensurate with the risks, level of autonomy and context of use and are
+    ensured through one or both of the specified types of measures.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-d439fe66
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: insufficient human oversight
+  conditions:
+  - when technically feasible
+  - before it is placed on the market or put into service
+  exceptions: []
+  requirements:
+  - The provider shall identify and build measures into the high-risk AI system, when
+    technically feasible, before it is placed on the market or put into service.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-608612c1
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: insufficient human oversight
+  conditions:
+  - before it is placed on the market or put into service
+  - appropriate to be implemented by the deployer
+  exceptions: []
+  requirements:
+  - The provider shall identify, before placing the high-risk AI system on the market
+    or putting it into service, measures that are appropriate to be implemented by
+    the deployer.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-0bd7c742
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: undetected anomalies, dysfunctions or unexpected performance
+  conditions:
+  - for the purpose of implementing paragraphs 1, 2 and 3
+  - as appropriate and proportionate
+  exceptions: []
+  requirements:
+  - The provider shall provide the high-risk AI system to the deployer in such a way
+    that natural persons assigned human oversight are enabled to properly understand
+    the system's relevant capacities and limitations and to duly monitor its operation,
+    including detecting and addressing anomalies, dysfunctions and unexpected performance.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-a14edeed
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: automation bias leading to over-reliance on outputs
+  conditions:
+  - for the purpose of implementing paragraphs 1, 2 and 3
+  - as appropriate and proportionate
+  - particularly for high-risk AI systems used to provide information or recommendations
+  exceptions: []
+  requirements:
+  - The provider shall provide the high-risk AI system to the deployer in such a way
+    that natural persons assigned human oversight are enabled to remain aware of the
+    possible tendency to automatically rely on or over-rely on the output produced
+    by the system (automation bias).
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-99dca09e
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0001
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: action based on unverified identification
+  conditions:
+  - high-risk AI systems referred to in point 1(a) of Annex III
+  - identification has been separately verified and confirmed by at least two natural
+    persons with the necessary competence, training and authority
+  exceptions:
+  - does not apply where Union or national law considers the application disproportionate
+    for systems used for law enforcement, migration, border control or asylum
+  requirements:
+  - deployer shall not take any action or decision on the basis of the identification
+    resulting from the system unless that identification has been separately verified
+    and confirmed by at least two natural persons with the necessary competence, training
+    and authority.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-3f1b1ed6
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0001
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: action based on unreviewed system output
+  conditions:
+  - high-risk AI systems referred to in point 1(a) of Annex III
+  exceptions: []
+  requirements:
+  - deployer shall ensure that, in any particular situation, a human can decide not
+    to use the high-risk AI system or to disregard, override or reverse the output
+    of the high-risk AI system.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-6138ae19
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0001
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inability to safely interrupt system operation
+  conditions:
+  - high-risk AI systems referred to in point 1(a) of Annex III
+  exceptions: []
+  requirements:
+  - deployer shall ensure the ability to intervene in the operation of the high-risk
+    AI system or to interrupt the system through a 'stop' button or a similar procedure
+    that allows the system to come to a halt in a safe state.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-3a014ff2
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient accuracy
+  conditions: []
+  exceptions: []
+  requirements:
+  - Developer shall design and develop high-risk AI systems to achieve an appropriate
+    level of accuracy.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-5deddc14
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient robustness
+  conditions: []
+  exceptions: []
+  requirements:
+  - Developer shall design and develop high-risk AI systems to achieve an appropriate
+    level of robustness.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-1ebb3cfd
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient cybersecurity
+  conditions: []
+  exceptions: []
+  requirements:
+  - Developer shall design and develop high-risk AI systems to achieve an appropriate
+    level of cybersecurity.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-f851a3e3
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inconsistent performance over lifecycle
+  conditions: []
+  exceptions: []
+  requirements:
+  - Developer shall ensure high-risk AI systems perform consistently in accuracy,
+    robustness and cybersecurity throughout their lifecycle.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-f527e665
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient resilience to errors, faults, or inconsistencies
+  conditions: []
+  exceptions: []
+  requirements:
+  - Developer shall design high-risk AI systems to be as resilient as possible regarding
+    errors, faults or inconsistencies that may occur within the system or its operating
+    environment, including due to interaction with natural persons or other systems.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-77071666
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: undeclared accuracy levels
+  conditions: []
+  exceptions: []
+  requirements:
+  - Org shall declare the levels of accuracy and the relevant accuracy metrics of
+    high-risk AI systems in the accompanying instructions of use.
+  evidence:
+  - instructions of use
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-1eb3cbd3
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0003
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: biased outputs influencing future input (feedback-loop bias)
+  conditions:
+  - continue to learn after being placed on the market or put into service
+  exceptions: []
+  requirements:
+  - developer shall develop high-risk AI systems that continue to learn after being
+    placed on the market or put into service so as to eliminate or reduce as far as
+    possible the risk of biased outputs influencing input for future operations
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-7278ca19
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0003
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unmitigated feedback loops causing bias
+  conditions:
+  - continue to learn after being placed on the market or put into service
+  exceptions: []
+  requirements:
+  - developer shall ensure that any feedback loops from biased outputs influencing
+    future input are duly addressed with appropriate mitigation measures
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-a294a410
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0003
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unauthorised alteration or tampering by third parties
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall ensure high-risk AI systems are resilient against attempts by unauthorised
+    third parties to alter their use, outputs or performance by exploiting system
+    vulnerabilities
+  evidence: []
+  severity: high

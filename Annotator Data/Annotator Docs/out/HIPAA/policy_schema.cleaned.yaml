@@ -1,0 +1,2048 @@
+- rule_id: spans-passthrough-candidates/sent_0003-67f76a3b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0003
+  scope:
+    actor:
+    - provider
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - permitted or required by this subpart or by subpart C of part 160 of this subchapter
+  exceptions:
+  - permitted or required by this subpart or by subpart C of part 160 of this subchapter
+  requirements:
+  - Do not use or disclose protected health information.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-9b914ce1
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: failure to disclose PHI when legally required
+  conditions:
+  - requested under and required by §164.524 or §164.528
+  exceptions: []
+  requirements:
+  - entity shall disclose protected health information to an individual when requested
+    under and required by §164.524 or §164.528.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-8a721236
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: failure to disclose PHI when legally required to cooperate with oversight
+  conditions:
+  - required by the Secretary under subpart C of part 160 to investigate or determine
+    the covered entity's compliance with this subchapter
+  exceptions: []
+  requirements:
+  - entity shall disclose protected health information when required by the Secretary
+    under subpart C of part 160 to investigate or determine the covered entity's compliance
+    with this subchapter.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-75cbcf46
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - permitted or required by its business associate contract or other arrangement
+    pursuant to §164.504(e) or required by law
+  exceptions: []
+  requirements:
+  - business associate shall not use or disclose protected health information except
+    as permitted or required by its business associate contract or other arrangement
+    pursuant to §164.504(e) or as required by law.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-6f1dddd6
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: use or disclosure of PHI in violation of subpart requirements
+  conditions:
+  - in a manner that would violate the requirements of this subpart if done by the
+    covered entity
+  exceptions:
+  - for the purposes specified under §164.504(e)(2)(i)(A) or (B) if such uses or disclosures
+    are permitted by its contract or other arrangement
+  requirements:
+  - business associate shall not use or disclose protected health information in a
+    manner that would violate the requirements of this subpart if done by the covered
+    entity.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-ce7bc4a6
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0006
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: interference with regulatory compliance investigation
+  conditions:
+  - When required by the Secretary under subpart C of part 160 of this subchapter
+    to investigate or determine the business associate's compliance with this subchapter
+  exceptions: []
+  requirements:
+  - business associate must disclose protected health information when required by
+    the Secretary under subpart C of part 160 to investigate or determine the business
+    associate's compliance with this subchapter.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-cdf60801
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0006
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: denial of individual's access to electronic PHI
+  conditions:
+  - as necessary to satisfy a covered entity's obligations under § 164.524(c)(2)(ii)
+    and (3)(ii) with respect to an individual's request for an electronic copy of
+    protected health information
+  exceptions: []
+  requirements:
+  - business associate must disclose protected health information to the covered entity,
+    individual, or individual's designee as necessary to satisfy a covered entity's
+    obligations under §164.524(c)(2)(ii) and (3)(ii) for an individual's request for
+    an electronic copy of protected health information.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-8a221f80
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0006
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: genetic discrimination in underwriting
+  conditions:
+  - for underwriting purposes
+  exceptions:
+  - excluding an issuer of a long-term care policy falling within paragraph (1)(viii)
+    of the definition of health plan
+  requirements:
+  - org must not use or disclose protected health information that is genetic information
+    for underwriting purposes.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0008-737a75e6
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0008
+  scope:
+    actor:
+    - provider
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized sale of PHI
+  conditions:
+  - Except pursuant to and in compliance with § 164.508(a)(4)
+  - disclosure where the covered entity or business associate directly or indirectly
+    receives remuneration from or on behalf of the recipient in exchange for the protected
+    health information
+  exceptions: []
+  requirements:
+  - Providers and business associates must not sell protected health information.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0010-99ea86fe
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0010
+  scope:
+    actor:
+    - entity
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: PHI used to investigate individuals for reproductive health care
+  conditions:
+  - to conduct a criminal, civil, or administrative investigation into any person
+    for the mere act of seeking, obtaining, providing, or facilitating reproductive
+    health care
+  exceptions:
+  - subject to paragraphs (a)(5)(iii)(B) and (C) of this section
+  requirements:
+  - entity and business associate shall not use or disclose PHI to conduct a criminal,
+    civil, or administrative investigation into any person for the mere act of seeking,
+    obtaining, providing, or facilitating reproductive health care.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0010-1a6f0405
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0010
+  scope:
+    actor:
+    - entity
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: PHI used to identify individuals for investigation or liability related
+    to reproductive health care
+  conditions:
+  - to identify any person for any purpose described in paragraphs (a)(5)(iii)(A)(1)
+    or (2) of this section
+  exceptions:
+  - subject to paragraphs (a)(5)(iii)(B) and (C) of this section
+  requirements:
+  - entity and business associate shall not use or disclose PHI to identify any person
+    for any purpose described in paragraphs (a)(5)(iii)(A)(1) or (2) of this section.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0011-713c778e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0011
+  scope:
+    actor:
+    - provider
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of PHI related to reproductive health care
+  conditions:
+  - request for protected health information is in connection with seeking, obtaining,
+    providing, or facilitating reproductive health care
+  - reproductive health care is lawful under the law of the state in which such health
+    care is provided under the circumstances in which it is provided
+  - reproductive health care is protected, required, or authorized by Federal law
+    under the circumstances in which such health care is provided
+  - the presumption at paragraph (a)(5)(iii)(C) of this section applies
+  exceptions: []
+  requirements:
+  - The provider or business associate must reasonably determine that at least one
+    of the conditions in conditions[] exists before applying the prohibition at paragraph
+    (a)(5)(iii)(A) of this section.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0012-64b52b9b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0012
+  scope:
+    actor:
+    - business associate
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of PHI
+  conditions:
+  - actual knowledge that the reproductive health care was not lawful under the circumstances
+    in which it was provided
+  exceptions: []
+  requirements:
+  - Do not treat reproductive health care provided by another person as lawful for
+    purposes of using or disclosing protected health information when the actor has
+    actual knowledge that the reproductive health care was not lawful under the circumstances
+    in which it was provided.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0013-c43922b7
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0013
+  scope:
+    actor:
+    - entity
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unnecessary disclosure of PHI
+  conditions:
+  - when using or disclosing protected health information
+  exceptions: []
+  requirements:
+  - Entity and business associate must make reasonable efforts to limit protected
+    health information to the minimum necessary for the purpose when using or disclosing
+    PHI.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0014-93949593
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0014
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - agreed to a restriction pursuant to §164.522(a)(1)
+  exceptions:
+  - as otherwise provided in §164.522(a)
+  requirements:
+  - Entity must not use or disclose the protected health information covered by the
+    agreed restriction in violation of that restriction.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0016-e2aa41b5
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0016
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - de-identified information is re-identified
+  - use or disclosure is permitted or required by this subpart
+  exceptions: []
+  requirements:
+  - entity shall not use or disclose re-identified information except as permitted
+    or required by this subpart.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0017-03b28e49
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0017
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - satisfactory assurances required by paragraph (e)(1)
+  exceptions: []
+  requirements:
+  - The business associate must document the satisfactory assurances required by paragraph
+    (e)(1) through a written contract or other written agreement or arrangement with
+    the business associate.
+  evidence:
+  - written contract or other written agreement or arrangement
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0018-690e4858
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0018
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - with respect to the protected health information of a deceased individual
+  - for a period of 50 years following the death of the individual
+  exceptions: []
+  requirements:
+  - Entity must comply with the requirements of this subpart with respect to the protected
+    health information of a deceased individual for a period of 50 years following
+    the death of the individual.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0018-406e5f1b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0018
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions:
+  - except as provided in paragraphs (g)(3) and (g)(5) of this section
+  requirements:
+  - Entity must treat a personal representative as the individual for purposes of
+    this subchapter.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0019-b360c314
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0019
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - under applicable law a parent, guardian, or other person acting in loco parentis
+    has authority to act on behalf of an unemancipated minor in making decisions related
+    to health care
+  exceptions:
+  - The minor consents to such health care service; no other consent to such health
+    care service is required by law; and the minor has not requested that such person
+    be treated as the personal representative
+  - The minor may lawfully obtain such health care service without the consent of
+    a parent, guardian, or other person acting in loco parentis, and the minor, a
+    court, or another person authorized by law consents to such health care service
+  - A parent, guardian, or other person acting in loco parentis assents to an agreement
+    of confidentiality between a covered health care provider and the minor with respect
+    to such health care service
+  requirements:
+  - entity must treat such parent, guardian, or other person acting in loco parentis
+    as a personal representative under this subchapter with respect to protected health
+    information relevant to such personal representation, except when one of the listed
+    exceptions applies.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0020-6e88632d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - If, and to the extent, prohibited by an applicable provision of State or other
+    law, including applicable case law
+  exceptions: []
+  requirements:
+  - Do not disclose, or provide access in accordance with § 164.524 to, protected
+    health information about an unemancipated minor to a parent, guardian, or other
+    person acting in loco parentis.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0020-1d6962c7
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - If under applicable law an executor, administrator, or other person has authority
+    to act on behalf of a deceased individual or of the individual's estate
+  exceptions: []
+  requirements:
+  - Treat such person as a personal representative under this subchapter with respect
+    to protected health information relevant to such personal representation.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0020-65750ce1
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - Where the parent, guardian, or other person acting in loco parentis is not the
+    personal representative under paragraphs (g)(3)(i)(A), (B), or (C) and where there
+    is no applicable access provision under State or other law, including case law
+  - Only if the action is consistent with State or other applicable law
+  exceptions: []
+  requirements:
+  - Ensure that any decision to provide or deny access under § 164.524 to a parent,
+    guardian, or other person acting in loco parentis in these circumstances is made
+    by a licensed health care professional.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0020-1211a495
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020
+  scope:
+    actor:
+    - practitioner
+    data_domain:
+    - PHI
+    context: []
+  hazard: improper professional decision-making regarding PHI access
+  conditions:
+  - Where the parent, guardian, or other person acting in loco parentis is not the
+    personal representative under paragraphs (g)(3)(i)(A), (B), or (C) and where there
+    is no applicable access provision under State or other law, including case law
+  - Only if the action is consistent with State or other applicable law
+  exceptions: []
+  requirements:
+  - When making a decision to provide or deny access under § 164.524 to a parent,
+    guardian, or other person acting in loco parentis in these circumstances, make
+    the decision in the exercise of professional judgment.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0022-6c8d41bf
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0022
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: unauthorized disclosure
+  conditions:
+  - basis for the belief is the provision or facilitation of reproductive health care
+    by such person for and at the request of the individual
+  - under paragraph (g)(5)(i)(A)
+  exceptions: []
+  requirements:
+  - The entity must not have a reasonable belief under paragraph (g)(5)(i)(A) when
+    the basis for that belief is the provision or facilitation of reproductive health
+    care by the person for and at the request of the individual.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0022-ce43494f
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0022
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of PHI
+  conditions:
+  - in communicating protected health information
+  exceptions: []
+  requirements:
+  - The provider must comply with the applicable requirements of § 164.522(b) when
+    communicating protected health information.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0022-ad858b24
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0022
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: uses or disclosures inconsistent with notice
+  conditions: []
+  exceptions: []
+  requirements:
+  - The entity must ensure that its uses and disclosures are consistent with the notice.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0023-770983bc
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0023
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - required by § 164.520 to have a notice
+  exceptions: []
+  requirements:
+  - Entity must not use or disclose protected health information in a manner inconsistent
+    with such notice.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-09ed0a2b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0003
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - contract or other arrangement required by § 164.502(e)(2)
+  exceptions: []
+  requirements:
+  - Ensure the contract or other arrangement required by § 164.502(e)(2) meets the
+    requirements of paragraph (e)(2), (e)(3), or (e)(5) of this section, as applicable.
+  evidence:
+  - contract or other arrangement
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-719bb69b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0003
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - knew of a pattern of activity or practice of the business associate that constituted
+    a material breach or violation of the business associate's obligation under the
+    contract or other arrangement
+  exceptions:
+  - if feasible
+  requirements:
+  - Take reasonable steps to cure the breach or end the violation.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-6e80c04e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0003
+  scope:
+    actor:
+    - business associate
+    data_domain: []
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - knew of a pattern of activity or practice of a subcontractor that constituted
+    a material breach or violation of the subcontractor's obligation under the contract
+    or other arrangement
+  exceptions:
+  - if feasible
+  requirements:
+  - Take reasonable steps to cure the breach or end the violation by the subcontractor.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-551668ee
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized electronic PHI disclosure
+  conditions:
+  - where applicable, with respect to electronic protected health information comply
+    with subpart C of this part
+  exceptions: []
+  requirements:
+  - The business associate shall use appropriate safeguards and, where applicable
+    for electronic protected health information, comply with subpart C of this part
+    to prevent use or disclosure of the information other than as provided for by
+    its contract.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-982dac67
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unreported PHI breach
+  conditions: []
+  exceptions: []
+  requirements:
+  - The business associate shall report to the covered entity any use or disclosure
+    of protected health information not provided for by its contract of which it becomes
+    aware, including breaches of unsecured protected health information as required
+    by §164.410.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-299ef600
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: impermissible PHI use or disclosure due to contract omission
+  conditions: []
+  exceptions: []
+  requirements:
+  - The provider shall ensure that the contract establishes the permitted and required
+    uses and disclosures of protected health information by the business associate.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-afd26585
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure via subcontractors
+  conditions:
+  - subcontractors that create, receive, maintain, or transmit PHI on behalf of the
+    business associate
+  exceptions: []
+  requirements:
+  - Ensure that any subcontractors that create, receive, maintain, or transmit protected
+    health information on behalf of the business associate agree to the same restrictions
+    and conditions that apply to the business associate with respect to such information.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-08d296b3
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: failure to provide individuals required PHI access and amendment
+  conditions:
+  - in accordance with § 164.524
+  - in accordance with § 164.526
+  exceptions: []
+  requirements:
+  - Make available protected health information in accordance with § 164.524.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-82b26f72
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: failure to provide accounting of disclosures
+  conditions:
+  - in accordance with § 164.528
+  exceptions: []
+  requirements:
+  - Make available the information required to provide an accounting of disclosures
+    in accordance with § 164.528.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-0af3fb56
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: noncompliance with covered entity obligations under the subpart
+  conditions:
+  - To the extent the business associate is to carry out a covered entity's obligation
+    under this subpart
+  exceptions: []
+  requirements:
+  - Comply with the requirements of this subpart that apply to the covered entity
+    in the performance of such obligation.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-ae259597
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: lack of evidence for covered entity compliance
+  conditions: []
+  exceptions: []
+  requirements:
+  - Make its internal practices, books, and records relating to the use and disclosure
+    of protected health information received from, or created or received by the business
+    associate on behalf of the covered entity available to the Secretary for purposes
+    of determining the covered entity's compliance with this subpart.
+  evidence:
+  - internal practices, books, and records
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-856387d5
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: retention or improper use of PHI after contract termination
+  conditions:
+  - At termination of the contract
+  exceptions:
+  - 'If return or destruction of the information is not feasible: extend the protections
+    of the contract to the information and limit further uses and disclosures to those
+    purposes that make the return or destruction of the information infeasible.'
+  requirements:
+  - At termination of the contract, if feasible, return or destroy all protected health
+    information received from, or created or received by the business associate on
+    behalf of the covered entity that the business associate still maintains in any
+    form and retain no copies of such information.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0007-770adb35
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - as required by paragraph (e)(2) of this section and § 164.314(a)(1), if applicable
+  exceptions: []
+  requirements:
+  - org shall attempt in good faith to obtain satisfactory assurances as required
+    by paragraph (e)(2) of this section and § 164.314(a)(1), if applicable.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0007-6f1df103
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - if such attempt fails
+  exceptions: []
+  requirements:
+  - If such attempt fails, org shall document the attempt and the reasons that such
+    assurances cannot be obtained.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0008-0de477d0
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0008
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - contract or other arrangement required by §164.502(e)(1)(ii) between a business
+    associate and a business associate that is a subcontractor
+  exceptions: []
+  requirements:
+  - The business associate shall ensure that the contract or other arrangement with
+    a business associate that is a subcontractor includes and implements the requirements
+    of §164.504(e)(2) through §164.504(e)(4) in the same manner as such requirements
+    apply to contracts or other arrangements between a covered entity and a business
+    associate.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0010-aed2abc0
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0010
+  scope:
+    actor:
+    - org
+    data_domain:
+    - health
+    context: []
+  hazard: unauthorized disclosure of health information
+  conditions: []
+  exceptions: []
+  requirements:
+  - Org must ensure that the plan documents restrict uses and disclosures of such
+    information by the plan sponsor consistent with the requirements of this subpart.
+  evidence:
+  - plan documents
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0011-82748cee
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must amend the group health plan's plan documents to establish the permitted
+    and required uses and disclosures of protected health information by the plan
+    sponsor and ensure such uses and disclosures are not inconsistent with this subpart.
+  evidence:
+  - plan documents
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0011-ea854aae
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - 'receipt of a certification by the plan sponsor that the plan documents have been
+    amended to incorporate the following provisions and that the plan sponsor agrees
+    to:'
+  exceptions: []
+  requirements:
+  - org must not disclose protected health information to the plan sponsor except
+    upon receipt of a certification by the plan sponsor that the plan documents have
+    been amended to incorporate the required provisions and that the plan sponsor
+    agrees to those provisions.
+  evidence:
+  - certification
+  - plan documents
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0011-4c41da50
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - as permitted or required by the plan documents or as required by law
+  exceptions: []
+  requirements:
+  - org must not use or further disclose the protected health information other than
+    as permitted or required by the plan documents or as required by law.
+  evidence:
+  - plan documents
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0011-e74a3681
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure via agents
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must ensure that any agents to whom it provides protected health information
+    agree to the same restrictions and conditions that apply to the plan sponsor with
+    respect to such information.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0011-a3126985
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: improper employment-related use of PHI
+  conditions:
+  - use or disclosure for employment-related actions and decisions or in connection
+    with any other benefit or employee benefit plan of the plan sponsor
+  exceptions: []
+  requirements:
+  - org must not use or disclose the protected health information for employment-related
+    actions and decisions or in connection with any other benefit or employee benefit
+    plan of the plan sponsor.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0011-3873077e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: undetected inconsistent PHI disclosures
+  conditions:
+  - upon becoming aware of an inconsistent use or disclosure
+  exceptions: []
+  requirements:
+  - org must report to the group health plan any use or disclosure of protected health
+    information that is inconsistent with the permitted uses or disclosures of which
+    the plan sponsor becomes aware.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0012-70254725
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: improper retention of PHI
+  conditions:
+  - if feasible
+  - when no longer needed for the purpose for which disclosure was made
+  exceptions: []
+  requirements:
+  - org must return or destroy all protected health information received from the
+    group health plan that the sponsor still maintains in any form and retain no copies
+    of such information when it is no longer needed for the purpose for which the
+    disclosure was made, if feasible.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0012-fcd2ef0e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - if return or destruction is not feasible
+  exceptions: []
+  requirements:
+  - org must limit further uses and disclosures to those purposes that make the return
+    or destruction of the information infeasible.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0012-aee6f9b0
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI access
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must ensure that the adequate separation required in paragraph (f)(2)(iii)
+    of this section is established.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0012-28da988c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI access
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must ensure the plan documents describe those employees or classes of employees
+    or other persons under the control of the plan sponsor to be given access to the
+    protected health information to be disclosed.
+  evidence:
+  - plan documents
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0012-0ec05553
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI access
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must ensure that any employee or person who receives protected health information
+    relating to payment under, health care operations of, or other matters pertaining
+    to the group health plan in the ordinary course of business is included in that
+    description.
+  evidence:
+  - plan documents
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0012-b581123c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: continued unauthorized PHI access
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must ensure the plan documents provide an effective mechanism for resolving
+    any issues of noncompliance by the persons described in the plan documents with
+    the plan document provisions required by this paragraph.
+  evidence:
+  - plan documents
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0013-5c26764b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - unless the statement required by § 164.520(b)(1)(iii)(C) is included in the appropriate
+    notice
+  exceptions: []
+  requirements:
+  - org must not disclose protected health information to a plan sponsor as otherwise
+    permitted by this paragraph unless the statement required by § 164.520(b)(1)(iii)(C)
+    is included in the appropriate notice.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0013-2da35f55
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0013
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: noncompliance with privacy standards leading to PHI misuse
+  conditions:
+  - performs multiple covered functions
+  - as applicable to the health plan, health care provider, or health care clearinghouse
+    covered functions performed
+  exceptions: []
+  requirements:
+  - entity must comply with the standards, requirements, and implementation specifications
+    of this subpart as applicable to the health plan, health care provider, or health
+    care clearinghouse covered functions it performs.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-0ff8014d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of protected health information
+  conditions:
+  - when an authorization under § 164.508 is required
+  - when another condition must be met for such use or disclosure to be permissible
+    under this subpart
+  exceptions: []
+  requirements:
+  - The provider shall not permit a use or disclosure of protected health information
+    based on consent when an authorization under § 164.508 is required.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-69da010a
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0004
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI use
+  conditions:
+  - no authorization valid under this section
+  exceptions:
+  - permitted or required by this subchapter
+  requirements:
+  - entity must not use protected health information without an authorization that
+    is valid under this section.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-45acfa06
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0005
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of psychotherapy notes
+  conditions: []
+  exceptions:
+  - Use by the originator of the psychotherapy notes for treatment
+  - Use or disclosure by the covered entity for its own training programs in which
+    students, trainees, or practitioners in mental health learn under supervision
+    to practice or improve their skills in group, joint, family, or individual counseling
+  - Use or disclosure by the covered entity to defend itself in a legal action or
+    other proceeding brought by the individual
+  - A use or disclosure that is required by § 164.502(a)(2)(ii) or permitted by §
+    164.512(a); § 164.512(d) with respect to the oversight of the originator of the
+    psychotherapy notes; § 164.512(g)(1); or § 164.512(j)(1)(i)
+  requirements:
+  - The provider must obtain an authorization for any use or disclosure of psychotherapy
+    notes.
+  evidence:
+  - authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0005-5772691c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0005
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of PHI for marketing
+  conditions: []
+  exceptions:
+  - A face-to-face communication made by a covered entity to an individual
+  - A promotional gift of nominal value provided by the covered entity
+  requirements:
+  - The provider must obtain an authorization for any use or disclosure of protected
+    health information for marketing.
+  evidence:
+  - authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-56ed7608
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0006
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: undisclosed financial remuneration in marketing
+  conditions:
+  - marketing involves financial remuneration to the covered entity from a third party
+  exceptions: []
+  requirements:
+  - The provider must include in the authorization a statement that financial remuneration
+    from a third party to the covered entity is involved.
+  evidence:
+  - authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-66a61626
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0006
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: sale of PHI without authorization
+  conditions:
+  - disclosure is a sale of protected health information
+  exceptions: []
+  requirements:
+  - The provider must obtain an authorization for any disclosure of protected health
+    information that is a sale of protected health information.
+  evidence:
+  - authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0006-3b6e7bb2
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0006
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: undisclosed remuneration from sale of PHI
+  conditions:
+  - disclosure is a sale of protected health information
+  exceptions: []
+  requirements:
+  - The provider must state in the authorization that the disclosure will result in
+    remuneration to the covered entity.
+  evidence:
+  - authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0007-c796e9fc
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: use or disclosure inconsistent with authorization requirements
+  conditions:
+  - authorization must meet the requirements in paragraphs (a)(3)(ii), (a)(4)(ii),
+    (c)(1), and (c)(2) of this section, as applicable
+  exceptions: []
+  requirements:
+  - The org must ensure each authorization document meets the requirements in paragraphs
+    (a)(3)(ii), (a)(4)(ii), (c)(1), and (c)(2) of this section, as applicable.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0008-108389b0
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - document submitted "has any of the 45 CFR Part 164 Subpart E"
+  exceptions: []
+  requirements:
+  - Do not accept or treat as valid any submitted authorization document that "has
+    any of the 45 CFR Part 164 Subpart E".
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0009-8c426967
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - expiration date has passed or the expiration event is known by the covered entity
+    to have occurred
+  exceptions: []
+  requirements:
+  - Entity must not use or disclose PHI pursuant to an authorization when the expiration
+    date has passed or the expiration event has occurred.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0009-a3b0ac50
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - the authorization has not been filled out completely with respect to an element
+    described by paragraph (c) of this section, if applicable
+  exceptions: []
+  requirements:
+  - Entity must not use or disclose PHI pursuant to an authorization that is not filled
+    out completely as required by paragraph (c) of this section.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0009-37a37d7d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - the authorization is known by the covered entity to have been revoked
+  exceptions: []
+  requirements:
+  - Entity must not use or disclose PHI pursuant to an authorization that the covered
+    entity knows has been revoked.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0009-24d20160
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - the authorization violates paragraph (b)(3) or (4) of this section, if applicable
+  exceptions: []
+  requirements:
+  - Entity must not use or disclose PHI pursuant to an authorization that violates
+    paragraph (b)(3) or (4) of this section.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0009-ff2752ad
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - any material information in the authorization is known by the covered entity to
+    be false
+  exceptions: []
+  requirements:
+  - Entity must not use or disclose PHI pursuant to an authorization when the covered
+    entity knows that any material information in the authorization is false.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0009-04ed85f9
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - authorization is combined with any other document to create a compound authorization
+  exceptions:
+  - authorization for use or disclosure of PHI for a research study combined with
+    any other written permission for the same or another research study
+  - combining with another authorization for the same research study
+  - combining with an authorization for the creation or maintenance of a research
+    database or repository
+  - combining with a consent to participate in research
+  requirements:
+  - Entity must not combine an authorization for use or disclosure of PHI with any
+    other document to create a compound authorization except as allowed for research
+    study permissions.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0010-6ed377c7
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context:
+    - research
+  hazard: coerced research participation
+  conditions:
+  - where a covered health care provider has conditioned the provision of research-related
+    treatment on the provision of one of the authorizations (paragraph (b)(4)(i))
+  exceptions: []
+  requirements:
+  - provider must clearly differentiate between the conditioned and unconditioned
+    components in any compound authorization created under this paragraph.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0010-e39acc72
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of psychotherapy notes
+  conditions:
+  - for an authorization for a use or disclosure of psychotherapy notes
+  exceptions: []
+  requirements:
+  - entity shall not combine an authorization for a use or disclosure of psychotherapy
+    notes with any authorization that is not also for a use or disclosure of psychotherapy
+    notes.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0010-d7c3c139
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: coerced provision of treatment or benefits
+  conditions:
+  - where a covered entity has conditioned the provision of treatment, payment, enrollment
+    in a health plan, or eligibility for benefits on the provision of one of the authorizations
+    (paragraph (b)(4))
+  exceptions:
+  - does not apply to a compound authorization created in accordance with paragraph
+    (b)(3)(i) of this section
+  requirements:
+  - entity shall not combine authorizations under this section when the entity has
+    conditioned provision of treatment, payment, enrollment in a health plan, or eligibility
+    for benefits on the provision of one of the authorizations.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0011-a136f19e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0011
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: denial of treatment, payment, enrollment, or benefits based on refusal to
+    provide an authorization
+  conditions:
+  - when conditioning the provision of treatment on the provision of an authorization
+  - when conditioning the provision of payment on the provision of an authorization
+  - when conditioning enrollment in the health plan or eligibility for benefits on
+    the provision of an authorization
+  exceptions:
+  - covered health care provider may condition provision of research-related treatment
+    on provision of an authorization for the use or disclosure of protected health
+    information for such research
+  - health plan may condition enrollment in the health plan or eligibility for benefits
+    on provision of an authorization requested by the health plan prior to an individual's
+    enrollment in the health plan
+  requirements:
+  - The entity must not condition the provision to an individual of treatment, payment,
+    enrollment in the health plan, or eligibility for benefits on the provision of
+    an authorization.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0013-2d890537
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0013
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: unauthorized use or disclosure
+  conditions:
+  - under this section
+  - as required by § 164.530(j)
+  exceptions: []
+  requirements:
+  - The entity must document any signed authorization under this section.
+  evidence:
+  - signed authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0013-15bceb47
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0013
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: unauthorized use or disclosure
+  conditions:
+  - valid authorization under this section
+  exceptions: []
+  requirements:
+  - The entity must ensure a valid authorization contains a description of the information
+    to be used or disclosed that identifies the information in a specific and meaningful
+    fashion.
+  evidence:
+  - signed authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0014-a69a62c4
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0014
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: unauthorized disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - The entity shall include in the authorization the name or other specific identification
+    of the person(s) or class of persons to whom the entity may make the requested
+    use or disclosure.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0014-895c4e2b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0014
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: use beyond authorized purpose
+  conditions: []
+  exceptions:
+  - '"at the request of the individual" is sufficient when the individual initiates
+    the authorization and does not provide a statement of the purpose.'
+  requirements:
+  - The entity shall include in the authorization a description of each purpose of
+    the requested use or disclosure.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0014-b69f908c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0014
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: continued disclosure beyond authorized period
+  conditions: []
+  exceptions: []
+  requirements:
+  - The entity shall include in the authorization an expiration date or an expiration
+    event that relates to the individual or the purpose of the use or disclosure.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0015-67968951
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0015
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context:
+    - research
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must include the individual's signature and the date on the authorization.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0015-fb77aa0e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0015
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context:
+    - research
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - authorization is signed by a personal representative of the individual
+  exceptions: []
+  requirements:
+  - When the authorization is signed by a personal representative of the individual,
+    org must provide a description of the representative's authority to act for the
+    individual.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0016-956863bf
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0016
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inability to revoke authorization
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must include in the authorization a statement that the individual has the
+    right to revoke the authorization in writing.
+  evidence:
+  - authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0016-dc45e16c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0016
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: lack of notice about revocation exceptions and process
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must include in the authorization the exceptions to the right to revoke and
+    a description of how the individual may revoke.
+  evidence:
+  - authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-2a55d4f1
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: denial of treatment or benefits based on authorization status
+  conditions:
+  - when the prohibition on conditioning of authorizations in paragraph (b)(4) of
+    this section applies
+  exceptions: []
+  requirements:
+  - The provider shall not condition treatment, payment, enrollment, or eligibility
+    for benefits on whether the individual signs the authorization when the prohibition
+    in paragraph (b)(4) of this section applies.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-a1b5c877
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: individuals uninformed of consequences of refusal to sign authorization
+  conditions:
+  - when, in accordance with paragraph (b)(4) of this section, the covered entity
+    can condition treatment, enrollment in the health plan, or eligibility for benefits
+    on failure to obtain such authorization
+  exceptions: []
+  requirements:
+  - The provider shall state the consequences to the individual of a refusal to sign
+    the authorization when the provider can condition treatment, enrollment, or eligibility
+    on failure to obtain the authorization in accordance with paragraph (b)(4).
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-90d0da5c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure via redisclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - The provider shall state the potential for information disclosed pursuant to the
+    authorization to be subject to redisclosure by the recipient and no longer be
+    protected by this subpart.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0001-a74e8e9d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: individuals uninformed of entity notice
+  conditions:
+  - to the extent that the information in paragraph (c)(2)(i)(A) of this section is
+    included in the notice required by § 164.520
+  exceptions: []
+  requirements:
+  - The provider shall include a reference to the covered entity's notice when the
+    information in paragraph (c)(2)(i)(A) is included in the notice required by §
+    164.520.
+  evidence: []
+  severity: medium
+- rule_id: spans-passthrough-candidates/sent_0002-ab6d71e0
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0002
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - entity must ensure the authorization is written in plain language.
+  evidence:
+  - authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0002-b0f98b13
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0002
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - If a covered entity seeks an authorization from an individual for a use or disclosure
+    of protected health information
+  exceptions: []
+  requirements:
+  - entity must provide the individual with a copy of the signed authorization when
+    seeking such an authorization.
+  evidence:
+  - signed authorization
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0003-91c60794
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0003
+  scope:
+    actor:
+    - provider
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - purpose is specified in § 164.512(d), (e), (f), or (g)(1)
+  - no valid attestation obtained under paragraph (b)(1) from the person requesting
+    the use or disclosure or not complying with all applicable conditions of this
+    part
+  exceptions: []
+  requirements:
+  - provider and business associate must not use or disclose protected health information
+    potentially related to reproductive health care for purposes specified in § 164.512(d),
+    (e), (f), or (g)(1) unless they have obtained a valid attestation under paragraph
+    (b)(1) from the person requesting the use or disclosure and are complying with
+    all applicable conditions of this part.
+  evidence: []
+  severity: high
+- rule_id: spans-passthrough-candidates/sent_0004-0a608ea0
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: invalid attestation
+  conditions: []
+  exceptions: []
+  requirements:
+  - org must ensure that a valid attestation is a document that meets the requirements
+    of paragraph (c)(1) of this section.
+  evidence: []
+  severity: high

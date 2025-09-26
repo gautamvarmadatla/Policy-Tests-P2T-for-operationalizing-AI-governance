@@ -1,0 +1,1955 @@
+- rule_id: spans-passthrough-candidates/sent_0001-74757207
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0001
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: non-compliance with Union harmonisation legislation
+  conditions:
+  - product contains an AI system to which this Regulation and the Union harmonisation
+    legislation listed in Section A of Annex I apply
+  exceptions: []
+  requirements:
+  - provider shall ensure that their product is fully compliant with all applicable
+    requirements under applicable Union harmonisation legislation.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague legal obligation: ''full compliance with all applicable Union harmonisation
+      legislation'' requires legal judgment and external evidence, not directly verifiable
+      via artifacts.'
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-0edbbb5a
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unmanaged risks to health, safety or fundamental rights
+  conditions: []
+  exceptions: []
+  requirements:
+  - The developer shall establish, implement, document and maintain a risk management
+    system in relation to high-risk AI systems.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Obligation lacks objective criteria or defined artifacts for an automated
+      pass/fail check of establishing/maintaining a 'risk management system'.
+    evidence_signals:
+    - repo_check
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-7689ca18
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unmanaged lifecycle risks to health, safety or fundamental rights
+  conditions:
+  - throughout the entire lifecycle of a high-risk AI system
+  exceptions: []
+  requirements:
+  - The developer shall plan and run the risk management system as a continuous iterative
+    process throughout the entire lifecycle of the high-risk AI system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation lacking concrete artifacts or measurable criteria; no
+      specified observable signal to objectively verify compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-64b3067a
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: outdated or unreviewed risks to health, safety or fundamental rights
+  conditions: []
+  exceptions: []
+  requirements:
+  - The developer shall conduct regular systematic review and updating of the risk
+    management system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No specified frequency, criteria, or required artifacts; cannot objectively
+      verify review/update occurred.
+    evidence_signals:
+    - log_check
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-a0dc4362
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: undetected risks to health, safety or fundamental rights
+  conditions:
+  - when the system is used in accordance with its intended purpose
+  - under conditions of reasonably foreseeable misuse
+  - based on data gathered from the post-market monitoring system referred to in Article
+    72
+  exceptions: []
+  requirements:
+  - The developer shall ensure the risk management system comprises identification
+    and analysis of known and reasonably foreseeable risks to health, safety or fundamental
+    rights and the estimation and evaluation of risks, including those emerging under
+    reasonably foreseeable misuse, and the evaluation of other risks based on post-market
+    monitoring data.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Uses subjective terms ('reasonably foreseeable') and lacks objective pass/fail
+      criteria or specified artifacts to verify compliance.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-250808fb
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unmitigated risks to health, safety or fundamental rights
+  conditions:
+  - to address the risks identified pursuant to the identification and analysis step
+  exceptions: []
+  requirements:
+  - The developer shall adopt appropriate and targeted risk management measures designed
+    to address the risks identified pursuant to the identification and analysis step.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'appropriate and targeted' lacks objective criteria; no observable
+      pass/fail predicate to verify via logs/configs or I/O.
+    evidence_signals:
+    - config_check
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0002-e071b823
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: consideration of non-mitigable risks
+  conditions: []
+  exceptions: []
+  requirements:
+  - The developer shall ensure that the risks referred to in this Article concern
+    only those which may be reasonably mitigated or eliminated through the development
+    or design of the high-risk AI system, or the provision of adequate technical information.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Depends on subjective 'reasonably mitigated' judgement; no objective io/log/config/data/repo/ci
+      oracle verifies compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-63112607
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: unacceptable residual risk
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall ensure that the risk management measures are such that the relevant
+    residual risk associated with each hazard, as well as the overall residual risk
+    of the high-risk AI systems, is judged to be acceptable.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective acceptance criteria or measurable threshold for 'acceptable'
+      residual risk; cannot be verified automatically.
+    evidence_signals:
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-bc19ed17
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: residual hazards due to inadequate design
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall eliminate or reduce risks identified and evaluated pursuant to
+    paragraph 2, inasmuch as technically feasible, through adequate design and development
+    of the high-risk AI system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Criteria are vague ('adequate design', 'as technically feasible') and
+      lack measurable thresholds or an objective oracle for pass/fail verification.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-49282319
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: unmitigated non-eliminable risks
+  conditions:
+  - for risks that cannot be eliminated
+  exceptions: []
+  requirements:
+  - developer shall implement adequate mitigation and control measures addressing
+    risks that cannot be eliminated.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective criteria for what constitutes 'adequate' mitigation; acceptance
+      criteria and observable pass/fail oracle are missing.
+    evidence_signals:
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0003-cedd2104
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: ineffective mitigation due to unconsidered interactions
+  conditions:
+  - combined application of the requirements set out in this Section
+  exceptions: []
+  requirements:
+  - developer shall give due consideration to the effects and possible interaction
+    resulting from the combined application of the requirements set out in this Section,
+    with a view to minimising risks and achieving an appropriate balance in implementing
+    the measures to fulfil those requirements.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague, subjective 'give due consideration' to unspecified interactions;
+      no concrete measurable criteria or observable artifacts (io/log/config/ci/data/repo).
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-72c236f4
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: lack of required information for safe deployment
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall provide to deployers the information required pursuant to Article
+    13.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify developer provided Article 13 required information by inspecting
+      repository or deployment/configuration artifacts.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-168436c1
+  source:
+    doc: spans_passthrough_candidates
+    citation: appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+    span_id: EU_AI_2024_removed/appropriate-the-necessary-testing-and-reporting-processes-in/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: insufficient deployer preparedness
+  conditions:
+  - where appropriate
+  exceptions: []
+  requirements:
+  - developer shall provide training to deployers where appropriate.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Conditional 'where appropriate' and no objective criteria or required
+      artifacts to verify training; lacks observable pass/fail signals.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-9f03494d
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient risk management measures
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall test high-risk AI systems for the purpose of identifying the most
+    appropriate and targeted risk management measures.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligatory testing can be checked via CI/test reports or repository test
+      artifacts.
+    evidence_signals:
+    - ci_gate
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-3957b413
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inconsistent system performance
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall conduct testing that demonstrates high-risk AI systems perform
+    consistently for their intended purpose.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective acceptance criteria or measurable metrics defined to determine
+      'consistent' performance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-5abd1480
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: non-compliance with Section requirements
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall conduct testing that demonstrates high-risk AI systems are in
+    compliance with the requirements set out in this Section.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No specific acceptance criteria, required artifacts, or pass/fail tests
+      are defined to objectively verify compliance.
+    evidence_signals:
+    - repo_check
+    - ci_gate
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0002-bf5323e8
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context:
+    - dev
+  hazard: deployment of untested high-risk AI
+  conditions:
+  - at any time throughout the development process
+  - prior to being placed on the market or put into service
+  exceptions: []
+  requirements:
+  - provider shall perform testing of high-risk AI systems during development and,
+    in any event, prior to placing them on the market or putting them into service.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligatory testing before market; verifiable via CI/test reports, runtime
+      logs, or repository test artifacts.
+    evidence_signals:
+    - ci_gate
+    - log_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-6c3b3957
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context:
+    - dev
+  hazard: incorrect performance due to inadequate validation against intended-purpose
+    metrics
+  conditions: []
+  exceptions: []
+  requirements:
+  - provider shall carry out testing against prior defined metrics and probabilistic
+    thresholds that are appropriate to the intended purpose of the high-risk AI system.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires providers to perform tests against prior-defined metrics and
+      thresholds; verifiable via metrics configs, test reports/CI gates, and execution
+      logs.
+    evidence_signals:
+    - config_check
+    - ci_gate
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0002-764e8798
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: adverse impact on persons under the age of 18 and other vulnerable groups
+  conditions:
+  - when implementing the risk management system as provided for in paragraphs 1 to
+    7
+  exceptions: []
+  requirements:
+  - provider shall give consideration to whether, in view of its intended purpose,
+    the high-risk AI system is likely to have an adverse impact on persons under the
+    age of 18 and, as appropriate, other vulnerable groups when implementing the risk
+    management system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''Give consideration'' is vague and lacks a specific, inspectable artifact
+      or measurable criterion for objective pass/fail.'
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-26360280
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: use of datasets that do not meet required quality criteria
+  conditions:
+  - whenever training, validation and testing data sets are used
+  exceptions: []
+  requirements:
+  - developer shall develop high-risk AI systems that make use of techniques involving
+    the training of AI models on the basis of training, validation and testing data
+    sets that meet the quality criteria referred to in paragraphs 2 to 5.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires developers to use training/validation/test datasets meeting specified
+      quality criteria; dataset contents/metadata can be inspected for compliance.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0003-9a65d83c
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inadequate data governance for intended purpose
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall subject training, validation and testing data sets to data governance
+    and management practices that are appropriate for the intended purpose of the
+    high-risk AI system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requirement is vague—'appropriate' practices unspecified; no objective
+      predicate or artifact to determine compliance.
+    evidence_signals:
+    - data_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-698bb7c9
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: bias leading to harm, rights impact, or discrimination
+  conditions:
+  - especially where data outputs influence inputs for future operations
+  exceptions: []
+  requirements:
+  - developer shall ensure data governance practices include examination for possible
+    biases that are likely to affect the health and safety of persons, have a negative
+    impact on fundamental rights or lead to discrimination prohibited under Union
+    law.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligates developers to include bias examinations in data governance;
+      presence can be checked in governance policies or documentation.
+    evidence_signals:
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-d0de453e
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient data availability, quantity or suitability
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall ensure data governance practices include an assessment of the
+    availability, quantity and suitability of the data sets that are needed.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Check for documented data-assessment artifacts or policy/config entries
+      and dataset metadata evidencing availability, quantity, and suitability.
+    evidence_signals:
+    - repo_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0003-ca5336a1
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: non-compliance due to data gaps or shortcomings
+  conditions: []
+  exceptions: []
+  requirements:
+  - developer shall ensure data governance practices identify relevant data gaps or
+    shortcomings that prevent compliance with this Regulation and specify how those
+    gaps and shortcomings can be addressed.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Determining whether gaps ‘prevent compliance’ requires subjective judgment;
+      artifact presence alone is insufficient for objective pass/fail.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0004-6e075e49
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: misaligned model behavior due to irrelevant training data
+  conditions:
+  - in view of the intended purpose
+  exceptions: []
+  requirements:
+  - Document that training, validation and testing data sets are relevant to the intended
+    purpose.
+  evidence:
+  - dataset documentation (relevance assessment)
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to document is verifiable by inspecting repository/documentation
+      for a statement that datasets are relevant to the intended purpose.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0004-aff77f49
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: biased outcomes due to unrepresentative data
+  conditions:
+  - in view of the intended purpose
+  exceptions: []
+  requirements:
+  - Ensure and record that training, validation and testing data sets are sufficiently
+    representative for the intended purpose.
+  evidence:
+  - dataset documentation (representativeness metrics)
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague criterion—'sufficiently representative' lacks objective metrics
+      or thresholds, so pass/fail cannot be verified via logs, configs, or data.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0004-ddb15bfa
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inaccurate model behavior due to erroneous or incomplete data
+  conditions:
+  - in view of the intended purpose
+  - to the best extent possible
+  exceptions: []
+  requirements:
+  - Perform data quality checks and document that training, validation and testing
+    data sets are, to the best extent possible, free of errors and complete in view
+    of the intended purpose.
+  evidence:
+  - dataset documentation (data quality checks)
+  severity: high
+  is_testable: false
+  testability:
+    reason: Uses vague/subjective criteria ('to the best extent possible', 'complete
+      in view of intended purpose'), so no objective pass/fail oracle
+    evidence_signals:
+    - data_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0004-838898b6
+  source:
+    doc: spans_passthrough_candidates
+    citation: high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+    span_id: EU_AI_2024_removed/high-risk-ai-systems-shall-be-tested-for-the-purpose-of-iden/sent_0004
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: disparate impact on persons or groups due to inadequate statistical properties
+  conditions:
+  - in view of the intended purpose
+  - where applicable, as regards the persons or groups of persons in relation to whom
+    the high-risk AI system is intended to be used
+  exceptions: []
+  requirements:
+  - Assess and document that training, validation and testing data sets have appropriate
+    statistical properties, including where applicable with respect to persons or
+    groups for whom the high-risk AI system is intended to be used.
+  evidence:
+  - dataset documentation (statistical property analysis)
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires judging ‘appropriate statistical properties’ without defined
+      metrics, so no objective pass/fail oracle.
+    evidence_signals:
+    - data_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-af4060e2
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: unauthorized access or misuse of special categories of personal data
+  conditions:
+  - processing is strictly necessary for the purpose of ensuring bias detection and
+    correction in relation to the high-risk AI systems in accordance with paragraph
+    (2), points (f) and (g)
+  - in addition to the provisions set out in Regulations (EU) 2016/679 and (EU) 2018/1725
+    and Directive (EU) 2016/680
+  - points (a) to (f) of paragraph 5 are met
+  exceptions: []
+  requirements:
+  - provider shall not process special categories of personal data for the purpose
+    of bias detection and correction unless the conditions listed in this rule are
+    satisfied.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Exemption depends on unspecified "conditions listed in this rule", so
+      compliance cannot be objectively checked from artifacts alone.
+    evidence_signals:
+    - data_check
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-9c6cc1b6
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: unauthorized access or misuse of special categories of personal data
+  conditions: []
+  exceptions: []
+  requirements:
+  - provider shall apply technical limitations on the re-use of the special categories
+    of personal data and implement state-of-the-art security and privacy-preserving
+    measures, including pseudonymisation.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''state-of-the-art'' and unspecified ''technical limitations'' are vague;
+      no objective criterion/oracle to yield pass/fail.'
+    evidence_signals:
+    - data_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-cecc0146
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: unauthorized retention of special categories of personal data beyond need
+  conditions: []
+  exceptions: []
+  requirements:
+  - provider shall delete the special categories of personal data once the bias has
+    been corrected or the personal data has reached the end of its retention period,
+    whichever comes first.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Trigger "bias has been corrected" lacks an objective artifact; timing
+      of required deletion cannot be deterministically verified.
+    evidence_signals:
+    - log_check
+    - data_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-cfee8dc3
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0001
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PII
+    context:
+    - high-risk
+  hazard: lack of justification for processing special categories of personal data
+  conditions: []
+  exceptions: []
+  requirements:
+  - provider shall ensure that the records of processing activities pursuant to Regulations
+    (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680 include the reasons
+    why the processing of special categories of personal data was strictly necessary
+    to detect and correct biases and why that objective could not be achieved by processing
+    other data.
+  evidence:
+  - records of processing activities
+  severity: high
+  is_testable: true
+  testability:
+    reason: RoPA documents are inspectable; presence of the required justification
+      fields can be objectively checked in records.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-96145790
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: deployment without required technical documentation
+  conditions:
+  - before that system is placed on the market or put into service
+  exceptions: []
+  requirements:
+  - org shall draw up the technical documentation of a high-risk AI system before
+    that system is placed on the market or put into service.
+  evidence:
+  - technical documentation
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to create technical documentation before market/service; verify
+      by checking documentation artifacts and creation/deployment timestamps in repos
+      or deployment logs.
+    evidence_signals:
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0002-29fb8928
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: outdated technical documentation leading to unverifiable compliance
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall keep the technical documentation of a high-risk AI system up-to-date.
+  evidence:
+  - technical documentation
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'up-to-date' requirement lacks an objective metric (frequency/content),
+      so no deterministic pass/fail via artifacts.
+    evidence_signals:
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0002-b04bdd0f
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: regulatory non-compliance due to insufficient evidence of conformity
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall draw up the technical documentation so that it demonstrates that the
+    high-risk AI system complies with the requirements set out in this Section.
+  evidence:
+  - technical documentation
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''Demonstrates compliance'' is subjective; no objective pass/fail criterion
+      or single oracle specified to verify conformity.'
+    evidence_signals:
+    - repo_check
+    - config_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0002-a9a98020
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: inability of authorities to assess compliance
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall ensure the technical documentation provides national competent authorities
+    and notified bodies with the necessary information in a clear and comprehensive
+    form to assess the compliance of the AI system with those requirements.
+  evidence:
+  - technical documentation
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective criteria for "necessary" information or "clear and comprehensive";
+      cannot automatically verify documentation contents.
+    evidence_signals:
+    - io_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-6ca84a97
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: missing required Annex IV documentation elements
+  conditions:
+  - elements set out in Annex IV
+  exceptions: []
+  requirements:
+  - org shall ensure the technical documentation contains, at a minimum, the elements
+    set out in Annex IV.
+  evidence:
+  - technical documentation
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to include Annex IV elements in technical documentation; verifiable
+      by inspecting documentation artifacts (repo/files) for required elements.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-aa55a3e4
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0003
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: non-conformity with Annex IV technical documentation requirements
+  conditions:
+  - opts to provide the information required in Annex IV in a simplified manner
+  exceptions: []
+  requirements:
+  - When an SME, including a start-up, opts to provide the information required in
+    Annex IV in a simplified manner, the org shall use the simplified technical documentation
+    form referred to in this paragraph.
+  evidence:
+  - technical documentation (Annex IV)
+  - simplified technical documentation form
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Specifies an obligation to use a particular form when SMEs opt for simplified
+      Annex IV; verifiable by inspecting submitted documentation files.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0003-2a6aa1d0
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0003
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0003
+  scope:
+    actor:
+    - auditor
+    data_domain: []
+    context: []
+  hazard: rejection of the simplified technical documentation form during conformity
+    assessment
+  conditions:
+  - for the purposes of the conformity assessment
+  exceptions: []
+  requirements:
+  - Auditor shall accept the simplified technical documentation form referred to in
+    this paragraph for the purposes of the conformity assessment.
+  evidence:
+  - simplified technical documentation form
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Obligates auditors to accept a specific document during conformity assessment;
+      verifiable by inspecting audit decision records or logs showing acceptance.
+    evidence_signals:
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0004-7b262c87
+  source:
+    doc: spans_passthrough_candidates
+    citation: directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0004
+    span_id: EU_AI_2024_removed/directive-eu-2016-680-all-the-following-conditions-must-be-m/sent_0004
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: missing required technical documentation
+  conditions:
+  - high-risk AI system
+  - related to a product covered by Union harmonisation legislation listed in Section
+    A of Annex I
+  - placed on the market or put into service
+  exceptions: []
+  requirements:
+  - Draw up a single set of technical documentation when the conditions apply.
+  evidence:
+  - technical documentation
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires deployer to produce one technical documentation set for high-risk
+      cases; presence/uniqueness of doc files in repo is checkable.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-c048ac64
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient event traceability
+  conditions:
+  - over the lifetime of the system
+  exceptions: []
+  requirements:
+  - Developer shall technically implement automatic recording of events (logs) for
+    the high-risk AI system that operates over the lifetime of the system.
+  evidence:
+  - logs
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to implement automatic event logging; verifiable by inspecting
+      runtime logs or logging configuration.
+    evidence_signals:
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-a44fc60f
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient traceability for detection, monitoring, and post-market review
+  conditions:
+  - appropriate to the intended purpose of the system
+  exceptions: []
+  requirements:
+  - Developer shall enable logging to record events relevant for identifying situations
+    that may result in the high-risk AI system presenting a risk within the meaning
+    of Article 79(1) or in a substantial modification.
+  evidence:
+  - logs
+  severity: high
+  is_testable: false
+  testability:
+    reason: ‘Events relevant for identifying…’ is undefined, making pass/fail subjective
+      rather than objectively verifiable.
+    evidence_signals:
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-4bdef0e2
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient traceability for detection, monitoring, and post-market review
+  conditions:
+  - appropriate to the intended purpose of the system
+  exceptions: []
+  requirements:
+  - Developer shall enable logging to record events relevant for facilitating the
+    post-market monitoring referred to in Article 72.
+  evidence:
+  - logs
+  severity: high
+  is_testable: false
+  testability:
+    reason: Obligation lacks a concrete, verifiable list of "relevant events", so
+      pass/fail cannot be determined objectively.
+    evidence_signals:
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-8902f308
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: missing records of system use periods
+  conditions:
+  - Annex III point 1(a) system
+  exceptions: []
+  requirements:
+  - Developer shall ensure logging capabilities provide recording of the period of
+    each use of the system, including start date and time and end date and time of
+    each use.
+  evidence:
+  - logs
+  severity: high
+  is_testable: true
+  testability:
+    reason: Logs can be inspected to confirm each system-use period has start and
+      end date/time entries.
+    evidence_signals:
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0001-d786b428
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: lack of traceability to reference data sources
+  conditions:
+  - Annex III point 1(a) system
+  exceptions: []
+  requirements:
+  - Developer shall ensure logging capabilities record the reference database against
+    which input data has been checked by the system.
+  evidence:
+  - logs
+  severity: high
+  is_testable: true
+  testability:
+    reason: Logs can be inspected to verify entries include the reference database
+      identifier; logging configuration can also be checked.
+    evidence_signals:
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0001-498aa0b8
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inability to trace matched input data
+  conditions:
+  - Annex III point 1(a) system
+  exceptions: []
+  requirements:
+  - Developer shall ensure logging capabilities record the input data for which the
+    search has led to a match.
+  evidence:
+  - logs
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to log matched input can be verified by inspecting runtime
+      logs for entries recording input data when a search yields a match.
+    evidence_signals:
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0001-860fcf38
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0001
+    span_id: EU_AI_2024_removed/article-12/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: unattributed human verification of results
+  conditions:
+  - Annex III point 1(a) system
+  exceptions: []
+  requirements:
+  - Developer shall ensure logging capabilities record the identification of the natural
+    persons involved in the verification of the results, as referred to in Article
+    14(5).
+  evidence:
+  - logs
+  severity: high
+  is_testable: true
+  testability:
+    reason: Logs or logging configuration can be inspected to verify entries record
+      identifiers of natural persons who verified results.
+    evidence_signals:
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-6f182111
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0002
+    span_id: EU_AI_2024_removed/article-12/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: misinterpretation of outputs leading to inappropriate use
+  conditions: []
+  exceptions: []
+  requirements:
+  - The developer shall design and develop high-risk AI systems so that their operation
+    is sufficiently transparent to enable deployers to interpret the system's output
+    and use it appropriately.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague "sufficiently transparent" lacks measurable criteria or specific
+      artifacts; no oracle can objectively verify compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-fbf2c6a0
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0002
+    span_id: EU_AI_2024_removed/article-12/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: non-compliance with provider and deployer obligations due to insufficient
+    transparency
+  conditions: []
+  exceptions: []
+  requirements:
+  - The developer shall ensure an appropriate type and degree of transparency in high-risk
+    AI systems with a view to achieving compliance with the relevant obligations of
+    the provider and deployer set out in Section 3.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'appropriate type and degree of transparency' lacks measurable criteria
+      to verify compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-b44ba33c
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0002
+    span_id: EU_AI_2024_removed/article-12/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: deployers unable to use system due to unclear or incomplete instructions
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall accompany high-risk AI systems with instructions for use in an appropriate
+    digital format or otherwise that include concise, complete, correct and clear
+    information that is relevant, accessible and comprehensible to deployers.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Qualitative attributes (concise/complete/correct/clear/relevant/accessible/comprehensible)
+      lack objective pass/fail criteria.
+    evidence_signals:
+    - repo_check
+    - io_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-04fd6e79
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0003
+    span_id: EU_AI_2024_removed/article-12/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: inability to contact provider
+  conditions: []
+  exceptions:
+  - where applicable, authorised representative
+  requirements:
+  - The org shall include in the instructions for use the identity and the contact
+    details of the provider and, where applicable, of its authorised representative.
+  evidence:
+  - instructions for use
+  severity: high
+  is_testable: true
+  testability:
+    reason: Inspect instructions-for-use documentation (repo/docs) to verify provider
+      identity and contact details, and authorised representative when applicable.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-d9b4dd6f
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0003
+    span_id: EU_AI_2024_removed/article-12/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: use outside intended purpose
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall include in the instructions for use the intended purpose of the
+    high-risk AI system.
+  evidence:
+  - instructions for use
+  severity: high
+  is_testable: true
+  testability:
+    reason: Inspect the instructions-for-use document (repo/config) to verify it explicitly
+      states the system's intended purpose.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-61a749d4
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0003
+    span_id: EU_AI_2024_removed/article-12/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: reduced accuracy, robustness or cybersecurity
+  conditions:
+  - referred to in Article 15
+  - against which the high-risk AI system has been tested and validated
+  exceptions: []
+  requirements:
+  - The org shall include in the instructions for use the level of accuracy, including
+    its metrics, robustness and cybersecurity referred to in Article 15 against which
+    the high-risk AI system has been tested and validated and which can be expected,
+    and any known and foreseeable circumstances that may have an impact on that expected
+    level of accuracy, robustness and cybersecurity.
+  evidence:
+  - instructions for use
+  severity: high
+  is_testable: true
+  testability:
+    reason: Mandated content in 'instructions for use' is inspectable in product documentation/repository;
+      presence and specific statements can be verified.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0003-157d81f5
+  source:
+    doc: spans_passthrough_candidates
+    citation: article-12/sent_0003
+    span_id: EU_AI_2024_removed/article-12/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: risks to health
+  conditions:
+  - in accordance with its intended purpose or under conditions of reasonably foreseeable
+    misuse
+  exceptions: []
+  requirements:
+  - The org shall include in the instructions for use any known or foreseeable circumstance,
+    related to the use of the high-risk AI system in accordance with its intended
+    purpose or under conditions of reasonably foreseeable misuse, which may lead to
+    risks to health.
+  evidence:
+  - instructions for use
+  severity: high
+  is_testable: false
+  testability:
+    reason: Completeness of 'known or foreseeable' circumstances is subjective and
+      requires risk‑assessment artifacts not specified.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0001-d08646aa
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: insufficient human oversight
+  conditions:
+  - during the period in which they are in use
+  exceptions: []
+  requirements:
+  - Developer shall design and develop the high-risk AI system with appropriate human-machine
+    interface tools that enable effective oversight by natural persons during the
+    period in which the system is in use.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Obligation is vague—'appropriate' interfaces and 'effective oversight'
+      lack measurable criteria; no objective oracle can determine pass/fail.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-61f80f2e
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0001
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: risks to health, safety or fundamental rights
+  conditions:
+  - when the system is used in accordance with its intended purpose or under conditions
+    of reasonably foreseeable misuse
+  - in particular where such risks persist despite the application of other requirements
+    set out in this Section
+  exceptions: []
+  requirements:
+  - Developer shall implement human oversight measures that aim to prevent or minimise
+    risks to health, safety or fundamental rights arising during intended use or under
+    reasonably foreseeable misuse.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requirement is vague—no specific, observable artifacts or metrics to verify
+      oversight measures' existence or effectiveness against listed risks.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-e972a467
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient human oversight
+  conditions: []
+  exceptions: []
+  requirements:
+  - The provider shall ensure that oversight measures are commensurate with the risks,
+    level of autonomy and context of use of the high-risk AI system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''Commensurate with the risks'' is subjective and lacks measurable thresholds
+      or concrete criteria for objective verification.'
+    evidence_signals:
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-ce818cdd
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context:
+    - high-risk
+  hazard: missing built-in oversight measures
+  conditions:
+  - when technically feasible
+  - before it is placed on the market or put into service
+  exceptions: []
+  requirements:
+  - The provider shall identify and build measures into the high-risk AI system, when
+    technically feasible, before it is placed on the market or put into service.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague obligation: ''measures'' and ''technically feasible'' lack concrete
+      criteria or artifacts for objective pass/fail.'
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-52d34771
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient deployer-implementable oversight measures
+  conditions:
+  - before placing on the market or putting into service
+  exceptions: []
+  requirements:
+  - The provider shall identify, before placing the high-risk AI system on the market
+    or putting it into service, measures that are appropriate to be implemented by
+    the deployer.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires identification of “appropriate” measures — appropriateness is
+      subjective and lacks an objective oracle to verify compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-00407898
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context:
+    - high-risk
+  hazard: undetected anomalies or dysfunctions due to inadequate oversight
+  conditions:
+  - when the high-risk AI system is provided to the deployer
+  exceptions: []
+  requirements:
+  - The provider shall provide the high-risk AI system to the deployer in such a way
+    that natural persons to whom human oversight is assigned are enabled to properly
+    understand the system's relevant capacities and limitations and be able to duly
+    monitor its operation, including detecting and addressing anomalies, dysfunctions
+    and unexpected performance.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective measurable criteria (e.g., 'properly', 'duly'); pass/fail
+      cannot be determined from I/O, logs, or configs.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0002-8e0ff5e7
+  source:
+    doc: spans_passthrough_candidates
+    citation: v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+    span_id: EU_AI_2024_removed/v-when-appropriate-its-performance-regarding-specific-person/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context:
+    - high-risk
+  hazard: automation bias (over-reliance on system outputs)
+  conditions:
+  - in particular for high-risk AI systems used to provide information or recommendations
+  exceptions: []
+  requirements:
+  - The provider shall provide the high-risk AI system to the deployer in such a way
+    that natural persons to whom human oversight is assigned are enabled to remain
+    aware of the possible tendency to automatically rely or over-rely on the output
+    produced by the high-risk AI system.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''enabled to remain aware'' is vague and lacks a concrete, objectively
+      verifiable artifact or metric for pass/fail.'
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0001-49441479
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0001
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0001
+  scope:
+    actor:
+    - deployer
+    data_domain: []
+    context:
+    - high-risk
+  hazard: action based on unverified identification
+  conditions:
+  - Annex III point 1(a) system
+  - based on the identification resulting from the system
+  - identification separately verified and confirmed by at least two natural persons
+    with the necessary competence, training and authority
+  exceptions:
+  - where used for law enforcement, migration, border control or asylum and Union
+    or national law considers the application of this requirement disproportionate
+  requirements:
+  - The deployer shall not take any action or decision based on the identification
+    resulting from the system unless that identification has been separately verified
+    and confirmed by at least two natural persons with the necessary competence, training
+    and authority.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify logs/configs show two distinct authorized human confirmations before
+      any deployer action based on system identification.
+    evidence_signals:
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0002-0d4ec897
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: insufficient accuracy
+  conditions: []
+  exceptions: []
+  requirements:
+  - The developer shall design and develop high-risk AI systems to achieve an appropriate
+    level of accuracy.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: 'Vague requirement: ''appropriate level of accuracy'' lacks measurable
+      metric or threshold, so no objective pass/fail oracle.'
+    evidence_signals:
+    - config_check
+    - io_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0002-bc6a4593
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: cybersecurity vulnerabilities
+  conditions: []
+  exceptions: []
+  requirements:
+  - The developer shall design and develop high-risk AI systems to achieve an appropriate
+    level of cybersecurity.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague/unbounded obligation — 'appropriate level of cybersecurity' lacks
+      measurable criteria or observable predicates for objective pass/fail verification.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-06bedd55
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: performance degradation over lifecycle
+  conditions:
+  - throughout their lifecycle
+  exceptions: []
+  requirements:
+  - The developer shall design and develop high-risk AI systems so that they perform
+    consistently in accuracy, robustness and cybersecurity throughout their lifecycle.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'perform consistently' lacks measurable metrics, thresholds, timeframe
+      or an objective pass/fail predicate.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-8e58b876
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: unhandled errors or faults due to interactions
+  conditions:
+  - regarding errors, faults or inconsistencies that may occur within the system or
+    the environment
+  exceptions: []
+  requirements:
+  - The developer shall design and develop high-risk AI systems to be as resilient
+    as possible to errors, faults or inconsistencies, in particular those due to interaction
+    with natural persons or other systems.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague, unquantified "as resilient as possible" obligation lacks measurable
+      criteria or artifacts; no oracle can determine pass/fail.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0002-caf0277c
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0002
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: undisclosed accuracy metrics
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall declare the levels of accuracy and the relevant accuracy metrics
+    of high-risk AI systems in the accompanying instructions of use.
+  evidence: []
+  severity: medium
+  is_testable: true
+  testability:
+    reason: Verify documentation contains declared accuracy levels and metrics by
+      inspecting accompanying instructions (repo/config files).
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-30745643
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0003
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: bias amplification via feedback loops
+  conditions:
+  - that continue to learn after being placed on the market or put into service
+  exceptions: []
+  requirements:
+  - developer shall develop high-risk AI systems that continue to learn after being
+    placed on the market or put into service to eliminate or reduce as far as possible
+    the risk of possibly biased outputs influencing input for future operations (feedback
+    loops).
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Mandates reducing bias 'as far as possible' without a defined metric or
+      objective pass/fail; outcome not objectively verifiable.
+    evidence_signals:
+    - config_check
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0003-ecca1ccf
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0003
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0003
+  scope:
+    actor:
+    - developer
+    data_domain: []
+    context: []
+  hazard: bias amplification via feedback loops
+  conditions:
+  - that continue to learn after being placed on the market or put into service
+  exceptions: []
+  requirements:
+  - developer shall ensure that any feedback loops resulting from continued learning
+    after market placement or being put into service are duly addressed with appropriate
+    mitigation measures.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague requirement ('appropriate mitigation measures') lacks objective
+      pass/fail criteria; no clear observable oracle to verify compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-e15eb233
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0003
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unauthorised alteration of system use, outputs or performance by exploiting
+    vulnerabilities
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall ensure high-risk AI systems are resilient against attempts by unauthorised
+    third parties to alter their use, outputs or performance by exploiting system
+    vulnerabilities.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'resilient' obligation lacks measurable acceptance criteria or concrete
+      artifacts to enable an objective pass/fail oracle.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-9b3c60e8
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0003
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: unmitigated feedback loops
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall take technical and organisational measures in relation to the risks
+    described in this clause.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague obligation lacking specific measures, metrics, or observable artifacts;
+      no objective oracle can verify compliance.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0004-1ff28756
+  source:
+    doc: spans_passthrough_candidates
+    citation: the-output-of-the-high-risk-ai-system/sent_0004
+    span_id: EU_AI_2024_removed/the-output-of-the-high-risk-ai-system/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context:
+    - high-risk
+  hazard: insufficient cybersecurity
+  conditions: []
+  exceptions: []
+  requirements:
+  - org shall ensure that the technical solutions aiming to ensure the cybersecurity
+    of high-risk AI systems are appropriate to the relevant circumstances and the
+    risks.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague requirement — “appropriate to circumstances and the risks” has no
+      measurable criteria or observable predicates to check objectively.
+    evidence_signals:
+    - config_check

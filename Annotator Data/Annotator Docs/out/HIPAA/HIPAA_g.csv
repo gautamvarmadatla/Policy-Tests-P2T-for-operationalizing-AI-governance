@@ -1,0 +1,1812 @@
+span_id,text,scope.actor,scope.domain,scope.context,hazard,requirement,exceptions,conditions,is_testable,evidence_signals,evidence,rule_id
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0003,"A covered entity or business associate may not use or disclose protected health information,
+except as permitted or required by this subpart or by subpart C of part 160 of this subchapter. (1)
+Covered entities: Permitted uses and disclosures. A covered entity is permitted to use or disclose
+protected health information as follows:
+(i)
+To the individual;
+(ii)
+For treatment, payment, or health care operations, as permitted by and in compliance with §
+164.506;
+(iii) Incident to a use or disclosure otherwise permitted or required by this subpart, provided that the
+covered entity has complied with the applicable requirements of §§ 164.502(b), 164.514(d),
+and 164.530(c) with respect to such otherwise permitted or required use or disclosure;
+(iv) Except for uses and disclosures prohibited under § 164.502(a)(5)(i), pursuant to and in
+compliance with a valid authorization under § 164.508;
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.501 ""Payment"" (2)(vi)(C)",org; business associate,null,regulated,unauthorized PHI disclosure,An org or business associate shall not use or disclose protected health information except as explicitly permitted or required by regulation.,"as permitted or required by 45 CFR 164 Subpart E or 160 Subpart C; disclosure is to the individual; for treatment, payment, or health care operations; incident to an otherwise permitted use or disclosure; pursuant to a valid authorization",processing protected health information,TRUE,log_check; config_check; access_check; attest_check,valid authorization record,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005,"A covered entity is required to disclose protected health
+information:
+(i)
+To an individual, when requested under, and required by § 164.524 or § 164.528; and
+(ii)
+When required by the Secretary under subpart C of part 160 of this subchapter to investigate or
+determine the covered entity's compliance with this subchapter. (3)
+Business associates: Permitted uses and disclosures. A business associate may use or disclose
+protected health information only as permitted or required by its business associate contract or
+other arrangement pursuant to § 164.504(e) or as required by law. The business associate may not
+use or disclose protected health information in a manner that would violate the requirements of this
+subpart, if done by the covered entity, except for the purposes specified under § 164.504(e)(2)(i)(A)
+or (B) if such uses or disclosures are permitted by its contract or other arrangement.",org,null,regulated,Improper denial of PHI access,An org must disclose protected health information to an individual when requested under § 164.524 or § 164.528.,null,upon individual request under § 164.524 or § 164.528,TRUE,log_check; attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005,"A covered entity is required to disclose protected health
+information:
+(i)
+To an individual, when requested under, and required by § 164.524 or § 164.528; and
+(ii)
+When required by the Secretary under subpart C of part 160 of this subchapter to investigate or
+determine the covered entity's compliance with this subchapter. (3)
+Business associates: Permitted uses and disclosures. A business associate may use or disclose
+protected health information only as permitted or required by its business associate contract or
+other arrangement pursuant to § 164.504(e) or as required by law. The business associate may not
+use or disclose protected health information in a manner that would violate the requirements of this
+subpart, if done by the covered entity, except for the purposes specified under § 164.504(e)(2)(i)(A)
+or (B) if such uses or disclosures are permitted by its contract or other arrangement.",org,null,regulated,Non-compliance with regulatory investigation,An org must disclose protected health information when required by the Secretary for a compliance investigation.,null,when required by the Secretary for a compliance investigation,TRUE,attest_check; log_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005,"A covered entity is required to disclose protected health
+information:
+(i)
+To an individual, when requested under, and required by § 164.524 or § 164.528; and
+(ii)
+When required by the Secretary under subpart C of part 160 of this subchapter to investigate or
+determine the covered entity's compliance with this subchapter. (3)
+Business associates: Permitted uses and disclosures. A business associate may use or disclose
+protected health information only as permitted or required by its business associate contract or
+other arrangement pursuant to § 164.504(e) or as required by law. The business associate may not
+use or disclose protected health information in a manner that would violate the requirements of this
+subpart, if done by the covered entity, except for the purposes specified under § 164.504(e)(2)(i)(A)
+or (B) if such uses or disclosures are permitted by its contract or other arrangement.",business associate,null,regulated,Unauthorized PHI disclosure by a third party,A business associate must only use or disclose protected health information as permitted by its business associate contract or as required by law.,null,null,TRUE,attest_check; log_check; config_check,business associate contract,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005,"A covered entity is required to disclose protected health
+information:
+(i)
+To an individual, when requested under, and required by § 164.524 or § 164.528; and
+(ii)
+When required by the Secretary under subpart C of part 160 of this subchapter to investigate or
+determine the covered entity's compliance with this subchapter. (3)
+Business associates: Permitted uses and disclosures. A business associate may use or disclose
+protected health information only as permitted or required by its business associate contract or
+other arrangement pursuant to § 164.504(e) or as required by law. The business associate may not
+use or disclose protected health information in a manner that would violate the requirements of this
+subpart, if done by the covered entity, except for the purposes specified under § 164.504(e)(2)(i)(A)
+or (B) if such uses or disclosures are permitted by its contract or other arrangement.",business associate,null,regulated,Circumvention of PHI protection rules via a third party,A business associate shall not use or disclose protected health information in a manner that would violate the subpart's requirements if the action were performed by the covered entity.,for purposes specified under § 164.504(e)(2)(i)(A) or (B) if permitted by contract,when using or disclosing protected health information,TRUE,log_check; config_check; attest_check,business associate contract,4
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0006,"(4)
+Business associates: Required uses and disclosures. A business associate is required to disclose
+protected health information:
+(i)
+When required by the Secretary under subpart C of part 160 of this subchapter to investigate or
+determine the business associate's compliance with this subchapter. (ii)
+To the covered entity, individual, or individual's designee, as necessary to satisfy a covered
+entity's obligations under § 164.524(c)(2)(ii) and (3)(ii) with respect to an individual's request
+for an electronic copy of protected health information. (5)
+Prohibited uses and disclosures —
+(i)
+Use and disclosure of genetic information for underwriting purposes: Notwithstanding any other
+provision of this subpart, a health plan, excluding an issuer of a long-term care policy falling
+within paragraph (1)(viii) of the definition of health plan, shall not use or disclose protected
+health information that is genetic information for underwriting purposes.",business associate,null,regulated,Regulatory non-compliance,A business associate must disclose protected health information when required by the Secretary to investigate or determine the business associate's compliance.,null,when required by the Secretary for a compliance investigation,TRUE,attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0006,"(4)
+Business associates: Required uses and disclosures. A business associate is required to disclose
+protected health information:
+(i)
+When required by the Secretary under subpart C of part 160 of this subchapter to investigate or
+determine the business associate's compliance with this subchapter. (ii)
+To the covered entity, individual, or individual's designee, as necessary to satisfy a covered
+entity's obligations under § 164.524(c)(2)(ii) and (3)(ii) with respect to an individual's request
+for an electronic copy of protected health information. (5)
+Prohibited uses and disclosures —
+(i)
+Use and disclosure of genetic information for underwriting purposes: Notwithstanding any other
+provision of this subpart, a health plan, excluding an issuer of a long-term care policy falling
+within paragraph (1)(viii) of the definition of health plan, shall not use or disclose protected
+health information that is genetic information for underwriting purposes.",business associate,null,regulated,Denial of data access rights,"A business associate must disclose protected health information to the covered entity, individual, or individual's designee to fulfill an individual's request for an electronic copy of their protected health information.",null,upon an individual's request for an electronic copy of their PHI,TRUE,log_check; attest_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0006,"(4)
+Business associates: Required uses and disclosures. A business associate is required to disclose
+protected health information:
+(i)
+When required by the Secretary under subpart C of part 160 of this subchapter to investigate or
+determine the business associate's compliance with this subchapter. (ii)
+To the covered entity, individual, or individual's designee, as necessary to satisfy a covered
+entity's obligations under § 164.524(c)(2)(ii) and (3)(ii) with respect to an individual's request
+for an electronic copy of protected health information. (5)
+Prohibited uses and disclosures —
+(i)
+Use and disclosure of genetic information for underwriting purposes: Notwithstanding any other
+provision of this subpart, a health plan, excluding an issuer of a long-term care policy falling
+within paragraph (1)(viii) of the definition of health plan, shall not use or disclose protected
+health information that is genetic information for underwriting purposes.",org,null,regulated,Discriminatory use of genetic data,An org shall not use or disclose protected health information that is genetic information for underwriting purposes.,does not apply to an issuer of a long-term care policy,for underwriting purposes,TRUE,data_check; log_check; config_check,null,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0008,"(3)
+The application of any pre-existing condition exclusion under the plan, coverage, or
+policy; and
+(4)
+Other activities related to the creation, renewal, or replacement of a contract of health
+insurance or health benefits. (B)
+Underwriting purposes does not include determinations of medical appropriateness where
+an individual seeks a benefit under the plan, coverage, or policy. (ii)
+Sale of protected health information:
+(A)
+Except pursuant to and in compliance with § 164.508(a)(4), a covered entity or business
+associate may not sell protected health information. (B)
+For purposes of this paragraph, sale of protected health information means:
+(1)
+Except as provided in paragraph (a)(5)(ii)(B)(2) of this section, a disclosure of
+protected health information by a covered entity or business associate, if applicable,
+where the covered entity or business associate directly or indirectly receives
+remuneration from or on behalf of the recipient of the protected health information in
+exchange for the protected health information.",org; business associate,null,regulated,unauthorized sale of PHI,An org or business associate shall not sell protected health information.,pursuant to and in compliance with § 164.508(a)(4),receiving remuneration for PHI disclosure,TRUE,log_check; attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0010,"(iii) Reproductive health care —
+(A)
+Prohibition. Subject to paragraphs (a)(5)(iii)(B) and (C) of this section, a covered entity or
+business associate may not use or disclose protected health information for any of the
+following activities:
+(1)
+To conduct a criminal, civil, or administrative investigation into any person for the
+mere act of seeking, obtaining, providing, or facilitating reproductive health care. (2)
+To impose criminal, civil, or administrative liability on any person for the mere act of
+seeking, obtaining, providing, or facilitating reproductive health care. (3)
+To identify any person for any purpose described in paragraphs (a)(5)(iii)(A)(1) or (2)
+of this section.",org; business associate,null,regulated,Misuse of PHI for legal action related to reproductive care,An org or business associate shall not use or disclose protected health information to conduct an investigation into any person for the mere act of engaging in reproductive health care.,subject to paragraphs (a)(5)(iii)(B) and (C) of this section,"for the purpose of conducting a criminal, civil, or administrative investigation into a person for seeking, obtaining, providing, or facilitating reproductive health care",TRUE,log_check; attest_check; config_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0010,"(iii) Reproductive health care —
+(A)
+Prohibition. Subject to paragraphs (a)(5)(iii)(B) and (C) of this section, a covered entity or
+business associate may not use or disclose protected health information for any of the
+following activities:
+(1)
+To conduct a criminal, civil, or administrative investigation into any person for the
+mere act of seeking, obtaining, providing, or facilitating reproductive health care. (2)
+To impose criminal, civil, or administrative liability on any person for the mere act of
+seeking, obtaining, providing, or facilitating reproductive health care. (3)
+To identify any person for any purpose described in paragraphs (a)(5)(iii)(A)(1) or (2)
+of this section.",org; business associate,null,regulated,Misuse of PHI for legal action related to reproductive care,An org or business associate shall not use or disclose protected health information to impose liability on any person for the mere act of engaging in reproductive health care.,subject to paragraphs (a)(5)(iii)(B) and (C) of this section,"for the purpose of imposing criminal, civil, or administrative liability on a person for seeking, obtaining, providing, or facilitating reproductive health care",TRUE,log_check; attest_check; config_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0010,"(iii) Reproductive health care —
+(A)
+Prohibition. Subject to paragraphs (a)(5)(iii)(B) and (C) of this section, a covered entity or
+business associate may not use or disclose protected health information for any of the
+following activities:
+(1)
+To conduct a criminal, civil, or administrative investigation into any person for the
+mere act of seeking, obtaining, providing, or facilitating reproductive health care. (2)
+To impose criminal, civil, or administrative liability on any person for the mere act of
+seeking, obtaining, providing, or facilitating reproductive health care. (3)
+To identify any person for any purpose described in paragraphs (a)(5)(iii)(A)(1) or (2)
+of this section.",org; business associate,null,regulated,Misuse of PHI for legal action related to reproductive care,An org or business associate shall not use or disclose protected health information to identify any person for the purpose of investigation or imposing liability related to reproductive health care.,subject to paragraphs (a)(5)(iii)(B) and (C) of this section,for the purpose of identifying a person for an investigation or imposition of liability related to reproductive health care,TRUE,log_check; attest_check; config_check,null,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0011,"(B)
+Rule of applicability. The prohibition at paragraph (a)(5)(iii)(A) of this section applies only
+where the relevant activity is in connection with any person seeking, obtaining, providing,
+or facilitating reproductive health care, and the covered entity or business associate that
+received the request for protected health information has reasonably determined that one
+or more of the following conditions exists:
+(1)
+The reproductive health care is lawful under the law of the state in which such health
+care is provided under the circumstances in which it is provided. (2)
+The reproductive health care is protected, required, or authorized by Federal law,
+including the United States Constitution, under the circumstances in which such
+health care is provided, regardless of the state in which it is provided. (3)
+The presumption at paragraph (a)(5)(iii)(C) of this section applies.",org; business associate,null,regulated,unauthorized disclosure of reproductive health PHI,"The org or business associate is prohibited from using or disclosing the requested protected health information if it has reasonably determined that the care is lawful under state law, protected by Federal law, or a specific legal presumption applies.",null,upon receiving a request for protected health information related to reproductive health care,TRUE,attest_check; log_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0012,"(C)
+Presumption. The reproductive health care provided by another person is presumed lawful
+under paragraph (a)(5)(iii)(B)(1) or (2) of this section unless the covered entity or business
+associate has any of the following:
+(1)
+Actual knowledge that the reproductive health care was not lawful under the
+circumstances in which it was provided. (2)
+Factual information supplied by the person requesting the use or disclosure of
+protected health information that demonstrates a substantial factual basis that the
+reproductive health care was not lawful under the specific circumstances in which it
+was provided. (D)
+Scope.",org; business associate,null,regulated,improper disclosure of reproductive health PHI,The org or business associate must presume that reproductive healthcare provided by another person is lawful when considering a request for the use or disclosure of protected health information.,the entity has actual knowledge that the reproductive health care was not lawful; the entity has factual information from the requester demonstrating a substantial factual basis that the care was not lawful,null,TRUE,log_check; attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0013,"For the purposes of this subpart, seeking, obtaining, providing, or facilitating
+reproductive health care includes, but is not limited to, any of the following: expressing
+interest in, using, performing, furnishing, paying for, disseminating information about,
+arranging, insuring, administering, authorizing, providing coverage for, approving,
+counseling about, assisting, or otherwise taking action to engage in reproductive health
+care; or attempting any of the same. (b)
+Standard: Minimum necessary — Minimum necessary applies. When using or disclosing protected health
+information or when requesting protected health information from another covered entity or business
+associate, a covered entity or business associate must make reasonable efforts to limit protected health
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.502(a)(5)(iii)",org; business associate,null,regulated,Excessive PHI collection,An org or business associate must make reasonable efforts to limit requests for protected health information to the minimum necessary to accomplish the intended purpose.,null,when requesting protected health information from another covered entity or business associate,TRUE,log_check; attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0013,"For the purposes of this subpart, seeking, obtaining, providing, or facilitating
+reproductive health care includes, but is not limited to, any of the following: expressing
+interest in, using, performing, furnishing, paying for, disseminating information about,
+arranging, insuring, administering, authorizing, providing coverage for, approving,
+counseling about, assisting, or otherwise taking action to engage in reproductive health
+care; or attempting any of the same. (b)
+Standard: Minimum necessary — Minimum necessary applies. When using or disclosing protected health
+information or when requesting protected health information from another covered entity or business
+associate, a covered entity or business associate must make reasonable efforts to limit protected health
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.502(a)(5)(iii)",org; business associate,null,regulated,Unauthorized PHI disclosure,An org or business associate must make reasonable efforts to limit the use or disclosure of protected health information to the minimum necessary to accomplish the intended purpose.,null,when using or disclosing protected health information,TRUE,log_check; config_check; access_check; data_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0014,"(2)
+Minimum necessary does not apply. This requirement does not apply to:
+(i)
+Disclosures to or requests by a health care provider for treatment;
+(ii)
+Uses or disclosures made to the individual, as permitted under paragraph (a)(1)(i) of this
+section or as required by paragraph (a)(2)(i) of this section;
+(iii) Uses or disclosures made pursuant to an authorization under § 164.508;
+(iv) Disclosures made to the Secretary in accordance with subpart C of part 160 of this subchapter;
+(v)
+Uses or disclosures that are required by law, as described by § 164.512(a); and
+(vi) Uses or disclosures that are required for compliance with applicable requirements of this
+subchapter. (c)
+Standard: Uses and disclosures of protected health information subject to an agreed upon restriction. A
+covered entity that has agreed to a restriction pursuant to § 164.522(a)(1) may not use or disclose the
+protected health information covered by the restriction in violation of such restriction, except as otherwise
+provided in § 164.522(a).",org,null,regulated,unauthorized PHI disclosure,An org that has agreed to a data use restriction may not use or disclose the protected health information covered by the restriction in violation of that restriction.,as otherwise provided in § 164.522(a),agreed to a restriction pursuant to § 164.522(a)(1),TRUE,log_check; config_check; attest_check,data use restriction agreement,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0015,"(d)
+Standard: Uses and disclosures of de-identified protected health information —
+(1)
+Uses and disclosures to create de-identified information. A covered entity may use protected health
+information to create information that is not individually identifiable health information or disclose
+protected health information only to a business associate for such purpose, whether or not the deidentified information is to be used by the covered entity. (2)
+Uses and disclosures of de-identified information. Health information that meets the standard and
+implementation specifications for de-identification under § 164.514(a) and (b) is considered not to
+be individually identifiable health information, i.e., de-identified.",org; business associate,null,regulated,Unauthorized PHI disclosure,An org shall only disclose protected health information for the purpose of de-identification to a business associate.,null,when disclosing protected health information for de-identification purposes,TRUE,log_check; attest_check; config_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0016,"The requirements of this subpart do
+not apply to information that has been de-identified in accordance with the applicable requirements
+of § 164.514, provided that:
+(i)
+Disclosure of a code or other means of record identification designed to enable coded or
+otherwise de-identified information to be re-identified constitutes disclosure of protected health
+information; and
+(ii)
+If de-identified information is re-identified, a covered entity may use or disclose such reidentified information only as permitted or required by this subpart. (e)
+(1)
+Standard: Disclosures to business associates. (i)
+A covered entity may disclose protected health information to a business associate and may
+allow a business associate to create, receive, maintain, or transmit protected health information
+on its behalf, if the covered entity obtains satisfactory assurance that the business associate
+will appropriately safeguard the information. A covered entity is not required to obtain such
+satisfactory assurances from a business associate that is a subcontractor.
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.502(b)(2)",org; business associate,null,regulated,Unauthorized PHI disclosure to a third party,"An org must obtain satisfactory assurance that a business associate will appropriately safeguard protected health information before disclosing PHI to the business associate or allowing them to create, receive, maintain, or transmit PHI on the org's behalf.",for a business associate that is a subcontractor,before disclosing PHI to a business associate,TRUE,attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0017,"(ii)
+A business associate may disclose protected health information to a business associate that is
+a subcontractor and may allow the subcontractor to create, receive, maintain, or transmit
+protected health information on its behalf, if the business associate obtains satisfactory
+assurances, in accordance with § 164.504(e)(1)(i), that the subcontractor will appropriately
+safeguard the information. (2)
+Implementation specification: Documentation. The satisfactory assurances required by paragraph
+(e)(1) of this section must be documented through a written contract or other written agreement or
+arrangement with the business associate that meets the applicable requirements of § 164.504(e). (f)
+Standard: Deceased individuals.",business associate,null,null,Unauthorized PHI disclosure by subcontractor,A business associate must obtain satisfactory assurances that a subcontractor will appropriately safeguard protected health information.,null,"before disclosing PHI to a subcontractor; before allowing a subcontractor to create, receive, maintain, or transmit PHI; assurances must be in accordance with § 164.504(e)(1)(i)",TRUE,attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0017,"(ii)
+A business associate may disclose protected health information to a business associate that is
+a subcontractor and may allow the subcontractor to create, receive, maintain, or transmit
+protected health information on its behalf, if the business associate obtains satisfactory
+assurances, in accordance with § 164.504(e)(1)(i), that the subcontractor will appropriately
+safeguard the information. (2)
+Implementation specification: Documentation. The satisfactory assurances required by paragraph
+(e)(1) of this section must be documented through a written contract or other written agreement or
+arrangement with the business associate that meets the applicable requirements of § 164.504(e). (f)
+Standard: Deceased individuals.",business associate,null,null,Inadequate contractual protection for PHI,A business associate must document satisfactory assurances from a subcontractor through a written contract or other written agreement.,null,when obtaining satisfactory assurances from a subcontractor; agreement must meet requirements of § 164.504(e),TRUE,attest_check,written contract with subcontractor; written agreement with subcontractor,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0018,"A covered entity must comply with the requirements of this subpart with
+respect to the protected health information of a deceased individual for a period of 50 years following the
+death of the individual. (g)
+(1)
+Standard: Personal representatives. As specified in this paragraph, a covered entity must, except as
+provided in paragraphs (g)(3) and (g)(5) of this section, treat a personal representative as the
+individual for purposes of this subchapter. (2)
+Implementation specification: Adults and emancipated minors.",org,null,null,improper handling of deceased individual's PHI,A covered entity must comply with subpart requirements for the protected health information of a deceased individual for 50 years following the individual's death.,null,handling protected health information of a deceased individual,TRUE,data_check; access_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0018,"A covered entity must comply with the requirements of this subpart with
+respect to the protected health information of a deceased individual for a period of 50 years following the
+death of the individual. (g)
+(1)
+Standard: Personal representatives. As specified in this paragraph, a covered entity must, except as
+provided in paragraphs (g)(3) and (g)(5) of this section, treat a personal representative as the
+individual for purposes of this subchapter. (2)
+Implementation specification: Adults and emancipated minors.",org,null,null,denial of legitimate access to PHI,A covered entity must treat a personal representative as the individual for purposes of this subchapter.,as provided in paragraphs (g)(3) and (g)(5) of this section,when processing requests related to an individual's data,TRUE,log_check; access_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0019,"If under applicable law a person has
+authority to act on behalf of an individual who is an adult or an emancipated minor in making
+decisions related to health care, a covered entity must treat such person as a personal
+representative under this subchapter, with respect to protected health information relevant to such
+personal representation. (3)
+(i)
+Implementation specification: Unemancipated minors. If under applicable law a parent, guardian,
+or other person acting in loco parentis has authority to act on behalf of an individual who is an
+unemancipated minor in making decisions related to health care, a covered entity must treat
+such person as a personal representative under this subchapter, with respect to protected
+health information relevant to such personal representation, except that such person may not
+be a personal representative of an unemancipated minor, and the minor has the authority to act
+as an individual, with respect to protected health information pertaining to a health care service,
+if:
+(A)
+The minor consents to such health care service; no other consent to such health care
+service is required by law, regardless of whether the consent of another person has also
+been obtained; and the minor has not requested that such person be treated as the
+personal representative;
+(B)
+The minor may lawfully obtain such health care service without the consent of a parent,
+guardian, or other person acting in loco parentis, and the minor, a court, or another person
+authorized by law consents to such health care service; or
+(C)
+A parent, guardian, or other person acting in loco parentis assents to an agreement of
+confidentiality between a covered health care provider and the minor with respect to such
+health care service. (ii)
+Notwithstanding the provisions of paragraph (g)(3)(i) of this section:
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.502(e)(1)(ii)",org,null,regulated,Unauthorized PHI access,An org must treat a person as a personal representative for an adult or emancipated minor regarding relevant protected health information if that person has legal authority to make health care decisions for the individual.,null,person has legal authority to make health care decisions for an adult or emancipated minor,TRUE,access_check; attest_check; log_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0019,"If under applicable law a person has
+authority to act on behalf of an individual who is an adult or an emancipated minor in making
+decisions related to health care, a covered entity must treat such person as a personal
+representative under this subchapter, with respect to protected health information relevant to such
+personal representation. (3)
+(i)
+Implementation specification: Unemancipated minors. If under applicable law a parent, guardian,
+or other person acting in loco parentis has authority to act on behalf of an individual who is an
+unemancipated minor in making decisions related to health care, a covered entity must treat
+such person as a personal representative under this subchapter, with respect to protected
+health information relevant to such personal representation, except that such person may not
+be a personal representative of an unemancipated minor, and the minor has the authority to act
+as an individual, with respect to protected health information pertaining to a health care service,
+if:
+(A)
+The minor consents to such health care service; no other consent to such health care
+service is required by law, regardless of whether the consent of another person has also
+been obtained; and the minor has not requested that such person be treated as the
+personal representative;
+(B)
+The minor may lawfully obtain such health care service without the consent of a parent,
+guardian, or other person acting in loco parentis, and the minor, a court, or another person
+authorized by law consents to such health care service; or
+(C)
+A parent, guardian, or other person acting in loco parentis assents to an agreement of
+confidentiality between a covered health care provider and the minor with respect to such
+health care service. (ii)
+Notwithstanding the provisions of paragraph (g)(3)(i) of this section:
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.502(e)(1)(ii)",org,null,regulated,Unauthorized PHI access,"An org must treat a parent, guardian, or person acting in loco parentis as a personal representative for an unemancipated minor regarding relevant protected health information if that person has legal authority to make health care decisions for the minor.",the minor consents to a health care service and no other consent is required by law; the minor may lawfully obtain the health care service without parental consent; a parent assents to a confidentiality agreement between the provider and the minor for the service,"parent, guardian, or person in loco parentis has legal authority for an unemancipated minor's health care decisions",TRUE,access_check; attest_check; log_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0019,"If under applicable law a person has
+authority to act on behalf of an individual who is an adult or an emancipated minor in making
+decisions related to health care, a covered entity must treat such person as a personal
+representative under this subchapter, with respect to protected health information relevant to such
+personal representation. (3)
+(i)
+Implementation specification: Unemancipated minors. If under applicable law a parent, guardian,
+or other person acting in loco parentis has authority to act on behalf of an individual who is an
+unemancipated minor in making decisions related to health care, a covered entity must treat
+such person as a personal representative under this subchapter, with respect to protected
+health information relevant to such personal representation, except that such person may not
+be a personal representative of an unemancipated minor, and the minor has the authority to act
+as an individual, with respect to protected health information pertaining to a health care service,
+if:
+(A)
+The minor consents to such health care service; no other consent to such health care
+service is required by law, regardless of whether the consent of another person has also
+been obtained; and the minor has not requested that such person be treated as the
+personal representative;
+(B)
+The minor may lawfully obtain such health care service without the consent of a parent,
+guardian, or other person acting in loco parentis, and the minor, a court, or another person
+authorized by law consents to such health care service; or
+(C)
+A parent, guardian, or other person acting in loco parentis assents to an agreement of
+confidentiality between a covered health care provider and the minor with respect to such
+health care service. (ii)
+Notwithstanding the provisions of paragraph (g)(3)(i) of this section:
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.502(e)(1)(ii)",org,null,regulated,Violation of minor's privacy rights,"An org shall not treat a parent, guardian, or person acting in loco parentis as a personal representative for an unemancipated minor regarding a specific health care service if the minor has authority to act as an individual for that service.",null,the minor consents to a health care service and no other consent is required by law; the minor may lawfully obtain a health care service without parental consent; a parent assents to a confidentiality agreement between the provider and the minor for the service,TRUE,access_check; config_check; attest_check; log_check,null,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020,"(A)
+If, and to the extent, permitted or required by an applicable provision of State or other law,
+including applicable case law, a covered entity may disclose, or provide access in
+accordance with § 164.524 to, protected health information about an unemancipated
+minor to a parent, guardian, or other person acting in loco parentis;
+(B)
+If, and to the extent, prohibited by an applicable provision of State or other law, including
+applicable case law, a covered entity may not disclose, or provide access in accordance
+with § 164.524 to, protected health information about an unemancipated minor to a
+parent, guardian, or other person acting in loco parentis; and
+(C)
+Where the parent, guardian, or other person acting in loco parentis, is not the personal
+representative under paragraphs (g)(3)(i)(A), (B), or (C) of this section and where there is
+no applicable access provision under State or other law, including case law, a covered
+entity may provide or deny access under § 164.524 to a parent, guardian, or other person
+acting in loco parentis, if such action is consistent with State or other applicable law,
+provided that such decision must be made by a licensed health care professional, in the
+exercise of professional judgment. (4)
+Implementation specification: Deceased individuals. If under applicable law an executor,
+administrator, or other person has authority to act on behalf of a deceased individual or of the
+individual's estate, a covered entity must treat such person as a personal representative under this
+subchapter, with respect to protected health information relevant to such personal representation. (5)
+Implementation specification: Abuse, neglect, endangerment situations.",org,null,regulated,improper PHI disclosure to a guardian,"An org shall not disclose or provide access to protected health information about an unemancipated minor to a parent, guardian, or other person acting in loco parentis when prohibited by applicable law.",null,prohibited by an applicable provision of State or other law,TRUE,config_check; attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020,"(A)
+If, and to the extent, permitted or required by an applicable provision of State or other law,
+including applicable case law, a covered entity may disclose, or provide access in
+accordance with § 164.524 to, protected health information about an unemancipated
+minor to a parent, guardian, or other person acting in loco parentis;
+(B)
+If, and to the extent, prohibited by an applicable provision of State or other law, including
+applicable case law, a covered entity may not disclose, or provide access in accordance
+with § 164.524 to, protected health information about an unemancipated minor to a
+parent, guardian, or other person acting in loco parentis; and
+(C)
+Where the parent, guardian, or other person acting in loco parentis, is not the personal
+representative under paragraphs (g)(3)(i)(A), (B), or (C) of this section and where there is
+no applicable access provision under State or other law, including case law, a covered
+entity may provide or deny access under § 164.524 to a parent, guardian, or other person
+acting in loco parentis, if such action is consistent with State or other applicable law,
+provided that such decision must be made by a licensed health care professional, in the
+exercise of professional judgment. (4)
+Implementation specification: Deceased individuals. If under applicable law an executor,
+administrator, or other person has authority to act on behalf of a deceased individual or of the
+individual's estate, a covered entity must treat such person as a personal representative under this
+subchapter, with respect to protected health information relevant to such personal representation. (5)
+Implementation specification: Abuse, neglect, endangerment situations.",practitioner,null,regulated,unqualified PHI access decision for a minor,A practitioner must make the decision to provide or deny a parent or guardian access to an unemancipated minor's protected health information in the exercise of professional judgment.,null,parent or guardian is not the personal representative; no applicable access provision under State or other law,TRUE,log_check; attest_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020,"(A)
+If, and to the extent, permitted or required by an applicable provision of State or other law,
+including applicable case law, a covered entity may disclose, or provide access in
+accordance with § 164.524 to, protected health information about an unemancipated
+minor to a parent, guardian, or other person acting in loco parentis;
+(B)
+If, and to the extent, prohibited by an applicable provision of State or other law, including
+applicable case law, a covered entity may not disclose, or provide access in accordance
+with § 164.524 to, protected health information about an unemancipated minor to a
+parent, guardian, or other person acting in loco parentis; and
+(C)
+Where the parent, guardian, or other person acting in loco parentis, is not the personal
+representative under paragraphs (g)(3)(i)(A), (B), or (C) of this section and where there is
+no applicable access provision under State or other law, including case law, a covered
+entity may provide or deny access under § 164.524 to a parent, guardian, or other person
+acting in loco parentis, if such action is consistent with State or other applicable law,
+provided that such decision must be made by a licensed health care professional, in the
+exercise of professional judgment. (4)
+Implementation specification: Deceased individuals. If under applicable law an executor,
+administrator, or other person has authority to act on behalf of a deceased individual or of the
+individual's estate, a covered entity must treat such person as a personal representative under this
+subchapter, with respect to protected health information relevant to such personal representation. (5)
+Implementation specification: Abuse, neglect, endangerment situations.",org,null,regulated,improper handling of deceased individual's PHI,An org must treat a person with legal authority to act on behalf of a deceased individual as their personal representative for relevant protected health information.,null,person has legal authority to act on behalf of a deceased individual or their estate,TRUE,access_check; attest_check,null,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0021,"Notwithstanding a State law
+or any requirement of this paragraph to the contrary, a covered entity may elect not to treat a person
+as the personal representative, provided that the conditions at paragraphs (g)(5)(i) and (ii) of this
+section are met:
+(i)
+Paragraphs (g)(5)(i)(A) and (B) of this section both apply. (A)
+The covered entity has a reasonable belief that any of the following is true:
+(1)
+The individual has been or may be subjected to domestic violence, abuse, or neglect
+by such person. (2)
+Treating such person as the personal representative could endanger the individual. (B)
+The covered entity, in the exercise of professional judgment, decides that it is not in the
+best interest of the individual to treat the person as the individual's personal
+representative.",org,null,regulated,endangerment of an individual,An org must exercise professional judgment to decide if it is not in the best interest of the individual to treat a person as their personal representative.,null,"when there is a reasonable belief the individual may be subjected to domestic violence, abuse, or neglect by a person; when there is a reasonable belief that treating a person as the personal representative could endanger the individual",TRUE,attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0022,"(ii)
+The covered entity does not have a reasonable belief under paragraph (g)(5)(i)(A) of this
+section if the basis for their belief is the provision or facilitation of reproductive health care by
+such person for and at the request of the individual. (h)
+Standard: Confidential communications. A covered health care provider or health plan must comply with
+the applicable requirements of § 164.522(b) in communicating protected health information. (i)
+Standard: Uses and disclosures consistent with notice.",provider; org,null,null,unauthorized PHI disclosure,A covered health care provider or health plan must comply with the applicable requirements of § 164.522(b) when communicating protected health information.,null,when communicating protected health information,TRUE,log_check; config_check; attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0022,"(ii)
+The covered entity does not have a reasonable belief under paragraph (g)(5)(i)(A) of this
+section if the basis for their belief is the provision or facilitation of reproductive health care by
+such person for and at the request of the individual. (h)
+Standard: Confidential communications. A covered health care provider or health plan must comply with
+the applicable requirements of § 164.522(b) in communicating protected health information. (i)
+Standard: Uses and disclosures consistent with notice.",entity,null,null,misuse of reproductive health information,An entity shall not form a reasonable belief under paragraph (g)(5)(i)(A) if the basis for the belief is the provision or facilitation of reproductive health care for an individual at their request.,null,basis for belief is the provision or facilitation of reproductive health care,TRUE,attest_check; log_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0023,"A covered entity that is required by § 164.520 to
+have a notice may not use or disclose protected health information in a manner inconsistent with such
+notice. A covered entity that is required by § 164.520(b)(1)(iii) to include a specific statement in its notice
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.502(g)(3)(ii)(A)",org,null,regulated,use of PHI inconsistent with public notice,The org shall not use or disclose protected health information in a manner inconsistent with its privacy notice.,null,when required by § 164.520 to have a notice,TRUE,io_check; log_check; config_check; attest_check,privacy notice,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0003,"(b)-(d) [Reserved]
+(e)
+(1)
+Standard: Business associate contracts. (i)
+The contract or other arrangement required by § 164.502(e)(2) must meet the requirements of
+paragraph (e)(2), (e)(3), or (e)(5) of this section, as applicable. (ii)
+A covered entity is not in compliance with the standards in § 164.502(e) and this paragraph, if
+the covered entity knew of a pattern of activity or practice of the business associate that
+constituted a material breach or violation of the business associate's obligation under the
+contract or other arrangement, unless the covered entity took reasonable steps to cure the
+breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the
+contract or arrangement, if feasible. (iii) A business associate is not in compliance with the standards in § 164.502(e) and this
+paragraph, if the business associate knew of a pattern of activity or practice of a subcontractor
+that constituted a material breach or violation of the subcontractor's obligation under the
+contract or other arrangement, unless the business associate took reasonable steps to cure the
+breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the
+contract or arrangement, if feasible.",org; business associate,null,regulated,Non-compliant third-party data handling,"The org must ensure that its contract or other arrangement with a business associate meets the requirements of paragraph (e)(2), (e)(3), or (e)(5) of this section.",null,When establishing a contract with a business associate,TRUE,attest_check,Business associate contract,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0003,"(b)-(d) [Reserved]
+(e)
+(1)
+Standard: Business associate contracts. (i)
+The contract or other arrangement required by § 164.502(e)(2) must meet the requirements of
+paragraph (e)(2), (e)(3), or (e)(5) of this section, as applicable. (ii)
+A covered entity is not in compliance with the standards in § 164.502(e) and this paragraph, if
+the covered entity knew of a pattern of activity or practice of the business associate that
+constituted a material breach or violation of the business associate's obligation under the
+contract or other arrangement, unless the covered entity took reasonable steps to cure the
+breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the
+contract or arrangement, if feasible. (iii) A business associate is not in compliance with the standards in § 164.502(e) and this
+paragraph, if the business associate knew of a pattern of activity or practice of a subcontractor
+that constituted a material breach or violation of the subcontractor's obligation under the
+contract or other arrangement, unless the business associate took reasonable steps to cure the
+breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the
+contract or arrangement, if feasible.",business associate,null,regulated,Unmitigated sub-processor data breach,"A business associate must take reasonable steps to cure the breach or end the violation by a subcontractor, and if such steps are unsuccessful, must terminate the contract or arrangement if feasible.",null,Upon knowledge of a subcontractor's material breach or violation of its contract,TRUE,log_check; attest_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0003,"(b)-(d) [Reserved]
+(e)
+(1)
+Standard: Business associate contracts. (i)
+The contract or other arrangement required by § 164.502(e)(2) must meet the requirements of
+paragraph (e)(2), (e)(3), or (e)(5) of this section, as applicable. (ii)
+A covered entity is not in compliance with the standards in § 164.502(e) and this paragraph, if
+the covered entity knew of a pattern of activity or practice of the business associate that
+constituted a material breach or violation of the business associate's obligation under the
+contract or other arrangement, unless the covered entity took reasonable steps to cure the
+breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the
+contract or arrangement, if feasible. (iii) A business associate is not in compliance with the standards in § 164.502(e) and this
+paragraph, if the business associate knew of a pattern of activity or practice of a subcontractor
+that constituted a material breach or violation of the subcontractor's obligation under the
+contract or other arrangement, unless the business associate took reasonable steps to cure the
+breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the
+contract or arrangement, if feasible.",org,null,regulated,Unmitigated third-party data breach,"The org must take reasonable steps to cure the breach or end the violation by a business associate, and if such steps are unsuccessful, must terminate the contract or arrangement if feasible.",null,Upon knowledge of a business associate's material breach or violation of its contract,TRUE,log_check; attest_check,null,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004,"(2)
+Implementation specifications: Business associate contracts. A contract between the covered entity
+and a business associate must:
+(i)
+Establish the permitted and required uses and disclosures of protected health information by
+the business associate. The contract may not authorize the business associate to use or
+further disclose the information in a manner that would violate the requirements of this
+subpart, if done by the covered entity, except that:
+(A)
+The contract may permit the business associate to use and disclose protected health
+information for the proper management and administration of the business associate, as
+provided in paragraph (e)(4) of this section; and
+(B)
+The contract may permit the business associate to provide data aggregation services
+relating to the health care operations of the covered entity. (ii)
+Provide that the business associate will:
+(A)
+Not use or further disclose the information other than as permitted or required by the
+contract or as required by law;
+(B)
+Use appropriate safeguards and comply, where applicable, with subpart C of this part with
+respect to electronic protected health information, to prevent use or disclosure of the
+information other than as provided for by its contract;
+(C)
+Report to the covered entity any use or disclosure of the information not provided for by its
+contract of which it becomes aware, including breaches of unsecured protected health
+information as required by § 164.410;
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(b)",org,null,regulated,Ambiguous data handling permissions,An org must ensure its contract with a business associate establishes the permitted and required uses and disclosures of protected health information.,null,when creating a business associate contract,TRUE,attest_check,business associate contract,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004,"(2)
+Implementation specifications: Business associate contracts. A contract between the covered entity
+and a business associate must:
+(i)
+Establish the permitted and required uses and disclosures of protected health information by
+the business associate. The contract may not authorize the business associate to use or
+further disclose the information in a manner that would violate the requirements of this
+subpart, if done by the covered entity, except that:
+(A)
+The contract may permit the business associate to use and disclose protected health
+information for the proper management and administration of the business associate, as
+provided in paragraph (e)(4) of this section; and
+(B)
+The contract may permit the business associate to provide data aggregation services
+relating to the health care operations of the covered entity. (ii)
+Provide that the business associate will:
+(A)
+Not use or further disclose the information other than as permitted or required by the
+contract or as required by law;
+(B)
+Use appropriate safeguards and comply, where applicable, with subpart C of this part with
+respect to electronic protected health information, to prevent use or disclosure of the
+information other than as provided for by its contract;
+(C)
+Report to the covered entity any use or disclosure of the information not provided for by its
+contract of which it becomes aware, including breaches of unsecured protected health
+information as required by § 164.410;
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(b)",org,null,regulated,Non-compliant PHI disclosure by proxy,An org's contract must not authorize a business associate to use or disclose protected health information in a manner that would violate regulatory requirements if done by the org.,for the business associate's proper management and administration; for data aggregation services related to the covered entity's health care operations,when creating a business associate contract,TRUE,attest_check,business associate contract,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004,"(2)
+Implementation specifications: Business associate contracts. A contract between the covered entity
+and a business associate must:
+(i)
+Establish the permitted and required uses and disclosures of protected health information by
+the business associate. The contract may not authorize the business associate to use or
+further disclose the information in a manner that would violate the requirements of this
+subpart, if done by the covered entity, except that:
+(A)
+The contract may permit the business associate to use and disclose protected health
+information for the proper management and administration of the business associate, as
+provided in paragraph (e)(4) of this section; and
+(B)
+The contract may permit the business associate to provide data aggregation services
+relating to the health care operations of the covered entity. (ii)
+Provide that the business associate will:
+(A)
+Not use or further disclose the information other than as permitted or required by the
+contract or as required by law;
+(B)
+Use appropriate safeguards and comply, where applicable, with subpart C of this part with
+respect to electronic protected health information, to prevent use or disclosure of the
+information other than as provided for by its contract;
+(C)
+Report to the covered entity any use or disclosure of the information not provided for by its
+contract of which it becomes aware, including breaches of unsecured protected health
+information as required by § 164.410;
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(b)",business associate,null,regulated,Unauthorized PHI disclosure due to inadequate security,A business associate must use appropriate safeguards to prevent use or disclosure of protected health information not provided for by its contract.,null,when handling electronic protected health information,TRUE,config_check; attest_check,null,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004,"(2)
+Implementation specifications: Business associate contracts. A contract between the covered entity
+and a business associate must:
+(i)
+Establish the permitted and required uses and disclosures of protected health information by
+the business associate. The contract may not authorize the business associate to use or
+further disclose the information in a manner that would violate the requirements of this
+subpart, if done by the covered entity, except that:
+(A)
+The contract may permit the business associate to use and disclose protected health
+information for the proper management and administration of the business associate, as
+provided in paragraph (e)(4) of this section; and
+(B)
+The contract may permit the business associate to provide data aggregation services
+relating to the health care operations of the covered entity. (ii)
+Provide that the business associate will:
+(A)
+Not use or further disclose the information other than as permitted or required by the
+contract or as required by law;
+(B)
+Use appropriate safeguards and comply, where applicable, with subpart C of this part with
+respect to electronic protected health information, to prevent use or disclosure of the
+information other than as provided for by its contract;
+(C)
+Report to the covered entity any use or disclosure of the information not provided for by its
+contract of which it becomes aware, including breaches of unsecured protected health
+information as required by § 164.410;
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(b)",business associate,null,regulated,Unauthorized PHI use or disclosure,A business associate shall not use or further disclose protected health information other than as permitted or required by the contract or as required by law.,if required by law; if permitted or required by the contract,when handling protected health information,TRUE,log_check; attest_check,null,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005,"(D)
+In accordance with § 164.502(e)(1)(ii), ensure that any subcontractors that create, receive,
+maintain, or transmit protected health information on behalf of the business associate
+agree to the same restrictions and conditions that apply to the business associate with
+respect to such information;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) To the extent the business associate is to carry out a covered entity's obligation under this
+subpart, comply with the requirements of this subpart that apply to the covered entity in
+the performance of such obligation. (I)
+Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from, or created or received by the business
+associate on behalf of, the covered entity available to the Secretary for purposes of
+determining the covered entity's compliance with this subpart; and
+(J)
+At termination of the contract, if feasible, return or destroy all protected health information
+received from, or created or received by the business associate on behalf of, the covered
+entity that the business associate still maintains in any form and retain no copies of such
+information or, if such return or destruction is not feasible, extend the protections of the
+contract to the information and limit further uses and disclosures to those purposes that
+make the return or destruction of the information infeasible. (iii) Authorize termination of the contract by the covered entity, if the covered entity determines that
+the business associate has violated a material term of the contract. (3)
+Implementation specifications: Other arrangements.",business associate,null,regulated,Unauthorized PHI disclosure by subcontractors,The business associate shall ensure that any subcontractors handling protected health information agree to the same data protection restrictions and conditions that apply to the business associate.,null,When using subcontractors to handle PHI,TRUE,attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005,"(D)
+In accordance with § 164.502(e)(1)(ii), ensure that any subcontractors that create, receive,
+maintain, or transmit protected health information on behalf of the business associate
+agree to the same restrictions and conditions that apply to the business associate with
+respect to such information;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) To the extent the business associate is to carry out a covered entity's obligation under this
+subpart, comply with the requirements of this subpart that apply to the covered entity in
+the performance of such obligation. (I)
+Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from, or created or received by the business
+associate on behalf of, the covered entity available to the Secretary for purposes of
+determining the covered entity's compliance with this subpart; and
+(J)
+At termination of the contract, if feasible, return or destroy all protected health information
+received from, or created or received by the business associate on behalf of, the covered
+entity that the business associate still maintains in any form and retain no copies of such
+information or, if such return or destruction is not feasible, extend the protections of the
+contract to the information and limit further uses and disclosures to those purposes that
+make the return or destruction of the information infeasible. (iii) Authorize termination of the contract by the covered entity, if the covered entity determines that
+the business associate has violated a material term of the contract. (3)
+Implementation specifications: Other arrangements.",business associate,null,regulated,Lack of transparency in data sharing,The business associate shall make available the information required to provide an accounting of disclosures of protected health information in accordance with § 164.528.,null,Upon request,TRUE,log_check; attest_check,accounting of disclosures,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005,"(D)
+In accordance with § 164.502(e)(1)(ii), ensure that any subcontractors that create, receive,
+maintain, or transmit protected health information on behalf of the business associate
+agree to the same restrictions and conditions that apply to the business associate with
+respect to such information;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) To the extent the business associate is to carry out a covered entity's obligation under this
+subpart, comply with the requirements of this subpart that apply to the covered entity in
+the performance of such obligation. (I)
+Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from, or created or received by the business
+associate on behalf of, the covered entity available to the Secretary for purposes of
+determining the covered entity's compliance with this subpart; and
+(J)
+At termination of the contract, if feasible, return or destroy all protected health information
+received from, or created or received by the business associate on behalf of, the covered
+entity that the business associate still maintains in any form and retain no copies of such
+information or, if such return or destruction is not feasible, extend the protections of the
+contract to the information and limit further uses and disclosures to those purposes that
+make the return or destruction of the information infeasible. (iii) Authorize termination of the contract by the covered entity, if the covered entity determines that
+the business associate has violated a material term of the contract. (3)
+Implementation specifications: Other arrangements.",business associate,null,regulated,Obstruction of regulatory oversight,"The business associate shall make its internal practices, books, and records regarding PHI use and disclosure available to the Secretary for compliance audits.",null,Upon request from the Secretary,TRUE,attest_check,internal practices documentation; books and records,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005,"(D)
+In accordance with § 164.502(e)(1)(ii), ensure that any subcontractors that create, receive,
+maintain, or transmit protected health information on behalf of the business associate
+agree to the same restrictions and conditions that apply to the business associate with
+respect to such information;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) To the extent the business associate is to carry out a covered entity's obligation under this
+subpart, comply with the requirements of this subpart that apply to the covered entity in
+the performance of such obligation. (I)
+Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from, or created or received by the business
+associate on behalf of, the covered entity available to the Secretary for purposes of
+determining the covered entity's compliance with this subpart; and
+(J)
+At termination of the contract, if feasible, return or destroy all protected health information
+received from, or created or received by the business associate on behalf of, the covered
+entity that the business associate still maintains in any form and retain no copies of such
+information or, if such return or destruction is not feasible, extend the protections of the
+contract to the information and limit further uses and disclosures to those purposes that
+make the return or destruction of the information infeasible. (iii) Authorize termination of the contract by the covered entity, if the covered entity determines that
+the business associate has violated a material term of the contract. (3)
+Implementation specifications: Other arrangements.",business associate,null,regulated,Improper data retention after contract termination,"The business associate shall return or destroy all protected health information upon contract termination, or if not feasible, extend contractual protections and limit further use.",null,At termination of the contract,TRUE,data_check; attest_check; config_check,null,4
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005,"(D)
+In accordance with § 164.502(e)(1)(ii), ensure that any subcontractors that create, receive,
+maintain, or transmit protected health information on behalf of the business associate
+agree to the same restrictions and conditions that apply to the business associate with
+respect to such information;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) To the extent the business associate is to carry out a covered entity's obligation under this
+subpart, comply with the requirements of this subpart that apply to the covered entity in
+the performance of such obligation. (I)
+Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from, or created or received by the business
+associate on behalf of, the covered entity available to the Secretary for purposes of
+determining the covered entity's compliance with this subpart; and
+(J)
+At termination of the contract, if feasible, return or destroy all protected health information
+received from, or created or received by the business associate on behalf of, the covered
+entity that the business associate still maintains in any form and retain no copies of such
+information or, if such return or destruction is not feasible, extend the protections of the
+contract to the information and limit further uses and disclosures to those purposes that
+make the return or destruction of the information infeasible. (iii) Authorize termination of the contract by the covered entity, if the covered entity determines that
+the business associate has violated a material term of the contract. (3)
+Implementation specifications: Other arrangements.",business associate,null,regulated,Inaccurate personal health data,The business associate shall make protected health information available for amendment and incorporate any amendments in accordance with § 164.526.,null,Upon request from an individual,TRUE,log_check; data_check; attest_check,null,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005,"(D)
+In accordance with § 164.502(e)(1)(ii), ensure that any subcontractors that create, receive,
+maintain, or transmit protected health information on behalf of the business associate
+agree to the same restrictions and conditions that apply to the business associate with
+respect to such information;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) To the extent the business associate is to carry out a covered entity's obligation under this
+subpart, comply with the requirements of this subpart that apply to the covered entity in
+the performance of such obligation. (I)
+Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from, or created or received by the business
+associate on behalf of, the covered entity available to the Secretary for purposes of
+determining the covered entity's compliance with this subpart; and
+(J)
+At termination of the contract, if feasible, return or destroy all protected health information
+received from, or created or received by the business associate on behalf of, the covered
+entity that the business associate still maintains in any form and retain no copies of such
+information or, if such return or destruction is not feasible, extend the protections of the
+contract to the information and limit further uses and disclosures to those purposes that
+make the return or destruction of the information infeasible. (iii) Authorize termination of the contract by the covered entity, if the covered entity determines that
+the business associate has violated a material term of the contract. (3)
+Implementation specifications: Other arrangements.",business associate,null,regulated,Denial of individual access to personal health data,The business associate shall make protected health information available to individuals in accordance with § 164.524.,null,Upon request from an individual,TRUE,log_check; attest_check,null,4
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0007,"provided that the covered entity attempts in good faith to obtain satisfactory assurances as
+required by paragraph (e)(2) of this section and § 164.314(a)(1), if applicable, and, if such
+attempt fails, documents the attempt and the reasons that such assurances cannot be
+obtained. (iii) The covered entity may omit from its other arrangements the termination authorization required
+by paragraph (e)(2)(iii) of this section, if such authorization is inconsistent with the statutory
+obligations of the covered entity or its business associate. (iv) A covered entity may comply with this paragraph and § 164.314(a)(1) if the covered entity
+discloses only a limited data set to a business associate for the business associate to carry out
+a health care operations function and the covered entity has a data use agreement with the
+business associate that complies with §§ 164.514(e)(4) and 164.314(a)(1), if applicable. (4)
+Implementation specifications: Other requirements for contracts and other arrangements.",org,null,regulated,third-party data misuse,The org must attempt in good faith to obtain satisfactory data protection assurances from its business associate.,null,when engaging a business associate,FALSE,null,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0007,"provided that the covered entity attempts in good faith to obtain satisfactory assurances as
+required by paragraph (e)(2) of this section and § 164.314(a)(1), if applicable, and, if such
+attempt fails, documents the attempt and the reasons that such assurances cannot be
+obtained. (iii) The covered entity may omit from its other arrangements the termination authorization required
+by paragraph (e)(2)(iii) of this section, if such authorization is inconsistent with the statutory
+obligations of the covered entity or its business associate. (iv) A covered entity may comply with this paragraph and § 164.314(a)(1) if the covered entity
+discloses only a limited data set to a business associate for the business associate to carry out
+a health care operations function and the covered entity has a data use agreement with the
+business associate that complies with §§ 164.514(e)(4) and 164.314(a)(1), if applicable. (4)
+Implementation specifications: Other requirements for contracts and other arrangements.",org,null,regulated,lack of accountability for third-party risk,The org must document the failed attempt to obtain satisfactory assurances and the reasons why such assurances could not be obtained.,null,if an attempt to obtain satisfactory assurances from a business associate fails,TRUE,attest_check,documentation of failed assurance attempt,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0008,"(i)
+The contract or other arrangement between the covered entity and the business associate may
+permit the business associate to use the protected health information received by the business
+associate in its capacity as a business associate to the covered entity, if necessary:
+(A)
+For the proper management and administration of the business associate; or
+(B)
+To carry out the legal responsibilities of the business associate. (ii)
+The contract or other arrangement between the covered entity and the business associate may
+permit the business associate to disclose the protected health information received by the
+business associate in its capacity as a business associate for the purposes described in
+paragraph (e)(4)(i) of this section, if:
+(A)
+The disclosure is required by law; or
+(B)
+(1)
+The business associate obtains reasonable assurances from the person to whom the
+information is disclosed that it will be held confidentially and used or further
+disclosed only as required by law or for the purposes for which it was disclosed to
+the person; and
+(2)
+The person notifies the business associate of any instances of which it is aware in
+which the confidentiality of the information has been breached. (5)
+Implementation specifications: Business associate contracts with subcontractors. The requirements
+of § 164.504(e)(2) through (e)(4) apply to the contract or other arrangement required by §
+164.502(e)(1)(ii) between a business associate and a business associate that is a subcontractor in
+the same manner as such requirements apply to contracts or other arrangements between a covered
+entity and business associate.",business_associate,null,regulated,Improper use of protected health information,"A business associate must only use protected health information for its own proper management, administration, or legal responsibilities if such use is permitted by its contract with the covered entity.",null,using protected health information for the business associate's own purposes,TRUE,attest_check; log_check,contract or other arrangement,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0008,"(i)
+The contract or other arrangement between the covered entity and the business associate may
+permit the business associate to use the protected health information received by the business
+associate in its capacity as a business associate to the covered entity, if necessary:
+(A)
+For the proper management and administration of the business associate; or
+(B)
+To carry out the legal responsibilities of the business associate. (ii)
+The contract or other arrangement between the covered entity and the business associate may
+permit the business associate to disclose the protected health information received by the
+business associate in its capacity as a business associate for the purposes described in
+paragraph (e)(4)(i) of this section, if:
+(A)
+The disclosure is required by law; or
+(B)
+(1)
+The business associate obtains reasonable assurances from the person to whom the
+information is disclosed that it will be held confidentially and used or further
+disclosed only as required by law or for the purposes for which it was disclosed to
+the person; and
+(2)
+The person notifies the business associate of any instances of which it is aware in
+which the confidentiality of the information has been breached. (5)
+Implementation specifications: Business associate contracts with subcontractors. The requirements
+of § 164.504(e)(2) through (e)(4) apply to the contract or other arrangement required by §
+164.502(e)(1)(ii) between a business associate and a business associate that is a subcontractor in
+the same manner as such requirements apply to contracts or other arrangements between a covered
+entity and business associate.",business_associate,null,regulated,Unauthorized secondary disclosure of PHI,A business associate must obtain reasonable assurances from a recipient that protected health information will be held confidentially and used only for its disclosed purpose or as required by law.,null,disclosing protected health information for the business associate's own purposes; disclosure is not required by law,TRUE,attest_check,recipient agreement with reasonable assurances,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0010,"plan sponsor by a health insurance issuer or HMO with respect to the group health plan, must
+ensure that the plan documents restrict uses and disclosures of such information by the plan
+sponsor consistent with the requirements of this subpart. (ii)
+Except as prohibited by § 164.502(a)(5)(i), the group health plan, or a health insurance issuer or
+HMO with respect to the group health plan, may disclose summary health information to the
+plan sponsor, if the plan sponsor requests the summary health information for purposes of:
+(A)
+Obtaining premium bids from health plans for providing health insurance coverage under
+the group health plan; or
+(B)
+Modifying, amending, or terminating the group health plan. (iii) The group health plan, or a health insurance issuer or HMO with respect to the group health
+plan, may disclose to the plan sponsor information on whether the individual is participating in
+the group health plan, or is enrolled in or has disenrolled from a health insurance issuer or HMO
+offered by the plan. (2)
+Implementation specifications: Requirements for plan documents.",org,null,regulated,Improper use or disclosure of protected health information,The org (plan sponsor) must ensure that plan documents restrict the uses and disclosures of protected health information by the plan sponsor.,null,null,TRUE,repo_check; attest_check,plan documents,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011,"The plan documents of the group
+health plan must be amended to incorporate provisions to:
+(i)
+Establish the permitted and required uses and disclosures of such information by the plan
+sponsor, provided that such permitted and required uses and disclosures may not be
+inconsistent with this subpart. (ii)
+Provide that the group health plan will disclose protected health information to the plan sponsor
+only upon receipt of a certification by the plan sponsor that the plan documents have been
+amended to incorporate the following provisions and that the plan sponsor agrees to:
+(A)
+Not use or further disclose the information other than as permitted or required by the plan
+documents or as required by law;
+(B)
+Ensure that any agents to whom it provides protected health information received from the
+group health plan agree to the same restrictions and conditions that apply to the plan
+sponsor with respect to such information;
+(C)
+Not use or disclose the information for employment-related actions and decisions or in
+connection with any other benefit or employee benefit plan of the plan sponsor;
+(D)
+Report to the group health plan any use or disclosure of the information that is
+inconsistent with the uses or disclosures provided for of which it becomes aware;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from the group health plan available to the
+Secretary for purposes of determining compliance by the group health plan with this
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(f)(1)(ii)",org,null,regulated,Improper PHI use by sponsor,The org (group health plan) must amend its plan documents to establish the permitted and required uses and disclosures of protected health information by the plan sponsor.,null,null,TRUE,repo_check; attest_check,plan documents,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011,"The plan documents of the group
+health plan must be amended to incorporate provisions to:
+(i)
+Establish the permitted and required uses and disclosures of such information by the plan
+sponsor, provided that such permitted and required uses and disclosures may not be
+inconsistent with this subpart. (ii)
+Provide that the group health plan will disclose protected health information to the plan sponsor
+only upon receipt of a certification by the plan sponsor that the plan documents have been
+amended to incorporate the following provisions and that the plan sponsor agrees to:
+(A)
+Not use or further disclose the information other than as permitted or required by the plan
+documents or as required by law;
+(B)
+Ensure that any agents to whom it provides protected health information received from the
+group health plan agree to the same restrictions and conditions that apply to the plan
+sponsor with respect to such information;
+(C)
+Not use or disclose the information for employment-related actions and decisions or in
+connection with any other benefit or employee benefit plan of the plan sponsor;
+(D)
+Report to the group health plan any use or disclosure of the information that is
+inconsistent with the uses or disclosures provided for of which it becomes aware;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from the group health plan available to the
+Secretary for purposes of determining compliance by the group health plan with this
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(f)(1)(ii)",org,null,regulated,Unauthorized PHI disclosure,The org (group health plan) must only disclose protected health information to the plan sponsor upon receipt of a certification that the plan documents have been amended to incorporate required provisions.,null,before disclosing PHI to a plan sponsor,TRUE,attest_check; log_check,certification from plan sponsor,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011,"The plan documents of the group
+health plan must be amended to incorporate provisions to:
+(i)
+Establish the permitted and required uses and disclosures of such information by the plan
+sponsor, provided that such permitted and required uses and disclosures may not be
+inconsistent with this subpart. (ii)
+Provide that the group health plan will disclose protected health information to the plan sponsor
+only upon receipt of a certification by the plan sponsor that the plan documents have been
+amended to incorporate the following provisions and that the plan sponsor agrees to:
+(A)
+Not use or further disclose the information other than as permitted or required by the plan
+documents or as required by law;
+(B)
+Ensure that any agents to whom it provides protected health information received from the
+group health plan agree to the same restrictions and conditions that apply to the plan
+sponsor with respect to such information;
+(C)
+Not use or disclose the information for employment-related actions and decisions or in
+connection with any other benefit or employee benefit plan of the plan sponsor;
+(D)
+Report to the group health plan any use or disclosure of the information that is
+inconsistent with the uses or disclosures provided for of which it becomes aware;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from the group health plan available to the
+Secretary for purposes of determining compliance by the group health plan with this
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(f)(1)(ii)",org,null,regulated,Unauthorized PHI disclosure,The org (plan sponsor) shall not use or further disclose protected health information.,as permitted or required by the plan documents; as required by law,handling PHI received from a group health plan,TRUE,log_check; access_check; attest_check,null,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011,"The plan documents of the group
+health plan must be amended to incorporate provisions to:
+(i)
+Establish the permitted and required uses and disclosures of such information by the plan
+sponsor, provided that such permitted and required uses and disclosures may not be
+inconsistent with this subpart. (ii)
+Provide that the group health plan will disclose protected health information to the plan sponsor
+only upon receipt of a certification by the plan sponsor that the plan documents have been
+amended to incorporate the following provisions and that the plan sponsor agrees to:
+(A)
+Not use or further disclose the information other than as permitted or required by the plan
+documents or as required by law;
+(B)
+Ensure that any agents to whom it provides protected health information received from the
+group health plan agree to the same restrictions and conditions that apply to the plan
+sponsor with respect to such information;
+(C)
+Not use or disclose the information for employment-related actions and decisions or in
+connection with any other benefit or employee benefit plan of the plan sponsor;
+(D)
+Report to the group health plan any use or disclosure of the information that is
+inconsistent with the uses or disclosures provided for of which it becomes aware;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from the group health plan available to the
+Secretary for purposes of determining compliance by the group health plan with this
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(f)(1)(ii)",org,null,regulated,Unauthorized PHI disclosure by third party,The org (plan sponsor) must ensure that any agents to whom it provides protected health information agree to the same restrictions and conditions that apply to the plan sponsor.,null,when providing PHI received from the group health plan to any agents,TRUE,attest_check,null,4
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011,"The plan documents of the group
+health plan must be amended to incorporate provisions to:
+(i)
+Establish the permitted and required uses and disclosures of such information by the plan
+sponsor, provided that such permitted and required uses and disclosures may not be
+inconsistent with this subpart. (ii)
+Provide that the group health plan will disclose protected health information to the plan sponsor
+only upon receipt of a certification by the plan sponsor that the plan documents have been
+amended to incorporate the following provisions and that the plan sponsor agrees to:
+(A)
+Not use or further disclose the information other than as permitted or required by the plan
+documents or as required by law;
+(B)
+Ensure that any agents to whom it provides protected health information received from the
+group health plan agree to the same restrictions and conditions that apply to the plan
+sponsor with respect to such information;
+(C)
+Not use or disclose the information for employment-related actions and decisions or in
+connection with any other benefit or employee benefit plan of the plan sponsor;
+(D)
+Report to the group health plan any use or disclosure of the information that is
+inconsistent with the uses or disclosures provided for of which it becomes aware;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from the group health plan available to the
+Secretary for purposes of determining compliance by the group health plan with this
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(f)(1)(ii)",org,null,regulated,Misuse of PHI for employment discrimination,The org (plan sponsor) shall not use or disclose protected health information for employment-related actions and decisions or in connection with any other benefit or employee benefit plan.,null,handling PHI received from a group health plan,TRUE,log_check; access_check; attest_check,null,5
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011,"The plan documents of the group
+health plan must be amended to incorporate provisions to:
+(i)
+Establish the permitted and required uses and disclosures of such information by the plan
+sponsor, provided that such permitted and required uses and disclosures may not be
+inconsistent with this subpart. (ii)
+Provide that the group health plan will disclose protected health information to the plan sponsor
+only upon receipt of a certification by the plan sponsor that the plan documents have been
+amended to incorporate the following provisions and that the plan sponsor agrees to:
+(A)
+Not use or further disclose the information other than as permitted or required by the plan
+documents or as required by law;
+(B)
+Ensure that any agents to whom it provides protected health information received from the
+group health plan agree to the same restrictions and conditions that apply to the plan
+sponsor with respect to such information;
+(C)
+Not use or disclose the information for employment-related actions and decisions or in
+connection with any other benefit or employee benefit plan of the plan sponsor;
+(D)
+Report to the group health plan any use or disclosure of the information that is
+inconsistent with the uses or disclosures provided for of which it becomes aware;
+(E)
+Make available protected health information in accordance with § 164.524;
+(F)
+Make available protected health information for amendment and incorporate any
+amendments to protected health information in accordance with § 164.526;
+(G)
+Make available the information required to provide an accounting of disclosures in
+accordance with § 164.528;
+(H) Make its internal practices, books, and records relating to the use and disclosure of
+protected health information received from the group health plan available to the
+Secretary for purposes of determining compliance by the group health plan with this
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(f)(1)(ii)",org,null,regulated,Failure to report a data breach,The org (plan sponsor) must report to the group health plan any use or disclosure of protected health information that is inconsistent with the uses or disclosures provided for.,null,upon becoming aware of a use or disclosure inconsistent with permitted uses,TRUE,log_check; attest_check,inconsistency report,6
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012,"(I)
+If feasible, return or destroy all protected health information received from the group
+health plan that the sponsor still maintains in any form and retain no copies of such
+information when no longer needed for the purpose for which disclosure was made,
+except that, if such return or destruction is not feasible, limit further uses and disclosures
+to those purposes that make the return or destruction of the information infeasible; and
+(J)
+Ensure that the adequate separation required in paragraph (f)(2)(iii) of this section is
+established. (iii) Provide for adequate separation between the group health plan and the plan sponsor. The plan
+documents must:
+(A)
+Describe those employees or classes of employees or other persons under the control of
+the plan sponsor to be given access to the protected health information to be disclosed,
+provided that any employee or person who receives protected health information relating
+to payment under, health care operations of, or other matters pertaining to the group
+health plan in the ordinary course of business must be included in such description;
+(B)
+Restrict the access to and use by such employees and other persons described in
+paragraph (f)(2)(iii)(A) of this section to the plan administration functions that the plan
+sponsor performs for the group health plan; and
+(C)
+Provide an effective mechanism for resolving any issues of noncompliance by persons
+described in paragraph (f)(2)(iii)(A) of this section with the plan document provisions
+required by this paragraph. (3)
+Implementation specifications: Uses and disclosures.",org,null,regulated,unauthorized retention of PHI,The org must return or destroy all protected health information received from the group health plan and retain no copies of it when it is no longer needed for the purpose for which it was disclosed.,null,when PHI is no longer needed for the purpose for which disclosure was made,TRUE,data_check; log_check; attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012,"(I)
+If feasible, return or destroy all protected health information received from the group
+health plan that the sponsor still maintains in any form and retain no copies of such
+information when no longer needed for the purpose for which disclosure was made,
+except that, if such return or destruction is not feasible, limit further uses and disclosures
+to those purposes that make the return or destruction of the information infeasible; and
+(J)
+Ensure that the adequate separation required in paragraph (f)(2)(iii) of this section is
+established. (iii) Provide for adequate separation between the group health plan and the plan sponsor. The plan
+documents must:
+(A)
+Describe those employees or classes of employees or other persons under the control of
+the plan sponsor to be given access to the protected health information to be disclosed,
+provided that any employee or person who receives protected health information relating
+to payment under, health care operations of, or other matters pertaining to the group
+health plan in the ordinary course of business must be included in such description;
+(B)
+Restrict the access to and use by such employees and other persons described in
+paragraph (f)(2)(iii)(A) of this section to the plan administration functions that the plan
+sponsor performs for the group health plan; and
+(C)
+Provide an effective mechanism for resolving any issues of noncompliance by persons
+described in paragraph (f)(2)(iii)(A) of this section with the plan document provisions
+required by this paragraph. (3)
+Implementation specifications: Uses and disclosures.",org,null,regulated,unauthorized use of retained PHI,The org must limit further uses and disclosures of protected health information to only those purposes that make its return or destruction infeasible.,null,if return or destruction of PHI is not feasible,TRUE,log_check; config_check; access_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012,"(I)
+If feasible, return or destroy all protected health information received from the group
+health plan that the sponsor still maintains in any form and retain no copies of such
+information when no longer needed for the purpose for which disclosure was made,
+except that, if such return or destruction is not feasible, limit further uses and disclosures
+to those purposes that make the return or destruction of the information infeasible; and
+(J)
+Ensure that the adequate separation required in paragraph (f)(2)(iii) of this section is
+established. (iii) Provide for adequate separation between the group health plan and the plan sponsor. The plan
+documents must:
+(A)
+Describe those employees or classes of employees or other persons under the control of
+the plan sponsor to be given access to the protected health information to be disclosed,
+provided that any employee or person who receives protected health information relating
+to payment under, health care operations of, or other matters pertaining to the group
+health plan in the ordinary course of business must be included in such description;
+(B)
+Restrict the access to and use by such employees and other persons described in
+paragraph (f)(2)(iii)(A) of this section to the plan administration functions that the plan
+sponsor performs for the group health plan; and
+(C)
+Provide an effective mechanism for resolving any issues of noncompliance by persons
+described in paragraph (f)(2)(iii)(A) of this section with the plan document provisions
+required by this paragraph. (3)
+Implementation specifications: Uses and disclosures.",org,null,regulated,unauthorized PHI access due to insufficient separation,The org must ensure adequate separation is established between the group health plan and the plan sponsor.,null,null,TRUE,config_check; access_check; attest_check,plan documents,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012,"(I)
+If feasible, return or destroy all protected health information received from the group
+health plan that the sponsor still maintains in any form and retain no copies of such
+information when no longer needed for the purpose for which disclosure was made,
+except that, if such return or destruction is not feasible, limit further uses and disclosures
+to those purposes that make the return or destruction of the information infeasible; and
+(J)
+Ensure that the adequate separation required in paragraph (f)(2)(iii) of this section is
+established. (iii) Provide for adequate separation between the group health plan and the plan sponsor. The plan
+documents must:
+(A)
+Describe those employees or classes of employees or other persons under the control of
+the plan sponsor to be given access to the protected health information to be disclosed,
+provided that any employee or person who receives protected health information relating
+to payment under, health care operations of, or other matters pertaining to the group
+health plan in the ordinary course of business must be included in such description;
+(B)
+Restrict the access to and use by such employees and other persons described in
+paragraph (f)(2)(iii)(A) of this section to the plan administration functions that the plan
+sponsor performs for the group health plan; and
+(C)
+Provide an effective mechanism for resolving any issues of noncompliance by persons
+described in paragraph (f)(2)(iii)(A) of this section with the plan document provisions
+required by this paragraph. (3)
+Implementation specifications: Uses and disclosures.",org,null,regulated,ambiguous access controls leading to unauthorized PHI access,The org must describe in plan documents which employees or classes of employees are given access to the protected health information to be disclosed.,null,null,TRUE,repo_check; attest_check,plan documents,4
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012,"(I)
+If feasible, return or destroy all protected health information received from the group
+health plan that the sponsor still maintains in any form and retain no copies of such
+information when no longer needed for the purpose for which disclosure was made,
+except that, if such return or destruction is not feasible, limit further uses and disclosures
+to those purposes that make the return or destruction of the information infeasible; and
+(J)
+Ensure that the adequate separation required in paragraph (f)(2)(iii) of this section is
+established. (iii) Provide for adequate separation between the group health plan and the plan sponsor. The plan
+documents must:
+(A)
+Describe those employees or classes of employees or other persons under the control of
+the plan sponsor to be given access to the protected health information to be disclosed,
+provided that any employee or person who receives protected health information relating
+to payment under, health care operations of, or other matters pertaining to the group
+health plan in the ordinary course of business must be included in such description;
+(B)
+Restrict the access to and use by such employees and other persons described in
+paragraph (f)(2)(iii)(A) of this section to the plan administration functions that the plan
+sponsor performs for the group health plan; and
+(C)
+Provide an effective mechanism for resolving any issues of noncompliance by persons
+described in paragraph (f)(2)(iii)(A) of this section with the plan document provisions
+required by this paragraph. (3)
+Implementation specifications: Uses and disclosures.",org,null,regulated,use of PHI beyond authorized plan administration functions,The org must restrict access to and use of protected health information by authorized persons to only the plan administration functions that the sponsor performs for the group health plan.,null,null,TRUE,repo_check; access_check; config_check,plan documents,5
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012,"(I)
+If feasible, return or destroy all protected health information received from the group
+health plan that the sponsor still maintains in any form and retain no copies of such
+information when no longer needed for the purpose for which disclosure was made,
+except that, if such return or destruction is not feasible, limit further uses and disclosures
+to those purposes that make the return or destruction of the information infeasible; and
+(J)
+Ensure that the adequate separation required in paragraph (f)(2)(iii) of this section is
+established. (iii) Provide for adequate separation between the group health plan and the plan sponsor. The plan
+documents must:
+(A)
+Describe those employees or classes of employees or other persons under the control of
+the plan sponsor to be given access to the protected health information to be disclosed,
+provided that any employee or person who receives protected health information relating
+to payment under, health care operations of, or other matters pertaining to the group
+health plan in the ordinary course of business must be included in such description;
+(B)
+Restrict the access to and use by such employees and other persons described in
+paragraph (f)(2)(iii)(A) of this section to the plan administration functions that the plan
+sponsor performs for the group health plan; and
+(C)
+Provide an effective mechanism for resolving any issues of noncompliance by persons
+described in paragraph (f)(2)(iii)(A) of this section with the plan document provisions
+required by this paragraph. (3)
+Implementation specifications: Uses and disclosures.",org,null,regulated,lack of recourse for PHI policy violations,The org must provide an effective mechanism in plan documents for resolving any issues of noncompliance with the required data handling provisions.,null,null,TRUE,repo_check; attest_check,plan documents,6
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0013,"A group health plan may:
+(i)
+Disclose protected health information to a plan sponsor to carry out plan administration
+functions that the plan sponsor performs only consistent with the provisions of paragraph (f)(2)
+of this section;
+(ii)
+Not permit a health insurance issuer or HMO with respect to the group health plan to disclose
+protected health information to the plan sponsor except as permitted by this paragraph;
+(iii) Not disclose and may not permit a health insurance issuer or HMO to disclose protected health
+information to a plan sponsor as otherwise permitted by this paragraph unless a statement
+required by § 164.520(b)(1)(iii)(C) is included in the appropriate notice; and
+(iv) Not disclose protected health information to the plan sponsor for the purpose of employmentrelated actions or decisions or in connection with any other benefit or employee benefit plan of
+the plan sponsor. (g)
+Standard: Requirements for a covered entity with multiple covered functions. (1)
+A covered entity that performs multiple covered functions that would make the entity any
+combination of a health plan, a covered health care provider, and a health care clearinghouse, must
+comply with the standards, requirements, and implementation specifications of this subpart, as
+applicable to the health plan, health care provider, or health care clearinghouse covered functions
+performed. (2)
+A covered entity that performs multiple covered functions may use or disclose the protected health
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(f)(2)(ii)(I)",org,null,regulated,Misuse of PHI for employment discrimination,An org shall not disclose protected health information to a plan sponsor for employment-related actions or decisions or in connection with any other employee benefit plan.,null,for the purpose of employment-related actions or decisions; in connection with any other benefit or employee benefit plan of the plan sponsor,TRUE,log_check; config_check; attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0013,"A group health plan may:
+(i)
+Disclose protected health information to a plan sponsor to carry out plan administration
+functions that the plan sponsor performs only consistent with the provisions of paragraph (f)(2)
+of this section;
+(ii)
+Not permit a health insurance issuer or HMO with respect to the group health plan to disclose
+protected health information to the plan sponsor except as permitted by this paragraph;
+(iii) Not disclose and may not permit a health insurance issuer or HMO to disclose protected health
+information to a plan sponsor as otherwise permitted by this paragraph unless a statement
+required by § 164.520(b)(1)(iii)(C) is included in the appropriate notice; and
+(iv) Not disclose protected health information to the plan sponsor for the purpose of employmentrelated actions or decisions or in connection with any other benefit or employee benefit plan of
+the plan sponsor. (g)
+Standard: Requirements for a covered entity with multiple covered functions. (1)
+A covered entity that performs multiple covered functions that would make the entity any
+combination of a health plan, a covered health care provider, and a health care clearinghouse, must
+comply with the standards, requirements, and implementation specifications of this subpart, as
+applicable to the health plan, health care provider, or health care clearinghouse covered functions
+performed. (2)
+A covered entity that performs multiple covered functions may use or disclose the protected health
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(f)(2)(ii)(I)",org,null,regulated,PHI disclosure for unauthorized purposes,An org must limit the disclosure of protected health information to a plan sponsor to only what is necessary for plan administration functions.,null,when disclosing PHI to a plan sponsor,TRUE,log_check; attest_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0013,"A group health plan may:
+(i)
+Disclose protected health information to a plan sponsor to carry out plan administration
+functions that the plan sponsor performs only consistent with the provisions of paragraph (f)(2)
+of this section;
+(ii)
+Not permit a health insurance issuer or HMO with respect to the group health plan to disclose
+protected health information to the plan sponsor except as permitted by this paragraph;
+(iii) Not disclose and may not permit a health insurance issuer or HMO to disclose protected health
+information to a plan sponsor as otherwise permitted by this paragraph unless a statement
+required by § 164.520(b)(1)(iii)(C) is included in the appropriate notice; and
+(iv) Not disclose protected health information to the plan sponsor for the purpose of employmentrelated actions or decisions or in connection with any other benefit or employee benefit plan of
+the plan sponsor. (g)
+Standard: Requirements for a covered entity with multiple covered functions. (1)
+A covered entity that performs multiple covered functions that would make the entity any
+combination of a health plan, a covered health care provider, and a health care clearinghouse, must
+comply with the standards, requirements, and implementation specifications of this subpart, as
+applicable to the health plan, health care provider, or health care clearinghouse covered functions
+performed. (2)
+A covered entity that performs multiple covered functions may use or disclose the protected health
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.504(f)(2)(ii)(I)",org,null,regulated,Lack of user awareness of PHI disclosure,An org must ensure a statement required by § 164.520(b)(1)(iii)(C) is included in the appropriate notice before it or its health insurance issuer or HMO discloses protected health information to a plan sponsor.,null,before disclosing PHI to a plan sponsor,TRUE,attest_check; repo_check,appropriate notice,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0002,"(1)
+A covered entity may obtain consent of the individual to use or disclose protected health information
+to carry out treatment, payment, or health care operations. (2)
+Consent, under paragraph (b) of this section, shall not be effective to permit a use or disclosure of
+protected health information when an authorization, under § 164.508, is required or when another
+condition must be met for such use or disclosure to be permissible under this subpart. (c)
+Implementation specifications: Treatment, payment, or health care operations. (1)
+A covered entity may use or disclose protected health information for its own treatment, payment, or
+health care operations.",org,null,regulated,Unauthorized PHI disclosure,An org shall not use general consent to permit a use or disclosure of protected health information when a specific authorization is required.,null,when a specific authorization under § 164.508 is required,TRUE,attest_check; log_check,consent record; authorization record,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0004,"(a)
+Standard: Authorizations for uses and disclosures —
+(1)
+Authorization required: General rule. Except as otherwise permitted or required by this subchapter, a
+covered entity may not use or disclose protected health information without an authorization that is
+valid under this section. When a covered entity obtains or receives a valid authorization for its use or
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.506",org,null,regulated,unauthorized PHI use,An org shall not use protected health information without a valid authorization.,as otherwise permitted or required by this subchapter,without a valid authorization,TRUE,log_check; attest_check,valid authorization record,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0005,"(2)
+Authorization required: Psychotherapy notes. Notwithstanding any provision of this subpart, other
+than the transition provisions in § 164.532, a covered entity must obtain an authorization for any use
+or disclosure of psychotherapy notes, except:
+(i)
+To carry out the following treatment, payment, or health care operations:
+(A)
+Use by the originator of the psychotherapy notes for treatment;
+(B)
+Use or disclosure by the covered entity for its own training programs in which students,
+trainees, or practitioners in mental health learn under supervision to practice or improve
+their skills in group, joint, family, or individual counseling; or
+(C)
+Use or disclosure by the covered entity to defend itself in a legal action or other
+proceeding brought by the individual; and
+(ii)
+A use or disclosure that is required by § 164.502(a)(2)(ii) or permitted by § 164.512(a); §
+164.512(d) with respect to the oversight of the originator of the psychotherapy notes; §
+164.512(g)(1); or § 164.512(j)(1)(i). (3)
+Authorization required: Marketing. (i)
+Notwithstanding any provision of this subpart, other than the transition provisions in § 164.532,
+a covered entity must obtain an authorization for any use or disclosure of protected health
+information for marketing, except if the communication is in the form of:
+(A)
+A face-to-face communication made by a covered entity to an individual; or
+(B)
+A promotional gift of nominal value provided by the covered entity.",org,null,regulated,unauthorized disclosure of psychotherapy notes,The org must obtain an authorization for any use or disclosure of psychotherapy notes.,for treatment by the originator; for the org's own training programs; to defend the org in a legal action; as required or permitted by §164.502(a)(2)(ii) or §164.512,use or disclosure of psychotherapy notes,TRUE,attest_check; log_check,authorization record,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0005,"(2)
+Authorization required: Psychotherapy notes. Notwithstanding any provision of this subpart, other
+than the transition provisions in § 164.532, a covered entity must obtain an authorization for any use
+or disclosure of psychotherapy notes, except:
+(i)
+To carry out the following treatment, payment, or health care operations:
+(A)
+Use by the originator of the psychotherapy notes for treatment;
+(B)
+Use or disclosure by the covered entity for its own training programs in which students,
+trainees, or practitioners in mental health learn under supervision to practice or improve
+their skills in group, joint, family, or individual counseling; or
+(C)
+Use or disclosure by the covered entity to defend itself in a legal action or other
+proceeding brought by the individual; and
+(ii)
+A use or disclosure that is required by § 164.502(a)(2)(ii) or permitted by § 164.512(a); §
+164.512(d) with respect to the oversight of the originator of the psychotherapy notes; §
+164.512(g)(1); or § 164.512(j)(1)(i). (3)
+Authorization required: Marketing. (i)
+Notwithstanding any provision of this subpart, other than the transition provisions in § 164.532,
+a covered entity must obtain an authorization for any use or disclosure of protected health
+information for marketing, except if the communication is in the form of:
+(A)
+A face-to-face communication made by a covered entity to an individual; or
+(B)
+A promotional gift of nominal value provided by the covered entity.",org,null,regulated,improper use of PHI for marketing,The org must obtain an authorization for any use or disclosure of protected health information for marketing.,for face-to-face communications; for promotional gifts of nominal value,use or disclosure of PHI for marketing,TRUE,attest_check; log_check,authorization record,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0006,"(ii)
+If the marketing involves financial remuneration, as defined in paragraph (3) of the definition of
+marketing at § 164.501, to the covered entity from a third party, the authorization must state
+that such remuneration is involved. (4)
+Authorization required: Sale of protected health information. (i)
+Notwithstanding any provision of this subpart, other than the transition provisions in § 164.532,
+a covered entity must obtain an authorization for any disclosure of protected health information
+which is a sale of protected health information, as defined in § 164.501 of this subpart. (ii)
+Such authorization must state that the disclosure will result in remuneration to the covered
+entity.",org,null,regulated,undisclosed financial incentive for data use,The org must state in the authorization that financial remuneration is involved when marketing involves such remuneration from a third party.,null,marketing involves financial remuneration from a third party,TRUE,attest_check,authorization record,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0006,"(ii)
+If the marketing involves financial remuneration, as defined in paragraph (3) of the definition of
+marketing at § 164.501, to the covered entity from a third party, the authorization must state
+that such remuneration is involved. (4)
+Authorization required: Sale of protected health information. (i)
+Notwithstanding any provision of this subpart, other than the transition provisions in § 164.532,
+a covered entity must obtain an authorization for any disclosure of protected health information
+which is a sale of protected health information, as defined in § 164.501 of this subpart. (ii)
+Such authorization must state that the disclosure will result in remuneration to the covered
+entity.",org,null,regulated,unauthorized sale of PHI,The org must obtain an authorization for any disclosure of protected health information that constitutes a sale of that information.,transition provisions in § 164.532 apply,disclosure of PHI constitutes a sale of PHI,TRUE,attest_check,authorization record,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0006,"(ii)
+If the marketing involves financial remuneration, as defined in paragraph (3) of the definition of
+marketing at § 164.501, to the covered entity from a third party, the authorization must state
+that such remuneration is involved. (4)
+Authorization required: Sale of protected health information. (i)
+Notwithstanding any provision of this subpart, other than the transition provisions in § 164.532,
+a covered entity must obtain an authorization for any disclosure of protected health information
+which is a sale of protected health information, as defined in § 164.501 of this subpart. (ii)
+Such authorization must state that the disclosure will result in remuneration to the covered
+entity.",org,null,regulated,undisclosed financial incentive for data disclosure,The org must ensure that an authorization for the sale of protected health information states that the disclosure will result in remuneration to the org.,null,authorization is for the sale of PHI,TRUE,attest_check,authorization record,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009,"(i)
+The expiration date has passed or the expiration event is known by the covered entity to have
+occurred;
+(ii)
+The authorization has not been filled out completely, with respect to an element described by
+paragraph (c) of this section, if applicable;
+(iii) The authorization is known by the covered entity to have been revoked;
+(iv) The authorization violates paragraph (b)(3) or (4) of this section, if applicable;
+(v)
+Any material information in the authorization is known by the covered entity to be false. (3)
+Compound authorizations. An authorization for use or disclosure of protected health information may
+not be combined with any other document to create a compound authorization, except as follows:
+(i)
+An authorization for the use or disclosure of protected health information for a research study
+may be combined with any other type of written permission for the same or another research
+study. This exception includes combining an authorization for the use or disclosure of
+protected health information for a research study with another authorization for the same
+research study, with an authorization for the creation or maintenance of a research database or
+repository, or with a consent to participate in research.",org,null,regulated,Unauthorized use of PHI via invalid authorization,"The org shall not act on an authorization for protected health information if it is known to be expired, incomplete, revoked, in violation of other sections, or contains false information.",null,authorization expiration date has passed; authorization is incomplete; authorization is known to have been revoked; authorization violates paragraph (b)(3) or (4); authorization contains known false material information,TRUE,log_check; attest_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009,"(i)
+The expiration date has passed or the expiration event is known by the covered entity to have
+occurred;
+(ii)
+The authorization has not been filled out completely, with respect to an element described by
+paragraph (c) of this section, if applicable;
+(iii) The authorization is known by the covered entity to have been revoked;
+(iv) The authorization violates paragraph (b)(3) or (4) of this section, if applicable;
+(v)
+Any material information in the authorization is known by the covered entity to be false. (3)
+Compound authorizations. An authorization for use or disclosure of protected health information may
+not be combined with any other document to create a compound authorization, except as follows:
+(i)
+An authorization for the use or disclosure of protected health information for a research study
+may be combined with any other type of written permission for the same or another research
+study. This exception includes combining an authorization for the use or disclosure of
+protected health information for a research study with another authorization for the same
+research study, with an authorization for the creation or maintenance of a research database or
+repository, or with a consent to participate in research.",org,null,regulated; research,Invalid user consent from compound authorizations,The org shall not combine an authorization for use or disclosure of protected health information with any other document to create a compound authorization.,when the authorization is for a research study and combined with other written permissions for research,creating an authorization for use or disclosure of protected health information,TRUE,attest_check; repo_check,null,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010,"Where a covered health care provider
+has conditioned the provision of research-related treatment on the provision of one of the
+authorizations, as permitted under paragraph (b)(4)(i) of this section, any compound
+authorization created under this paragraph must clearly differentiate between the conditioned
+and unconditioned components and provide the individual with an opportunity to opt in to the
+research activities described in the unconditioned authorization. (ii)
+An authorization for a use or disclosure of psychotherapy notes may only be combined with
+another authorization for a use or disclosure of psychotherapy notes. (iii) An authorization under this section, other than an authorization for a use or disclosure of
+psychotherapy notes, may be combined with any other such authorization under this section,
+except when a covered entity has conditioned the provision of treatment, payment, enrollment
+in the health plan, or eligibility for benefits under paragraph (b)(4) of this section on the
+provision of one of the authorizations. The prohibition in this paragraph on combining
+authorizations where one authorization conditions the provision of treatment, payment,
+enrollment in a health plan, or eligibility for benefits under paragraph (b)(4) of this section does
+not apply to a compound authorization created in accordance with paragraph (b)(3)(i) of this
+section.",org,null,research; regulated,Uninformed consent for research,The org must clearly differentiate between conditioned and unconditioned components in any compound authorization for research-related treatment.,null,creating a compound authorization; when research-related treatment is conditioned on an authorization,TRUE,attest_check; io_check,compound authorization document,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010,"Where a covered health care provider
+has conditioned the provision of research-related treatment on the provision of one of the
+authorizations, as permitted under paragraph (b)(4)(i) of this section, any compound
+authorization created under this paragraph must clearly differentiate between the conditioned
+and unconditioned components and provide the individual with an opportunity to opt in to the
+research activities described in the unconditioned authorization. (ii)
+An authorization for a use or disclosure of psychotherapy notes may only be combined with
+another authorization for a use or disclosure of psychotherapy notes. (iii) An authorization under this section, other than an authorization for a use or disclosure of
+psychotherapy notes, may be combined with any other such authorization under this section,
+except when a covered entity has conditioned the provision of treatment, payment, enrollment
+in the health plan, or eligibility for benefits under paragraph (b)(4) of this section on the
+provision of one of the authorizations. The prohibition in this paragraph on combining
+authorizations where one authorization conditions the provision of treatment, payment,
+enrollment in a health plan, or eligibility for benefits under paragraph (b)(4) of this section does
+not apply to a compound authorization created in accordance with paragraph (b)(3)(i) of this
+section.",org,null,research; regulated,Lack of user control over research data,The org must provide the user with an opportunity to opt in to the research activities described in the unconditioned part of a compound authorization.,null,creating a compound authorization; when research-related treatment is conditioned on an authorization,TRUE,attest_check; io_check,compound authorization document,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010,"Where a covered health care provider
+has conditioned the provision of research-related treatment on the provision of one of the
+authorizations, as permitted under paragraph (b)(4)(i) of this section, any compound
+authorization created under this paragraph must clearly differentiate between the conditioned
+and unconditioned components and provide the individual with an opportunity to opt in to the
+research activities described in the unconditioned authorization. (ii)
+An authorization for a use or disclosure of psychotherapy notes may only be combined with
+another authorization for a use or disclosure of psychotherapy notes. (iii) An authorization under this section, other than an authorization for a use or disclosure of
+psychotherapy notes, may be combined with any other such authorization under this section,
+except when a covered entity has conditioned the provision of treatment, payment, enrollment
+in the health plan, or eligibility for benefits under paragraph (b)(4) of this section on the
+provision of one of the authorizations. The prohibition in this paragraph on combining
+authorizations where one authorization conditions the provision of treatment, payment,
+enrollment in a health plan, or eligibility for benefits under paragraph (b)(4) of this section does
+not apply to a compound authorization created in accordance with paragraph (b)(3)(i) of this
+section.",entity,null,regulated,Coerced consent for data use,"The entity shall not combine authorizations when one authorization is a condition for receiving treatment, payment, enrollment, or eligibility for benefits.",does not apply to a compound authorization for research-related treatment,"combining authorizations; when one authorization is a condition for treatment, payment, enrollment, or eligibility for benefits",TRUE,attest_check,combined authorization document,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010,"Where a covered health care provider
+has conditioned the provision of research-related treatment on the provision of one of the
+authorizations, as permitted under paragraph (b)(4)(i) of this section, any compound
+authorization created under this paragraph must clearly differentiate between the conditioned
+and unconditioned components and provide the individual with an opportunity to opt in to the
+research activities described in the unconditioned authorization. (ii)
+An authorization for a use or disclosure of psychotherapy notes may only be combined with
+another authorization for a use or disclosure of psychotherapy notes. (iii) An authorization under this section, other than an authorization for a use or disclosure of
+psychotherapy notes, may be combined with any other such authorization under this section,
+except when a covered entity has conditioned the provision of treatment, payment, enrollment
+in the health plan, or eligibility for benefits under paragraph (b)(4) of this section on the
+provision of one of the authorizations. The prohibition in this paragraph on combining
+authorizations where one authorization conditions the provision of treatment, payment,
+enrollment in a health plan, or eligibility for benefits under paragraph (b)(4) of this section does
+not apply to a compound authorization created in accordance with paragraph (b)(3)(i) of this
+section.",org,null,regulated,Unauthorized disclosure of psychotherapy notes,The org shall not combine an authorization for use or disclosure of psychotherapy notes with any authorization other than one for psychotherapy notes.,null,combining an authorization for use or disclosure of psychotherapy notes,TRUE,attest_check,combined authorization document,4
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0011,"(4)
+Prohibition on conditioning of authorizations. A covered entity may not condition the provision to an
+individual of treatment, payment, enrollment in the health plan, or eligibility for benefits on the
+provision of an authorization, except:
+(i)
+A covered health care provider may condition the provision of research-related treatment on
+provision of an authorization for the use or disclosure of protected health information for such
+research under this section;
+(ii)
+A health plan may condition enrollment in the health plan or eligibility for benefits on provision
+of an authorization requested by the health plan prior to an individual's enrollment in the health
+plan, if:
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.508(b)(2)(i)",entity,null,regulated,Coerced data authorization,"A covered entity shall not condition the provision of treatment, payment, health plan enrollment, or eligibility for benefits on an individual's provision of an authorization.","for research-related treatment by a health care provider, where authorization is for use or disclosure of PHI for such research; for health plan enrollment or eligibility, if the authorization is requested by the health plan prior to an individual's enrollment",providing treatment to an individual; providing payment to an individual; enrolling an individual in a health plan; determining an individual's eligibility for benefits,TRUE,attest_check; io_check,null,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0012,"(A)
+The authorization sought is for the health plan's eligibility or enrollment determinations
+relating to the individual or for its underwriting or risk rating determinations; and
+(B)
+The authorization is not for a use or disclosure of psychotherapy notes under paragraph
+(a)(2) of this section; and
+(iii) A covered entity may condition the provision of health care that is solely for the purpose of
+creating protected health information for disclosure to a third party on provision of an
+authorization for the disclosure of the protected health information to such third party. (5)
+Revocation of authorizations. An individual may revoke an authorization provided under this section
+at any time, provided that the revocation is in writing, except to the extent that:
+(i)
+The covered entity has taken action in reliance thereon; or
+(ii)
+If the authorization was obtained as a condition of obtaining insurance coverage, other law
+provides the insurer with the right to contest a claim under the policy or the policy itself. (6)
+Documentation.",org; user,null,regulated,unwanted data processing after consent withdrawal,"The org must honor a user's written revocation of an authorization at any time, subject to specific exceptions.",the org has taken action in reliance on the authorization; the authorization was a condition of obtaining insurance coverage and other law provides the insurer the right to contest a claim or the policy,user submits revocation in writing,TRUE,log_check; attest_check,documentation of authorization revocation,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0013,"A covered entity must document and retain any signed authorization under this
+section as required by § 164.530(j). (c)
+Implementation specifications: Core elements and requirements —
+(1)
+Core elements. A valid authorization under this section must contain at least the following elements:
+(i)
+A description of the information to be used or disclosed that identifies the information in a
+specific and meaningful fashion. (ii)
+The name or other specific identification of the person(s), or class of persons, authorized to
+make the requested use or disclosure.",org,null,regulated,failure to prove consent,A covered entity must document any signed authorization under this section.,null,for any signed authorization,TRUE,attest_check; repo_check,signed authorization record,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0013,"A covered entity must document and retain any signed authorization under this
+section as required by § 164.530(j). (c)
+Implementation specifications: Core elements and requirements —
+(1)
+Core elements. A valid authorization under this section must contain at least the following elements:
+(i)
+A description of the information to be used or disclosed that identifies the information in a
+specific and meaningful fashion. (ii)
+The name or other specific identification of the person(s), or class of persons, authorized to
+make the requested use or disclosure.",org,null,regulated,failure to prove consent,A covered entity must retain any signed authorization as required by § 164.530(j).,null,for any signed authorization,TRUE,attest_check; data_check,signed authorization record,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0013,"A covered entity must document and retain any signed authorization under this
+section as required by § 164.530(j). (c)
+Implementation specifications: Core elements and requirements —
+(1)
+Core elements. A valid authorization under this section must contain at least the following elements:
+(i)
+A description of the information to be used or disclosed that identifies the information in a
+specific and meaningful fashion. (ii)
+The name or other specific identification of the person(s), or class of persons, authorized to
+make the requested use or disclosure.",org,null,regulated,overly broad consent,The org must ensure a valid authorization contains a description of the information to be used or disclosed that identifies the information in a specific and meaningful fashion.,null,when creating a valid authorization,TRUE,data_check; repo_check,authorization form,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0013,"A covered entity must document and retain any signed authorization under this
+section as required by § 164.530(j). (c)
+Implementation specifications: Core elements and requirements —
+(1)
+Core elements. A valid authorization under this section must contain at least the following elements:
+(i)
+A description of the information to be used or disclosed that identifies the information in a
+specific and meaningful fashion. (ii)
+The name or other specific identification of the person(s), or class of persons, authorized to
+make the requested use or disclosure.",org,null,regulated,unauthorized data disclosure,"The org must ensure a valid authorization contains the name or other specific identification of the person(s), or class of persons, authorized to make the requested use or disclosure.",null,when creating a valid authorization,TRUE,data_check; repo_check,authorization form,4
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0014,"(iii) The name or other specific identification of the person(s), or class of persons, to whom the
+covered entity may make the requested use or disclosure. (iv) A description of each purpose of the requested use or disclosure. The statement ""at the request
+of the individual"" is a sufficient description of the purpose when an individual initiates the
+authorization and does not, or elects not to, provide a statement of the purpose. (v)
+An expiration date or an expiration event that relates to the individual or the purpose of the use
+or disclosure.",org,null,regulated,unauthorized data disclosure to unspecified recipients,The org must ensure an authorization specifies the person(s) or class of persons to whom a requested use or disclosure may be made.,null,when creating an authorization for data use or disclosure,TRUE,data_check; attest_check,authorization record,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0014,"(iii) The name or other specific identification of the person(s), or class of persons, to whom the
+covered entity may make the requested use or disclosure. (iv) A description of each purpose of the requested use or disclosure. The statement ""at the request
+of the individual"" is a sufficient description of the purpose when an individual initiates the
+authorization and does not, or elects not to, provide a statement of the purpose. (v)
+An expiration date or an expiration event that relates to the individual or the purpose of the use
+or disclosure.",org,null,regulated,data misuse for unapproved purposes,The org must ensure an authorization includes a description of each purpose of the requested use or disclosure.,"if an individual initiates the authorization and does not provide a purpose, the statement 'at the request of the individual' is sufficient",when creating an authorization for data use or disclosure,TRUE,data_check; attest_check,authorization record,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0014,"(iii) The name or other specific identification of the person(s), or class of persons, to whom the
+covered entity may make the requested use or disclosure. (iv) A description of each purpose of the requested use or disclosure. The statement ""at the request
+of the individual"" is a sufficient description of the purpose when an individual initiates the
+authorization and does not, or elects not to, provide a statement of the purpose. (v)
+An expiration date or an expiration event that relates to the individual or the purpose of the use
+or disclosure.",org,null,regulated,indefinite data access or use,The org must ensure an authorization includes an expiration date or an expiration event for the use or disclosure.,null,when creating an authorization for data use or disclosure,TRUE,data_check; attest_check,authorization record,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0015,"The statement ""end of the research study,"" ""none,"" or similar language is
+sufficient if the authorization is for a use or disclosure of protected health information for
+research, including for the creation and maintenance of a research database or research
+repository. (vi) Signature of the individual and date. If the authorization is signed by a personal representative
+of the individual, a description of such representative's authority to act for the individual must
+also be provided. (2)
+Required statements.",org,null,research,invalid authorization for PHI use,The org must ensure that an authorization for the use or disclosure of protected health information includes the signature of the individual and the date.,null,collecting authorization for use or disclosure of protected health information,TRUE,attest_check; data_check,authorization record,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0015,"The statement ""end of the research study,"" ""none,"" or similar language is
+sufficient if the authorization is for a use or disclosure of protected health information for
+research, including for the creation and maintenance of a research database or research
+repository. (vi) Signature of the individual and date. If the authorization is signed by a personal representative
+of the individual, a description of such representative's authority to act for the individual must
+also be provided. (2)
+Required statements.",org,null,research,invalid authorization by a representative,"The org must ensure that if an authorization is signed by a personal representative, a description of that representative's authority to act for the individual is also provided.",null,an authorization is signed by a personal representative of the individual,TRUE,attest_check; data_check,authorization record,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0016,"In addition to the core elements, the authorization must contain statements
+adequate to place the individual on notice of all of the following:
+(i)
+The individual's right to revoke the authorization in writing, and either:
+(A)
+The exceptions to the right to revoke and a description of how the individual may revoke
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.508(b)(4)(ii)(A)",org,null,regulated,uninformed consent for PHI use,The org must include a statement in the PHI authorization document informing the individual of their right to revoke the authorization in writing.,null,when creating a PHI authorization document,TRUE,repo_check; attest_check,authorization document,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0016,"In addition to the core elements, the authorization must contain statements
+adequate to place the individual on notice of all of the following:
+(i)
+The individual's right to revoke the authorization in writing, and either:
+(A)
+The exceptions to the right to revoke and a description of how the individual may revoke
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.508(b)(4)(ii)(A)",org,null,regulated,uninformed consent for PHI use,The org must include a description in the PHI authorization document of the process for how the individual may revoke the authorization.,null,when creating a PHI authorization document,TRUE,repo_check; attest_check,authorization document,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0016,"In addition to the core elements, the authorization must contain statements
+adequate to place the individual on notice of all of the following:
+(i)
+The individual's right to revoke the authorization in writing, and either:
+(A)
+The exceptions to the right to revoke and a description of how the individual may revoke
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.508(b)(4)(ii)(A)",org,null,regulated,uninformed consent for PHI use,The org must include a statement in the PHI authorization document describing any exceptions to the individual's right to revoke.,null,when creating a PHI authorization document,TRUE,repo_check; attest_check,authorization document,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001,"[67 FR 53268, Aug. 14, 2002, as amended at 78 FR 5699, Jan. 25, 2013]
+§ 164.509 Uses and disclosures for which an attestation is required. (B)
+To the extent that the information in paragraph (c)(2)(i)(A) of this section is included in the
+notice required by § 164.520, a reference to the covered entity's notice. (ii)
+The ability or inability to condition treatment, payment, enrollment or eligibility for benefits on
+the authorization, by stating either:
+(A)
+The covered entity may not condition treatment, payment, enrollment or eligibility for
+benefits on whether the individual signs the authorization when the prohibition on
+conditioning of authorizations in paragraph (b)(4) of this section applies; or
+(B)
+The consequences to the individual of a refusal to sign the authorization when, in
+accordance with paragraph (b)(4) of this section, the covered entity can condition
+treatment, enrollment in the health plan, or eligibility for benefits on failure to obtain such
+authorization. (iii) The potential for information disclosed pursuant to the authorization to be subject to
+redisclosure by the recipient and no longer be protected by this subpart.",org,null,regulated,Insufficient user awareness of rights,The org shall include a reference to its notice in the authorization form when required information is contained within that notice.,null,If required authorization information is included in the notice per § 164.520,TRUE,io_check; repo_check,Authorization form; Notice of Privacy Practices,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001,"[67 FR 53268, Aug. 14, 2002, as amended at 78 FR 5699, Jan. 25, 2013]
+§ 164.509 Uses and disclosures for which an attestation is required. (B)
+To the extent that the information in paragraph (c)(2)(i)(A) of this section is included in the
+notice required by § 164.520, a reference to the covered entity's notice. (ii)
+The ability or inability to condition treatment, payment, enrollment or eligibility for benefits on
+the authorization, by stating either:
+(A)
+The covered entity may not condition treatment, payment, enrollment or eligibility for
+benefits on whether the individual signs the authorization when the prohibition on
+conditioning of authorizations in paragraph (b)(4) of this section applies; or
+(B)
+The consequences to the individual of a refusal to sign the authorization when, in
+accordance with paragraph (b)(4) of this section, the covered entity can condition
+treatment, enrollment in the health plan, or eligibility for benefits on failure to obtain such
+authorization. (iii) The potential for information disclosed pursuant to the authorization to be subject to
+redisclosure by the recipient and no longer be protected by this subpart.",org,null,regulated,User misunderstanding of data protection scope after disclosure,The org shall state in the authorization form that information disclosed pursuant to the authorization may be subject to redisclosure by the recipient and may no longer be protected.,null,When creating an authorization form for disclosure,TRUE,io_check; repo_check,Authorization form,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001,"[67 FR 53268, Aug. 14, 2002, as amended at 78 FR 5699, Jan. 25, 2013]
+§ 164.509 Uses and disclosures for which an attestation is required. (B)
+To the extent that the information in paragraph (c)(2)(i)(A) of this section is included in the
+notice required by § 164.520, a reference to the covered entity's notice. (ii)
+The ability or inability to condition treatment, payment, enrollment or eligibility for benefits on
+the authorization, by stating either:
+(A)
+The covered entity may not condition treatment, payment, enrollment or eligibility for
+benefits on whether the individual signs the authorization when the prohibition on
+conditioning of authorizations in paragraph (b)(4) of this section applies; or
+(B)
+The consequences to the individual of a refusal to sign the authorization when, in
+accordance with paragraph (b)(4) of this section, the covered entity can condition
+treatment, enrollment in the health plan, or eligibility for benefits on failure to obtain such
+authorization. (iii) The potential for information disclosed pursuant to the authorization to be subject to
+redisclosure by the recipient and no longer be protected by this subpart.",org,null,regulated,Lack of informed consent regarding conditionality of services,"The org shall state in the authorization form its policy on conditioning treatment, payment, enrollment, or eligibility for benefits on the authorization, by stating either that it may not condition them or the consequences for refusal if conditioning is permitted.",null,When creating an authorization form,TRUE,io_check; repo_check,Authorization form,3
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0002,"(3)
+Plain language requirement. The authorization must be written in plain language. (4)
+Copy to the individual. If a covered entity seeks an authorization from an individual for a use or
+disclosure of protected health information, the covered entity must provide the individual with a copy
+of the signed authorization.",org,null,regulated,uninformed consent,The org must ensure that any authorization document is written in plain language.,null,when creating an authorization document,TRUE,repo_check; attest_check,authorization document,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0002,"(3)
+Plain language requirement. The authorization must be written in plain language. (4)
+Copy to the individual. If a covered entity seeks an authorization from an individual for a use or
+disclosure of protected health information, the covered entity must provide the individual with a copy
+of the signed authorization.",org,null,regulated,inability to verify consent,The org must provide the individual with a copy of the signed authorization.,null,after an individual signs an authorization for use or disclosure of protected health information,TRUE,log_check; io_check; attest_check,copy of signed authorization,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0003,"(a)
+Standard: Attestations for certain uses and disclosures of protected health information to persons other
+than covered entities or business associates. (1)
+A covered entity or business associate may not use or disclose protected health information
+potentially related to reproductive health care for purposes specified in § 164.512(d), (e), (f), or
+(g)(1), without obtaining an attestation that is valid under paragraph (b)(1) of this section from the
+person requesting the use or disclosure and complying with all applicable conditions of this part. (2)
+A covered entity or business associate that uses or discloses protected health information
+potentially related to reproductive health care for purposes specified in § 164.512(d), (e), (f), or
+(g)(1), in reliance on an attestation that is defective under paragraph (b)(2) of this section, is not in
+compliance with this section. (b)
+Implementation specifications: General requirements —
+(1)
+Valid attestations.",org; business associate,null,prod; regulated,Improper disclosure of reproductive health PHI due to invalid authorization,An org or business associate is prohibited from using or disclosing protected health information potentially related to reproductive health care.,null,"for purposes specified in § 164.512(d), (e), (f), or (g)(1); in reliance on a defective attestation",TRUE,log_check; attest_check,attestation record,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0003,"(a)
+Standard: Attestations for certain uses and disclosures of protected health information to persons other
+than covered entities or business associates. (1)
+A covered entity or business associate may not use or disclose protected health information
+potentially related to reproductive health care for purposes specified in § 164.512(d), (e), (f), or
+(g)(1), without obtaining an attestation that is valid under paragraph (b)(1) of this section from the
+person requesting the use or disclosure and complying with all applicable conditions of this part. (2)
+A covered entity or business associate that uses or discloses protected health information
+potentially related to reproductive health care for purposes specified in § 164.512(d), (e), (f), or
+(g)(1), in reliance on an attestation that is defective under paragraph (b)(2) of this section, is not in
+compliance with this section. (b)
+Implementation specifications: General requirements —
+(1)
+Valid attestations.",org; business associate,null,prod; regulated,Improper disclosure of reproductive health PHI,An org or business associate is prohibited from using or disclosing protected health information potentially related to reproductive health care.,null,"for purposes specified in § 164.512(d), (e), (f), or (g)(1); a valid attestation has not been obtained from the requestor",TRUE,log_check; attest_check,attestation record,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0004,"(i)
+A valid attestation is a document that meets the requirements of paragraph (c)(1) of this
+section. (ii)
+A valid attestation verifies that the use or disclosure is not otherwise prohibited by §
+164.502(a)(5)(iii). (iii) A valid attestation may be electronic, provided that it meets the requirements in paragraph
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.508(c)(2)(i)(B)",org,null,regulated,unauthorized disclosure of PHI,The org must ensure that a valid attestation verifies that the use or disclosure of individually identifiable health information is not otherwise prohibited by § 164.502(a)(5)(iii).,null,when using or disclosing individually identifiable health information,TRUE,attest_check,attestation document,1
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0004,"(i)
+A valid attestation is a document that meets the requirements of paragraph (c)(1) of this
+section. (ii)
+A valid attestation verifies that the use or disclosure is not otherwise prohibited by §
+164.502(a)(5)(iii). (iii) A valid attestation may be electronic, provided that it meets the requirements in paragraph
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.508(c)(2)(i)(B)",org,null,regulated,use of an invalid attestation,The org must ensure any attestation document meets the requirements of paragraph (c)(1) of this section.,null,when creating an attestation for PHI use or disclosure,TRUE,attest_check,attestation document,2
+HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0004,"(i)
+A valid attestation is a document that meets the requirements of paragraph (c)(1) of this
+section. (ii)
+A valid attestation verifies that the use or disclosure is not otherwise prohibited by §
+164.502(a)(5)(iii). (iii) A valid attestation may be electronic, provided that it meets the requirements in paragraph
+45 CFR Part 164 Subpart E (up to date as of 9/29/2025)
+Privacy of Individually Identifiable Health Information
+45 CFR 164.508(c)(2)(i)(B)",org,null,regulated,non-compliant electronic attestation for PHI,The org must ensure any electronic attestation meets the requirements of 45 CFR Part 164 Subpart E.,null,if the attestation is electronic,TRUE,attest_check,electronic attestation document,3

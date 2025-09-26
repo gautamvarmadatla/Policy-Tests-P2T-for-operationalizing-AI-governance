@@ -1,0 +1,2730 @@
+- rule_id: spans-passthrough-candidates/sent_0005-97b95c20
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure that would violate subpart requirements
+  conditions:
+  - '"in a manner that would violate the requirements of this subpart, if done by
+    the covered entity"'
+  exceptions:
+  - '"except for the purposes specified under § 164.504(e)(2)(i)(A) or (B) if such
+    uses or disclosures are permitted by its contract or other arrangement."'
+  requirements:
+  - Do not use or disclose protected health information in a manner that would violate
+    the requirements of this subpart if done by the covered entity.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Prohibits business-associate PHI disclosures contrary to the HIPAA subpart;
+      verifiable by inspecting disclosures, logs, contracts, and PHI metadata.
+    evidence_signals:
+    - io_check
+    - log_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0005-7e7518b2
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure outside contract or law
+  conditions:
+  - unless permitted by its business associate contract or other arrangement pursuant
+    to § 164.504(e)
+  - unless required by law
+  exceptions: []
+  requirements:
+  - Do not use or disclose protected health information except as permitted by its
+    business associate contract or other arrangement pursuant to § 164.504(e) or as
+    required by law.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: PHI disclosure is detectable, but verifying permission under contract
+      or law requires external legal/contract evidence not objectively checkable here.
+    evidence_signals:
+    - io_check
+    - data_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0005-f3649c7d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: denial of individual's access to PHI
+  conditions:
+  - when requested under § 164.524 or § 164.528
+  - when request is "required by § 164.524 or § 164.528"
+  exceptions: []
+  requirements:
+  - Disclose protected health information to an individual when requested under, and
+    required by, § 164.524 or § 164.528.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to disclose PHI upon authorized request; verifiable by inspecting
+      access-request/disclosure logs or system I/O.
+    evidence_signals:
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0005-ad335414
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0005
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: failure to provide PHI for compliance investigation
+  conditions:
+  - when required by the Secretary under subpart C of part 160 to investigate or determine
+    the covered entity's compliance with this subchapter
+  exceptions: []
+  requirements:
+  - Disclose protected health information to the Secretary under subpart C of part
+    160 when required to investigate or determine the covered entity's compliance
+    with this subchapter.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to disclose PHI when required is verifiable by inspecting disclosure/audit
+      logs or transmitted outputs for PHI sent to the Secretary.
+    evidence_signals:
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0006-5e1d5b16
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0006
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized withholding of PHI from oversight or authorized requestors
+  conditions:
+  - when required by the Secretary under subpart C of part 160 to investigate or determine
+    the business associate's compliance with this subchapter
+  exceptions: []
+  requirements:
+  - The business associate shall disclose protected health information when required
+    by the Secretary under subpart C of part 160 to investigate or determine the business
+    associate's compliance with this subchapter.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can be verified by checking audit/runtime logs for Secretary request events
+      and corresponding PHI disclosure actions.
+    evidence_signals:
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0006-aa8c540b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0006
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: failure to provide electronic copies of PHI to satisfy individual's request
+  conditions:
+  - as necessary to satisfy a covered entity's obligations under § 164.524(c)(2)(ii)
+    and (3)(ii) with respect to an individual's request for an electronic copy of
+    protected health information
+  exceptions: []
+  requirements:
+  - The business associate shall disclose protected health information to the covered
+    entity, individual, or the individual's designee as necessary to satisfy a covered
+    entity's obligations under § 164.524(c)(2)(ii) and (3)(ii) with respect to an
+    individual's request for an electronic copy of protected health information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to disclose PHI for electronic copy requests is concrete and
+      verifiable via logs or I/O showing disclosure events and recipients.
+    evidence_signals:
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0006-682a8c9f
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0006
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized use or disclosure of genetic PHI for underwriting
+  conditions:
+  - for underwriting purposes
+  exceptions:
+  - excluding an issuer of a long-term care policy falling within paragraph (1)(viii)
+    of the definition of health plan
+  requirements:
+  - The entity shall not use or disclose protected health information that is genetic
+    information for underwriting purposes.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Prohibition is specific (entity, genetic PHI, underwriting); use/disclosure
+      can be detected via logs or dataset metadata.
+    evidence_signals:
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0008-2c30b064
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0008
+  scope:
+    actor:
+    - entity
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - Except pursuant to and in compliance with § 164.508(a)(4)
+  exceptions: []
+  requirements:
+  - Entity and business associate must not sell protected health information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Explicit prohibition on selling PHI; can be audited via logs, policies/configs,
+      contracts, and dataset metadata for sale transactions.
+    evidence_signals:
+    - log_check
+    - config_check
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0008-8d5cb930
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0008
+  scope:
+    actor:
+    - entity
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - Entity and business associate must treat a disclosure of protected health information
+    as a sale when the covered entity or business associate directly or indirectly
+    receives remuneration from or on behalf of the recipient in exchange for the protected
+    health information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify logs/datasets showing PHI disclosure and corresponding remuneration
+      to determine if treated as a sale.
+    evidence_signals:
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0010-c59b13d2
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0010
+  scope:
+    actor:
+    - provider
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: PHI used to investigate individuals for seeking reproductive health care
+  conditions:
+  - use or disclose protected health information
+  - to conduct a criminal, civil, or administrative investigation
+  - for the mere act of seeking, obtaining, providing, or facilitating reproductive
+    health care
+  - subject to paragraphs (a)(5)(iii)(B) and (C) of this section
+  exceptions: []
+  requirements:
+  - provider and business associate must not use or disclose protected health information
+    to conduct a criminal, civil, or administrative investigation into any person
+    for the mere act of seeking, obtaining, providing, or facilitating reproductive
+    health care.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Prohibits providers/business associates from disclosing PHI for investigations;
+      check disclosure logs and PHI metadata for investigation-purpose reproductive-care
+      disclosures.
+    evidence_signals:
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0010-b585c5a0
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0010
+  scope:
+    actor:
+    - provider
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: PHI used to identify persons for investigation or liability related to reproductive
+    health care
+  conditions:
+  - use or disclose protected health information
+  - to identify any person
+  - for any purpose described in paragraphs (a)(5)(iii)(A)(1) or (2) of this section
+  - subject to paragraphs (a)(5)(iii)(B) and (C) of this section
+  exceptions: []
+  requirements:
+  - provider and business associate must not use or disclose protected health information
+    to identify any person for any purpose described in paragraphs (a)(5)(iii)(A)(1)
+    or (2) of this section.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Prohibits providers/BAs from disclosing PHI to identify persons; detect
+      via inspecting model/app I/O or runtime logs for identifying PHI disclosures
+      and purpose.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0011-3a457aac
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0011
+  scope:
+    actor:
+    - business associate
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure related to reproductive health
+  conditions:
+  - request for protected health information in connection with any person seeking,
+    obtaining, providing, or facilitating reproductive health care
+  - 'one or more of the following exists: (1) the reproductive health care is lawful
+    under the law of the state in which such health care is provided under the circumstances
+    in which it is provided; (2) the reproductive health care is protected, required,
+    or authorized by Federal law under the circumstances in which it is provided;
+    (3) the presumption at paragraph (a)(5)(iii)(C) of this section applies'
+  exceptions: []
+  requirements:
+  - When a covered entity or business associate receives a request for protected health
+    information in connection with reproductive health care, the business associate
+    and provider shall reasonably determine that at least one of the listed conditions
+    (lawful under state law; protected/required/authorized by Federal law; presumption
+    at paragraph (a)(5)(iii)(C) applies) exists before treating the prohibition at
+    paragraph (a)(5)(iii)(A) as applicable.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: 'Verify via I/O tests: supply requests with known legal conditions, check
+      responses/refusals and recorded determinations.'
+    evidence_signals:
+    - io_check
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0012-5ee6386e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0012
+  scope:
+    actor:
+    - provider
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - reproductive health care provided by another person
+  - under paragraph (a)(5)(iii)(B)(1) or (2)
+  exceptions:
+  - actual knowledge that the reproductive health care was not lawful under the circumstances
+    in which it was provided
+  - factual information supplied by the person requesting the use or disclosure of
+    protected health information that demonstrates a substantial factual basis that
+    the reproductive health care was not lawful under the specific circumstances in
+    which it was provided
+  requirements:
+  - The provider or business associate must presume that reproductive health care
+    provided by another person is lawful under paragraph (a)(5)(iii)(B)(1) or (2)
+    unless they have actual knowledge or factual information demonstrating the reproductive
+    health care was not lawful under the specific circumstances in which it was provided.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires subjective legal judgment about 'actual knowledge' or 'substantial
+      factual basis'—no single objective artifact to definitively verify.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0013-6a47068e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0013
+  scope:
+    actor:
+    - entity
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: excessive PHI disclosure
+  conditions:
+  - when using or disclosing protected health information
+  exceptions: []
+  requirements:
+  - A covered entity or business associate must make reasonable efforts to limit protected
+    health information to the minimum necessary for the purpose when using or disclosing
+    it.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: '''Reasonable efforts'' and ''minimum necessary'' are subjective; no objective
+      pass/fail predicate provided for verification.'
+    evidence_signals:
+    - io_check
+    - log_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0014-f243d769
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0014
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - agreed to a restriction pursuant to § 164.522(a)(1)
+  exceptions:
+  - as otherwise provided in § 164.522(a)
+  requirements:
+  - Entity may not use or disclose the protected health information covered by the
+    restriction in violation of such restriction.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Prohibition on disclosing restricted PHI is verifiable via access logs,
+      PHI dataset tags, and restriction policy/config inspection.
+    evidence_signals:
+    - log_check
+    - data_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0017-379d2646
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0017
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - satisfactory assurances required by paragraph (e)(1) of this section
+  - subcontractor will create, receive, maintain, or transmit protected health information
+    on behalf of the business associate
+  exceptions: []
+  requirements:
+  - The business associate must document the satisfactory assurances required by paragraph
+    (e)(1) through a written contract or other written agreement or arrangement that
+    meets the applicable requirements of § 164.504(e).
+  evidence:
+  - written contract or other written agreement or arrangement
+  severity: high
+  is_testable: true
+  testability:
+    reason: Existence of a written contract/arrangement meeting §164.504(e) can be
+      verified by inspecting organizational contract records.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0018-4a858b7e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0018
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context:
+    - regulated
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - for a period of 50 years following the death of the individual
+  exceptions: []
+  requirements:
+  - The provider must comply with the requirements of this subpart with respect to
+    the protected health information of a deceased individual for a period of 50 years
+    following the individual's death.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires providers to protect deceased individuals' PHI for 50 years;
+      verifiable via retention metadata, access controls/config, or audit logs.
+    evidence_signals:
+    - data_check
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0018-3f95beb4
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0018
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context:
+    - regulated
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - as specified in this paragraph
+  exceptions:
+  - except as provided in paragraphs (g)(3) and (g)(5) of this section
+  requirements:
+  - The provider must treat a personal representative as the individual for purposes
+    of this subchapter.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to treat personal representatives as the individual; verifiable
+      via access-control/config mappings or logs/I/O showing identical disclosure
+      decisions.
+    evidence_signals:
+    - config_check
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0019-0817e761
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0019
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - under applicable law the person has authority to act on behalf of an individual
+    who is an adult or an emancipated minor in making decisions related to health
+    care
+  exceptions: []
+  requirements:
+  - The provider must treat a person who under applicable law has authority to act
+    on behalf of an adult or an emancipated minor in making health care decisions
+    as a personal representative under this subchapter with respect to protected health
+    information relevant to such personal representation.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Verifying a person “has authority under applicable law” requires external
+      legal proof not observable from system artifacts alone.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0019-ef82a103
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0019
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - under applicable law a parent, guardian, or other person acting in loco parentis
+    has authority to act on behalf of an unemancipated minor in making decisions related
+    to health care
+  exceptions: []
+  requirements:
+  - The provider must treat a parent, guardian, or other person acting in loco parentis
+    who has such authority as the personal representative of the unemancipated minor
+    with respect to protected health information relevant to such personal representation.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify via records and logs that a parent/guardian was documented as personal
+      representative and PHI disclosures occurred accordingly.
+    evidence_signals:
+    - io_check
+    - log_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0019-ba1d0af2
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0019
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - a parent, guardian, or person acting in loco parentis assents to an agreement
+    of confidentiality between the covered health care provider and the minor with
+    respect to the health care service
+  exceptions: []
+  requirements:
+  - The provider must not treat the parent, guardian, or person acting in loco parentis
+    as the personal representative of the unemancipated minor with respect to protected
+    health information pertaining to that health care service when such a confidentiality
+    agreement has been assented to.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: 'Verifyable by audit: check confidentiality-agreement records plus access-control
+      settings and disclosure/access logs for any PHI shared with parent/guardian.'
+    evidence_signals:
+    - data_check
+    - config_check
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0020-e75afc20
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - If, and to the extent, prohibited by an applicable provision of State or other
+    law, including applicable case law
+  exceptions: []
+  requirements:
+  - The entity must not disclose, or provide access in accordance with § 164.524 to,
+    protected health information about an unemancipated minor to a parent, guardian,
+    or other person acting in loco parentis.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Clear prohibition (no disclosure to parents/guardians of minor PHI) verifiable
+      by inspecting model I/O and access/runtime logs for such disclosures.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0020-b2d6b965
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: improper PHI access by non-authorized estate representatives
+  conditions:
+  - If under applicable law an executor, administrator, or other person has authority
+    to act on behalf of a deceased individual or of the individual's estate
+  exceptions: []
+  requirements:
+  - The entity must treat an executor, administrator, or other person who has authority
+    under applicable law to act on behalf of a deceased individual or the individual's
+    estate as a personal representative under this subchapter with respect to protected
+    health information relevant to such personal representation.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Cannot objectively verify "authority under applicable law" from system
+      artifacts; legal-authority proof is unspecified.
+    evidence_signals:
+    - log_check
+    - data_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0020-7c9069c4
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0020
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: improper PHI disclosure to parent/guardian
+  conditions:
+  - Where the parent, guardian, or other person acting in loco parentis is not the
+    personal representative under paragraphs (g)(3)(i)(A), (B), or (C) and where there
+    is no applicable access provision under State or other law, including case law
+  - provided that such action is consistent with State or other applicable law
+  exceptions: []
+  requirements:
+  - The entity must ensure that the decision to provide or deny access under § 164.524
+    to a parent, guardian, or other person acting in loco parentis is made by a licensed
+    health care professional exercising professional judgment.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Exercising professional judgment is subjective and lacks an objective
+      artifact to verify; decider's license is checkable, judgment is not.
+    evidence_signals:
+    - log_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0022-993cac9d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0022
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: action based on individual's reproductive health care
+  conditions:
+  - basis for belief is the provision or facilitation of reproductive health care
+    by such person for and at the request of the individual
+  exceptions: []
+  requirements:
+  - The entity must not determine a "reasonable belief" under paragraph (g)(5)(i)(A)
+    based solely on the provision or facilitation of reproductive health care by such
+    person for and at the request of the individual.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify by inspecting decision records or I/O to confirm whether the 'reasonable
+      belief' determination relied solely on reproductive‑health provision.
+    evidence_signals:
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0022-43818f5b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0022
+  scope:
+    actor:
+    - provider
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - when communicating protected health information
+  exceptions: []
+  requirements:
+  - A covered health care provider or health plan must comply with the applicable
+    requirements of § 164.522(b) when communicating protected health information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Mandates covered entities comply with §164.522(b) when communicating PHI;
+      compliance verifiable via I/O, logs, config, or patient restriction records.
+    evidence_signals:
+    - io_check
+    - log_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0022-83d53829
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0022
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: disclosure inconsistent with notice
+  conditions: []
+  exceptions: []
+  requirements:
+  - The entity must ensure that uses and disclosures of protected health information
+    are consistent with the notice.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Compare recorded PHI disclosures against the entity's published notice;
+      mismatches produce an objective fail.
+    evidence_signals:
+    - log_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0023-3dfd0f83
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-502-uses-and-disclosures-of-protected-health-information/sent_0023
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: missing required notice statement
+  conditions:
+  - entity is required by § 164.520(b)(1)(iii) to include a specific statement in
+    its notice
+  exceptions: []
+  requirements:
+  - Include the specific statement in the entity's notice as required by § 164.520(b)(1)(iii).
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify the entity's notice document contains the exact §164.520(b)(1)(iii)
+      required statement via static document inspection.
+    evidence_signals:
+    - config_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0002-d2b95962
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0002
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - workforce member is the victim of a criminal act
+  - disclosure to a law enforcement official
+  - PHI disclosed is about the suspected perpetrator
+  - PHI disclosed is limited to the information listed in § 164.512(f)(2)(i)
+  exceptions: []
+  requirements:
+  - org shall treat a disclosure of protected health information by a workforce member
+    who is the victim of a criminal act to a law enforcement official as not a violation
+    of this subpart when the disclosed PHI is about the suspected perpetrator and
+    is limited to the information listed in § 164.512(f)(2)(i).
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Clear obligation with specific actor/conditions; verifiable by inspecting
+      disclosures, org policy, or audit logs against allowed fields list.
+    evidence_signals:
+    - io_check
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0003-128df7d1
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0003
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: material breach or violation by business associate
+  conditions:
+  - knew of a pattern of activity or practice of the business associate that constituted
+    a material breach or violation
+  exceptions: []
+  requirements:
+  - The provider must take reasonable steps to cure the breach or end the violation
+    when the provider knows of a pattern of activity or practice of the business associate
+    that constitutes a material breach or violation.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague criteria ('reasonable' steps, 'knows' of a pattern) lacks objective
+      observable predicate; cannot determine pass/fail via logs/config/data.
+    evidence_signals: []
+- rule_id: spans-passthrough-candidates/sent_0003-7bc2aa20
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0003
+  scope:
+    actor:
+    - business associate
+    data_domain: []
+    context: []
+  hazard: material breach or violation by subcontractor
+  conditions:
+  - knew of a pattern of activity or practice of a subcontractor that constituted
+    a material breach or violation
+  exceptions: []
+  requirements:
+  - The business associate must take reasonable steps to cure the breach or end the
+    violation when the business associate knows of a pattern of activity or practice
+    of a subcontractor that constitutes a material breach or violation.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Uses vague terms like "reasonable steps" and "knows" without objective
+      criteria or observable pass/fail artifacts.
+    evidence_signals:
+    - log_check
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0003-dc22cc58
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0003
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: contract fails to meet required standards
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org must ensure the contract or other arrangement required by § 164.502(e)(2)
+    meets the requirements of paragraph (e)(2), (e)(3), or (e)(5) of this section,
+    as applicable.
+  evidence:
+  - contract or other arrangement
+  severity: high
+  is_testable: true
+  testability:
+    reason: Contract text can be inspected and checked against the specific paragraph
+      requirements of §164.502(e)(2)/(e)(3)/(e)(5).
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0004-e39fb2bd
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - Ensure the contract establishes the permitted and required uses and disclosures
+    of protected health information by the business associate.
+  evidence:
+  - contract
+  severity: high
+  is_testable: true
+  testability:
+    reason: Contract/document text can be inspected to verify clauses specifying permitted
+      and required PHI uses/disclosures by the business associate.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0004-dc7143ca
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - proper management and administration of the business associate (paragraph (e)(4))
+  - provision of data aggregation services relating to the health care operations
+    of the covered entity
+  exceptions:
+  - proper management and administration of the business associate (paragraph (e)(4))
+  - provision of data aggregation services relating to the health care operations
+    of the covered entity
+  requirements:
+  - Do not authorize the business associate to use or further disclose the protected
+    health information in a manner that would violate the requirements of this subpart
+    if done by the covered entity.
+  evidence:
+  - contract
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires legal interpretation of 'violate the subpart' and no machine-checkable
+      authorization predicate or artifact specified.
+    evidence_signals:
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0004-72bbe02c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - Use appropriate safeguards and, where applicable, comply with subpart C with respect
+    to electronic protected health information to prevent use or disclosure of the
+    information other than as provided for by the contract.
+  evidence:
+  - contract
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires compliance with HIPAA Subpart C; verifiable via policies/configs,
+      audit logs, and dataset handling evidence for ePHI safeguards.
+    evidence_signals:
+    - config_check
+    - log_check
+    - data_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0004-05e3740d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0004
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: failure to report unauthorized disclosures or breaches
+  conditions: []
+  exceptions: []
+  requirements:
+  - Report to the covered entity any use or disclosure of the protected health information
+    not provided for by the contract of which the business associate becomes aware,
+    including breaches of unsecured protected health information as required by §
+    164.410.
+  evidence:
+  - contract
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires business associate to report unauthorized PHI disclosures; verifiable
+      via incident/notification logs or outgoing communications.
+    evidence_signals:
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0005-4720fc14
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure via subcontractors
+  conditions:
+  - subcontractor creates, receives, maintains, or transmits PHI on behalf of the
+    business associate
+  exceptions: []
+  requirements:
+  - Ensure that any subcontractors that create, receive, maintain, or transmit protected
+    health information on behalf of the business associate agree to the same restrictions
+    and conditions that apply to the business associate with respect to such information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation that subcontractors agree to same PHI restrictions; verifiable
+      by inspecting subcontractor agreements/policies or stored contract files.
+    evidence_signals:
+    - config_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0005-71a074db
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: denial of individual access to PHI
+  conditions:
+  - in accordance with § 164.524
+  exceptions: []
+  requirements:
+  - Make available protected health information in accordance with § 164.524.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires business associates to provide PHI to individuals per §164.524;
+      verifiable by inspecting access request responses and access logs.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0005-6c0a6944
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: failure to process and incorporate PHI amendments
+  conditions:
+  - in accordance with § 164.526
+  exceptions: []
+  requirements:
+  - Make available protected health information for amendment and incorporate any
+    amendments to protected health information in accordance with § 164.526.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verifiable by inspecting records, logs, and I/O showing amendment requests
+      and applied changes.
+    evidence_signals:
+    - data_check
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0005-57b557f2
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: incomplete accounting of disclosures
+  conditions:
+  - in accordance with § 164.528
+  exceptions: []
+  requirements:
+  - Make available the information required to provide an accounting of disclosures
+    in accordance with § 164.528.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Presence of disclosure records/logs required by §164.528 can be inspected
+      to confirm availability.
+    evidence_signals:
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0005-dcb6324e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: obstruction of regulatory review of PHI handling
+  conditions: []
+  exceptions: []
+  requirements:
+  - Make its internal practices, books, and records relating to the use and disclosure
+    of protected health information received from, or created or received by the business
+    associate on behalf of, the covered entity available to the Secretary for purposes
+    of determining the covered entity's compliance with this subpart.
+  evidence:
+  - internal practices, books, and records
+  severity: high
+  is_testable: true
+  testability:
+    reason: Business associate must produce PHI-related records to the Secretary;
+      provision can be verified via access/transfer/audit logs.
+    evidence_signals:
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0005-a511248d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0005
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: improper retention or further use of PHI after contract termination
+  conditions:
+  - at termination of the contract
+  - if feasible
+  exceptions:
+  - if return or destruction is not feasible, extend the protections of the contract
+    to the information and limit further uses and disclosures to those purposes that
+    make the return or destruction of the information infeasible
+  requirements:
+  - At termination of the contract, if feasible, return or destroy all protected health
+    information received from, or created or received by the business associate on
+    behalf of, the covered entity that the business associate still maintains in any
+    form and retain no copies of such information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Business associate must delete/return PHI at termination — verifiable
+      by deletion logs, storage inventories, and retention/config settings.
+    evidence_signals:
+    - log_check
+    - data_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0007-14bcc706
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0007
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: business associate non-compliance with required assurances
+  conditions:
+  - as required by paragraph (e)(2) of this section and § 164.314(a)(1), if applicable
+  exceptions: []
+  requirements:
+  - The covered entity shall attempt in good faith to obtain satisfactory assurances
+    as required by paragraph (e)(2) of this section and § 164.314(a)(1), if applicable.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'good faith' and 'satisfactory assurances' are subjective; requires
+      documented contracts/assurances (repo_check or data_check) to verify.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0007-094ed590
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0007
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: business associate non-compliance with required assurances
+  conditions:
+  - if such attempt to obtain satisfactory assurances fails
+  exceptions: []
+  requirements:
+  - If the attempt to obtain satisfactory assurances fails, the covered entity shall
+    document the attempt and the reasons that such assurances cannot be obtained.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Mandates documenting failed assurance attempts and reasons; existence
+      of such records can be verified via logs.
+    evidence_signals:
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0008-13b75f32
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0008
+  scope:
+    actor:
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure to subcontractors
+  conditions:
+  - contract or other arrangement required by § 164.502(e)(1)(ii) between a business
+    associate and a business associate that is a subcontractor
+  exceptions: []
+  requirements:
+  - Include in any contract or other arrangement required by § 164.502(e)(1)(ii) between
+    a business associate and a business associate that is a subcontractor the requirements
+    of § 164.504(e)(2) through § 164.504(e)(4) in the same manner as they apply to
+    contracts or other arrangements between a covered entity and a business associate.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify contracts or contract-templates include §164.504(e)(2)–(e)(4) language
+      by inspecting stored agreement documents or templates.
+    evidence_signals:
+    - repo_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0010-9443443e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0010
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org must ensure that the plan documents restrict uses and disclosures of such
+    information by the plan sponsor consistent with the requirements of this subpart.
+  evidence:
+  - plan documents
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires legal judgment about consistency with the HIPAA subpart; no objective
+      pass/fail criterion is specified.
+    evidence_signals:
+    - repo_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0011-497dbe8d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: inconsistent PHI disclosures
+  conditions: []
+  exceptions: []
+  requirements:
+  - Amend the plan documents of the group health plan to incorporate provisions that
+    establish the permitted and required uses and disclosures of protected health
+    information by the plan sponsor, ensuring those uses and disclosures are not inconsistent
+    with this subpart.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires legal/semantic judgment of 'not inconsistent'; no objective pass/fail
+      predicate for artifact inspection.
+    evidence_signals:
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0011-19feece6
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - unless receipt of a certification by the plan sponsor that the plan documents
+    have been amended to incorporate the required provisions and that the plan sponsor
+    agrees to provisions (A) through (H)
+  exceptions: []
+  requirements:
+  - Do not disclose protected health information to the plan sponsor unless the group
+    health plan has received a certification by the plan sponsor that the plan documents
+    have been amended and the plan sponsor agrees to the specified provisions (A)
+    through (H).
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires checking for certification and amended plan documents; their
+      presence and contents are objectively verifiable in stored records.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0011-0648b136
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - with respect to protected health information received from the group health plan
+  exceptions: []
+  requirements:
+  - Not use or further disclose the protected health information other than as permitted
+    or required by the plan documents or as required by law.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: PHI disclosures can be detected in logs/dataset tags and compared against
+      plan documents/authorization records.
+    evidence_signals:
+    - log_check
+    - config_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0011-699a6bd5
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure by agents
+  conditions:
+  - when providing protected health information received from the group health plan
+    to agents
+  exceptions: []
+  requirements:
+  - Ensure that any agents to whom the plan sponsor provides protected health information
+    agree to the same restrictions and conditions that apply to the plan sponsor with
+    respect to such information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Check for agreements/records listing agents and verify PHI transfer logs
+      show recipients are only agents with those agreements.
+    evidence_signals:
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0011-dcb327ac
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: undetected improper PHI disclosures
+  conditions:
+  - if the plan sponsor becomes aware of a use or disclosure of protected health information
+    that is inconsistent with the permitted uses or disclosures provided for
+  exceptions: []
+  requirements:
+  - Report to the group health plan any use or disclosure of the protected health
+    information that is inconsistent with the uses or disclosures provided for of
+    which the plan sponsor becomes aware.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to report inconsistent PHI disclosures can be verified by checking
+      audit logs or outgoing report messages.
+    evidence_signals:
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0011-7e85d9d9
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0011
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: undetected noncompliant PHI uses or disclosures
+  conditions:
+  - for purposes of determining compliance by the group health plan with 45 CFR Part
+    164 Subpart E
+  exceptions: []
+  requirements:
+  - Make internal practices, books, and records relating to the use and disclosure
+    of protected health information received from the group health plan available
+    to the Secretary for purposes of determining compliance by the group health plan
+    with 45 CFR Part 164 Subpart E.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Clause lacks a specified observable artifact or verification mechanism
+      (no logs, delivery receipts, or record identifiers to check).
+    evidence_signals:
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0012-e1e5f35b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - when no longer needed for the purpose for which disclosure was made
+  - if feasible
+  exceptions: []
+  requirements:
+  - The organization must return or destroy all protected health information received
+    from the group health plan that it still maintains in any form and retain no copies
+    of such information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can verify by checking data inventories/metadata and deletion/return logs
+      to confirm no PHI copies remain.
+    evidence_signals:
+    - data_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0012-21ca403e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - when no longer needed for the purpose for which disclosure was made
+  - if return or destruction is not feasible
+  exceptions: []
+  requirements:
+  - If return or destruction of the protected health information is not feasible,
+    the organization must limit further uses and disclosures to those purposes that
+    make the return or destruction infeasible.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective rule to identify which 'purposes' make return/destruction
+      infeasible; requires subjective judgment or defined purpose codes.
+    evidence_signals:
+    - io_check
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0012-c20ebcee
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - The organization must ensure that the plan documents describe those employees,
+    classes of employees, or other persons under the control of the plan sponsor who
+    are to be given access to the protected health information to be disclosed.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires plan documents to list employees/classes with PHI access — verifiable
+      by inspecting the plan documents or policy files.
+    evidence_signals:
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0012-6aa17526
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - for employees described in paragraph (f)(2)(iii)(A)
+  exceptions: []
+  requirements:
+  - The organization must restrict the access to and use by the employees and other
+    persons described in paragraph (f)(2)(iii)(A) to the plan administration functions
+    that the plan sponsor performs for the group health plan.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Access can be verified via access-control configs and audit logs ensuring
+      specified personnel access only plan-administration functions.
+    evidence_signals:
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0012-6e995a61
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0012
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - for persons described in paragraph (f)(2)(iii)(A)
+  exceptions: []
+  requirements:
+  - The organization must provide an effective mechanism for resolving any issues
+    of noncompliance by persons described in paragraph (f)(2)(iii)(A) with the plan
+    document provisions required by this paragraph.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires a subjective standard ('effective mechanism') and lacks objective
+      success criteria or required artifacts to allow automated pass/fail.
+    evidence_signals:
+    - repo_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0013-1765dfef
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure to plan sponsor
+  conditions:
+  - statement required by § 164.520(b)(1)(iii)(C) included in the appropriate notice
+  exceptions: []
+  requirements:
+  - The org must not permit a health insurance issuer or HMO to disclose protected
+    health information to a plan sponsor as otherwise permitted by this paragraph.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: References exceptions ('as otherwise permitted by this paragraph'), so
+      compliance needs the referenced rule or disclosure logs to decide.
+    evidence_signals:
+    - config_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0013-aa3e4c0c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-504-uses-and-disclosures-organizational-requirements/sent_0013
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure to plan sponsor
+  conditions:
+  - for the purpose of employment-related actions or decisions or in connection with
+    any other benefit or employee benefit plan of the plan sponsor
+  exceptions: []
+  requirements:
+  - The org must not disclose protected health information to the plan sponsor for
+    the purpose of employment-related actions or decisions or in connection with any
+    other benefit or employee benefit plan of the plan sponsor.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can be checked by inspecting outputs or disclosure logs for PHI sent to
+      a plan sponsor for employment-purpose.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0002-2d2fa3bd
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0002
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - when an authorization under § 164.508 is required
+  - when another condition must be met for such use or disclosure to be permissible
+    under this subpart
+  exceptions: []
+  requirements:
+  - entity must not treat consent under paragraph (b) as effective to permit a use
+    or disclosure of protected health information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Prohibits relying on paragraph (b) consent; verifiable by inspecting disclosures
+      and logs for uses/disclosures based on that consent.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0004-3e7070da
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0004
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - without an authorization that is valid under this section
+  exceptions:
+  - Except as otherwise permitted or required by this subchapter
+  requirements:
+  - provider must not use or disclose protected health information without an authorization
+    that is valid under this section.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Requires legal judgment of whether an authorization is 'valid' and 'use'
+      is ambiguous; no single objective oracle to decide pass/fail.
+    evidence_signals:
+    - io_check
+    - data_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0005-88236085
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0005
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of psychotherapy notes
+  conditions: []
+  exceptions:
+  - Use by the originator of the psychotherapy notes for treatment
+  - Use or disclosure by the covered entity for its own training programs in which
+    students, trainees, or practitioners in mental health learn under supervision
+    to practice or improve their skills in group, joint, family, or individual counseling
+  - Use or disclosure by the covered entity to defend itself in a legal action or
+    other proceeding brought by the individual
+  - A use or disclosure that is required by § 164.502(a)(2)(ii) or permitted by §
+    164.512(a); § 164.512(d) with respect to the oversight of the originator of the
+    psychotherapy notes; § 164.512(g)(1); or § 164.512(j)(1)(i)
+  requirements:
+  - The covered entity must obtain an authorization for any use or disclosure of psychotherapy
+    notes.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires authorization for any psychotherapy-note disclosure; existence
+      of authorizations and disclosure events can be checked in logs or data records.
+    evidence_signals:
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0005-d5edc9c7
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0005
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of PHI for marketing
+  conditions: []
+  exceptions:
+  - Face-to-face communication made by a covered entity to an individual
+  - A promotional gift of nominal value provided by the covered entity
+  requirements:
+  - The covered entity must obtain an authorization for any use or disclosure of protected
+    health information for marketing.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Authorization for marketing disclosures can be verified by inspecting
+      disclosure logs and consent/authorization records tied to PHI marketing events.
+    evidence_signals:
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0006-a868254a
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0006
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: undisclosed remuneration for PHI disclosure
+  conditions:
+  - marketing involves financial remuneration to the covered entity from a third party
+  exceptions: []
+  requirements:
+  - Entity must include in the authorization a statement that such remuneration is
+    involved when the marketing involves financial remuneration to the covered entity
+    from a third party.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can inspect the authorization text to verify inclusion of a remuneration
+      statement when third‑party marketing payment occurs.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0006-c739744b
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0006
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: sale of PHI without authorization
+  conditions:
+  - disclosure is a sale of protected health information as defined in § 164.501
+  exceptions: []
+  requirements:
+  - Entity must obtain an authorization for any disclosure of protected health information
+    which is a sale of protected health information.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to obtain authorization for any PHI sale can be verified by
+      correlating disclosure events with authorization records in logs/metadata.
+    evidence_signals:
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0006-ef02a1db
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0006
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: undisclosed remuneration for PHI disclosure
+  conditions:
+  - disclosure is a sale of protected health information as defined in § 164.501
+  exceptions: []
+  requirements:
+  - Entity must include in the authorization a statement that the disclosure will
+    result in remuneration to the covered entity.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can verify presence of the required statement by inspecting the authorization
+      document text.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0007-296a4710
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0007
+  scope:
+    actor:
+    - org
+    data_domain: []
+    context: []
+  hazard: disclosure based on invalid authorization
+  conditions: []
+  exceptions: []
+  requirements:
+  - Ensure that any authorization document meets the requirements in paragraphs (a)(3)(ii),
+    (a)(4)(ii), (c)(1), and (c)(2) of this section, as applicable.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Authorization documents can be inspected to verify inclusion of elements
+      required by the cited regulatory paragraphs.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0008-ed847b83
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0008
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context:
+    - regulated
+  hazard: reliance on invalid authorization
+  conditions:
+  - submitted document contains any of 45 CFR Part 164 Subpart E (45 CFR 164.508(a)(2))
+  - 45 CFR Part 164 Subpart E reference as of 9/29/2025
+  exceptions: []
+  requirements:
+  - The org must treat an authorization as invalid when the submitted document contains
+    any of 45 CFR Part 164 Subpart E (45 CFR 164.508(a)(2)).
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Check input documents for the cited regulatory text and verify the system
+      response or logs mark the authorization invalid.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0009-35d0e2f6
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - expiration date has passed or the expiration event is known by the covered entity
+    to have occurred
+  exceptions: []
+  requirements:
+  - provider must not use or disclose protected health information based on an authorization
+    when the expiration date has passed or the expiration event is known to have occurred.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can verify objectively via audit logs, authorization metadata, or enforcement
+      config showing no disclosures after expiration.
+    evidence_signals:
+    - log_check
+    - data_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0009-f1967db9
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - the authorization has not been filled out completely with respect to an element
+    described by paragraph (c) of this section, if applicable
+  exceptions: []
+  requirements:
+  - provider must not use or disclose protected health information based on an authorization
+    that has not been filled out completely with respect to an element described by
+    paragraph (c) of this section.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can verify authorization completeness and whether PHI was disclosed by
+      inspecting auth records and runtime I/O/logs.
+    evidence_signals:
+    - data_check
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0009-0d5c6cdd
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - the authorization is known by the covered entity to have been revoked
+  exceptions: []
+  requirements:
+  - provider must not use or disclose protected health information based on an authorization
+    that the provider knows has been revoked.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can be verified by checking logs/IO for a revocation event the provider
+      recorded and any subsequent PHI uses/disclosures tied to that event.
+    evidence_signals:
+    - log_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0009-e43ebd84
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - any material information in the authorization is known by the covered entity to
+    be false
+  exceptions: []
+  requirements:
+  - provider must not use or disclose protected health information based on an authorization
+    when any material information in the authorization is known to be false.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: No objective artifact specified to determine when an authorization is
+      'known to be false', so pass/fail cannot be verified.
+    evidence_signals:
+    - log_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0009-9b92aecd
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0009
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - attempt to combine an authorization for use or disclosure of protected health
+    information with any other document to create a compound authorization
+  exceptions:
+  - authorization for the use or disclosure of protected health information for a
+    research study combined with any other type of written permission for the same
+    or another research study (including combining with another authorization for
+    the same research study; with an authorization for the creation or maintenance
+    of a research database or repository; or with a consent to participate in research)
+  requirements:
+  - provider must not combine an authorization for the use or disclosure of protected
+    health information with any other document to create a compound authorization,
+    except as stated in the listed research-related exception.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Clear prohibition on providers combining PHI authorizations; verifiable
+      by inspecting stored authorization documents for compound content.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0010-ca66528e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: coerced research participation
+  conditions:
+  - where the provider has conditioned the provision of research-related treatment
+    on the provision of one of the authorizations
+  exceptions: []
+  requirements:
+  - provider must create any compound authorization that clearly differentiates between
+    the conditioned and unconditioned components.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: Vague 'clearly differentiates' lacks objective criteria; cannot be verified
+      by inspection alone without explicit differentiation rules.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0010-308f8a51
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: involuntary inclusion in research activities
+  conditions:
+  - where the provider has conditioned the provision of research-related treatment
+    on the provision of one of the authorizations
+  exceptions: []
+  requirements:
+  - provider must provide the individual with an opportunity to opt in to the research
+    activities described in the unconditioned authorization.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Must present an opt-in opportunity to the individual; verifiable by inspecting
+      app outputs or consent logs.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0010-c8b9c2e4
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized disclosure of psychotherapy notes
+  conditions:
+  - authorization is for a use or disclosure of psychotherapy notes
+  exceptions: []
+  requirements:
+  - entity must not combine an authorization for a use or disclosure of psychotherapy
+    notes with an authorization that is not for a use or disclosure of psychotherapy
+    notes.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Check authorization records/forms to ensure no single authorization contains
+      psychotherapy-notes plus other-use authorization.
+    evidence_signals:
+    - data_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0010-ea00c5c0
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0010
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: coerced authorization leading to conditioned benefits
+  conditions:
+  - when one authorization conditions the provision of treatment, payment, enrollment
+    in a health plan, or eligibility for benefits under paragraph (b)(4) of this section
+  exceptions:
+  - compound authorization created in accordance with paragraph (b)(3)(i) of this
+    section
+  requirements:
+  - entity must not combine authorizations (other than authorizations for psychotherapy
+    notes) when one authorization conditions the provision of treatment, payment,
+    enrollment in a health plan, or eligibility for benefits.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can inspect stored authorization records/forms to detect combined authorizations
+      that condition treatment/payment/enrollment.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0011-76c50c58
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0011
+  scope:
+    actor:
+    - entity
+    data_domain:
+    - PHI
+    context: []
+  hazard: denial of treatment based on refusal to authorize use or disclosure of PHI
+  conditions:
+  - conditioning provision of treatment to an individual on the provision of an authorization
+  exceptions:
+  - covered health care provider may condition research-related treatment on authorization
+    for use/disclosure of protected health information for such research under this
+    section
+  - health plan may condition enrollment or eligibility for benefits on provision
+    of an authorization requested prior to an individual's enrollment in the health
+    plan
+  requirements:
+  - entity must not condition the provision of treatment to an individual on the individual's
+    provision of an authorization.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Behavioral prohibition ('must not condition treatment on authorization')
+      can be verified by probing system I/O or logs for treatment refusals tied to
+      authorization.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0013-a1d9f318
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0013
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: unauthorized use or disclosure
+  conditions:
+  - under this section
+  - as required by § 164.530(j)
+  exceptions: []
+  requirements:
+  - The provider must document and retain any signed authorization under this section.
+  evidence:
+  - signed authorization
+  severity: high
+  is_testable: true
+  testability:
+    reason: Presence of signed authorization records can be verified in provider records/storage.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0013-0f7d1705
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0013
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: unauthorized use or disclosure
+  conditions:
+  - valid authorization under this section
+  exceptions: []
+  requirements:
+  - The provider must ensure each valid authorization contains a description of the
+    information to be used or disclosed that identifies the information in a specific
+    and meaningful fashion.
+  evidence:
+  - authorization
+  severity: high
+  is_testable: false
+  testability:
+    reason: Term 'specific and meaningful' is subjective—no objective pass/fail predicate
+      to verify authorization content.
+    evidence_signals:
+    - io_check
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0013-7f3b3764
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0013
+  scope:
+    actor:
+    - provider
+    data_domain: []
+    context: []
+  hazard: unauthorized use or disclosure
+  conditions:
+  - valid authorization under this section
+  exceptions: []
+  requirements:
+  - The provider must ensure each valid authorization contains the name or other specific
+    identification of the person(s), or class of persons, authorized to make the requested
+    use or disclosure.
+  evidence:
+  - authorization
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify authorization documents/templates include name or class of persons;
+      presence is objectively checkable in stored records or templates.
+    evidence_signals:
+    - data_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0014-0148d60c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0014
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - The provider must include the name or other specific identification of the person(s),
+    or class of persons, to whom the provider may make the requested use or disclosure
+    in the authorization.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Obligation to include recipient name/class in an authorization; verifiable
+      by inspecting authorization documents for that field.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0014-dabd97b9
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0014
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions: []
+  exceptions:
+  - The statement "at the request of the individual" is a sufficient description of
+    the purpose when an individual initiates the authorization and does not, or elects
+    not to, provide a statement of the purpose.
+  requirements:
+  - The provider must include a description of each purpose of the requested use or
+    disclosure in the authorization.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can check authorization documents/templates for purpose descriptions or
+      the 'at the request of the individual' phrase; logs can confirm who initiated.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0015-ce95f1ad
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0015
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure due to missing signature/date
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org must include the individual's signature on the authorization.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify by inspecting authorization records/documents for the individual's
+      signature field/presence.
+    evidence_signals:
+    - data_check
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0015-8677c624
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0015
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: action based on unverified representative authority
+  conditions:
+  - signed by a personal representative of the individual
+  exceptions: []
+  requirements:
+  - When an authorization is signed by a personal representative, the org must provide
+    a description of the representative's authority to act for the individual.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires org to present representative authority; verifiable by inspecting
+      system I/O or runtime logs when a representative-signed authorization is processed.
+    evidence_signals:
+    - io_check
+    - log_check
+- rule_id: spans-passthrough-candidates/sent_0016-5b7c0df1
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-508-uses-and-disclosures-for-which-an-authorization-is-r/sent_0016
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - in the authorization
+  - statements adequate to place the individual on notice
+  exceptions: []
+  requirements:
+  - The org must include in the authorization a statement notifying the individual
+    of their right to revoke the authorization in writing.
+  evidence:
+  - authorization
+  severity: high
+  is_testable: true
+  testability:
+    reason: Can be verified by inspecting authorization documents/templates for the
+      required revocation-in-writing statement.
+    evidence_signals:
+    - io_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-c3b07e52
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: lack of notice of conditioning policy
+  conditions:
+  - the information in paragraph (c)(2)(i)(A) of this section is included in the notice
+    required by §164.520
+  - the prohibition on conditioning of authorizations in paragraph (b)(4) of this
+    section applies
+  exceptions: []
+  requirements:
+  - Include the statement "The covered entity may not condition treatment, payment,
+    enrollment or eligibility for benefits on whether the individual signs the authorization"
+    in the notice required by §164.520.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify the notice text contains the exact required sentence by inspecting
+      the notice document or the service output.
+    evidence_signals:
+    - repo_check
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0001-f2350198
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: individuals uninformed of consequences for refusing authorization
+  conditions:
+  - the information in paragraph (c)(2)(i)(A) of this section is included in the notice
+    required by §164.520
+  - in accordance with paragraph (b)(4) of this section the covered entity can condition
+    treatment, enrollment in the health plan, or eligibility for benefits on failure
+    to obtain such authorization
+  exceptions: []
+  requirements:
+  - Include in the notice the consequences to the individual of a refusal to sign
+    the authorization.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires notices to state consequences of refusing authorization; verifiable
+      by inspecting notices/outputs for those statements.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0001-ca49b27e
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: unauthorized PHI redisclosure
+  conditions:
+  - the information in paragraph (c)(2)(i)(A) of this section is included in the notice
+    required by §164.520
+  exceptions: []
+  requirements:
+  - State that information disclosed pursuant to the authorization may be subject
+    to redisclosure by the recipient and may no longer be protected by this subpart.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Verify required redisclosure sentence appears in authorization documents
+      or templates via I/O or repo inspection.
+    evidence_signals:
+    - io_check
+    - repo_check
+- rule_id: spans-passthrough-candidates/sent_0001-4be66fe6
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0001
+  scope:
+    actor:
+    - entity
+    data_domain: []
+    context: []
+  hazard: missing reference to covered entity notice
+  conditions:
+  - the information in paragraph (c)(2)(i)(A) of this section is included in the notice
+    required by §164.520
+  exceptions: []
+  requirements:
+  - Include a reference to the covered entity's notice in the notice required by §164.520.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: You can inspect the notice text to verify it contains a reference to the
+      covered entity's §164.520 notice.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0002-621c4c9c
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: uninformed PHI disclosure
+  conditions: []
+  exceptions: []
+  requirements:
+  - The provider must ensure that the authorization is written in plain language.
+  evidence: []
+  severity: high
+  is_testable: false
+  testability:
+    reason: “Plain language” is undefined/subjective, so no objective pass/fail criterion
+      is available.
+    evidence_signals:
+    - io_check
+- rule_id: spans-passthrough-candidates/sent_0002-53fac31f
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0002
+  scope:
+    actor:
+    - provider
+    data_domain:
+    - PHI
+    context: []
+  hazard: individual unable to verify authorization
+  conditions:
+  - when the provider seeks an authorization from an individual for a use or disclosure
+    of protected health information
+  exceptions: []
+  requirements:
+  - The provider must provide the individual with a copy of the signed authorization.
+  evidence: []
+  severity: high
+  is_testable: true
+  testability:
+    reason: Explicit obligation; presence of the signed authorization copy can be
+      verified in records/metadata.
+    evidence_signals:
+    - data_check
+- rule_id: spans-passthrough-candidates/sent_0003-be15789d
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0003
+  scope:
+    actor:
+    - entity
+    - business associate
+    data_domain:
+    - PHI
+    context: []
+  hazard: unauthorized PHI disclosure
+  conditions:
+  - for purposes specified in § 164.512(d), (e), (f), or (g)(1)
+  - without obtaining an attestation that is valid under paragraph (b)(1) from the
+    person requesting the use or disclosure
+  - not complying with all applicable conditions of this part
+  exceptions: []
+  requirements:
+  - entity and business associate must not use or disclose protected health information
+    potentially related to reproductive health care for purposes specified in § 164.512(d),
+    (e), (f), or (g)(1) without obtaining an attestation that is valid under paragraph
+    (b)(1) from the person requesting the use or disclosure and without complying
+    with all applicable conditions of this part.
+  evidence:
+  - attestation
+  severity: high
+  is_testable: true
+  testability:
+    reason: Check disclosure events, verify existence/validity of requester attestation,
+      and confirm applicable-condition compliance via logs, attestation records, and
+      configs.
+    evidence_signals:
+    - log_check
+    - data_check
+    - config_check
+- rule_id: spans-passthrough-candidates/sent_0004-9aef8629
+  source:
+    doc: spans_passthrough_candidates
+    citation: subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req
+    span_id: HIPAA_removed/subpart-e-privacy-of-individually-identifiable-health-inform/164-509-uses-and-disclosures-for-which-an-attestation-is-req/sent_0004
+  scope:
+    actor:
+    - org
+    data_domain:
+    - PHI
+    context: []
+  hazard: prohibited disclosure of PHI
+  conditions: []
+  exceptions: []
+  requirements:
+  - The org shall ensure that any attestation document meets the requirements of paragraph
+    (c)(1) of this section.
+  evidence:
+  - attestation document
+  severity: high
+  is_testable: true
+  testability:
+    reason: Requires attestation documents to meet paragraph (c)(1); verifiable by
+      inspecting attestation documents against those requirements.
+    evidence_signals:
+    - io_check
