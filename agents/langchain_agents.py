@@ -924,3 +924,83 @@ Return EXACTLY this JSON (no markdown):
 """
 
 
+class SchemaRepairAgent:
+    """
+    Targeted JSON schema repair agent.
+
+    INTEGRATION POINT — step3_llm_generation_few_shot.py
+    ──────────────────────────────────────────────────────
+    Currently Step 3 validates rules with RULES_VALIDATOR.iter_errors() and
+    then does ad-hoc string repairs. Replace that block with this agent.
+
+    Example integration::
+
+        from agents.langchain_agents import SchemaRepairAgent
+        _repair_agent = SchemaRepairAgent()   # instantiate once
+
+        # Inside run_hardened(), after the LLM generates rules:
+        for rule in raw_rules:
+            errors = list(RULES_VALIDATOR.iter_errors(rule))
+            if errors:
+                result = _repair_agent.run(broken_rule=rule)
+                if result["valid"]:
+                    rule = result["repaired_rule"]
+                # log result["changes"] for audit trail
+            validated_rules.append(rule)
+    """
+
+    def __init__(self, model: str = "gpt-4o-mini"):
+        self._executor = _make_executor(
+            _get_llm(model),
+            _REPAIR_TOOLS,
+            _REPAIR_SYSTEM,
+        )
+
+    def run(self, broken_rule: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Repair a rule that failed schema validation.
+
+        Parameters
+        ----------
+        broken_rule : The raw rule dict (may have type errors, missing fields,
+                      wrong enums, etc.).
+
+        Returns
+        -------
+        dict with keys:
+          repaired_rule : The fixed rule dict.
+          changes       : List of strings describing each fix applied.
+          valid         : Whether the repaired rule now passes RULE_SCHEMA.
+        """
+        user_input = json.dumps({
+            "broken_rule": broken_rule,
+            "instruction": (
+                "Validate and repair this rule so it conforms to the pipeline schema. "
+                "Use the tools in sequence: validate first, then fix each error, "
+                "then validate again."
+            ),
+        }, ensure_ascii=False)
+
+        raw = self._executor.invoke({"input": user_input})
+        output = raw.get("output", "{}")
+
+        try:
+            json_match = re.search(r"\{.*\}", output, re.DOTALL)
+            result = json.loads(json_match.group(0)) if json_match else {}
+        except Exception:
+            result = {}
+
+        repaired = result.get("repaired_rule") or broken_rule
+        changes  = result.get("changes") or []
+        valid    = bool(result.get("valid", False))
+
+        # Final server-side validation as a safety net
+        if _SCHEMA_AVAILABLE and _RULE_VALIDATOR is not None:
+            errors = list(_RULE_VALIDATOR.iter_errors(repaired))
+            valid = not errors
+
+        return {
+            "repaired_rule": repaired,
+            "changes":       changes,
+            "valid":         valid,
+        }
