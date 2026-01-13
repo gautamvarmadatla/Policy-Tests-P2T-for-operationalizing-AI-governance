@@ -116,7 +116,38 @@ def default_out_path(inp_jsonl: str, suffix: str = "_candidates_filtered.jsonl")
 
 # -------- Main mining function (now returns saved path) --------
 def mine(inp_jsonl: str, out_jsonl: str, *, keep_informative: bool=False,
-         include_tables: bool=False, ctx_window: int=2) -> str:
+         include_tables: bool=False, ctx_window: int=2,
+         use_agent_mining: bool=False, agent_confidence_threshold: float=0.6) -> str:
+    """
+    Mine policy clause candidates from a spans JSONL file.
+
+    Parameters
+    ----------
+    use_agent_mining : bool
+        When True, spans that the regex heuristic classifies as "other"
+        (would normally be dropped) but that still contain a deontic keyword
+        are passed to PolicyMiningAgent for a second opinion.  This recovers
+        implicit or paraphrased obligations that the regex misses.
+        Requires OPENAI_API_KEY.  Default: False (zero API calls, original behaviour).
+    agent_confidence_threshold : float
+        Only consult the agent for spans whose heuristic confidence score is
+        below this value.  Default 0.6 — the grey zone between a clear reject
+        and a clear accept.
+    """
+    # Lazy-init the agent once per mine() call (avoids per-span overhead)
+    _mining_agent = None
+    if use_agent_mining:
+        try:
+            from agents.langchain_agents import PolicyMiningAgent
+            _mining_agent = PolicyMiningAgent()
+        except Exception as _e:
+            import warnings
+            warnings.warn(
+                f"[step2] PolicyMiningAgent unavailable ({_e}); "
+                "falling back to regex-only mining.",
+                stacklevel=2,
+            )
+
     buckets = defaultdict(list)
     with open(inp_jsonl, "r", encoding="utf-8") as f:
         for line in f:
@@ -176,6 +207,32 @@ def mine(inp_jsonl: str, out_jsonl: str, *, keep_informative: bool=False,
                 last_deontic_type = ttype
 
             keep = ttype in ("obligation","prohibition","exception","exemption") or (ttype=="definition" and local_norm)
+
+            # ── PolicyMiningAgent: second-opinion for borderline spans ──────────
+            # A span lands here as "other" when regex found deontic keywords but
+            # _classify_type() couldn't commit to a canonical type.  The agent
+            # deliberates with four tools (deontic check → section normative check
+            # → clause type → actor presence) and may promote the span.
+            if not keep and _mining_agent is not None and DEONTIC_RE.search(text):
+                conf_score = _conf(text, ttype, cues, local_norm)
+                if conf_score < agent_confidence_threshold:
+                    prevs_tmp, nexts_tmp = _ctx(rows, i, window=ctx_window)
+                    try:
+                        decision = _mining_agent.run(
+                            text=text,
+                            section_path=list(sec_path),
+                            span_id=r.get("span_id", ""),
+                            context_prev=" ".join(prevs_tmp),
+                            context_next=" ".join(nexts_tmp),
+                        )
+                        if decision.get("is_candidate"):
+                            keep = True
+                            ttype    = decision.get("clause_type", ttype)
+                            severity = decision.get("severity",    severity)
+                    except Exception as _agent_err:
+                        pass  # agent failure is non-fatal; keep original decision
+            # ──────────────────────────────────────────────────────────────────
+
             if not keep:
                 continue
 
@@ -226,11 +283,17 @@ def run_clause_miner(inp_jsonl: str, *,
                      keep_informative: bool=False,
                      include_tables: bool=False,
                      ctx_window: int=2,
-                     suffix: str="_candidates_filtered.jsonl") -> str:
+                     suffix: str="_candidates_filtered.jsonl",
+                     use_agent_mining: bool=False,
+                     agent_confidence_threshold: float=0.6) -> str:
     """
     Derives the output path next to `inp_jsonl` with the given suffix,
     runs mining, and returns the saved output path.
+
+    Pass use_agent_mining=True to enable PolicyMiningAgent for borderline spans.
     """
     outp = default_out_path(inp_jsonl, suffix=suffix)
     return mine(inp_jsonl, outp, keep_informative=keep_informative,
-                include_tables=include_tables, ctx_window=ctx_window)
+                include_tables=include_tables, ctx_window=ctx_window,
+                use_agent_mining=use_agent_mining,
+                agent_confidence_threshold=agent_confidence_threshold)
