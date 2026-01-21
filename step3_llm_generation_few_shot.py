@@ -1755,16 +1755,44 @@ def run_hardened(candidates_jsonl: str,
                  counterfactuals: int = 0,
                  llm_judge: bool=False,
                  llm_judge_model: Optional[str]=None,
-                 decode_retries: int = 3) -> None:
+                 decode_retries: int = 3,
+                 agent_repair: bool = False) -> None:
+    """
+    agent_repair : bool
+        When True, the SchemaRepairAgent replaces repair_rule_llm() in the
+        judge/repair loop.  The agent first calls validate_rule to get the
+        exact jsonschema error path, then calls only the targeted fix tool
+        (fix_severity, coerce_to_array, canonicalize_scope_fields, or
+        fill_missing_required_fields), then re-validates — eliminating blind
+        repair attempts and leaving a structured audit trail of changes.
+        Requires: pip install langchain langchain-openai.
+        Default: False (original repair_rule_llm behaviour).
+    """
 
     t_run0 = time.perf_counter()
-    logger.info("[Step3] init | provider=%s model=%s decoder=%s evidence_gate=%s allow_domains=%s smt=%s repair_passes=%d counterfactuals=%d llm_judge=%s decode_retries=%d",
-                provider, model or "(auto)", decoder, evidence_gate, allow_domains, smt, repair_passes, counterfactuals, llm_judge, decode_retries)
+    logger.info("[Step3] init | provider=%s model=%s decoder=%s evidence_gate=%s allow_domains=%s smt=%s repair_passes=%d counterfactuals=%d llm_judge=%s decode_retries=%d agent_repair=%s",
+                provider, model or "(auto)", decoder, evidence_gate, allow_domains, smt, repair_passes, counterfactuals, llm_judge, decode_retries, agent_repair)
 
     # Client + model
     client = _get_client_for_provider(provider)
     model_to_use = select_working_model(client, provider, user_model=model)
     logger.info("[Step3] using provider=%s model=%s", provider, model_to_use)
+
+    # ── SchemaRepairAgent: init once, reused across all spans ────────────────
+    # The agent replaces repair_rule_llm() when agent_repair=True.  It calls
+    # validate_rule first to know exactly which field is broken, then applies
+    # only the matching fix tool, then re-validates — giving a targeted repair
+    # with a structured changes[] audit trail instead of blind string mutations.
+    _repair_agent = None
+    if agent_repair:
+        try:
+            from agents.langchain_agents import SchemaRepairAgent
+            _repair_agent = SchemaRepairAgent(model=model_to_use)
+            logger.info("[Step3] SchemaRepairAgent enabled (model=%s)", model_to_use)
+        except Exception as _e:
+            logger.warning("[Step3] SchemaRepairAgent unavailable (%s); "
+                           "falling back to repair_rule_llm().", _e)
+    # ─────────────────────────────────────────────────────────────────────────
 
     out_rules_path = pathlib.Path(out_rules_jsonl or (pathlib.Path(out_schema_path).with_suffix(".jsonl")))
     out_rules_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1876,7 +1904,24 @@ def run_hardened(candidates_jsonl: str,
                         logger.info("[Step3][%s][r#%d] repair pass %d/%d | issues_before=%s",
                                     span_id, rule_idx, passes+1, repair_passes, issues)
                         t_rep0 = time.perf_counter()
-                        r = repair_rule_llm(client, model_to_use, r, issues, text)
+
+                        if _repair_agent is not None:
+                            # ── Agent repair path ─────────────────────────────
+                            # SchemaRepairAgent calls validate_rule to pinpoint
+                            # the exact broken field, applies the matching fix
+                            # tool, and re-validates — targeting only what's wrong
+                            # instead of regenerating the whole rule.
+                            agent_result = _repair_agent.run(broken_rule=r)
+                            r = agent_result["repaired_rule"]
+                            if agent_result.get("changes"):
+                                logger.info("[Step3][%s][r#%d] agent_repair changes: %s",
+                                            span_id, rule_idx, agent_result["changes"])
+                            # ─────────────────────────────────────────────────
+                        else:
+                            # ── Original LLM repair path ──────────────────────
+                            r = repair_rule_llm(client, model_to_use, r, issues, text)
+                            # ─────────────────────────────────────────────────
+
                         r = normalize_and_validate_rules([r], {"doc":doc,"citation":citation,"span_id":span_id}, RULES_VALIDATOR)[0]
 
                         issues = judge_rule(r, allow_domains=allow_domains, use_evidence_gate=evidence_gate)
@@ -2026,6 +2071,9 @@ if __name__ == "__main__":
     ap.add_argument("--counterfactuals", type=int, default=0)
     ap.add_argument("--decode-retries", type=int, default=3,
                 help="Max decode/validation retries per span (repair-on-parse).")
+    ap.add_argument("--agent-repair", action="store_true", default=False,
+                help="Use SchemaRepairAgent (targeted validate→fix→validate loop) "
+                     "instead of repair_rule_llm() for the repair passes.")
     args = ap.parse_args()
 
     run_hardened(
@@ -2041,4 +2089,5 @@ if __name__ == "__main__":
         repair_passes=args.repair_passes,
         counterfactuals=args.counterfactuals,
         decode_retries=args.decode_retries,
+        agent_repair=args.agent_repair,
     )
