@@ -116,12 +116,18 @@ def _chat_json(client: OpenAI, model: str, system: str, user: str) -> tuple[dict
     raise RuntimeError(f"OpenAI call failed after retries: {last_err}")
 
 
-def tag_testability(input_yaml: Path, output_yaml: Path, model: str | None = None) -> Path:
+def tag_testability(input_yaml: Path, output_yaml: Path, model: str | None = None,
+                    use_agent: bool = False) -> Path:
     """
     Programmatic entrypoint for Step 5.
     - input_yaml: path to cleaned rules (YAML or JSON with top-level list or {"rules":[...]})
     - output_yaml: path to write tagged rules
     - model: optional override for MODEL
+    - use_agent: when True, use TestabilityJudgeAgent (multi-step A→B→C tool calls)
+                 instead of the single-shot _chat_json() call.  The agent walks the
+                 three testability criteria with separate tools, producing an inspectable
+                 reasoning chain.  Requires: pip install langchain langchain-openai.
+                 Default: False (original single-shot behaviour).
     Returns the output_yaml path.
     """
     # use your globals but allow overrides
@@ -137,11 +143,31 @@ def tag_testability(input_yaml: Path, output_yaml: Path, model: str | None = Non
     if not isinstance(rules, list):
         raise ValueError("Input must be a list of rule objects or a dict with key 'rules'.")
 
-    # ---- OpenAI client ----
+    # ---- OpenAI client (only needed for single-shot path) ----
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         raise RuntimeError("Set OPENAI_API_KEY in your environment.")
     client = OpenAI(api_key=api_key)
+
+    # ── TestabilityJudgeAgent: init once outside the loop ────────────────────
+    # The agent replaces the single _chat_json() call with four sequential tool
+    # calls (check_actionability → check_boundedness → identify_evidence_signals
+    # → check_observability), making the A/B/C decision criteria explicit and
+    # producing an inspectable reasoning chain per rule.
+    _judge_agent = None
+    if use_agent:
+        try:
+            from agents.langchain_agents import TestabilityJudgeAgent
+            _judge_agent = TestabilityJudgeAgent(model=MODEL)
+            print(f"[Step5] TestabilityJudgeAgent enabled (model={MODEL})")
+        except Exception as _e:
+            import warnings
+            warnings.warn(
+                f"[Step5] TestabilityJudgeAgent unavailable ({_e}); "
+                "falling back to single-shot LLM call.",
+                stacklevel=2,
+            )
+    # ─────────────────────────────────────────────────────────────────────────
 
     # ---- Process rules (reuse your helpers) ----
     n = len(rules)
@@ -161,20 +187,28 @@ def tag_testability(input_yaml: Path, output_yaml: Path, model: str | None = Non
         src = r.get("source", {}) or {}
         clause = _build_clause_text(r)
 
-        user_msg = USER_TPL.format(
-            CLAUSE_TEXT=clause,
-            DOC=(src.get("doc") or ""),
-            CIT=(src.get("citation") or ""),
-            SPAN_ID=(src.get("span_id") or "")
-        )
-
         try:
-            out, _usage = _chat_json(client, MODEL, SYSTEM_MSG, user_msg)
+            if _judge_agent is not None:
+                # ── Agent path: multi-step tool-calling judgment ──────────────
+                out = _judge_agent.run(rule=r, clause_text=clause)
+                testable = bool(out.get("testable", False))
+                reason   = str(out.get("reason", "")).strip()[:200]
+                signals  = out.get("evidence_signals") or []
+                # ─────────────────────────────────────────────────────────────
+            else:
+                # ── Original path: single-shot LLM call ──────────────────────
+                user_msg = USER_TPL.format(
+                    CLAUSE_TEXT=clause,
+                    DOC=(src.get("doc") or ""),
+                    CIT=(src.get("citation") or ""),
+                    SPAN_ID=(src.get("span_id") or "")
+                )
+                out, _usage = _chat_json(client, MODEL, SYSTEM_MSG, user_msg)
+                testable = bool(out.get("testable", False))
+                reason   = str(out.get("reason", "")).strip()[:200]
+                signals  = out.get("evidence_signals") or []
+                # ─────────────────────────────────────────────────────────────
 
-            # normalize fields
-            testable = bool(out.get("testable", False))
-            reason = str(out.get("reason","")).strip()[:200]
-            signals = out.get("evidence_signals") or []
             if not isinstance(signals, list):
                 signals = []
 
@@ -219,7 +253,9 @@ if __name__ == "__main__":
     ap.add_argument("--in", dest="inp", required=False, help="Input YAML (cleaned rules)")
     ap.add_argument("--out", dest="out", required=False, help="Output YAML (with testable tags)")
     ap.add_argument("--model", dest="model", required=False, help="Model name override")
+    ap.add_argument("--agent", action="store_true", default=False,
+                    help="Use TestabilityJudgeAgent (multi-step A/B/C tool calls) instead of single-shot LLM.")
     args = ap.parse_args()
     inp = Path(args.inp) if args.inp else INPUT_PATH
     out = Path(args.out) if args.out else OUTPUT_PATH
-    tag_testability(inp, out, args.model)
+    tag_testability(inp, out, args.model, use_agent=args.agent)
