@@ -67,8 +67,7 @@ macOS/Linux:
 
 ## Pipeline Workflow
 
-<img width="1368" height="515" alt="image" src="https://github.com/user-attachments/assets/ea0b4d33-9c0d-48cc-af89-5ca6d200da4e" />
-
+<img width="930" height="337" alt="executable gov" src="https://github.com/user-attachments/assets/5ad552e3-90ab-4cbe-8267-5d8b631ed44a" />
 
 
 ### 1) Ingest PDF → spans JSONL
